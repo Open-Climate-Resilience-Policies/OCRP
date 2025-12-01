@@ -1,0 +1,80 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+  title: string;
+  language?: string;
+  summary?: string;
+  hazard_type?: string[];
+  level_of_government_applicability?: string[];
+  implementation_horizon?: string;
+  fiscal_profile?: {
+    cost_range?: string;
+    cost_type?: string;
+  };
+}
+
+const { 
+  title, 
+  language, 
+  summary,
+  hazard_type,
+  level_of_government_applicability,
+  implementation_horizon,
+  fiscal_profile
+} = Astro.props;
+---
+
+<Layout title={title} language={language}>
+  <article class="policy">
+    <header class="policy-header">
+      <h1>{title}</h1>
+      {summary && <p class="policy-summary">{summary}</p>}
+    </header>
+    
+    {(hazard_type || level_of_government_applicability || implementation_horizon || fiscal_profile) && (
+      <aside class="policy-metadata">
+        <h2>Policy Details</h2>
+        <dl>
+          {hazard_type && (
+            <div>
+              <dt>Hazard Type</dt>
+              <dd>{hazard_type.join(', ')}</dd>
+            </div>
+          )}
+          
+          {level_of_government_applicability && (
+            <div>
+              <dt>Applicable Government Levels</dt>
+              <dd>{level_of_government_applicability.join(', ')}</dd>
+            </div>
+          )}
+          
+          {implementation_horizon && (
+            <div>
+              <dt>Implementation Timeline</dt>
+              <dd>{implementation_horizon}</dd>
+            </div>
+          )}
+          
+          {fiscal_profile && (
+            <>
+              <div>
+                <dt>Cost Range</dt>
+                <dd>{fiscal_profile.cost_range}</dd>
+              </div>
+              <div>
+                <dt>Cost Type</dt>
+                <dd>{fiscal_profile.cost_type}</dd>
+              </div>
+            </>
+          )}
+        </dl>
+      </aside>
+    )}
+    
+    <div class="policy-body">
+      <slot />
+    </div>
+  </article>
+</Layout>

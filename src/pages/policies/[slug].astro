@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import PolicyLayout from '../../layouts/PolicyLayout.astro';
+
+export async function getStaticPaths() {
+  const policies = await getCollection('policies');
+  return policies.map(policy => ({
+    params: { slug: policy.slug },
+    props: { policy }
+  }));
+}
+
+const { policy } = Astro.props;
+const { Content } = await policy.render();
+---
+
+<PolicyLayout 
+  title={policy.data.title}
+  language={policy.data.language}
+  summary={policy.data.summary}
+  hazard_type={policy.data.hazard_type}
+  level_of_government_applicability={policy.data.level_of_government_applicability}
+  implementation_horizon={policy.data.implementation_horizon}
+  fiscal_profile={policy.data.fiscal_profile}
+>
+  <Content />
+</PolicyLayout>

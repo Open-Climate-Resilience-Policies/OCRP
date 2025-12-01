@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const policies = await getCollection('policies', ({ data }) => {
+  return data.type === 'generic-policy';
+});
+---
+
+<Layout title="Policies">
+  <h1>Policies</h1>
+  
+  <ul class="policy-list">
+    {policies.map((policy) => (
+      <li class="policy-list-item">
+        <h2><a href={`${import.meta.env.BASE_URL}policies/${policy.slug}/`}>{policy.data.title}</a></h2>
+        {policy.data.summary && (
+          <p class="policy-list-summary">{policy.data.summary}</p>
+        )}
+        <dl class="policy-list-meta">
+          {policy.data.hazard_type && (
+            <div>
+              <dt>Hazard</dt>
+              <dd>{policy.data.hazard_type.join(', ')}</dd>
+            </div>
+          )}
+          {policy.data.level_of_government_applicability && (
+            <div>
+              <dt>Levels of government</dt>
+              <dd>{policy.data.level_of_government_applicability.join(', ')}</dd>
+            </div>
+          )}
+        </dl>
+      </li>
+    ))}
+  </ul>
+</Layout>
