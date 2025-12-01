@@ -4,4 +4,6 @@ url: "https://open-climate-resilience-policies.github.io"
 baseurl: "/OCRP"
 exclude:
   - docs/
+  - README.md
 markdown: kramdown
+theme: null
