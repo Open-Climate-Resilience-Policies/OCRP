@@ -5,5 +5,8 @@ baseurl: "/OCRP"
 exclude:
   - docs/
   - README.md
+  - Gemfile
+  - Gemfile.lock
 markdown: kramdown
-theme: null
+plugins:
+  - jekyll-relative-links
