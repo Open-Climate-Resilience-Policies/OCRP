@@ -4,4 +4,9 @@ url: "https://open-climate-resilience-policies.github.io"
 baseurl: "/OCRP"
 exclude:
   - docs/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 markdown: kramdown
+plugins:
+  - jekyll-relative-links
