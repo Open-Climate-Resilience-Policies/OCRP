@@ -1,5 +1,5 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from '../../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 const policies = await getCollection('policies', ({ data }) => {
@@ -13,7 +13,7 @@ const policies = await getCollection('policies', ({ data }) => {
   <ul class="policy-list">
     {policies.map((policy) => (
       <li class="policy-list-item">
-        <h2><a href={`${import.meta.env.BASE_URL}/policies/${policy.slug}/`}>{policy.data.title}</a></h2>
+        <h2><a href={`${import.meta.env.BASE_URL}/en/policies/${policy.slug}/`}>{policy.data.title}</a></h2>
         {policy.data.summary && (
           <p class="policy-list-summary">{policy.data.summary}</p>
         )}

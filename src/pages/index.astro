@@ -4,5 +4,37 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Open Climate Resilience Policies">
   <h1>Open Climate Resilience Policies</h1>
-  <p>Open Climate Resilience Policies, OCRP, is an open source library of model policies designed to reduce climate related losses for governments.</p>
+  <p style="font-size: 1.25rem; margin-bottom: 2rem;">
+    OCRP is an open source library of model policies designed to reduce climate-related losses for governments at all levels.
+  </p>
+  
+  <section style="margin: 3rem 0;">
+    <h2>About the Project</h2>
+    <p>
+      Climate change poses unprecedented challenges to communities worldwide. The Open Climate Resilience Policies project 
+      provides government officials, policymakers, and community leaders with tested, adaptable policy frameworks to 
+      address climate hazards and build resilience.
+    </p>
+  </section>
+  
+  <section style="margin: 3rem 0;">
+    <h2>Our Approach</h2>
+    <p>
+      Each policy in the OCRP library includes:
+    </p>
+    <ul style="line-height: 1.8;">
+      <li>Clear implementation guidelines</li>
+      <li>Applicability to different government levels</li>
+      <li>Fiscal impact assessments</li>
+      <li>Evidence-based best practices</li>
+    </ul>
+  </section>
+  
+  <section style="margin: 3rem 0;">
+    <h2>Get Started</h2>
+    <p>
+      Explore our <a href={`${import.meta.env.BASE_URL}policies/`}>policy library</a> to find resilience solutions 
+      tailored to your community's needs.
+    </p>
+  </section>
 </Layout>

@@ -1,0 +1,57 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <radialGradient id="centerGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#90EE90;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="300" fill="url(#centerGlow)"/>
+  
+  <!-- Large background leaves -->
+  <g opacity="0.3">
+    <ellipse cx="200" cy="150" rx="80" ry="40" fill="#90EE90" transform="rotate(-15 200 150)"/>
+    <ellipse cx="600" cy="180" rx="100" ry="50" fill="#90EE90" transform="rotate(25 600 180)"/>
+    <ellipse cx="100" cy="250" rx="60" ry="30" fill="#90EE90" transform="rotate(-45 100 250)"/>
+  </g>
+  
+  <!-- Detailed leaves -->
+  <g>
+    <!-- Leaf 1 -->
+    <path d="M150 80 Q180 60 210 80 Q200 110 180 120 Q160 110 150 80 Z" fill="url(#leafGradient)" opacity="0.8"/>
+    <line x1="150" y1="80" x2="210" y2="80" stroke="#2F4F2F" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Leaf 2 -->
+    <path d="M400 120 Q440 100 480 120 Q470 150 440 160 Q410 150 400 120 Z" fill="url(#leafGradient)" opacity="0.9"/>
+    <line x1="400" y1="120" x2="480" y2="120" stroke="#2F4F2F" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Leaf 3 -->
+    <path d="M550 200 Q590 180 630 200 Q620 230 590 240 Q560 230 550 200 Z" fill="url(#leafGradient)" opacity="0.7"/>
+    <line x1="550" y1="200" x2="630" y2="200" stroke="#2F4F2F" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Leaf 4 -->
+    <path d="M300 220 Q340 200 380 220 Q370 250 340 260 Q310 250 300 220 Z" fill="url(#leafGradient)" opacity="0.8"/>
+    <line x1="300" y1="220" x2="380" y2="220" stroke="#2F4F2F" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Small floating elements -->
+  <g opacity="0.6">
+    <circle cx="250" cy="100" r="3" fill="#32CD32"/>
+    <circle cx="500" cy="80" r="4" fill="#90EE90"/>
+    <circle cx="350" cy="180" r="3" fill="#32CD32"/>
+    <circle cx="650" cy="120" r="3" fill="#90EE90"/>
+    <circle cx="150" cy="200" r="4" fill="#32CD32"/>
+  </g>
+  
+  <!-- Light rays -->
+  <g opacity="0.2">
+    <polygon points="100,0 150,0 180,300 130,300" fill="#FFFF99"/>
+    <polygon points="300,0 350,0 380,300 330,300" fill="#FFFF99"/>
+    <polygon points="500,0 550,0 580,300 530,300" fill="#FFFF99"/>
+  </g>
+</svg>

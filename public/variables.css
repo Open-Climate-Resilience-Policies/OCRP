@@ -1,5 +1,16 @@
 :root {
   --color-primary: #004b50;
+  --color-primary-light: #006b70;
+  --color-accent: #2d8f3c;
   --color-text: #2f3336;
+  --color-text-light: #5a5e62;
   --color-bg: #ffffff;
+  --color-bg-light: #f8f9fa;
+  --color-border: #dee2e6;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --max-width: 1200px;
 }
