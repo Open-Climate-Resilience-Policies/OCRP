@@ -4,23 +4,31 @@ title: Policy Library
 pagination: 
   enabled: true
   collection: policies
+  sort_field: title
+  sort_reverse: false
 ---
 
 <h1>Policy Library</h1>
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% for policy in paginator.posts %}
-<article class="policy-list-item">
-  <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
-  <p class="policy-summary">{{ policy.summary }}</p>
-  <div class="policy-meta">
-    <span class="policy-type">{{ policy.type | replace: "-", " " | capitalize }}</span>
-    {% if policy.jurisdiction %}<span class="policy-jurisdiction">{{ policy.jurisdiction }}</span>{% endif %}
-    {% if policy.date_enacted %}<span class="policy-date">Enacted: {{ policy.date_enacted | date: "%B %Y" }}</span>{% endif %}
-  </div>
-</article>
-{% endfor %}
+{% assign policies = paginator.posts | default: paginator.documents %}
+
+{% if policies.size > 0 %}
+  {% for policy in policies %}
+  <article class="policy-list-item">
+    <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
+    <p class="policy-summary">{{ policy.summary }}</p>
+    <div class="policy-meta">
+      <span class="policy-type">{{ policy.type | replace: "-", " " | capitalize }}</span>
+      {% if policy.jurisdiction %}<span class="policy-jurisdiction">{{ policy.jurisdiction }}</span>{% endif %}
+      {% if policy.date_enacted %}<span class="policy-date">Enacted: {{ policy.date_enacted | date: "%B %Y" }}</span>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+{% else %}
+  <p>No policies found. (Debug: Total policies in site: {{ site.policies.size }})</p>
+{% endif %}
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
