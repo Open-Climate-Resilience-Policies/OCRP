@@ -11,6 +11,10 @@ markdown: kramdown
 plugins:
   - jekyll-paginate-v2
 
+# Pagination
+pagination:
+  enabled: true
+
 # Collections
 collections:
   policies:
