@@ -1,42 +1,43 @@
 # Open Climate Resilience Policies (OCRP)
 
-This repository contains the OCRP website and model policy library, built with [Astro](https://astro.build).
+A collaborative repository of climate resilience policies, strategies, and best practices for municipalities and organizations worldwide. This site is built with Jekyll and hosted on GitHub Pages.
 
 ## 🚀 Project Structure
 
 ```
 /
-├── public/              # Static assets (CSS, images)
-├── src/
-│   ├── content/
-│   │   └── policies/    # Policy markdown files
-│   ├── layouts/         # Astro layout components
-│   └── pages/           # Site pages and routes
-├── astro.config.mjs     # Astro configuration
-└── package.json
+├── _layouts/            # Jekyll layouts
+│   ├── default.html     # Main page layout
+│   └── policy.html      # Policy page layout
+├── _policies/           # Policy collection (markdown files)
+│   ├── urban-heat-model.md
+│   └── ...
+├── assets/
+│   ├── css/             # Stylesheets
+│   └── img/             # Images and SVG files
+├── policies/            # Policy listing page (paginated)
+│   └── index.md
+├── _config.yml          # Jekyll configuration
+├── index.md             # Home page
+├── about.md             # About page
+└── contribute.md        # Contribution guide
 ```
 
-## 🧞 Commands
+## 🌐 Live Site
 
-All commands are run from the root of the project:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
+The site is available at: https://open-climate-resilience-policies.github.io/OCRP/
 
 ## 📝 Adding New Policies
 
-1. Create a new markdown file in `src/content/policies/`
-2. Add the required frontmatter fields (id, title, type, summary)
-3. The policy will automatically appear in the policies listing
+We welcome contributions! You can add policies in two ways:
 
-## 🌐 Deployment
-
-The site automatically deploys to GitHub Pages when you push to the `main` branch.
+1.  **Via GitHub Issues**: Follow the instructions on our [Contribute page](https://open-climate-resilience-policies.github.io/OCRP/contribute/) to format your policy using AI and submit it as an issue.
+2.  **Direct Pull Request**:
+    *   Create a new markdown file in `_policies/`.
+    *   Add the required frontmatter (title, summary, type, jurisdiction, date_enacted).
+    *   Submit a Pull Request.
 
 ## 📄 License
 
-Content licensed under CC BY 4.0. © OCRP.
+Content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Code is licensed under the MIT License.

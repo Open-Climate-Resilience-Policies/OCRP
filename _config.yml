@@ -1,0 +1,35 @@
+# Site settings
+title: Open Climate Resilience Policies
+description: A collaborative repository of climate resilience policies, strategies, and best practices for municipalities and organizations worldwide.
+url: "https://open-climate-resilience-policies.github.io"
+baseurl: "/OCRP"
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  sort_reverse: true
+
+# Collections
+collections:
+  policies:
+    output: true
+    permalink: /policies/:name/
+
+# Exclude from processing
+exclude:
+  - .git
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

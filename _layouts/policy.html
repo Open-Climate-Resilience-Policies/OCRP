@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<article class="policy-content">
+  <h1>{{ page.title }}</h1>
+  
+  {% if page.summary %}
+  <p class="policy-summary"><strong>{{ page.summary }}</strong></p>
+  {% endif %}
+
+  {% if page.jurisdiction or page.date_enacted or page.legal_reference %}
+  <div class="policy-metadata">
+    {% if page.jurisdiction %}<div><strong>Jurisdiction:</strong> {{ page.jurisdiction }}</div>{% endif %}
+    {% if page.date_enacted %}<div><strong>Date Enacted:</strong> {{ page.date_enacted | date: "%B %d, %Y" }}</div>{% endif %}
+    {% if page.legal_reference %}<div><strong>Legal Reference:</strong> {{ page.legal_reference }}</div>{% endif %}
+  </div>
+  {% endif %}
+
+  <div class="policy-body">
+    {{ content }}
+  </div>
+
+  {% if page.official_sources or page.news_sources %}
+  <div class="policy-sources">
+    {% if page.official_sources %}
+    <h2>Official Sources</h2>
+    <ul>
+      {% for source in page.official_sources %}
+      <li><a href="{{ source.url }}">{{ source.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if page.news_sources %}
+    <h2>News Coverage</h2>
+    <ul>
+      {% for source in page.news_sources %}
+      <li><a href="{{ source.url }}">{{ source.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="policy-footer">
+    <a href="{{ '/policies/' | relative_url }}" class="back-link">← Back to Policy Library</a>
+  </div>
+</article>

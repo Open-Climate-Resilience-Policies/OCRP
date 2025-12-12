@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/variables.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="OCRP Logo" class="brand-mark">
+      <div class="brand-text">
+        <div class="brand-name">{{ site.title }}</div>
+        <div class="brand-acronym">OCRP</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/policies/' | relative_url }}">Policy Library</a></li>
+        <li><a href="{{ '/contribute/' | relative_url }}">Contribute</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; 2025 {{ site.title }}. Licensed under <a href="{{ '/LICENSE' | relative_url }}">MIT License</a>.</p>
+    <p>Community-driven • Open Source • Climate Action</p>
+  </footer>
+</body>
+</html>
