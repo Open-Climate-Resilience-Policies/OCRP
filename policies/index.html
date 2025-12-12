@@ -12,7 +12,10 @@ pagination:
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% assign policies = paginator.posts | default: paginator.documents %}
+{% assign policies = site.policies | sort: 'title' %}
+{% if paginator and paginator.documents %}
+  {% assign policies = paginator.documents %}
+{% endif %}
 
 {% if policies.size > 0 %}
   {% for policy in policies %}
@@ -27,7 +30,7 @@ pagination:
   </article>
   {% endfor %}
 {% else %}
-  <p>No policies found. (Debug: Total policies in site: {{ site.policies.size }})</p>
+  <p>No policies found.</p>
 {% endif %}
 
 <!-- Pagination links -->
