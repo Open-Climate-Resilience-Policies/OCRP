@@ -11,13 +11,6 @@ markdown: kramdown
 plugins:
   - jekyll-paginate-v2
 
-# Pagination
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: '/page/:num/'
-  sort_reverse: true
-
 # Collections
 collections:
   policies:
