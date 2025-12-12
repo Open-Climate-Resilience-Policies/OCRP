@@ -2,7 +2,7 @@
 layout: policy
 title: "Biodiversity Corridors & Rewilding Mandate"
 type: generic-policy
-summary: "A framework for reconnecting urban ecosystems through living infrastructure, stream daylighting, and wildlife bridges to support biodiversity and climate resilience."
+summary: "A plan to reconnect nature in cities using green roofs, restored streams, and wildlife bridges. This reduces flooding, cools the city, and protects animals."
 hazard_type:
   - "biodiversity loss"
   - "urban heat island"
@@ -17,62 +17,80 @@ related_policies:
 
 ## Overview
 
-Urbanization often fragments natural habitats, isolating animal populations and disrupting ecosystems. This policy establishes a framework for **Biodiversity Corridors and Rewilding**, aiming to physically reconnect these fragmented habitats. By integrating nature into the built environment, cities can support pollinators, reduce flood risks, and lower urban temperatures.
+
+
+Cities often break nature into small, isolated pieces. Roads and concrete block animals from moving, mating, or finding food. This policy creates **Biodiversity Corridors**—safe pathways that physically reconnect these pieces.
+
+By weaving nature back into the city, we solve three problems at once: we save local animals (like bees and frogs), we stop floods by giving rain somewhere to go, and we cool down our overheated neighborhoods.
 
 ## Policy 1: The "Living Infrastructure" Mandate
 
 **Concept:**
-Cities possess vast amounts of unused surface area on top of small public utility structures (bus stops, kiosks, electrical boxes) that can serve as critical "stepping stones" for pollinators.
+Cities are full of small structures—bus stops, trash bins, and bike sheds—that have empty roofs. We can use these surfaces to create a "highway" for insects.
 
 **The Policy:**
-Mandate that all new and retrofitted small-scale public infrastructure must be equipped with green roofs consisting of sedum plants, mosses, or native wildflowers.
-*   **Scope:** Bus shelters, bike sheds, waste/recycling hubs, and utility kiosks.
-*   **Goal:** Create a "micro-corridor" network for bees and butterflies in dense concrete areas where large parks are not feasible.
+All new and renovated small public structures must have a "green roof" planted with moss, sedum, or wildflowers.
+* **Scope:** Bus shelters, utility boxes, and bike storage lockers.
+* **Goal:** To give bees and butterflies a place to rest and feed as they travel across the concrete city.
 
 **Why It Works:**
-*   **Zero Land Use:** Requires no additional ground space.
-*   **Air Quality:** Captures fine dust and particulate matter.
-*   **Water Management:** Stores rainwater, reducing runoff.
-*   **Biodiversity:** Provides crucial rest stops for pollinators moving between larger green spaces.
+* **Uses No Extra Space:** It uses roofs that already exist.
+* **Cleans the Air:** The plants trap dust and pollution.
+* **Cools the Street:** Metal roofs get hot; green roofs stay cool.
 
 **Real-World Example:**
-*   **Utrecht, Netherlands:** Transformed over 300 bus stops into "Bee Stops" with green roofs. This initiative stabilized the local bee population and requires minimal maintenance.
+* **Utrecht, Netherlands:** The city transformed over 300 bus stops into [**"Bee Stops"**](https://www.utrecht.nl/city-of-utrecht/green-roofed-bus-shelters-in-utrecht) with green roofs. The project saved the local bee population and is paid for by the advertising company that manages the stops, costing the city nothing.
+
+
 
 ## Policy 2: Urban Stream "Daylighting"
 
 **Concept:**
-Many 20th-century cities buried natural rivers and streams in concrete pipes to build roads or parking lots, destroying aquatic corridors and increasing flood risks.
+In the 20th century, many cities buried natural creeks inside concrete pipes to build parking lots or roads on top. This caused flooding and killed the fish. "Daylighting" means digging them up and letting them flow in the open again.
 
 **The Policy:**
-Implement a **"Daylighting" Zoning Code** that prioritizes the unearthing of buried urban streams during major redevelopment projects.
-*   **Requirement:** Convert paved canals or buried pipes back into open, naturalized streams with vegetated banks.
+The City will adopt a **"Daylighting" Zoning Code**. When a developer wants to rebuild a site that has a buried pipe, they must check if it can be uncovered and restored to a natural stream.
 
 **Why It Works:**
-*   **Biodiversity:** Re-establishes aquatic corridors for fish and amphibians.
-*   **Cooling:** Significantly lowers the "Urban Heat Island" effect through evaporative cooling.
-*   **Flood Control:** Provides natural flood management by allowing water to absorb into the soil rather than rushing into storm drains.
+* **Flood Control:** Natural streams absorb heavy rain like a sponge; pipes just overflow.
+* **Natural Air Conditioning:** Open water cools the air around it, lowering the ["Urban Heat Island"](https://www.epa.gov/heatisland) effect.
 
 **Real-World Example:**
-*   **Seoul, South Korea:** Removed a major highway to "daylight" the **Cheonggyecheon Stream**. The project created a massive wind corridor that cools the surrounding area by 3.3°C to 5.9°C and restored habitat for varied species of birds, fish, and insects.
+* **Seoul, South Korea:** The city tore down a major highway to uncover the **[Cheonggyecheon Stream](https://www.landscapeperformance.org/case-study-briefs/cheonggyecheon-stream-restoration-project)**. It lowered the temperature of the area by nearly 6°C and brought back fish and birds that hadn't been seen for decades.
+
+
 
 ## Policy 3: The Ecological Link (Wildlife Bridges)
 
 **Concept:**
-Highways and train lines often slice through existing forests, creating "habitat fragmentation" where animals cannot mate, hunt, or migrate without risking roadkill.
+Highways are deadly walls for nature. Animals cannot cross them to find mates, leading to inbreeding and extinction.
 
 **The Policy:**
-Require the construction of **"Eco-Links"** (vegetated overpasses or underpasses) whenever major transport infrastructure bisects a designated nature reserve or green belt.
-*   **Design Standard:** Structures must be planted with native vegetation to mimic the surrounding forest, effectively hiding the road from the wildlife crossing it.
+The City will require **"Eco-Links"** (green bridges or tunnels) whenever a major road cuts through a forest or nature reserve.
+* **Design:** The bridge must be covered in soil and trees, so animals think they are just walking through the woods.
 
 **Why It Works:**
-*   **Genetic Health:** Physically reconnects fragmented forests, allowing for genetic exchange between isolated animal populations (preventing inbreeding).
-*   **Safety:** Reduces dangerous animal-vehicle collisions.
+* **Genetic Health:** It allows isolated animal families to meet and mix, which keeps the population healthy.
+* **Road Safety:** It creates fewer car accidents involving deer or other wildlife.
 
 **Real-World Example:**
-*   **Singapore:** Constructed the **Eco-Link@BKE**, a bridge covered in dense rainforest connecting the Bukit Timah Nature Reserve and the Central Catchment Nature Reserve. Rare animals like the Sunda Pangolin and Palm Civet have been observed using the bridge to expand their territories.
+* **Singapore:** The **[Eco-Link@BKE](https://www.nparks.gov.sg/visit/parks/bukit-timah-nature-reserve/special-features/eco-link-bke)** connects two rainforests separated by an expressway. Rare animals like the Sunda Pangolin now use it safely to expand their territory.
 
-## Implementation Strategy
 
-1.  **Audit:** Map existing buried streams and fragmented green belts to identify high-impact opportunities.
-2.  **Pilot:** Begin with the "Living Infrastructure" mandate as it has the lowest barrier to entry and high visibility.
-3.  **Partnership:** Collaborate with transport authorities for Eco-Links and water management agencies for Daylighting projects.
+
+## Todo: Implementation Roadmap
+
+If you are a city planner or council member, follow these steps to get started.
+
+### Phase 1: The Audit (Months 1-3)
+- [ ] **Map the "Blue Lines":** Use old historical maps to find where streams were buried under the city.
+- [ ] **Map the "Kill Zones":** Ask the Department of Transportation for data on where the most animal-vehicle collisions happen. This is where you need a Wildlife Bridge.
+- [ ] **Identify "Grey" Assets:** Count how many city-owned bus stops and utility kiosks could support a green roof.
+
+### Phase 2: The Pilot (Months 3-6)
+- [ ] **Launch the "Bee Stop" Pilot:** Put out a contract (RFP) for new bus shelters that requires green roofs. (Tip: Ask advertising companies to pay for maintenance in exchange for ad space, like Utrecht did).
+- [ ] **Zoning Text Amendment:** Draft language that gives developers "bonus density" (permission to build bigger) if they agree to "daylight" a stream on their property.
+
+### Phase 3: Major Infrastructure (Months 6-12+)
+- [ ] **Grant Writing:** Apply for FEMA/Flood mitigation grants to fund Stream Daylighting projects (frame it as "flood control," not just "nature").
+- [ ] **Feasibility Study:** Commission an engineering study for a Wildlife Bridge at the #1 worst roadkill location identified in Phase 1.
