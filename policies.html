@@ -8,26 +8,9 @@ pagination:
 
 <h1>Policy Library</h1>
 
-<div style="background: #f8f9fa; padding: 15px; margin-bottom: 20px; border: 1px solid #dee2e6; border-radius: 4px;">
-  <h4 style="margin-top: 0;">Debug Pagination</h4>
-  <ul style="margin-bottom: 0;">
-    <li><strong>Paginator object:</strong> {% if paginator %}Present{% else %}Nil{% endif %}</li>
-    <li><strong>Total Pages:</strong> {{ paginator.total_pages }}</li>
-    <li><strong>Current Page:</strong> {{ paginator.page }}</li>
-    <li><strong>Total Documents:</strong> {{ paginator.total_posts }}</li>
-    <li><strong>Site Policies Count:</strong> {{ site.policies.size }}</li>
-  </ul>
-</div>
-
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% assign policies = site.policies | sort: 'title' %}
-{% if paginator and paginator.documents.size > 0 %}
-  {% assign policies = paginator.documents %}
-{% endif %}
-
-{% if policies.size > 0 %}
-  {% for policy in policies %}
+{% for policy in paginator.documents %}
   <article class="policy-list-item">
     <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
     <p class="policy-summary">{{ policy.summary }}</p>
@@ -37,24 +20,25 @@ pagination:
       {% if policy.date_enacted %}<span class="policy-date">Enacted: {{ policy.date_enacted | date: "%B %Y" }}</span>{% endif %}
     </div>
   </article>
-  {% endfor %}
-{% else %}
-  <p>No policies found.</p>
-{% endif %}
+{% endfor %}
 
-<!-- Pagination links -->
+<!-- Pagination navigation -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
-  {% else %}
-    <span class="next">Next</span>
-  {% endif %}
-</div>
+<nav class="pagination" role="navigation" aria-label="Pagination">
+  <div class="pagination-links">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-previous" aria-label="Previous page">← Previous</a>
+    {% else %}
+      <span class="pagination-previous disabled">← Previous</span>
+    {% endif %}
+    
+    <span class="pagination-info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-next" aria-label="Next page">Next →</a>
+    {% else %}
+      <span class="pagination-next disabled">Next →</span>
+    {% endif %}
+  </div>
+</nav>
 {% endif %}
