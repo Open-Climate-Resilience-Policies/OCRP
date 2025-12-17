@@ -1,63 +1,82 @@
 ---
 layout: policy
-title: "Cohousing & Cooperative Housing Resource-Sharing Mandate"
-category: Housing & Land Use
+title: "Cohousing & Cooperative Housing Mandate"
+type: generic-policy
+summary: "A framework to decarbonize housing by prioritizing 'resource-efficient communities' over independent units. It uses zoning overlays, public land partnerships, and legal reforms to incentivize Co-ops and Cohousing."
+hazard_type:
+  - "social isolation"
+  - "housing affordability"
+  - "high embodied carbon"
+  - "climate resilience"
+policy_category: "housing & land use"
+implementation_level: "municipal"
+related_policies:
+  - "community-retrofit-aggregation"
+  - "building-performance-standards"
 ---
 
-# Cohousing & Cooperative Housing Resource-Sharing Mandate
+## Overview
 
-## Summary
-A municipal framework to incentivize **Cohousing** and **Housing Cooperatives (Co-ops)** as a primary strategy for climate resilience. This policy leverages "radical resource sharing" to decarbonize the housing sector while addressing the affordability crisis. It shifts the focus from "energy-efficient independent units" to "resource-efficient communities."
+The standard housing model relies on individual ownership of rarely used assets (lawnmowers, guest rooms, large private kitchens), resulting in high embodied carbon and waste. Furthermore, fragmented living arrangements contribute to a loneliness epidemic, weakening community resilience during climate shocks.
 
-## The Problem
-* **Inefficient Consumption:** The standard housing model relies on individual ownership of rarely used assets (lawnmowers, guest rooms, large private kitchens), resulting in high embodied carbon and waste.
-* **Social Isolation:** Fragmented living arrangements contribute to a loneliness epidemic, weakening community resilience during climate shocks (e.g., heat waves, floods).
-* **Zoning Barriers:** Current codes penalize shared living by mandating excessive private amenities and parking, making co-living illegal or financially unviable.
+This policy shifts the focus from "energy-efficient independent units" to **"resource-efficient communities."** It establishes a municipal framework to incentivize **Cohousing** and **Housing Cooperatives (Co-ops)** through "Radical Resource Sharing."
 
-## The Solution: A "Share-Shed" Zoning Overlay
-Municipalities shall adopt a **Cohousing Overlay Zone** applicable to all residential areas. This overlay incentivizes density and affordability in exchange for verifiable resource sharing.
+## Policy 1: The "Share-Shed" Zoning Overlay
 
-### 1. The "Share-Shed" Requirement
-Developments qualify for this overlay only if they reduce private footprint in favor of shared assets:
-* **Common House Mandate:** Minimum 15% of gross floor area must be dedicated to communal use (commercial-grade kitchen, dining hall, workshops).
-* **The "Library of Things":** Mandatory shared infrastructure for high-carbon tools (laundry, woodworking, gardening equipment) to negate the need for private ownership.
-* **Guest Room Banking:** Private units are permitted to be smaller (micro-units) by pooling guest accommodations into shared, bookable suites.
+**Concept:**
+Current zoning often penalizes shared living by mandating excessive private amenities. This overlay creates a "Density for Sharing" swap: developers get higher density allowances if they reduce private footprints in favor of verifiable shared assets.
 
-### 2. Legal & Financial Enablers
-* **Zoning for "Functional Families":** Amend definitions of "household" to allow unlimited unrelated individuals to live together if they function as a single economic unit (removing "roommate caps").
-* **Community Land Trust (CLT) Partnership:** City-owned surplus land is offered first to CLTs or Co-ops on long-term nominal leases ($1/year), removing land cost speculation.
-* **Density Bonuses:** Exclude shared amenity spaces from Floor Area Ratio (FAR) calculations.
+**The Policy:**
+Municipalities shall adopt a **Cohousing Overlay Zone** applicable to residential areas. To qualify, developments must meet the "Share-Shed" Standard:
+1.  **Common House Mandate:** Minimum **15% of gross floor area** must be dedicated to communal use (commercial-grade kitchen, dining hall, co-working spaces).
+2.  **Guest Room Banking:** Private units are permitted to be "Micro-Suites" (smaller than standard minimums) by pooling guest accommodations into shared, bookable suites.
+3.  **The "Library of Things":** Mandatory shared infrastructure for high-carbon tools (laundry, woodworking, gardening) to negate the need for private ownership.
 
----
+**Why It Works:**
+* **Decarbonization:** Reduces embodied carbon by eliminating redundant appliances and square footage.
+* **Resilience:** The "Common House" serves as a built-in emergency hub during power outages or heat waves.
 
-## Municipal Precedents: Examples Folks Can Work For
+**Real-World Example:**
+* **Vienna, Austria:** The city uses a "Social Sustainability" scoring matrix for new developments. Developers *must* propose how residents will interact and share resources to win land bids. This effectively mandates the community-building aspect of cohousing into all social housing.
 
-These real-world examples prove that this model works. Advocates can use these case studies to show city councils what is possible.
+## Policy 2: The "Public Land for Public Good" Pipeline
 
-### 1. Amsterdam, Netherlands: The "Zelfbouw" (Self-Build) Model
-* **The Policy:** The city designates specific plots of land *exclusively* for "CPO" (Collectief Particulier Opdrachtgeverschap) groups—essentially citizen-led housing co-ops. These groups do not compete with commercial developers; they only compete with other community groups based on the quality of their social and environmental plans.
-* **The Result:** Projects like **De Warren**, a carbon-positive co-op built by its residents. It features a massive shared "energy facade," communal thermal storage, and 30% shared living space, reducing rent significantly below market rates.
-* **Actionable Takeaway:** Demand your city set aside a percentage of public land sales strictly for non-profit/citizen groups, judging bids on *social value* rather than highest price.
+**Concept:**
+The biggest barrier to Co-ops and Cohousing is the high cost of land. Speculative developers will always outbid community groups. This policy removes land from the speculative market.
 
-### 2. Vancouver, Canada: Community Land Trust (CLT) Partnerships
-* **The Policy:** The City of Vancouver has leased municipal land (valued at over $100M) to the **Community Land Trust Foundation of BC** for 99 years at a nominal rate. This allows the CLT to build and operate mixed-income co-ops where residents pay no more than 30% of their income.
-* **The Result:** 58 affordable homes at 1700 Kingsway and other sites. By removing the land cost from the equation, the co-op model becomes financially viable even in one of the world's most expensive real estate markets.
-* **Actionable Takeaway:** Push for a "Public Land for Public Good" bylaw that mandates surplus city property be transferred to a Land Trust rather than sold to private developers.
+**The Policy:**
+1.  **Surplus Land Priority:** City-owned surplus land is offered *first* to **Community Land Trusts (CLTs)** or registered **Co-op Groups** on long-term nominal leases ($1/year for 99 years).
+2.  **The "Social Value" Tender:** Public land is not sold to the highest bidder, but awarded to the group with the best social and environmental proposal.
 
-### 3. Kingston, Ontario: Zoning for "Invisible Density"
-* **The Policy:** While still evolving, Kingston has seen a rise in "forming groups" like **Kingston Cohousing** and existing success with **Kingston Co-operative Homes**. The city is exploring zoning reforms to allow "missing middle" density (fourplexes, cluster housing) in traditionally single-family areas.
-* **The Opportunity:** Advocates in mid-sized cities like Kingston are using the "climate emergency" declaration to argue that cohousing is a climate strategy, not just a housing strategy.
-* **Actionable Takeaway:** Use the "Cluster Housing" argument—zoning that allows multiple smaller detached units on a single large lot (a "cottage court") without subdividing the land, sharing a common driveway and garden.
+**Why It Works:**
+* **Affordability:** Removing the land cost allows Co-ops to offer rents 30-50% below market rates.
+* **Control:** Ensuring land stays in community hands prevents future displacement/gentrification.
 
-### 4. Vienna, Austria: The "Social Mix" Gold Standard
-* **The Policy:** In new developments over a certain size, **two-thirds** of the floor space must be subsidized housing. The city uses a "quality competition" (Bauträgerwettbewerbe) where developers win based on four pillars: Economics, Architecture, Ecology, and **Social Sustainability**.
-* **The Result:** "Social Sustainability" is a scoring metric. Developers *must* propose how residents will interact, share resources, and self-manage. This effectively mandates the "community building" aspect of cohousing into all social housing.
-* **Actionable Takeaway:** Ask your planning department to add a "Social Sustainability" scoring matrix to all Requests for Proposals (RFPs) for city-supported housing.
+**Real-World Examples:**
+* **Vancouver, Canada:** The City leased municipal land valued at over $100M to the **Community Land Trust Foundation of BC** for a nominal rate. This enabled the construction of 58 affordable homes at 1700 Kingsway that would have been financially impossible otherwise.
+* **Amsterdam, Netherlands:** The "Zelfbouw" (Self-Build) policy sets aside specific plots exclusively for citizen-led co-ops. This enabled projects like **De Warren**, a carbon-positive co-op built by its residents with a massive shared "energy facade."
+
+## Policy 3: Zoning for "Invisible Density" & Functional Families
+
+**Concept:**
+Many zoning codes define a "household" as related family members, effectively making co-living by unrelated adults illegal. This prevents "forming groups" from retrofitting large existing homes into cohousing.
+
+**The Policy:**
+1.  **"Functional Family" Definition:** Amend zoning definitions of "household" to allow unlimited unrelated individuals to live together if they function as a single economic unit (removing "roommate caps").
+2.  **Cluster Housing:** Allow "Cottage Courts"—multiple smaller detached units on a single large single-family lot—without requiring land subdivision, provided they share a common driveway and garden.
+
+**Why It Works:**
+* **Immediate Action:** Unlocks existing housing stock for co-living without new construction.
+* **Missing Middle:** Allows gentle density in established neighborhoods.
+
+**Real-World Example:**
+* **Kingston, Ontario:** The city is exploring zoning reforms to allow "missing middle" density and recognize "forming groups." Advocates are using the city's climate emergency declaration to argue that sharing distinct, smaller units on a single lot (Cluster Housing) is a key climate strategy.
 
 ## Implementation Roadmap
 
 | Phase | Action Item |
 | :--- | :--- |
 | **Immediate** | **Audit Surplus Land:** Identify 3 city-owned parcels suitable for a pilot Co-op/CLT partnership. |
-| **Year 1** | **Pass "Co-Living" Overlay:** Remove caps on unrelated occupants and reduce parking minimums for developments with car-share programs. |
+| **Year 1** | **Pass "Co-Living" Overlay:** Remove caps on unrelated occupants ("Functional Family" definition) and reduce parking minimums for developments with car-share programs. |
 | **Year 2** | **Establish Revolving Loan Fund:** Create a seed fund to help co-op groups pay for initial architectural drawings and legal fees (often the biggest barrier to entry). |
+| **Year 3** | **Social Value Procurement:** Formally adopt a policy where public land sales are judged on social/environmental merit, not just price. |
