@@ -11,6 +11,20 @@ markdown: kramdown
 plugins:
   - jekyll-paginate-v2
 
+# Pagination configuration
+pagination:
+  enabled: true
+  debug: true
+  collection: 'policies'
+  per_page: 5
+  permalink: '/page/:num/'
+  sort_field: 'title'
+  sort_reverse: false
+
+# Autopages (disable to avoid conflicts)
+autopages:
+  enabled: false
+
 # Collections
 collections:
   policies:
