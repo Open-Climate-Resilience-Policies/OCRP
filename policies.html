@@ -10,7 +10,7 @@ pagination:
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% if paginator.documents.size > 0 %}
+{% if paginator.documents and paginator.documents.size > 0 %}
   {% for policy in paginator.documents %}
   <article class="policy-list-item">
     <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
@@ -22,7 +22,32 @@ pagination:
     </div>
   </article>
   {% endfor %}
+{% elsif paginator %}
+  <!-- Debug: Paginator exists but no documents -->
+  <div style="background: #fff3cd; padding: 15px; margin: 20px 0; border: 1px solid #ffc107; border-radius: 4px;">
+    <p><strong>Debug Info:</strong></p>
+    <ul>
+      <li>Paginator exists: Yes</li>
+      <li>Documents count: {{ paginator.documents.size }}</li>
+      <li>Total pages: {{ paginator.total_pages }}</li>
+      <li>Current page: {{ paginator.page }}</li>
+      <li>Collection: {{ paginator.collection }}</li>
+    </ul>
+  </div>
+  {% assign policies = site.policies | sort: 'title' %}
+  {% for policy in policies %}
+  <article class="policy-list-item">
+    <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
+    <p class="policy-summary">{{ policy.summary }}</p>
+    <div class="policy-meta">
+      <span class="policy-type">{{ policy.type | replace: "-", " " | capitalize }}</span>
+      {% if policy.jurisdiction %}<span class="policy-jurisdiction">{{ policy.jurisdiction }}</span>{% endif %}
+      {% if policy.date_enacted %}<span class="policy-date">Enacted: {{ policy.date_enacted | date: "%B %Y" }}</span>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
 {% else %}
+  <!-- Fallback: No paginator at all -->
   {% assign policies = site.policies | sort: 'title' %}
   {% for policy in policies %}
   <article class="policy-list-item">
