@@ -12,7 +12,7 @@ pagination:
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% for policy in paginator.documents %}
+{% for policy in paginator.posts %}
   <article class="policy-list-item">
     <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
     <p class="policy-summary">{{ policy.summary }}</p>
