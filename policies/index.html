@@ -12,6 +12,17 @@ pagination:
 
 <h1>Policy Library</h1>
 
+<div style="background: #f8f9fa; padding: 15px; margin-bottom: 20px; border: 1px solid #dee2e6; border-radius: 4px;">
+  <h4 style="margin-top: 0;">Debug Pagination</h4>
+  <ul style="margin-bottom: 0;">
+    <li><strong>Paginator object:</strong> {% if paginator %}Present{% else %}Nil{% endif %}</li>
+    <li><strong>Total Pages:</strong> {{ paginator.total_pages }}</li>
+    <li><strong>Current Page:</strong> {{ paginator.page }}</li>
+    <li><strong>Total Documents:</strong> {{ paginator.total_posts }}</li>
+    <li><strong>Site Policies Count:</strong> {{ site.policies.size }}</li>
+  </ul>
+</div>
+
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
 {% assign policies = site.policies | sort: 'title' %}
