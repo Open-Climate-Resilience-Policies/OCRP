@@ -10,7 +10,8 @@ pagination:
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% for policy in paginator.documents %}
+{% if paginator.documents.size > 0 %}
+  {% for policy in paginator.documents %}
   <article class="policy-list-item">
     <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
     <p class="policy-summary">{{ policy.summary }}</p>
@@ -20,7 +21,21 @@ pagination:
       {% if policy.date_enacted %}<span class="policy-date">Enacted: {{ policy.date_enacted | date: "%B %Y" }}</span>{% endif %}
     </div>
   </article>
-{% endfor %}
+  {% endfor %}
+{% else %}
+  {% assign policies = site.policies | sort: 'title' %}
+  {% for policy in policies %}
+  <article class="policy-list-item">
+    <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
+    <p class="policy-summary">{{ policy.summary }}</p>
+    <div class="policy-meta">
+      <span class="policy-type">{{ policy.type | replace: "-", " " | capitalize }}</span>
+      {% if policy.jurisdiction %}<span class="policy-jurisdiction">{{ policy.jurisdiction }}</span>{% endif %}
+      {% if policy.date_enacted %}<span class="policy-date">Enacted: {{ policy.date_enacted | date: "%B %Y" }}</span>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+{% endif %}
 
 <!-- Pagination navigation -->
 {% if paginator.total_pages > 1 %}
