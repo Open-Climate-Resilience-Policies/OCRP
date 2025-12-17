@@ -14,10 +14,20 @@ pagination:
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% assign policies = site.policies | sort: 'title' %}
-{% if paginator and paginator.documents %}
-  {% assign policies = paginator.documents %}
+{% assign policies = nil %}
+{% if paginator %}
+  {% if paginator.documents and paginator.documents.size > 0 %}
+    {% assign policies = paginator.documents %}
+  {% elsif paginator.posts and paginator.posts.size > 0 %}
+    {% assign policies = paginator.posts %}
+  {% elsif paginator.resources and paginator.resources.size > 0 %}
+    {% assign policies = paginator.resources %}
+  {% endif %}
 {% endif %}
+
+{% unless policies %}
+  {% assign policies = site.policies | sort: 'title' %}
+{% endunless %}
 
 {% if policies.size > 0 %}
   {% for policy in policies %}
