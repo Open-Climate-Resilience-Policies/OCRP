@@ -13,6 +13,11 @@ implementation_level: "municipal"
 related_policies:
   - "building-performance-standards"
   - "eco-roof-energy-resilience-mandate"
+
+improvements:
+  - "Add `technical_refs` for noise (dBC) and water engineering standards."
+  - "Clarify how CUE will be measured and audited with a sample reporting template."
+  - "Add guidance on community benefits agreements and decommissioning bonds."
 ---
 
 ## Overview

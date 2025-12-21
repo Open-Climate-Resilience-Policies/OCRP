@@ -11,6 +11,11 @@ policy_category: "waste management"
 implementation_level: "municipal"
 related_policies:
   - "green-roofs-sponge-city-model"
+
+improvements:
+  - "Add `official_sources` (Amsterdam circular construction examples) and templates for Material Passports."
+  - "Specify enforcement & measurement (how to verify 70% diversion)."
+  - "Define exemptions and hazardous-materials handling procedures."
 ---
 
 ## Overview

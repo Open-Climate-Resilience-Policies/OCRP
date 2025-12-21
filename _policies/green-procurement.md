@@ -12,6 +12,10 @@ implementation_level: "municipal"
 related_policies:
   - "circular-construction-model"
   - "building-performance-standards"
+
+improvements:
+  - "Add `procurement_examples` and sample RFP language for circular procurement."
+  - "Include `metrics` for lifecycle cost comparisons and enforcement roles."
 ---
 
 ## Overview

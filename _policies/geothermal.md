@@ -13,6 +13,11 @@ implementation_level: "state/provincial/national"
 related_policies:
   - "long-duration-energy-storage-model"
   - "industrial-workforce-transition"
+
+improvements:
+  - "Add `regulatory_refs` mapping oil/gas permitting to geothermal use."
+  - "Include `risk_management` guidance (induced seismicity, water use)."
+  - "Add `case_studies` with links to pilot projects and performance data."
 ---
 
 ## Overview

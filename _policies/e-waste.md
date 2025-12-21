@@ -13,6 +13,11 @@ implementation_level: "municipal/state"
 related_policies:
   - "organic-waste-ban"
   - "circular-construction-model"
+
+improvements:
+    - "Add `legal_references` for landfill bans and retailer take-back obligations."
+    - "Include `metrics` (tonnage diverted, repair-fund revenue) and targets."
+    - "Document data-destruction and privacy protocols for collected devices."
 ---
 
 ## Overview

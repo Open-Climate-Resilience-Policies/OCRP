@@ -1,0 +1,59 @@
+# data/locales/config_schema.yaml
+# This defines the "Menu" of localization options for a new City Profile.
+
+localization_options:
+  # 1. MEASUREMENT SYSTEM
+  units:
+    type: "select"
+    options:
+      - id: "metric"
+        label: "Metric (SI) - Standard"
+        details: "Meters, Celsius, Liters"
+      - id: "imperial_us"
+        label: "Imperial (US)"
+        details: "Feet, Fahrenheit, Gallons"
+      - id: "imperial_uk"
+        label: "Imperial (UK/Hybrid)"
+        details: "Meters/Miles mix, Celsius, Pints"
+      - id: "hybrid_canada"
+        label: "Canadian Construction"
+        details: "Celsius for weather, Feet/Inches for building materials"
+
+  # 2. LEGAL JURISDICTION (Affects Vocabulary)
+  legal_system:
+    type: "select"
+    options:
+      - id: "common_law"
+        label: "Common Law"
+        regions: ["US", "UK", "Canada (ex-QC)", "Australia"]
+      - id: "civil_code"
+        label: "Civil Code"
+        regions: ["Europe", "Quebec", "Latin America"]
+
+  # 3. CLIMATE CONTEXT (Affects Policy Logic)
+  climate_zone:
+    type: "select"
+    options:
+      - id: "temperate"
+        label: "Temperate (4 Seasons)"
+        risk_focus: ["Winter Heating", "Summer Cooling"]
+      - id: "tropical_wet_dry"
+        label: "Tropical (Wet/Dry)"
+        risk_focus: ["Monsoon Flooding", "Extreme Heat"]
+      - id: "arid"
+        label: "Arid / Desert"
+        risk_focus: ["Water Scarcity", "Nighttime Cooling"]
+      - id: "coastal"
+        label: "Coastal / Low-Lying"
+        risk_focus: ["Sea Level Rise", "Saltwater Intrusion"]
+
+  # 4. POLITICAL STRUCTURE (Affects "Who signs it")
+  governance_structure:
+    type: "select"
+    options:
+      - id: "strong_mayor"
+        label: "Strong Mayor System"
+        details: "Mayor has veto power / executive authority."
+      - id: "council_manager"
+        label: "Council-Manager System"
+        details: "Mayor is ceremonial; City Manager runs operations."

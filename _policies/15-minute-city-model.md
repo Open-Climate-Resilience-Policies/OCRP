@@ -12,6 +12,11 @@ policy_category: "urban planning"
 implementation_level: "municipal"
 related_policies:
   - "urban-forest-management-model"
+improvements:
+  - "Add metadata: `date`, `slug`, and `keywords` for discoverability."
+  - "Standardize `policy_category` to use hyphenated tags (e.g., 'urban-planning')."
+  - "Include clear citations for quoted laws and data (add `official_sources`)."
+  - "Add 'equity' and 'cost' sections or tags to align with other policies."
 ---
 
 ## Overview

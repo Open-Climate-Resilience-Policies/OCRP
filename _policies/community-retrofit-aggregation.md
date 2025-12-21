@@ -12,6 +12,11 @@ implementation_level: "municipal"
 related_policies:
   - "building-performance-standards"
   - "eco-roof-energy-resilience-mandate"
+
+improvements:
+  - "Add `case_studies` and links to successful CRAFT pilots."
+  - "Clarify legal models for Aggregators (non-profit, municipal, private)."
+  - "Include sample financing terms (interest rates, term lengths) in `finance` field."
 ---
 
 ## Overview

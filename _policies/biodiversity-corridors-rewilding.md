@@ -13,6 +13,11 @@ implementation_level: "municipal"
 related_policies:
   - "green-roofs-sponge-city-model"
   - "urban-forest-management-model"
+improvements:
+  - "Add `official_sources` and citations for case studies (Utrecht, Seoul)."
+  - "Include measurable targets (e.g., km of corridor, % canopy cover) for implementation."
+  - "Standardize `policy_category` values (use 'environmental-protection')."
+  - "Add guidance on maintenance costs and responsible department (parks/transport)."
 ---
 
 ## Overview

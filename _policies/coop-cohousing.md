@@ -13,6 +13,11 @@ implementation_level: "municipal"
 related_policies:
   - "community-retrofit-aggregation"
   - "building-performance-standards"
+
+improvements:
+  - "Add `legal_references` for 'Functional Family' zoning changes and sample ordinance language."
+  - "Include examples of successful CLT leases and standard lease terms."
+  - "Add `equity` guidance: resident selection, anti-displacement measures."
 ---
 
 ## Overview

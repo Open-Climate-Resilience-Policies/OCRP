@@ -13,6 +13,11 @@ implementation_level: "municipal/state"
 related_policies:
   - "ev-ready-right-to-charge"
   - "cool-pavements-heat-resilience"
+improvements:
+  - "Add `date` and `jurisdiction` fields for legal context."
+  - "Cite technical standards (UL 1741) in `official_sources` and link to guidance."
+  - "Clarify interactions with electrical code and utility interconnection rules."
+  - "Standardize related policy slugs (e.g., ev-ready-right-to-charge -> right-to-charge)."
 ---
 
 ## Overview

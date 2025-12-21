@@ -13,6 +13,11 @@ implementation_level: "municipal/state"
 related_policies:
   - "circular-economy-framework"
   - "urban-agriculture-zoning"
+
+improvements:
+  - "Add `targets` (diversion rates, timelines) and supporting `official_sources`."
+  - "Clarify funding mechanisms for curbside pickup and processing capacity."
+  - "Add language protecting small food businesses from burdensome compliance costs."
 ---
 
 ## Overview

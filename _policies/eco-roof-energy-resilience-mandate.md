@@ -12,6 +12,11 @@ implementation_level: "municipal"
 related_policies:
   - "green-roofs-sponge-city-model"
   - "building-performance-standards"
+
+improvements:
+  - "Add `cost_estimates` and incentive examples (tax abatement figures)."
+  - "Cite legal precedents for mandatory solar/green roofs and their enforcement."
+  - "Clarify measurement: % roof coverage vs. energy offset goals."
 ---
 
 ## Overview

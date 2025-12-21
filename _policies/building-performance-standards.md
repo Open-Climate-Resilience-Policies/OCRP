@@ -11,6 +11,11 @@ implementation_level: "municipal"
 related_policies:
   - "circular-construction-model"
   - "green-roofs-sponge-city-model"
+improvements:
+  - "Add `date`, `scope` (building size thresholds), and `official_sources` for laws cited."
+  - "Standardize table formatting in Markdown to match project styles."
+  - "Add a 'metrics' field (EUI, PUE, target years) for quick reference."
+  - "Clarify enforcement mechanisms and responsible agency (e.g., building dept.)."
 ---
 
 ## Overview

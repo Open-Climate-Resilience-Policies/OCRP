@@ -1,0 +1,74 @@
+# data/glossary.yaml
+# The Source of Truth for "Concept Adaptation" (not just word translation).
+
+meta:
+  version: "1.1"
+  maintainer: "OCRaP-Global-Working-Group"
+
+terms:
+  # ==========================================
+  # 🏛️ POLICY & LEGAL (Civic Infrastructure)
+  # ==========================================
+  municipal_head:
+    definition: "The highest elected official in a municipality."
+    en_US: "Mayor"
+    en_CA: "Mayor" # Rural: "Reeve"
+    fr_FR: "Maire"
+    es_MX: "Presidente Municipal"
+    de_DE: "Bürgermeister"
+
+  legislative_body:
+    definition: "The elected group that votes on laws."
+    en_US: "City Council"
+    en_CA: "Municipal Council"
+    fr_FR: "Conseil municipal"
+    es_MX: "Ayuntamiento"
+
+  local_law:
+    definition: "A regulation enacted by a municipal government."
+    en_US: "Ordinance"
+    en_CA: "By-law"
+    fr_FR: "Arrêté municipal"
+    es_MX: "Reglamento"
+  
+  easement:
+    definition: "Right to use another's land for a specific purpose (e.g., power lines)."
+    system_common_law: "Easement"
+    system_civil_code: "Servitude"  # Crucial distinction for Quebec/Europe
+
+  zoning_variance:
+    definition: "Permission to deviate from current zoning rules."
+    en_US: "Variance"
+    en_CA: "Minor Variance"
+    en_UK: "Planning Permission"
+
+  # ==========================================
+  # 🌍 CLIMATE & ENVIRONMENT (Physical Reality)
+  # ==========================================
+  warm_season:
+    definition: "The hottest period of the year."
+    context_temperate: "Summer"      # US/Europe
+    context_tropical: "Dry Season"   # India/Africa (often)
+    context_equatorial: "High Sun"
+
+  heavy_rain_event:
+    definition: "An extreme precipitation event used for drainage design."
+    en_US: "100-Year Storm"
+    en_UK: "1 in 100 Annual Exceedance Probability (AEP)" # UK engineers prefer probability
+    fr_FR: "Crue centennale"
+
+  urban_heat:
+    definition: "Phenomenon where city is hotter than surrounding rural areas."
+    en_US: "Urban Heat Island (UHI)"
+    fr_FR: "Îlot de chaleur urbain (ICU)"
+    
+  drainage_system:
+    definition: "Infrastructure to manage surface water."
+    en_US: "Storm Drain"
+    en_UK: "Surface Water Sewer"
+    tech_term: "Stormwater Management System"
+
+  flood_zone:
+    definition: "Area at risk of flooding."
+    en_US: "Flood Plain"
+    en_AU: "Flood Prone Land"

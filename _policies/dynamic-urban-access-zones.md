@@ -12,6 +12,11 @@ implementation_level: "municipal"
 related_policies:
   - "15-minute-city-model"
   - "green-roofs-sponge-city-model"
+
+improvements:
+  - "Add `revenue_use` examples and legislative language for the lockbox."
+  - "Include an `equity` section describing discounts/exemptions and monitoring."
+  - "Cite tech platforms used for dynamic pricing (ERP) and privacy safeguards for LPR data."
 ---
 
 ## Overview
