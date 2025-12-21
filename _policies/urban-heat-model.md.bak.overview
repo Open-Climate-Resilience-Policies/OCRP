@@ -10,6 +10,7 @@ keywords:
   - "tree canopy"
 official_sources: []
 summary: "Comprehensive model policy for reducing urban heat islands through green infrastructure, reflective materials, and strategic urban planning measures."
+published: false
 hazard_type:
   - "extreme heat"
   - "urban heat island"

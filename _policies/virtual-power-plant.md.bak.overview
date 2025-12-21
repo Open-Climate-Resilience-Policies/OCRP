@@ -27,6 +27,7 @@ official_sources:
   - title: "CAISO Participating Resource Model (example)"
     url: "https://www.caiso.com/Documents/Participating-Resource-Model-Reference.pdf"
     note: "CAISO documentation describing how distributed resources can participate in markets."
+published: false
     note: "Safety and anti-islanding requirements for inverters; UL catalog reference."
   - title: "Green Mountain Power - Distributed Energy Programs"
     url: "https://greenmountainpower.com/"
