@@ -2,6 +2,13 @@
 layout: policy
 title: "Climate Budgeting & Green Procurement Mandate"
 type: generic-policy
+date: "2025-12-21"
+slug: "green-procurement"
+keywords:
+  - "procurement"
+  - "buy clean"
+  - "carbon budgeting"
+official_sources: []
 summary: "A governance framework that integrates carbon limits into the municipal financial budget and mandates 'Buy Clean' standards for concrete, steel, and fleets to decarbonize the supply chain."
 hazard_type:
   - "supply chain emissions (Scope 3)"

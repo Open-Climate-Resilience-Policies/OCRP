@@ -13,7 +13,13 @@ implementation_level: "municipal"
 related_policies:
   - "community-retrofit-aggregation"
   - "building-performance-standards"
-
+date: "2025-12-21"
+slug: "coop-cohousing"
+keywords:
+  - "cohousing"
+  - "housing cooperatives"
+  - "community land trust"
+official_sources: []
 improvements:
   - "Add `legal_references` for 'Functional Family' zoning changes and sample ordinance language."
   - "Include examples of successful CLT leases and standard lease terms."

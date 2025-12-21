@@ -2,6 +2,13 @@
 layout: policy
 title: "Data Center Constraints & Community Protection"
 type: generic-policy
+date: "2025-12-21"
+slug: "data-center-constraints"
+keywords:
+  - "data centers"
+  - "water usage"
+  - "noise pollution"
+official_sources: []
 summary: "A zoning and operational framework to protect community resources from hyperscale data centers. It mandates strict caps on noise and water usage, requires grid-positive energy sourcing, and enforcing transparency."
 hazard_type:
   - "water scarcity"

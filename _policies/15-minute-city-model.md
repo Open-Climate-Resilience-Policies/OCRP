@@ -2,6 +2,13 @@
 layout: policy
 title: "15-Minute City & Complete Neighborhoods Model"
 type: generic-policy
+date: "2025-12-21"
+slug: "15-minute-city-model"
+keywords:
+  - "15-minute city"
+  - "complete neighborhoods"
+  - "walkability"
+official_sources: []
 summary: "A simple city planning model where residents can reach daily needs—like shops, schools, and parks—within a short walk or bike ride. This reduces traffic, cuts pollution, and improves health."
 hazard_type:
   - "urban sprawl"
@@ -13,9 +20,8 @@ implementation_level: "municipal"
 related_policies:
   - "urban-forest-management-model"
 improvements:
-  - "Add metadata: `date`, `slug`, and `keywords` for discoverability."
   - "Standardize `policy_category` to use hyphenated tags (e.g., 'urban-planning')."
-  - "Include clear citations for quoted laws and data (add `official_sources`)."
+  - "Include clear citations for quoted laws and data."
   - "Add 'equity' and 'cost' sections or tags to align with other policies."
 ---
 

@@ -2,6 +2,13 @@
 layout: policy
 title: "Organic Waste Diversion & Food Recovery Model"
 type: generic-policy
+date: "2025-12-21"
+slug: "food-waste"
+keywords:
+  - "food waste"
+  - "composting"
+  - "food recovery"
+official_sources: []
 summary: "A practical waste management framework that keeps food and organic materials out of landfills through mandatory separation, unit-based pricing, and food donation protections. This reduces methane emissions, extends landfill life, and strengthens local food security."
 hazard_type:
   - "methane emissions"

@@ -1,0 +1,23 @@
+---
+# Master registry mapping policy IDs to taxonomy tags.
+taxonomy_definitions:
+  sectors:
+    - id: "transport"
+      label: "Mobility & Transport"
+      icon: "🚲"
+    - id: "housing"
+      label: "Housing & Zoning"
+      icon: "🏠"
+    - id: "energy"
+      label: "Energy & Resilience"
+      icon: "⚡️"
+
+  impacts:
+    - id: "health"
+      label: "Public Health"
+    - id: "wallet"
+      label: "Cost of Living"
+    - id: "climate"
+      label: "Climate Mitigation"
+
+policies: {}

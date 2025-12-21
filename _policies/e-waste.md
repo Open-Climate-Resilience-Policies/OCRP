@@ -2,6 +2,13 @@
 layout: policy
 title: "Circular Electronics & E-Waste Recovery Mandate"
 type: generic-policy
+date: "2025-12-21"
+slug: "e-waste"
+keywords:
+    - "e-waste"
+    - "repairability"
+    - "right-to-repair"
+official_sources: []
 summary: "A 'Right-to-Repair' and recovery framework that mandates repairability scores for new devices, funds consumer repairs through producer fees, and establishes convenient curbside e-waste collection."
 hazard_type:
   - "electronic waste"

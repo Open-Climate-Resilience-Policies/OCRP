@@ -2,6 +2,13 @@
 layout: policy
 title: "Community Retrofit Aggregation & Financing Tool (CRAFT)"
 type: generic-policy
+date: "2025-12-21"
+slug: "community-retrofit-aggregation"
+keywords:
+  - "retrofit"
+  - "bulk purchasing"
+  - "financing"
+official_sources: []
 summary: "A framework for 'Community-Scale Retrofitting' that enables neighborhoods to bulk-buy retrofits (insulation, heat pumps, solar) with integrated financing, lowering costs and accelerating decarbonization."
 hazard_type:
   - "energy inefficiency"

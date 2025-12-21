@@ -10,6 +10,14 @@ policy_category: "water management"
 implementation_level: "municipal"
 related_policies:
   - "urban-forest-management-model"
+  - "urban-forest-management-model"
+date: "2025-12-21"
+slug: "urban-lawn-watering-model"
+keywords:
+  - "lawn watering"
+  - "drought"
+  - "water restrictions"
+official_sources: []
 ---
 
 ## Overview

@@ -2,6 +2,13 @@
 layout: policy
 title: "Balcony Power & Shading Mandate"
 type: generic-policy
+date: "2025-12-21"
+slug: "balcony-solar-shade"
+keywords:
+  - "balcony solar"
+  - "shading"
+  - "tenant rights"
+official_sources: []
 summary: "A 'Right-to-Modify' framework that grants tenants the legal right to install plug-and-play balcony solar and external shutters to reduce AC costs and generate clean energy."
 hazard_type:
   - "energy insecurity"
@@ -14,7 +21,6 @@ related_policies:
   - "ev-ready-right-to-charge"
   - "cool-pavements-heat-resilience"
 improvements:
-  - "Add `date` and `jurisdiction` fields for legal context."
   - "Cite technical standards (UL 1741) in `official_sources` and link to guidance."
   - "Clarify interactions with electrical code and utility interconnection rules."
   - "Standardize related policy slugs (e.g., ev-ready-right-to-charge -> right-to-charge)."

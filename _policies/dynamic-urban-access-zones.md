@@ -2,6 +2,13 @@
 layout: policy
 title: "Dynamic Urban Access & Reinvestment Zones"
 type: generic-policy
+date: "2025-12-21"
+slug: "dynamic-urban-access-zones"
+keywords:
+  - "congestion pricing"
+  - "dynamic pricing"
+  - "reinvestment"
+official_sources: []
 summary: "A 'Best-of-Breed' congestion pricing policy using dynamic pricing and transparent revenue recycling to manage traffic demand, reduce emissions, and fund public transit improvements."
 hazard_type:
   - "traffic congestion"

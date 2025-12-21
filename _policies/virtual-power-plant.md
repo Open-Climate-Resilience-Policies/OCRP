@@ -2,24 +2,53 @@
 layout: policy
 title: "Virtual Power Plant (VPP) & Bi-Directional Resilience Protocol"
 type: generic-policy
-summary: "A framework enabling residents to monetize their home batteries and EVs by granting the utility permission to discharge them during peak demand, effectively replacing fossil-fuel peaker plants."
-hazard_type:
-  - "grid instability"
-  - "energy costs"
-  - "blackouts"
-policy_category: "energy & resilience"
-implementation_level: "municipal/utility"
-related_policies:
-  - "ev-ready-right-to-charge"
-  - "building-performance-standards"
----
+official_sources:
+  - title: "FERC Order No. 2222 — Distributed Energy Resource Participation"
+    url: "https://www.ferc.gov/media/ferc-order-no-2222-facilitating-new-entrants-distributed-energy-resource-markets"
+    note: "Federal rule enabling aggregation of distributed energy resources into wholesale markets."
+  - title: "ISO 15118 standard (bidirectional charging)"
+    url: "https://www.iso.org/standard/84280.html"
+    note: "ISO catalog entry for the 15118 family, relevant to bidirectional EV charging standards."
+  - title: "UL 1741 / Smart Inverter Requirements"
+    url: "https://standardscatalog.ul.com/standards/en/standard_1741_2"
+    note: "Safety and anti-islanding requirements for inverters; UL catalog reference."
+  - title: "Green Mountain Power - Distributed Energy Programs"
+    url: "https://greenmountainpower.com/"
+    note: "GMP's BYOD-style programs and customer battery incentives (case study reference)."
+  - title: "PG&E Emergency Load Reduction Program (ELRP)"
+    url: "https://www.pge.com/"
+    note: "PG&E program pages describing emergency load reduction payments and Powerwall participation."
+  - title: "NREL report: Virtual Power Plants and Distributed Energy Resources"
+    url: "https://www.nrel.gov/docs/fy20osti/75734.pdf"
+    note: "NREL technical report on VPP aggregation and benefits."
+  - title: "DOE — Vehicle-Grid Integration"
+    url: "https://www.energy.gov/eere/vehicles/vehicle-grid-integration"
+    note: "DOE resources on V2G and vehicle-grid integration research."
+  - title: "CAISO Participating Resource Model (example)"
+    url: "https://www.caiso.com/Documents/Participating-Resource-Model-Reference.pdf"
+    note: "CAISO documentation describing how distributed resources can participate in markets."
+    note: "Safety and anti-islanding requirements for inverters; UL catalog reference."
+  - title: "Green Mountain Power - Distributed Energy Programs"
+    url: "https://greenmountainpower.com/"
+    note: "GMP's BYOD-style programs and customer battery incentives (case study reference)."
+  - title: "PG&E Emergency Load Reduction Program (ELRP)"
+    url: "https://www.pge.com/"
+    note: "PG&E program pages describing emergency load reduction payments and Powerwall participation."
+  - title: "NREL report: Virtual Power Plants and Distributed Energy Resources"
+    url: "https://www.nrel.gov/docs/fy20osti/75734.pdf"
+    note: "NREL technical report on VPP aggregation and benefits."
+  - title: "DOE — Vehicle-Grid Integration"
+    url: "https://www.energy.gov/eere/vehicles/vehicle-grid-integration"
+    note: "DOE resources on V2G and vehicle-grid integration research."
+  - title: "CAISO Participating Resource Model (example)"
+    url: "https://www.caiso.com/Documents/Participating-Resource-Model-Reference.pdf"
+    note: "CAISO documentation describing how distributed resources can participate in markets."
 
 ## Overview
 
-We typically build expensive "Peaker Plants" (gas/coal) that run only a few hours a year during heatwaves. This is inefficient and dirty. Meanwhile, electric vehicles (like the Ford F-150 Lightning) and home batteries sit idle with massive stored energy.
+    We typically build expensive "Peaker Plants" (gas/coal) that run only a few hours a year during heatwaves. This is inefficient and dirty. Meanwhile, electric vehicles (like the Ford F-150 Lightning) and home batteries sit idle with massive stored energy.
 
 This policy creates a **"Bring Your Own Device" (BYOD)** market. The utility pays residents to "rent" the energy in their car/home battery during peak hours, creating a **Virtual Power Plant (VPP)** that stabilizes the grid without new construction.
-
 ## Policy 1: The "Bring Your Own Battery" (BYOD) Rebate
 
 **Concept:**
@@ -61,6 +90,10 @@ When a homeowner shares their energy, they should be paid the same rate as a gas
 * **Tesla & PG&E (California):** Launched the "Emergency Load Reduction Program" (ELRP). Participating Powerwall owners received **$2.00 for every kWh** they sent to the grid during emergencies. In 2022, this distributed fleet replaced a gas plant, keeping the lights on during a record heatwave.
 
 ---
+
+## Overview
+
+## Technical Specifications & Safety
 
 ## Technical Specifications & Safety
 

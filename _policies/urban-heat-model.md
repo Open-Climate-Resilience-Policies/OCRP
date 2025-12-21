@@ -2,6 +2,13 @@
 layout: policy
 title: "Urban Heat Island Mitigation Model Policy"
 type: "generic-policy"
+date: "2025-12-21"
+slug: "urban-heat-model"
+keywords:
+  - "urban heat"
+  - "cool roofs"
+  - "tree canopy"
+official_sources: []
 summary: "Comprehensive model policy for reducing urban heat islands through green infrastructure, reflective materials, and strategic urban planning measures."
 hazard_type:
   - "extreme heat"
@@ -14,6 +21,7 @@ fiscal_profile:
   cost_range: "medium"
   cost_type: "public and private investment"
 language: "en"
+
 ---
 
 # Urban Heat Island Mitigation Model Policy
@@ -21,6 +29,10 @@ language: "en"
 ## Policy Overview
 
 Urban heat islands (UHIs) occur when cities replace natural land cover with dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat. This model policy provides a comprehensive framework for municipalities to reduce urban heat island effects through strategic interventions in urban planning, infrastructure development, and green space management.
+
+## Overview
+
+Urban areas experience elevated temperatures compared to surrounding rural areas due to built environment materials and lack of vegetation. This policy describes modeling approaches and interventions to reduce heat exposure and protect vulnerable populations.
 
 ## Key Objectives
 
@@ -143,5 +155,9 @@ Municipalities should adapt this model policy to reflect:
 - Local building codes and zoning regulations
 
 ---
+
+## Overview
+
+Comprehensive model policy for reducing urban heat islands through green infrastructure, reflective materials, and strategic urban planning measures.
 
 *This model policy is provided by the Open Climate Resilience Policies project. Communities are encouraged to adapt and customize this policy to meet local needs and conditions.*

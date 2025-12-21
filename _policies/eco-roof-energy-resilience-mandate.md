@@ -2,6 +2,13 @@
 layout: policy
 title: "Eco-Roof & Energy Resilience Mandate"
 type: generic-policy
+date: "2025-12-21"
+slug: "eco-roof-energy-resilience-mandate"
+keywords:
+  - "eco roof"
+  - "solar mandates"
+  - "green roofs"
+official_sources: []
 summary: "A comprehensive framework mandating solar or green roofs on all new buildings, with a robust phase-in plan for existing structures to ensure energy generation and climate resilience."
 hazard_type:
   - "energy insecurity"

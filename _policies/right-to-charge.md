@@ -12,6 +12,14 @@ implementation_level: "municipal"
 related_policies:
   - "15-minute-city-model"
   - "building-performance-standards"
+  - "building-performance-standards"
+date: "2025-12-21"
+slug: "right-to-charge"
+keywords:
+  - "ev ready"
+  - "right to charge"
+  - "micromobility"
+official_sources: []
 ---
 
 ## Overview

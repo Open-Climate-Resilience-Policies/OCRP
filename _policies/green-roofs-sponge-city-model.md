@@ -2,6 +2,13 @@
 layout: policy
 title: "Green Roofs & Sponge City Infrastructure Model"
 type: generic-policy
+date: "2025-12-21"
+slug: "green-roofs-sponge-city-model"
+keywords:
+  - "green roofs"
+  - "sponge city"
+  - "stormwater"
+official_sources: []
 summary: "A framework for mandatory green roofs, solar integration, and permeable infrastructure to manage stormwater, reduce urban heat, and improve energy efficiency."
 hazard_type:
   - "urban heat island"

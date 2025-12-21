@@ -1,0 +1,7 @@
+.venv
+_site
+vendor
+node_modules
+*.pyc
+.DS_Store
+tmp

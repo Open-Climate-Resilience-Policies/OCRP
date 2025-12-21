@@ -13,11 +13,18 @@ implementation_level: "municipal"
 related_policies:
   - "15-minute-city-model"
   - "biodiversity-corridors-rewilding"
-
+ 
 improvements:
   - "Add `metrics` for SRI targets and WBGT thresholds with citation references."
   - "Cite sources on permeable pavement winter performance and maintenance costs."
   - "Clarify enforcement and funding mechanisms for retrofit programs."
+date: "2025-12-21"
+slug: "cool-pavement"
+keywords:
+  - "cool pavement"
+  - "urban heat"
+  - "permeable pavements"
+official_sources: []
 ---
 
 ## Overview

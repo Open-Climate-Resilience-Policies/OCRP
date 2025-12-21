@@ -2,6 +2,13 @@
 layout: policy
 title: "Healthy Homes & Induction Transition Mandate"
 type: generic-policy
+date: "2025-12-21"
+slug: "healthy-home"
+keywords:
+  - "indoor air quality"
+  - "induction"
+  - "healthy homes"
+official_sources: []
 summary: "A public health-focused policy that phases out gas cooking to improve indoor air quality (IAQ) and mandates 'Induction-Ready' circuits to future-proof housing."
 hazard_type:
   - "indoor air pollution (NOx/Benzene)"

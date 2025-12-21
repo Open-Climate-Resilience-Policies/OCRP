@@ -66,3 +66,29 @@ Every policy is a folder, not a file.
 ---
 
 *Verified by OCRaP.ai Command.*
+
+## 5. Agent Responsibilities: Metadata, Filenames, and Safe Edits
+
+1. Filename Conventions:
+    - Use short, descriptive, country-neutral slugs for policy filenames (e.g., `solar-parking.md` not `france-solar-parking.md`).
+    - Filenames should be lowercase, dash-separated, and match the `slug` frontmatter exactly.
+
+2. Mandatory Frontmatter Keys (every policy):
+    - `date`: ISO date string for the document revision (YYYY-MM-DD).
+    - `slug`: short string matching the filename (no country prefix unless the policy is jurisdiction-specific).
+    - `keywords`: a short array of 2–5 tags for discovery.
+    - `official_sources`: an array of authoritative citation objects or an empty array if none found.
+
+3. Edit Checklist for Agents (pre-commit):
+    - Ensure the `slug` matches the filename and contains no spaces or uppercase characters.
+    - Ensure `date` is today's revision date when adding metadata.
+    - Add `official_sources` entries when available; prefer primary legal sources.
+    - Remove any `improvements` bullets that only request metadata already added.
+    - When renaming a file to remove country tokens, create the new file and delete the old one in the same patch to avoid duplication.
+
+4. Review Triggers:
+    - Agent A (The Scientist): Trigger when `hazard_type` includes health or engineering claims — verify citations.
+    - Agent B (The CFO): Trigger when `fiscal_profile` or cost estimates exist — verify assumptions.
+    - Agent C (The Sleep Doctor): Trigger when indoor temperature guidance exists — verify public health thresholds.
+
+Agents must follow this checklist to keep the policy corpus consistent and machine-readable.

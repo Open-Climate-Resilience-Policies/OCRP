@@ -11,7 +11,13 @@ policy_category: "waste management"
 implementation_level: "municipal"
 related_policies:
   - "green-roofs-sponge-city-model"
-
+date: "2025-12-21"
+slug: "circular-construction-model"
+keywords:
+  - "circular construction"
+  - "deconstruction"
+  - "material passports"
+official_sources: []
 improvements:
   - "Add `official_sources` (Amsterdam circular construction examples) and templates for Material Passports."
   - "Specify enforcement & measurement (how to verify 70% diversion)."

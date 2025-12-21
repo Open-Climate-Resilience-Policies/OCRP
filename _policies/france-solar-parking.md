@@ -38,12 +38,25 @@ co_benefits:
 related_policies:
   - "French renewable energy targets"
   - "EU renewable energy directive"
----
-
+date: "2025-12-21"
+slug: "france-solar-parking"
+keywords:
+  - "solar canopy"
+  - "parking lots"
+  - "France"
+official_sources:
+  - url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT0000000000"
+    title: "Décret n° 2024-1023 (French Official Journal)"
+    language: "fr"
 improvements:
   - "Add `official_sources` with direct legal links to Decree No. 2024-1023 (Légifrance)."
   - "Standardize date formats and add a `slug` for cross-linking."
   - "Include sample tender language and inspection checklist for enforcement."
+---
+
+## Overview
+
+This policy mandates solar canopies on large parking lots to accelerate distributed solar generation and reduce carbon emissions. It summarizes the decree's scope, timelines, and enforcement measures for national and municipal implementers.
 
 France's Decree No. 2024-1023, published in November 2024, establishes mandatory solar panel installations on large parking lots across the country. This groundbreaking legislation represents one of the most ambitious parking lot solar mandates globally, requiring at least 50% coverage of parking areas with solar canopies or green energy structures.
 

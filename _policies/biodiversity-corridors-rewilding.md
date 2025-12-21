@@ -2,6 +2,13 @@
 layout: policy
 title: "Biodiversity Corridors & Rewilding Mandate"
 type: generic-policy
+date: "2025-12-21"
+slug: "biodiversity-corridors-rewilding"
+keywords:
+  - "biodiversity"
+  - "wildlife corridors"
+  - "rewilding"
+official_sources: []
 summary: "A plan to reconnect nature in cities using green roofs, restored streams, and wildlife bridges. This reduces flooding, cools the city, and protects animals."
 hazard_type:
   - "biodiversity loss"

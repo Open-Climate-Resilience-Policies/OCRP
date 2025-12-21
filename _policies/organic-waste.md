@@ -2,6 +2,13 @@
 layout: policy
 title: "Organic Waste Ban & Soil Regeneration Mandate"
 type: generic-policy
+date: "2025-12-21"
+slug: "organic-waste"
+keywords:
+  - "organic waste"
+  - "compost"
+  - "soil regeneration"
+official_sources: []
 summary: "A policy banning organic waste from landfills to cut methane emissions, mandating municipal 'Brown Bin' collection, and requiring the resulting compost be applied to local farms and parks to regenerate soil."
 hazard_type:
   - "methane emissions"

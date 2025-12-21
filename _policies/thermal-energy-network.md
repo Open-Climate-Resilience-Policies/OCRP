@@ -2,6 +2,13 @@
 layout: policy
 title: "Clean Heat Standard & Thermal Energy Networks (TENs)"
 type: generic-policy
+date: "2025-12-21"
+slug: "thermal-energy-network"
+keywords:
+  - "thermal energy network"
+  - "clean heat standard"
+  - "district heating"
+official_sources: []
 summary: "A regulatory framework that mandates gas utilities to decarbonize via a 'Clean Heat Standard' and authorizes the creation of 'Thermal Energy Networks' to replace gas pipes with neighborhood-scale geothermal loops."
 hazard_type:
   - "grid peak demand"

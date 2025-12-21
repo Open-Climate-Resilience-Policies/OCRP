@@ -2,6 +2,13 @@
 layout: policy
 title: "Geothermal Workforce Reuse & Firm Energy Infrastructure Model"
 type: generic-policy
+date: "2025-12-21"
+slug: "geothermal-workforce-reuse"
+keywords:
+  - "geothermal"
+  - "workforce reuse"
+  - "firm power"
+official_sources: []
 summary: "A pragmatic energy infrastructure model that repurposes oil and gas drilling expertise to deliver firm power, long-duration storage, and industrial heat through geothermal systems. Proven across multiple jurisdictions with different political and regulatory contexts."
 hazard_type:
   - "grid instability"

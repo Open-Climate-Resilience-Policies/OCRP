@@ -12,6 +12,14 @@ policy_category: "urban forestry"
 implementation_level: "municipal"
 related_policies:
   - "urban-heat-model"
+  - "urban-heat-model"
+date: "2025-12-21"
+slug: "urban-forest-management-model"
+keywords:
+  - "urban forest"
+  - "canopy"
+  - "tree protection"
+official_sources: []
 ---
 
 ## Overview
