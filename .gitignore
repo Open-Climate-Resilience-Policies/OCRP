@@ -1,3 +1,39 @@
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# Bundler vendor
+vendor/
+vendor/bundle/
+
+# Local env
+.env
+.env.*
+*.log
+
+# Misc
+coverage/
+dist/
+tmp/
 # macOS-specific files
 .DS_Store
 
