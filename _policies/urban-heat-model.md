@@ -154,10 +154,4 @@ Municipalities should adapt this model policy to reflect:
 - Regional vegetation and species selection
 - Local building codes and zoning regulations
 
----
-
-## Overview
-
-Comprehensive model policy for reducing urban heat islands through green infrastructure, reflective materials, and strategic urban planning measures.
-
 *This model policy is provided by the Open Climate Resilience Policies project. Communities are encouraged to adapt and customize this policy to meet local needs and conditions.*

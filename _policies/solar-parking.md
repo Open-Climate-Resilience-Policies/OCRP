@@ -43,8 +43,6 @@ keywords:
   - "solar canopy"
   - "parking lots"
   - "solar parking"
-improvements:
-  - "Include sample tender language and inspection checklist for enforcement."
 ---
 
 ## Overview

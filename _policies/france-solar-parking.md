@@ -44,14 +44,6 @@ keywords:
   - "solar canopy"
   - "parking lots"
   - "France"
-official_sources:
-  - url: "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT0000000000"
-    title: "Décret n° 2024-1023 (French Official Journal)"
-    language: "fr"
-improvements:
-  - "Add `official_sources` with direct legal links to Decree No. 2024-1023 (Légifrance)."
-  - "Standardize date formats and add a `slug` for cross-linking."
-  - "Include sample tender language and inspection checklist for enforcement."
 ---
 
 ## Overview

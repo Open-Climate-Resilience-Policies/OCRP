@@ -76,10 +76,6 @@ When a homeowner shares their energy, they should be paid the same rate as a gas
 
 ---
 
-## Overview
-
-## Technical Specifications & Safety
-
 ## Technical Specifications & Safety
 
 To address utility concerns about "losing control" or "frying the lines":
