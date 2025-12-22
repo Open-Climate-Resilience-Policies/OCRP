@@ -191,16 +191,100 @@ Every policy is a folder, not a file:
 
 ---
 
-## 10. Definition of Done (for any new tool or major change)
+## 10. Quality Enforcement Model (Phased)
 
-Before merging/publishing:
-- [ ] Manual keyboard pass: tab through, activate controls, verify focus visibility
-- [ ] Verify labels, errors, and result announcements
-- [ ] Test at mobile width and desktop width
-- [ ] Confirm no fabricated data or unstated assumptions
-- [ ] Confirm no third-party calls or tracking
-- [ ] Run accessibility checks (automated + manual)
-- [ ] Verify all citations are real and reachable
+This project uses a phased approach to quality enforcement to avoid blocking deployment while pages and tools are still stabilizing.
+
+### Phase 1: Manual enforcement (current)
+All requirements below are mandatory, but verified manually.
+
+### Phase 2: Automated enforcement (planned)
+Once the site builds reliably, these checks become enforced via GitHub Actions. No new requirements are introduced at that point; automation only enforces what already exists.
+
+---
+
+## 11. Planned GitHub Actions (Not Yet Enforced)
+
+The following checks are defined as requirements but are not yet enforced automatically. They must be run locally or manually until CI is enabled.
+
+### HTML validation
+**Purpose:**
+- Catch broken markup that causes rendering or accessibility failures.
+
+**Expectation:**
+- Tool pages and layouts produce valid HTML.
+- Known Jekyll-generated exceptions may be documented.
+
+**Suggested tool (when enabled):**
+- html-validate or W3C HTML validator (CLI)
+
+### JavaScript quality
+**Purpose:**
+- Prevent runtime failures in public tools.
+
+**Expectation:**
+- No uncaught exceptions on load.
+- No syntax errors.
+- Defensive coding around user input and network calls.
+
+**Suggested tool (when enabled):**
+- ESLint with a minimal ruleset (no stylistic bikeshedding)
+
+### Accessibility testing
+**Purpose:**
+- Catch obvious WCAG 2.2 AA failures early.
+
+**Expectation:**
+- No serious or critical violations.
+- Manual review remains authoritative.
+
+**Suggested tool (when enabled):**
+- axe-core via Playwright or equivalent headless runner
+
+### Security and privacy check
+**Purpose:**
+- Prevent accidental introduction of tracking or unsafe behavior.
+
+**Expectation:**
+- No third-party analytics.
+- No unexpected network calls.
+- No storage usage without documentation.
+
+**Method:**
+- Code review + network inspection
+
+---
+
+## 12. Definition of Done (For Any New Tool or Major Change)
+
+A change is not considered complete until all of the following are true:
+
+### Functionality
+- Page loads with no console errors.
+- All interactive controls work.
+- Error states are visible and understandable.
+- Empty states are handled.
+
+### Accessibility (WCAG 2.2 AA intent)
+- Keyboard navigation verified manually.
+- Focus indicator visible.
+- Labels and error messages programmatically associated.
+- Dynamic results announced or otherwise perceivable.
+
+### Content integrity
+- No fabricated data or claims.
+- Assumptions and limitations are stated.
+- External facts are cited or labeled unverified.
+- "Last verified" date included where applicable.
+
+### Privacy and safety
+- No tracking or analytics.
+- No third-party data submission.
+- No unsafe DOM or window access.
+
+### Readiness for automation
+- Code is structured so automated checks can be added without refactoring.
+- Known violations are documented explicitly (not silently ignored).
 
 ---
 
