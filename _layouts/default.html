@@ -14,7 +14,8 @@
   <meta name="theme-color" content="#0b6e4f">
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header role="banner">
     <div class="brand">
       <img src="{{ '/assets/img/ocrap-logo.svg' | relative_url }}" alt="OCRaP Logo" class="brand-mark" width="180" height="48" loading="lazy">
       <div class="brand-text">
@@ -22,7 +23,7 @@
         <div class="brand-acronym">OCRP</div>
       </div>
     </div>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li><a href="{{ '/policies/' | relative_url }}">Policy Library</a></li>
@@ -32,11 +33,11 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     {{ content }}
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2025 {{ site.title }}. Code licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="license noopener">AGPL-3.0</a>. <a href="https://github.com/OCRP/ocrap">View on GitHub</a>.</p>
     <p>Community-driven • Open Source • Climate Action</p>
   </footer>
