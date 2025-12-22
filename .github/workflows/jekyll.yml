@@ -20,6 +20,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Clear bundler cache
+        run: |
+          rm -rf vendor/bundle .bundle
+          bundle config unset --local path
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -28,6 +32,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: |
+          bundle install
+          bundle exec jekyll --version
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
