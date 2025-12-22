@@ -1,6 +1,7 @@
 ---
 date: 2025-12-21
 slug: time-health-safety-act
+summary: "Abolishes biannual clock changes and adopts permanent standard time to reduce accidents, improve public health, and lower carbon emissions."
 keywords: [time, daylight saving, standard time, health, safety]
 official_sources:
   - title: "University of Colorado Boulder DST Accident Study"

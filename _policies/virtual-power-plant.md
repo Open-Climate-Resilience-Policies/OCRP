@@ -2,6 +2,7 @@
 layout: policy
 title: "Virtual Power Plant (VPP) & Bi-Directional Resilience Protocol"
 type: generic-policy
+summary: "Pays residents to share stored energy from home batteries and EVs during peak demand, creating a virtual power plant that stabilizes the grid."
 official_sources:
   - title: "FERC Order No. 2222 — Distributed Energy Resource Participation"
     url: "https://www.ferc.gov/media/ferc-order-no-2222-facilitating-new-entrants-distributed-energy-resource-markets"

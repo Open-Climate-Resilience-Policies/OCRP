@@ -3,6 +3,7 @@ layout: policy
 title: The "Frequency First" Transit Mandate
 id: frequency-first-transit
 status: Draft
+summary: "Prioritizes high-frequency transit service over fare reductions, mandating 15-minute headways on core routes before implementing fare-free programs."
 tags: [transit, mobility, economics, urban-planning]
 discussion_id: frequency-first-feedback
 ---
