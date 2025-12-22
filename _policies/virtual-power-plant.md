@@ -27,22 +27,7 @@ official_sources:
   - title: "CAISO Participating Resource Model (example)"
     url: "https://www.caiso.com/Documents/Participating-Resource-Model-Reference.pdf"
     note: "CAISO documentation describing how distributed resources can participate in markets."
-    note: "Safety and anti-islanding requirements for inverters; UL catalog reference."
-  - title: "Green Mountain Power - Distributed Energy Programs"
-    url: "https://greenmountainpower.com/"
-    note: "GMP's BYOD-style programs and customer battery incentives (case study reference)."
-  - title: "PG&E Emergency Load Reduction Program (ELRP)"
-    url: "https://www.pge.com/"
-    note: "PG&E program pages describing emergency load reduction payments and Powerwall participation."
-  - title: "NREL report: Virtual Power Plants and Distributed Energy Resources"
-    url: "https://www.nrel.gov/docs/fy20osti/75734.pdf"
-    note: "NREL technical report on VPP aggregation and benefits."
-  - title: "DOE — Vehicle-Grid Integration"
-    url: "https://www.energy.gov/eere/vehicles/vehicle-grid-integration"
-    note: "DOE resources on V2G and vehicle-grid integration research."
-  - title: "CAISO Participating Resource Model (example)"
-    url: "https://www.caiso.com/Documents/Participating-Resource-Model-Reference.pdf"
-    note: "CAISO documentation describing how distributed resources can participate in markets."
+---
 
 ## Overview
 

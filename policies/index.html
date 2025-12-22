@@ -24,7 +24,7 @@ pagination:
   </article>
   {% endfor %}
 {% else %}
-  {% assign policies = site.policies | where_exp: "p", "p.template != true and p.published != false" | sort: 'title' %}
+  {% assign policies = site.policies | where_exp: "p", "p.template != true" | sort: 'title' %}
   {% for policy in policies %}
   <article class="policy-list-item">
     <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
