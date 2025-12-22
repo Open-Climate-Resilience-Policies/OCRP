@@ -28,7 +28,9 @@ RUNNING LOCALLY
    - On Windows Command Prompt, replace "$PWD" with "%cd%".
 
 4. Once the server starts (you'll see "Server running..."), open your browser and go to:
-   http://localhost:4000/OCRP/
+   http://localhost:4000/
+
+If you host the site at a custom domain (for example `https://ocrap.net`), set `url` in `_config.yml` and leave `baseurl` empty.
 
 TROUBLESHOOTING
 ---------------

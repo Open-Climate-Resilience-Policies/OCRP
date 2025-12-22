@@ -25,13 +25,13 @@ A collaborative repository of climate resilience policies, strategies, and best 
 
 ## 🌐 Live Site
 
-The site is available at: https://open-climate-resilience-policies.github.io/OCRP/
+The site is available at: https://ocrap.net/
 
 ## 📝 Adding New Policies
 
 We welcome contributions! You can add policies in two ways:
 
-1.  **Via GitHub Issues**: Follow the instructions on our [Contribute page](https://open-climate-resilience-policies.github.io/OCRP/contribute/) to format your policy using AI and submit it as an issue.
+1.  **Via GitHub Issues**: Follow the instructions on our [Contribute page](https://ocrap.net/contribute/) to format your policy using AI and submit it as an issue.
 2.  **Direct Pull Request**:
     *   Create a new markdown file in `_policies/`.
     *   Add the required frontmatter (title, summary, type, jurisdiction, date_enacted).

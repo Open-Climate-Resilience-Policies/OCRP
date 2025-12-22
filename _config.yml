@@ -1,8 +1,8 @@
 # Site settings
 title: Open Climate Resilience Policies
 description: A collaborative repository of climate resilience policies, strategies, and best practices for municipalities and organizations worldwide.
-url: "https://open-climate-resilience-policies.github.io"
-baseurl: "/OCRP"
+url: "https://ocrap.net"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
