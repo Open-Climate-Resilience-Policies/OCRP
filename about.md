@@ -1,9 +1,7 @@
----
 date: 2025-12-21
 slug: about
 keywords: [about, mission, team]
 official_sources: []
----
 
 # About OCRaP.net
 
@@ -55,12 +53,7 @@ A lexical construct that masquerades as an acronym but holds no allegiance to sp
 
 ## Our Philosophy
 
-- **Open Source (AGPL):** Because the code for our survival shouldn't be proprietary.
-- **Open Science:** Because data behind a paywall isn't data—it's a rumor.
-- **No Camps:** We don't care about your political tribe. We care about your citations.
 
-- [View on GitHub](https://github.com/Open-Climate-Resilience-Policies/OCRP)
-- [Join the Coalition](https://ocrap.net/contribute/)
 ---
 layout: default
 title: About
