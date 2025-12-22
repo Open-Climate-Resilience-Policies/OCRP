@@ -189,6 +189,43 @@ Every policy is a folder, not a file:
 - **Agent B (The CFO):** Trigger when `fiscal_profile` or cost estimates exist — verify assumptions
 - **Agent C (The Sleep Doctor):** Trigger when indoor temperature guidance exists — verify public health thresholds
 
+### 5. AI-Assisted Editing Protocol
+
+When AI agents make substantial edits to policy files, the following safeguards apply to prevent adversarial manipulation and enable oversight:
+
+#### Backup Requirements
+- **Before substantial edits:** Create timestamped `.bak` file in `archive/` directory
+- **Naming convention:** `{filename}.{YYYY-MM-DD-HHMMSS}.bak`
+- **Example:** `solar-parking.md.2025-12-22-143015.bak`
+- **Trigger:** Any edit that changes >20% of content, modifies policy mandates, or alters technical specifications
+
+#### Multi-Agent Review Chain
+When AI agents propose changes to policy content:
+1. **Primary Agent:** Makes proposed edits
+2. **Adversarial Reviewer:** Checks for:
+   - Data fabrication (fake sources, unverifiable claims)
+   - Weakened mandates (vague language replacing specific requirements)
+   - Removed accountability measures
+   - Regulatory capture patterns (industry-friendly loopholes)
+3. **Technical Validator:** Verifies scientific/engineering accuracy
+4. **Human Approval:** Required before committing substantive policy changes
+
+#### Documentation Standards
+All AI-assisted edits must document in commit message:
+- Which agent(s) performed the edit
+- What triggered the edit (user request, consistency check, etc.)
+- Summary of changes made
+- Whether adversarial review was performed
+- Location of backup file if created
+
+#### Prohibited Actions
+AI agents **must not** without explicit human approval:
+- Remove or weaken enforcement mechanisms
+- Delete official_sources citations
+- Change numeric thresholds or safety factors
+- Replace specific mandates with "encourage" or "strive to" language
+- Add external dependencies or tracking
+
 ---
 
 ## 10. Quality Enforcement Model (Phased)
