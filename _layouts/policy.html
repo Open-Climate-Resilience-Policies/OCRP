@@ -47,3 +47,37 @@ layout: default
     <a href="{{ '/policies/' | relative_url }}" class="back-link">← Back to Policy Library</a>
   </div>
 </article>
+
+{% comment %} Previous / Next navigation for browsing policies alphabetically {% endcomment %}
+{% assign policies_sorted = site.policies | sort: 'title' %}
+{% assign current_index = nil %}
+{% for p in policies_sorted %}
+  {% if p.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index != nil %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+
+  <nav class="policy-pagination" role="navigation" aria-label="Policy navigation">
+    <div class="policy-pagination-inner">
+      {% if prev_index >= 0 %}
+        {% assign prev_policy = policies_sorted[prev_index] %}
+        <a class="policy-prev" href="{{ prev_policy.url | relative_url }}" rel="prev" aria-label="Previous policy: {{ prev_policy.title }}">← Previous: {{ prev_policy.title }}</a>
+      {% else %}
+        <span class="policy-prev disabled">← Previous</span>
+      {% endif %}
+
+      <a class="policy-index-link" href="{{ '/policies/' | relative_url }}" aria-label="Back to policy index">Back to policies</a>
+
+      {% if next_index < policies_sorted.size %}
+        {% assign next_policy = policies_sorted[next_index] %}
+        <a class="policy-next" href="{{ next_policy.url | relative_url }}" rel="next" aria-label="Next policy: {{ next_policy.title }}">Next: {{ next_policy.title }} →</a>
+      {% else %}
+        <span class="policy-next disabled">Next →</span>
+      {% endif %}
+    </div>
+  </nav>
+{% endif %}
