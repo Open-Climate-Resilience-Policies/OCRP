@@ -10,7 +10,7 @@ markdown: kramdown
 
 # Plugins
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
 # Pagination configuration
 pagination:
