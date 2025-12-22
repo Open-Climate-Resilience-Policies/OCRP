@@ -6,11 +6,17 @@
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/variables.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="manifest" href="{{ '/assets/manifest/site.webmanifest' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <meta name="msapplication-config" content="{{ '/assets/manifest/browserconfig.xml' | relative_url }}">
+  <meta name="theme-color" content="#0b6e4f">
 </head>
 <body>
   <header>
     <div class="brand">
-      <img src="{{ '/assets/img/ocrap-logo-vectorized.svg' | relative_url }}" alt="OCRaP Logo" class="brand-mark" width="180" height="48" loading="lazy">
+      <img src="{{ '/assets/img/ocrap-logo.svg' | relative_url }}" alt="OCRaP Logo" class="brand-mark" width="180" height="48" loading="lazy">
       <div class="brand-text">
         <div class="brand-name">{{ site.title }}</div>
         <div class="brand-acronym">OCRP</div>

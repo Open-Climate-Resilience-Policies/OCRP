@@ -1,0 +1,40 @@
+TODOs for OCRP (generated 2025-12-21)
+
+1) Remove vendored gems
+   - Status: completed
+   - Notes: `vendor/bundle` removed from Git index; `.gitignore` updated and committed.
+
+2) Push current branch
+   - Status: completed
+   - Notes: Pushed `main` to `origin` (b7c21b0..92cdaef); branch set to track origin/main.
+
+3) Inspect policies folder
+   - Status: in-progress
+   - Description: List files in `_policies/` and locate duplicate/backup files causing empty listings on the site.
+
+4) Open offending files
+   - Status: not-started
+   - Targets: `_policies/urban-heat-model.md.bak`, `_policies/virtual-power-plant/` (dir), `_policies/virtual-power-plant.md`, `_policies/virtual-power-plant.md.bak`, `_policies/virtual-power-plant.md.bak.overview`, etc.
+
+5) Fix or remove backups
+   - Status: not-started
+   - Options: add `published: false` to backup files' frontmatter, or delete/rename them so Jekyll doesn't list them.
+
+6) Commit and push fix
+   - Status: not-started
+   - Commands: `git add ...; git commit -m "Fix policy backups/published flags"; git push`
+
+7) Verify GitHub Pages build/logs
+   - Status: not-started
+   - Notes: After pushing, check Actions/Pages build status for errors.
+
+8) Run Docker Jekyll build (optional)
+   - Status: not-started
+   - Description: Locally build site in Docker to validate `_site` without native Ruby toolchain. Use `make build-docker`.
+
+9) Update taxonomy data for Jekyll
+   - Status: not-started
+   - Description: Move `src/data/taxonomy_index.json` to `_data/taxonomy_index.json` or update scripts to write there.
+
+
+Suggested next action: I can inspect the offending `_policies` backup files and either mark them `published: false` or delete them; then commit and push the change so the site listing removes the blank entries. Do you want me to proceed with that fix now?
