@@ -39,5 +39,6 @@ exclude:
   - venv/
   - templates/
   - backups/
+  - archive/
   - "*.bak"
   - "*.bak.*"
