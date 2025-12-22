@@ -13,7 +13,7 @@ pagination:
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
-{% if paginator.documents and paginator.documents.size > 0 %}
+{% if paginator and paginator.documents and paginator.documents.size > 0 %}
   {% for policy in paginator.documents %}
   <article class="policy-list-item">
     <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
@@ -26,7 +26,7 @@ pagination:
   </article>
   {% endfor %}
 {% else %}
-  {% assign policies = site.policies | sort: 'title' %}
+  {% assign policies = site.policies | where_exp: "p", "p.template != true and p.published != false" | sort: 'title' %}
   {% for policy in policies %}
   <article class="policy-list-item">
     <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>

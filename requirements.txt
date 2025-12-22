@@ -1,3 +1,5 @@
+# For policy frontmatter validation
+PyYAML>=6.0
 sentence-transformers
 scikit-learn
 pandas

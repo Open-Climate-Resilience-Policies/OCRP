@@ -3,6 +3,7 @@ title: Open Climate Resilience Policies
 description: A collaborative repository of climate resilience policies, strategies, and best practices for municipalities and organizations worldwide.
 url: "https://ocrap.net"
 baseurl: ""
+theme: jekyll-theme-minimal # Start simple, upgrade later
 
 # Build settings
 markdown: kramdown
@@ -32,3 +33,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - .bundle
+  - scripts/
+  - requirements.txt
+  - .env
+  - example.env
+  - venv/

@@ -40,7 +40,7 @@ We welcome contributions! You can add policies in two ways:
 ## 📄 License
 
 Content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-Code is licensed under the MIT License.
+Code is licensed under the AGPL-3.0 License. See LICENSE and <https://www.gnu.org/licenses/agpl-3.0.html>.
 # OCRaP.ai (Open Climate Resilience Policies AI)
 
 > **Stop reading policy. Start debugging it.**
