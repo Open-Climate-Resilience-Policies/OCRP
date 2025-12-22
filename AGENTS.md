@@ -207,6 +207,81 @@ Once the site builds reliably, these checks become enforced via GitHub Actions. 
 
 The following checks are defined as requirements but are not yet enforced automatically. They must be run locally or manually until CI is enabled.
 
+### Workflow Configuration
+
+**File:** `.github/workflows/quality.yml` (to be created)
+
+**CI Assumptions:**
+- Runs on: `ubuntu-latest`
+- Ruby version: `3.1.7` (matches current GitHub Pages environment)
+- Node version: `20.x` (for accessibility testing tools)
+- Triggers: `push` to `main`, `pull_request` to `main`
+- Permissions: `contents: read` (no write access needed)
+
+**Workflow Structure:**
+```yaml
+name: Quality Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  jekyll-build:
+    # Verify Jekyll build succeeds
+  html-validation:
+    # Validate generated HTML
+  accessibility:
+    # Run axe-core against built pages
+  javascript-quality:
+    # ESLint checks on tools/*.js and assets/js/*.js
+```
+
+**Build Dependencies:**
+- Jekyll build must complete successfully before validation jobs run
+- Accessibility tests require full site build (not just source files)
+- Use caching for Ruby gems and Node modules to speed up workflow
+
+### Jekyll Build Steps (Required)
+
+**Standard Build Process:**
+```bash
+# 1. Install dependencies
+bundle config set path 'vendor/bundle'
+bundle install
+
+# 2. Build site
+bundle exec jekyll build --strict_front_matter
+
+# 3. Verify build output
+test -d _site
+test -f _site/index.html
+```
+
+**Build Assumptions:**
+- All policy files in `_policies/` have valid YAML frontmatter
+- Frontmatter uses exactly two `---` delimiters (start and end)
+- No horizontal rules (`---`) in markdown content (use `***` instead)
+- No duplicate keys in frontmatter (especially `official_sources`)
+- All Liquid template syntax is valid for Liquid 4.0.4
+- Template files are excluded via `_config.yml` (`exclude:` list)
+- Backup files (*.bak, *.bak.*) are excluded or not present
+
+**Build Flags:**
+- `--strict_front_matter`: Fail on malformed YAML (recommended for CI)
+- `--trace`: Show full stack trace on errors (debugging only)
+- `--verbose`: Show detailed build progress (debugging only)
+
+**Expected Build Output:**
+- `_site/` directory created
+- `_site/index.html` exists (home page)
+- `_site/policies/` directory exists
+- Policy files rendered as HTML (not raw markdown)
+- No Liquid errors in build log
+- No YAML parsing errors in build log
+
 ### HTML validation
 **Purpose:**
 - Catch broken markup that causes rendering or accessibility failures.
@@ -240,6 +315,29 @@ The following checks are defined as requirements but are not yet enforced automa
 
 **Suggested tool (when enabled):**
 - axe-core via Playwright or equivalent headless runner
+
+**Axe-core Thresholds (Fail Criteria):**
+- **Critical violations:** 0 allowed (fail build)
+- **Serious violations:** 0 allowed (fail build)
+- **Moderate violations:** Warning only (do not fail build)
+- **Minor violations:** Informational only
+
+**Test Scope:**
+- Home page: `index.md` (as built)
+- Policy index: `policies/index.html` (as built)
+- Sample policy: At least one from `_policies/` (e.g., `solar-parking.md`)
+- Sample tool: At least one from `tools/` if any exist
+
+**Axe Configuration:**
+```javascript
+{
+  runOnly: {
+    type: 'tag',
+    values: ['wcag2a', 'wcag2aa', 'wcag22aa']
+  },
+  resultTypes: ['violations', 'incomplete']
+}
+```
 
 ### Security and privacy check
 **Purpose:**
