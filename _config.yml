@@ -37,3 +37,7 @@ exclude:
   - .env
   - example.env
   - venv/
+  - templates/
+  - backups/
+  - "*.bak"
+  - "*.bak.*"
