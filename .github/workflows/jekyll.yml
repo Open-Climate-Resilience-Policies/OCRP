@@ -23,7 +23,8 @@ jobs:
       - name: Clear bundler cache
         run: |
           rm -rf vendor/bundle .bundle
-          bundle config unset --local path
+          bundle config set --local path ''
+          bundle config unset deployment
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -34,7 +35,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: |
-          bundle install
+          bundle config set --local without ''
+          bundle install --no-deployment
           bundle exec jekyll --version
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
