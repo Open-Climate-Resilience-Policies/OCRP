@@ -16,8 +16,6 @@ official_sources:
 status: Draft
 layout: policy
 title: Time Health & Safety Act
-id: time-health-safety-act
-tags: [health, safety, time, circadian, climate]
 ---
 
 # Time Health & Safety Act

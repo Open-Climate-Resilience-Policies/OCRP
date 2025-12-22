@@ -1,10 +1,10 @@
 ---
 layout: policy
 title: The Nighttime Recovery Standard
-id: nighttime-recovery
+slug: reclaim-nighttime
 status: Draft
 summary: "Mandates all residential units maintain safe nighttime temperatures below 26°C for 8 hours to prevent heat-related health impacts during extreme heat events."
-tags: [health, housing, heat]
+keywords: [health, housing, heat]
 ---
 
 # The Nighttime Recovery Standard
