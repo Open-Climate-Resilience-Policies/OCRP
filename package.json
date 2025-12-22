@@ -1,0 +1,15 @@
+{
+  "name": "ocrap-quality-checks",
+  "version": "1.0.0",
+  "description": "Quality automation for OCRaP.ai climate resilience policy library",
+  "private": true,
+  "scripts": {
+    "test:accessibility": "playwright test accessibility-test.js",
+    "install:browsers": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "axe-core": "^4.10.2",
+    "axe-playwright": "^2.0.3"
+  }
+}

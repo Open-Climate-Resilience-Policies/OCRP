@@ -2,9 +2,22 @@
 layout: policy
 title: The Nighttime Recovery Standard
 slug: reclaim-nighttime
-status: Draft
+date: 2025-12-22
 summary: "Mandates all residential units maintain safe nighttime temperatures below 26°C for 8 hours to prevent heat-related health impacts during extreme heat events."
-keywords: [health, housing, heat]
+keywords:
+  - "health"
+  - "housing"
+  - "heat"
+type: generic-policy
+policy_category: housing & health
+implementation_level: municipal
+hazard_type:
+  - "extreme heat"
+  - "tropical nights"
+related_policies:
+  - "urban-heat-model"
+  - "healthy-home"
+official_sources: []
 ---
 
 # The Nighttime Recovery Standard

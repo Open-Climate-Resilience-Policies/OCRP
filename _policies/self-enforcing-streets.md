@@ -2,9 +2,22 @@
 layout: policy
 title: The Self-Enforcing Street Design Code
 slug: self-enforcing-streets
-status: Draft
+date: 2025-12-22
 summary: "Requires street design geometry to match posted speed limits, using narrow lanes and speed tables to naturally enforce safe speeds."
-keywords: [transportation, safety, urban-design, vision-zero]
+keywords:
+  - "transportation"
+  - "safety"
+  - "urban-design"
+  - "vision-zero"
+type: generic-policy
+policy_category: transportation & safety
+implementation_level: municipal
+hazard_type:
+  - "traffic injuries"
+  - "pedestrian safety"
+related_policies:
+  - "15-minute-city-model"
+official_sources: []
 ---
 
 # The Self-Enforcing Street Design Code

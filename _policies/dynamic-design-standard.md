@@ -2,9 +2,23 @@
 layout: policy
 title: The Dynamic Design Standard Act
 slug: dynamic-design-standard
-status: Draft
+date: 2025-12-22
 summary: "Mandates climate-forward engineering that uses projected weather data instead of historical records to design infrastructure resilient to future climate conditions."
-keywords: [infrastructure, flooding, risk-management, engineering]
+keywords:
+  - "infrastructure"
+  - "flooding"
+  - "risk-management"
+  - "engineering"
+type: generic-policy
+policy_category: infrastructure & resilience
+implementation_level: regional
+hazard_type:
+  - "flooding"
+  - "extreme weather"
+related_policies:
+  - "urban-heat-model"
+  - "green-roofs-sponge-city-model"
+official_sources: []
 ---
 
 # The Dynamic Design Standard Act

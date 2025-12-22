@@ -1,10 +1,23 @@
 ---
 layout: policy
-title: The "Frequency First" Transit Mandate
+title: The Free-Fare Transit Sequencing Act
 slug: free-fare
-status: Draft
-summary: "Prioritizes high-frequency transit service over fare reductions, mandating 15-minute headways on core routes before implementing fare-free programs."
-keywords: [transit, mobility, economics, urban-planning]
+date: 2025-12-22
+summary: "Establishes prerequisites for fare-free transit programs, requiring high-frequency service on core routes before eliminating fares."
+keywords:
+  - "transit"
+  - "mobility"
+  - "economics"
+  - "urban-planning"
+type: generic-policy
+policy_category: transportation & mobility
+implementation_level: municipal
+hazard_type:
+  - "mobility poverty"
+related_policies:
+  - "frequency-first-transit"
+  - "15-minute-city-model"
+official_sources: []
 ---
 
 # The "Frequency First" Transit Mandate
