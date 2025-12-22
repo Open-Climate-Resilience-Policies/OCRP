@@ -85,7 +85,7 @@ Municipal fleets are high-visibility leaders. Transitioning them creates the bas
 2.  **Heavy Duty Phase-In:** For heavy equipment (garbage trucks, plows) where EV options are scarce, the city mandates **Renewable Diesel (HVO)** use in existing assets while prioritizing pilot programs for electric/hydrogen replacements.
 3.  **Right to Repair:** Procurement contracts for EVs must mandate access to repair manuals and diagnostic software, ensuring the city's unionized mechanics can service the new fleet.
 
----
+***
 
 ## Implementation Roadmap
 

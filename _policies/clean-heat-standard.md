@@ -26,7 +26,7 @@ We are debating the Clean Heat Standard (Transition off Gas).
 
 **The Bill:** Have you switched? Did your monthly operating cost go up or down? We need real data to verify the "Business Case."
 
----
+***
 
 ## Draft Implementation Notes
 

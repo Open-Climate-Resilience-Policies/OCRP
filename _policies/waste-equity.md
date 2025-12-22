@@ -24,7 +24,7 @@ We are stress-testing the Waste Equity (Pay-As-You-Throw) model.
 
 **Fairness:** Does this policy unfairly penalize families with unavoidable waste (e.g., diapers, medical supplies)? Should there be a "Medical Variance" allowance?
 
----
+***
 
 ## Draft Implementation Notes
 

@@ -74,7 +74,7 @@ When a homeowner shares their energy, they should be paid the same rate as a gas
 **Real-World Example:**
 * **Tesla & PG&E (California):** Launched the "Emergency Load Reduction Program" (ELRP). Participating Powerwall owners received **$2.00 for every kWh** they sent to the grid during emergencies. In 2022, this distributed fleet replaced a gas plant, keeping the lights on during a record heatwave.
 
----
+***
 
 ## Technical Specifications & Safety
 

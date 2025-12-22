@@ -14,7 +14,7 @@ discussion_id: frequency-first-feedback
 > Municipal transit funding shall prioritize **High Frequency** (headways < 15 minutes) over **Fare Reductions** or **Geographic Coverage**.
 > "Fare-Free" programs are prohibited unless the system has already achieved "Turn Up and Go" frequency (minimum 15-minute intervals) on 80% of core routes. Until then, every dollar of subsidy must buy more buses, not cheaper tickets.
 
----
+***
 
 ## 1. The Value Stack (Why This Matters)
 
@@ -35,7 +35,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 * **The Cost:** "Free Transit" often leads to dirty, poorly maintained systems that the middle class abandons. This turns transit into a "welfare service" rather than a "workforce utility."
 * **The ROI:** Businesses cannot hire if workers cannot get there reliably. A high-frequency network expands the "Labor Catchment Area" for every employer in the city.
 
----
+***
 
 ## 2. Implementation Mechanisms
 
@@ -51,7 +51,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 * **Mechanism:** If fares are reduced, the lost revenue must be legally replaced *before* the reduction takes effect.
 * **Source:** A payroll tax on large employers (>50 staff) located within 500m of a high-frequency corridor. They are the primary beneficiaries of the labor access; they pay for the pipeline.
 
----
+***
 
 ## 3. The Integrity Engine Checks
 
@@ -60,7 +60,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 * **The Test:** `IF fare_revenue == 0 AND replacement_revenue == NULL THEN flag_error("🚨 FISCAL CLIFF WARNING: Unfunded Mandate.")`
 * **Why:** Removing fares without replacing the ~30% operating budget they provide leads to the "Transit Death Spiral" (Service cuts $\to$ fewer riders $\to$ more cuts).
 
----
+***
 
 ## 🤝 For the Business Community (BIA)
 
@@ -70,7 +70,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 * **Revenue Opportunity:** **High**. "Turn Up and Go" frequency drastically increases foot traffic and employee reliability.
 * **The Trade:** Would you pay a 0.5% payroll tax to guarantee your employees are never late due to a "missed bus" again?
 
----
+***
 
 ## 🗣️ The Drafting Room
 *This policy is a living document. Help us break it, fix it, and pass it.*

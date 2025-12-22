@@ -69,7 +69,7 @@ Compost is often sold to remote industrial farms. This policy keeps the value lo
 **Real-World Example:**
 * **San Francisco, USA:** The city collects 500 tons of organics daily. The resulting compost is used by local vineyards in Napa Valley, which then grow the food/wine sold back to the city, creating a true regional loop.
 
----
+***
 
 ## Addressing the "Flies & Rats" Objection
 

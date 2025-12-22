@@ -71,7 +71,7 @@ A technical concern in the US is "Breaker Masking"—where solar power back-feed
 1.  **The "Dedicated Circuit" Rule:** For new balcony construction, the outdoor outlet must be on a dedicated 15A or 20A circuit.
 2.  **Smart Meters:** The local utility must swap the tenant's meter for a bi-directional "Smart Meter" within 30 days of notification, free of charge, to ensure they are credited for any excess power exported to the grid.
 
----
+***
 
 ## Implementation Roadmap
 

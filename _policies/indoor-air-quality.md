@@ -39,7 +39,7 @@ Points for discussion:
 - Rapid response: define trigger thresholds for CO2 and CO2+PM2.5 that require immediate action (e.g., increase ventilation, pause indoor activities).
 - Equity: ensure low-income schools receive prioritized funding for upgrades rather than being left behind with only portable units.
 
----
+***
 
 ## Implementation Notes / Draft Questions
 

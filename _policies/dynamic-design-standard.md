@@ -13,7 +13,7 @@ discussion_id: dynamic-design-feedback
 > **The Core Mandate:**
 > All public infrastructure projects with a lifespan exceeding 10 years must rely on **forward-looking climate projection models** (e.g., IPCC RCP 4.5/8.5 or local equivalents) for design loads. The use of exclusively historical weather data (e.g., NOAA Atlas 14) for long-term assets is hereby classified as **Professional Negligence**.
 
----
+***
 
 ## 1. The Value Stack (Why This Matters)
 
@@ -30,7 +30,7 @@ Engineering has traditionally relied on "Stationarity"—the idea that the futur
 * **The Risk:** If a city approves a bridge using old data and it washes away, the city (and the engineering firm) can be held liable for negligence. "Force Majeure" is no longer a valid defense when the extreme weather was predicted.
 * **The ROI:** This policy is a legal shield. Designing to dynamic standards provides a defensible "Standard of Care" in court.
 
----
+***
 
 ## 2. Implementation Mechanisms
 
@@ -46,7 +46,7 @@ Infrastructure documentation cannot be a static PDF filed in a basement.
 * **Requirement:** All major assets must maintain a "Digital Twin" or standardized data set of their design parameters.
 * **The Re-Simulation Audit:** Every 5 years, the City Engineer must re-simulate critical assets against the *latest* climate data. If an asset falls below the safety threshold, it is automatically flagged for the Capital Improvement Budget.
 
----
+***
 
 ## 3. Evidence & Citations
 
@@ -56,7 +56,7 @@ Infrastructure documentation cannot be a static PDF filed in a basement.
 * **IPCC AR6 Working Group I:** Establishes the specific projection pathways (RCP 4.5 / 8.5) required for modeling.
 * **ASCE Code of Ethics:** Requires engineers to "hold paramount the safety, health, and welfare of the public," which implies acknowledging known climate risks.
 
----
+***
 
 ## 🤝 For the Business Community (BIA)
 
@@ -65,7 +65,7 @@ Infrastructure documentation cannot be a static PDF filed in a basement.
 * **OpEx (Risk Avoidance):** **Decreases significantly**. Avoiding a single catastrophic failure (bridge washout) saves 100x the initial premium.
 * **Insurance:** Bond rating agencies (Moody's) are beginning to downgrade cities that do not account for climate risk. This policy protects the city's credit rating, keeping borrowing costs low for *all* businesses.
 
----
+***
 
 ## 🗣️ The Drafting Room
 *This policy is a living document. Help us break it, fix it, and pass it.*

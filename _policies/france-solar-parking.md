@@ -203,7 +203,7 @@ This policy model can be scaled and adapted for:
 - Public acceptance and satisfaction
 - Lessons for future expansion or modification
 
----
+***
 
 ## Document Metadata
 
@@ -215,6 +215,6 @@ This policy model can be scaled and adapted for:
 
 **Keywords**: solar energy, parking lots, renewable energy mandate, climate policy, distributed generation, France, solar canopies, photovoltaic installations, energy transition
 
----
+***
 
 *This document summarizes publicly available information about France's solar parking lot mandate. For official legal text and implementation details, please refer to the French government's official sources.*

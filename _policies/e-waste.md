@@ -75,7 +75,7 @@ Local governments are often the largest tech buyers in a region. They can single
 * **Denver Water:** Partnered with **Blue Star Recyclers**, a non-profit that employs people with autism to disassemble electronics. This creates local jobs while ensuring ethical recycling, rather than shipping waste overseas.
 * **City of Toronto:** Implemented a Circular Economy Procurement plan that explicitly weights "repairability" and "end-of-life takeback" in city tenders.
 
----
+***
 
 ## How to Encourage Adoption (The "Pitch" to Local Govs)
 

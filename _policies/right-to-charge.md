@@ -72,7 +72,7 @@ E-bikes are key to the "15-Minute City," but charging lithium-ion batteries in h
 **Real-World Example:**
 * **New York City, USA:** Following a spike in deadly battery fires, NYC passed laws banning the sale of uncertified batteries and is retrofitting public housing with safe, outdoor e-bike charging/storage hubs.
 
----
+***
 
 ## Implementation Roadmap (Phased Approach)
 

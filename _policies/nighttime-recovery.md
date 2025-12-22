@@ -1,9 +1,11 @@
+---
 layout: policy
 title: The Nighttime Recovery Standard
 id: nighttime-recovery
 status: Draft
 tags: [health, housing, heat]
 summary: "A public health policy requiring all homes to maintain a safe nighttime temperature for sleep, reducing heat-related illness and deaths during heatwaves."
+---
 
 # The Nighttime Recovery Standard
 

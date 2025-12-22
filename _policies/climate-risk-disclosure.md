@@ -26,7 +26,7 @@ We are reviewing the Climate Risk Disclosure mandate for Real Estate.
 
 **The "Lemon" Law:** Would you buy a house if you knew it would be uninsurable in 7 years? Do you feel you have access to this data right now?
 
----
+***
 
 ## Draft Implementation Notes
 

@@ -77,7 +77,7 @@ Outdoor workers face acute mortality risks during wet-bulb spikes. Standard "air
 **Real-World Example:**
 * **OSHA / NIOSH Standards:** The policy strictly adopts the "Acclimatized vs. Unacclimatized" work limits used by federal safety bodies to prevent heat stroke.
 
----
+***
 
 ## Technical Considerations: Winter & Water
 

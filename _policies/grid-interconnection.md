@@ -43,7 +43,7 @@ Points:
 - Time-of-day value: distributed solar can reduce peak prices but may require storage to capture value for evening peaks.
 - Long-term reliability vs short-term prices: upgrades can be amortized over decades and may produce net savings.
 
----
+***
 
 ## Draft Implementation Notes
 
