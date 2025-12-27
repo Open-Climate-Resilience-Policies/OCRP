@@ -42,6 +42,7 @@ improvements:
   - "Add measurable targets (e.g., km of corridor, % canopy cover) for implementation."
   - "Include maintenance cost estimates and responsible department (parks/transport)."
   - "Note monitoring metrics (pollinator counts, water temperature) for each pilot."
+---
 
 ## Overview
 

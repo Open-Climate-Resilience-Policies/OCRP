@@ -52,6 +52,7 @@ improvements:
   - "Add quick-reference metrics (EUI, emissions intensity, target years)."
   - "Clarify enforcement authority, compliance cycles, and penalties."
   - "Strengthen global case study sourcing with primary references."
+---
 
 ## Overview
 
