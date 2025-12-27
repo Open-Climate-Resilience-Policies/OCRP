@@ -48,6 +48,10 @@
         <li><a href="{{ '/about/' | relative_url }}">About</a></li>
       </ul>
     </nav>
+    <div class="status-indicator" id="status-indicator" hidden aria-live="polite" aria-atomic="true">
+      <span class="status-dot"></span>
+      <span class="status-text">Offline</span>
+    </div>
   </header>
 
   <main id="main-content">
@@ -75,5 +79,6 @@
 
   <script src="{{ '/assets/js/policy-engine.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/share.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/connectivity.js' | relative_url }}" defer></script>
 </body>
 </html>
