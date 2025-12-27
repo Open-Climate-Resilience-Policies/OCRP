@@ -2,92 +2,224 @@
 layout: policy
 title: "Community Retrofit Aggregation & Financing Tool (CRAFT)"
 type: generic-policy
+summary: "A community-scale retrofit delivery and financing framework that clusters projects to cut costs, protect consumers, and coordinate grid impacts."
+hazard_type:
+  - "energy burden"
+  - "indoor heat"
+  - "emissions"
+policy_category: "buildings-and-energy"
+implementation_level: "municipal"
+related_policies:
+  - "building-performance-standards"
+  - "virtual-power-plant"
 date: "2025-12-21"
 slug: "community-retrofit-aggregation"
 keywords:
-  - "retrofit"
-  - "bulk purchasing"
-  - "financing"
+  - "retrofit aggregation"
+  - "bulk procurement"
+  - "property-linked finance"
 official_sources:
   - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
-    title: "EU Directive 2010/31/EU on energy performance of buildings (EPBD)"
-    accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/energy/topics/energy-efficiency/energy-efficient-buildings/energy-performance-certificates_en"
-    title: "European Commission: Guidance on energy performance and retrofitting"
+    title: "EU Directive 2010/31/EU on the energy performance of buildings (EPBD)"
     accessed: "2025-12-27"
   - url: "https://op.europa.eu/en/publication-detail/-/publication/5d6f0f88-7b6a-11ea-9e4e-01aa75ed71a1"
     title: "EU guidance on financing energy renovation of buildings"
     accessed: "2025-12-27"
-  - "eco-roof-energy-resilience-mandate"
-
+  - url: "https://commission.europa.eu/publications/smart-finance-smart-buildings_en"
+    title: "European Commission: Smart Finance for Smart Buildings initiative"
+    accessed: "2025-12-27"
 improvements:
-  - "Add `case_studies` and links to successful CRAFT pilots."
-  - "Clarify legal models for Aggregators (non-profit, municipal, private)."
-  - "Include sample financing terms (interest rates, term lengths) in `finance` field."
+  - "Add case_studies for pilot retrofit zones and repayment performance."
+  - "Include grid constraint assessment checklist for clustered deployments."
+  - "Provide sample amortization tables for PACE and on-bill terms."
+  - "Publish tenant protection covenants for landlord participation."
 ---
 
 ## Overview
 
-Moving from house-by-house retrofits to a street-by-street or neighborhood-wide approach dramatically lowers costs through economies of scale, ensures quality control, and builds social momentum. This policy establishes the **Community Retrofit Aggregation & Financing Tool (CRAFT)**, a framework designed to support communities in bulk-buying retrofits with integrated financing.
+Individual, house-by-house retrofits are slow, expensive, and administratively complex. In contrast, **street-by-street and neighborhood-scale retrofits** reduce costs through economies of scale, simplify contractor logistics, and build social trust.
 
-## 1. Core Mechanism: The "Aggregator" Entity
+This policy establishes the **Community Retrofit Aggregation & Financing Tool (CRAFT)**: a delivery and financing framework that enables communities to upgrade buildings collectively while protecting residents from financial and technical risk.
 
-The central policy innovation is the formal designation and funding of **Retrofit Aggregators**. Instead of individual homeowners managing contractors, an Aggregator manages the process for a whole group (e.g., 50–500 homes at a time).
+---
 
-**Who can be an Aggregator?**
-*   **Municipalities:** (e.g., "City Retrofit Office")
-*   **Non-Profits/Co-ops:** Community energy cooperatives or housing non-profits.
-*   **Neighborhood Associations:** With a registered legal structure.
+## 1. Core Mechanism: Retrofit Aggregators
 
-**Role of the Aggregator:**
-*   Recruits households to sign a non-binding "Expression of Interest."
-*   Issues bulk Tenders/RFPs to contractors for specifically scoped work (e.g., "Install 50 heat pumps in the Cedar Heights neighborhood").
-*   Oversees quality assurance and acts as the project manager.
+### Legal Form and Authority
 
-## 2. Bulk Buying & Delivery Strategy
+A **Retrofit Aggregator** is a legally constituted entity authorized by the municipality to coordinate retrofit delivery for a defined geographic area.
 
-To maximize savings and speed, the policy divides retrofits into standardized "streams":
+Aggregators may be:
+- Municipal departments or authorities
+- Non-profit organizations or cooperatives
+- Special-purpose public benefit corporations
 
-| Stream | Bulk Buy Opportunity | Efficiency Gain |
+Aggregators act as:
+- **Program administrators**, not property owners
+- **Agents for collective procurement**, not mandatory intermediaries
+- **Coordinators**, not utilities or lenders
+
+Aggregators **may not**:
+- Compel participation
+- Sign construction contracts on behalf of residents without explicit consent
+- Bundle residents into financing without opt-in approval
+
+---
+
+## 2. Consumer Protections and Participation Rights
+
+To ensure trust and voluntary participation:
+
+- Participation is **opt-in at every stage**.
+- Expressions of Interest are **non-binding**.
+- Residents may withdraw prior to contract signing with no penalty.
+- Each dwelling receives an individual technical assessment.
+- Clear dispute resolution and complaints processes must be published.
+
+No household may be denied services or penalized for choosing not to participate.
+
+---
+
+## 3. Bulk Buying & Delivery Streams
+
+Retrofits are organized into standardized delivery streams to maximize efficiency.
+
+| Stream | Scope | Benefits |
 | :--- | :--- | :--- |
-| **A. The Thermal Shell** | Bulk purchase of insulation materials (cellulose, spray foam) and air-sealing labor. | Contractors can do 3-4 attics a day if homes are adjacent, reducing travel/setup costs by 15-20%. |
-| **B. The Mechanical Switch** | Bulk purchase of Heat Pumps and Heat Pump Water Heaters. | Wholesale equipment pricing (direct from manufacturer) and standardized installation teams. |
-| **C. Energy Independence** | Bulk purchase of Solar PV panels and Battery Storage systems. | "Solarize" model: Group discount tiers (e.g., "If 50 homes sign up, price drops by 10%"). |
+| **Thermal Shell** | Insulation, air sealing, windows | Reduced heating/cooling demand |
+| **Mechanical Systems** | Heat pumps, HPWHs | Electrification and efficiency |
+| **Energy Systems** | Solar PV, batteries | Peak reduction and resilience |
 
-## 3. Integrated Financing Models
+Aggregators must pre-qualify contractors and cap workload per contractor to maintain quality.
 
-The policy solves the "upfront cost" barrier by attaching financing to the property, not the person.
+---
 
-### Option A: PACE (Property Assessed Clean Energy)
-*   **How it works:** The Aggregator (or finance authority) pays the upfront cost.
-*   **Repayment:** Homeowner repays via a line item on their property tax bill over 15–20 years.
-*   **Benefit:** If the homeowner sells, the remaining balance stays with the house (new owner benefits from savings and takes over payments).
+## 4. Financing Models and Guardrails
+
+CRAFT enables **property-linked financing**, subject to strict consumer safeguards.
+
+### Option A: Property Assessed Clean Energy (PACE)
+- Financing is attached to the property, not the occupant.
+- Maximum interest rate: **2% above sovereign borrowing rate**.
+- Full disclosure of total repayment cost is mandatory.
 
 ### Option B: On-Bill Financing (OBF)
-*   **How it works:** The local utility provider pays the contractor.
-*   **Repayment:** Homeowner repays via their monthly electricity/gas bill.
-*   **Constraint:** The monthly loan payment must be less than the estimated energy savings (Bill Neutrality).
+- Repayment occurs via utility bills.
+- **Bill neutrality** must be certified using conservative energy savings estimates.
+- If savings underperform, payment schedules must be adjusted.
 
-## 4. Government Support & De-Risking
+Additional guardrails:
+- Predatory financing practices are prohibited.
+- Prepayment and transfer terms must be disclosed before enrollment.
+- Dispute resolution must be independent of lenders and contractors.
 
-To enable this model, the government provides:
-*   **Seed Funding:** Grants to cover administrative setup costs for Aggregators (legal fees, project manager salaries).
-*   **Loan Guarantees:** Government guarantees bulk loans taken out by the Aggregator, lowering interest rates (aiming for 0-2%).
-*   **Standardized Contracts:** Providing "off-the-shelf" legal contracts for bulk purchasing to protect communities from liability.
+---
 
-## 5. Implementation Pilot: "The Street-by-Street Challenge"
+## 5. Renters, Condos, and Multi-Unit Buildings
 
-A pilot program to launch the policy:
-1.  **Apply:** Neighborhoods apply to be a "Retrofit Zone" (Criteria: High density of similar housing types, high buy-in).
-2.  **Coach:** Winning neighborhood receives a dedicated "Retrofit Coach."
-3.  **Bulk Buy:** Coach organizes the bulk buy (e.g., 100 heat pumps).
-4.  **Renovation Train:** Teams move through the street assembly-line style—insulation one week, heat pumps the next.
+CRAFT explicitly includes:
+- Rental properties (with tenant protection requirements)
+- Condominiums and housing cooperatives
+- Small and mid-sized apartment buildings
 
-## Summary of Benefits
+Measures include:
+- Landlord participation conditioned on rent-stabilization or benefit-sharing mechanisms
+- Simplified approval pathways for condo boards
+- Aggregated financing structures for multi-unit buildings
+
+---
+
+## 6. Grid Coordination and Utility Engagement
+
+Aggregators must coordinate with utilities prior to large-scale deployment.
+
+Requirements include:
+- Advance notice of clustered load changes
+- Coordination of transformer and feeder capacity upgrades
+- Optional aggregation of batteries into **Virtual Power Plants (VPPs)** where permitted
+- Data-sharing agreements with clear privacy boundaries
+
+---
+
+## 7. Government Support and Risk Reduction
+
+Municipal and regional governments shall provide:
+- Seed funding for Aggregator setup and staffing
+- Loan guarantees to reduce financing costs
+- Standardized procurement and contracting templates
+- Workforce training and certification programs
+
+---
+
+## 8. Pilot Program: Street-by-Street Retrofit Zones
+
+### Selection Criteria
+- Housing typology similarity
+- High energy burden indicators
+- Demonstrated community interest
+- Grid readiness or constraint mitigation potential
+
+### Pilot Phases
+1. Outreach and assessments
+2. Bulk procurement
+3. Coordinated installation
+4. Post-install verification and reporting
+
+---
+
+## 9. Success Metrics and Reporting
+
+Aggregators must publish annual performance reports including:
+- Cost per dwelling retrofitted
+- Average energy and emissions reduction
+- Participation and opt-out rates
+- Financing performance (defaults, delinquencies)
+- Contractor quality metrics
+
+---
+
+# Appendix A: CRAFT Retrofit Aggregator Charter Template
+
+## 1. Purpose
+The Aggregator exists to coordinate equitable, affordable, and high-quality building retrofits at community scale.
+
+## 2. Governance
+- Board representation must include community members.
+- Conflicts of interest must be disclosed.
+- Financial accounts are subject to annual audit.
+
+## 3. Authority
+- Authorized to issue RFPs and manage procurement.
+- Authorized to coordinate financing offers.
+- Not authorized to compel participation or enforce compliance.
+
+## 4. Consumer Protections
+- Transparent pricing and financing disclosures.
+- Opt-out rights at defined milestones.
+- Independent complaints and mediation process.
+
+## 5. Contractor Management
+- Pre-qualification and performance monitoring.
+- Clear termination procedures for underperformance.
+- Worker safety and labor standards compliance.
+
+## 6. Data and Privacy
+- Minimal data collection principle.
+- No sale of participant data.
+- Compliance with applicable data protection laws.
+
+## 7. Reporting and Accountability
+- Annual public report.
+- Open performance metrics.
+- Sunset and renewal conditions defined by the municipality.
+
+---
+
+## Benefits Snapshot
 
 | Feature | Individual Approach | CRAFT (Community Bulk) Approach |
 | :--- | :--- | :--- |
 | **Cost** | Retail pricing + individual travel/setup. | **20-30% discount** via wholesale purchasing and clustered labor. |
-| **Trust** | Homeowner must vet contractors alone. | **Aggregator vets contractors**; community relies on peer trust. |
+| **Trust** | Homeowner vets contractors alone. | **Aggregator vets contractors**; community relies on peer trust. |
 | **Speed** | One home at a time; scheduling delays. | **Assembly-line delivery**; teams move door-to-door. |
-| **Grid** | Random installs strain the grid. | Coordinated battery installs can form a **Virtual Power Plant (VPP)**. |
+| **Grid** | Random installs strain the grid. | Coordinated batteries can form a **Virtual Power Plant (VPP)**. |

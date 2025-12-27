@@ -2,12 +2,12 @@
 layout: policy
 title: "Circular Construction & Deconstruction Mandate"
 type: generic-policy
-summary: "A policy framework to transition from linear 'demolition' to circular 'deconstruction', mandating material recovery and the use of Material Passports to minimize waste and embodied carbon."
+summary: "A policy framework to transition from linear demolition practices to circular deconstruction, mandating material recovery, reuse prioritization, and Material Passports to reduce waste and embodied carbon."
 hazard_type:
   - "waste generation"
   - "embodied carbon"
   - "resource depletion"
-policy_category: "waste management"
+policy_category: "waste-management"
 implementation_level: "municipal"
 related_policies:
   - "green-roofs-sponge-city-model"
@@ -28,72 +28,144 @@ official_sources:
     title: "EU Construction Products Regulation (CPR) — product standards and CE marking"
     accessed: "2025-12-27"
 improvements:
-  - "Add `official_sources` (Amsterdam circular construction examples) and templates for Material Passports."
-  - "Specify enforcement & measurement (how to verify 70% diversion)."
-  - "Define exemptions and hazardous-materials handling procedures."
+  - "Clarify diversion measurement and verification requirements."
+  - "Introduce tiered compliance by building type and size."
+  - "Define hazardous materials handling and exemptions."
+  - "Establish governance and accessibility requirements for Material Passports."
+  - "Add incentives alongside penalties to support adoption."
 ---
 
 ## Overview
 
-The construction sector is historically a linear economy ("take, make, dispose"), contributing significantly to landfill mass and embodied carbon emissions. This policy establishes a **Circular Construction Model** for [City/Organization Name].
+The construction sector traditionally follows a linear model of resource extraction, use, and disposal. This approach generates significant waste and locks in embodied carbon emissions.
 
-By shifting from "demolition" to "deconstruction," the policy aims to:
-*   **Minimize Waste:** Divert usable building materials (wood, brick, glass, metals) from landfills.
-*   **Preserve Embodied Carbon:** Retain the energy already spent extracting and manufacturing materials, thereby reducing the carbon footprint of new projects.
-*   **Foster Innovation:** Encourage the local green economy through salvage and resale markets.
+This policy establishes a **Circular Construction Model** for [City/Organization Name], requiring deconstruction over demolition, prioritizing material reuse, and treating buildings as long-term material banks rather than disposable assets.
 
-**Background Context:** This policy mimics successful frameworks like that of **Amsterdam, Netherlands**, which targets 100% circularity by 2050. Their use of "Material Passports" ensures buildings are treated as material banks for the future.
+By shifting practices, the policy aims to:
+* **Reduce Waste:** Divert recoverable materials from landfills.
+* **Lower Embodied Carbon:** Preserve the energy and emissions embedded in existing materials.
+* **Strengthen Local Economies:** Support reuse, repair, and salvage industries.
+
+This framework aligns with leading circular economy strategies, including those implemented by **Amsterdam**, which targets full circularity by 2050 through material tracking and reuse-first policies.
 
 ## Scope
 
 This policy applies to:
-*   All commercial and residential development projects exceeding **1,000 sq. ft.**
-*   All municipal capital improvement projects.
-*   Any project seeking a permit for total or partial removal of a structure.
+* All commercial and residential projects exceeding **1,000 sq. ft.** of floor area.
+* All municipal capital improvement projects, regardless of size.
+* Any project requiring a permit for total or partial removal of a structure.
 
 ## Key Definitions
 
-*   **Deconstruction:** The systematic dismantling of a structure, specifically to maximize the recovery of materials for reuse and recycling.
-*   **Demolition:** The destructive removal of buildings, typically resulting in commingled waste sent to landfills.
-*   **Material Passport:** A digital document listing all materials, components, and products used in a building to facilitate future recovery and reuse.
+* **Deconstruction:** The systematic disassembly of a structure to maximize material recovery for reuse and recycling.
+* **Demolition:** Mechanical removal of structures resulting in mixed waste streams.
+* **Material Passport:** A structured digital record documenting materials, components, quantities, and reuse potential within a building.
+* **Diversion Rate:** The percentage of total non-hazardous material, measured by weight, diverted from landfill disposal.
 
 ## Policy Requirements
 
 ### 1. The "Deconstruction First" Mandate
 
-Effective immediately, the Department of Buildings will no longer issue standard Demolition Permits for qualifying structures. Developers must apply for a **Deconstruction Permit**.
+Standard demolition permits shall no longer be issued for covered projects. Applicants must apply for a **Deconstruction Permit**.
 
-*   **Requirement:** Applicants must submit a **Deconstruction Plan** detailing how the building will be dismantled.
-*   **Salvage Targets:** Projects must achieve a minimum diversion rate of **70% by weight** (excluding hazardous materials) through reuse or recycling.
+* **Deconstruction Plan:** Required submission detailing sequencing, material handling, and destination pathways.
+* **Minimum Diversion Target:**
+  * **70 percent by weight** of non-hazardous materials must be diverted through reuse or recycling.
 
-### 2. Material Recovery Process
+#### Measurement and Verification
+* Diversion shall be measured using **certified scale tickets** from reuse, recycling, or transfer facilities.
+* Weights shall be recorded at the point of material acceptance.
+* Commingled waste loads are ineligible for diversion credit unless processed by certified facilities.
 
-*   **Soft Strip:** Non-structural elements (doors, cabinets, fixtures, flooring) must be removed first and sent to reuse centers.
-*   **Structural Dismantling:** Structural elements (bricks, lumber, steel beams) must be separated at the source.
-*   **Verification:** Receipts from salvage yards or donation centers must be submitted to close out the permit.
+---
 
-### 3. Material Passports for New Construction
+### 2. Tiered Compliance Framework
 
-To ensure future circularity, all new construction projects must file a "Material Passport" prior to receiving a Certificate of Occupancy.
-*   The passport must document the identity, location, and recycling potential of materials used.
-*   This data must be accessible to future owners to facilitate easier maintenance and eventual deconstruction.
+| Tier | Building Type | Minimum Diversion |
+| :--- | :--- | :--- |
+| Tier A | Residential ≤ 3 stories | 60% |
+| Tier B | Commercial / multi-unit residential | 70% |
+| Tier C | Municipal / large-scale developments | 80% |
+
+The Department of Buildings may adjust targets based on demonstrated feasibility.
+
+---
+
+### 3. Hazardous Materials Handling
+
+* A **pre-deconstruction hazardous materials survey** is mandatory.
+* Asbestos, lead, PCBs, and other regulated materials must be abated prior to deconstruction.
+* Hazardous materials are excluded from diversion calculations and must be handled in accordance with applicable health and safety regulations.
+
+---
+
+### 4. Material Recovery Hierarchy
+
+Recovered materials shall be managed in the following priority order:
+1. Reuse on-site
+2. Reuse off-site
+3. Recycling
+4. Disposal (last resort)
+
+Applicants must demonstrate good-faith efforts to pursue higher-order recovery options.
+
+---
+
+### 5. Material Passports for New Construction
+
+All new construction projects shall submit a **Material Passport** prior to issuance of a Certificate of Occupancy.
+
+Material Passports must:
+* Identify materials, components, and quantities.
+* Document location within the building.
+* Indicate reuse and recycling potential.
+
+#### Data Governance
+* Passports shall be stored in a city-approved digital registry.
+* Data must be accessible to future owners and authorized professionals.
+* Formats should be open and machine-readable where feasible.
+* Minimum retention period: **50 years**.
+
+---
 
 ## Implementation & Compliance
 
+### Phased Rollout
+
 | Phase | Timeline | Requirement |
 | :--- | :--- | :--- |
-| **Phase 1** | Months 1-6 | Voluntary compliance; Municipal pilot projects. |
-| **Phase 2** | Months 7-12 | Mandatory for all commercial buildings > 5,000 sq. ft. |
-| **Phase 3** | Month 13+ | Mandatory for all residential and commercial projects. |
+| Phase 1 | Months 1–6 | Voluntary compliance; municipal pilots; contractor training |
+| Phase 2 | Months 7–12 | Mandatory for commercial projects > 5,000 sq. ft. |
+| Phase 3 | Month 13+ | Mandatory for all covered projects |
 
-### Non-Compliance Penalties
+Progression between phases is contingent on:
+* Availability of certified contractors
+* Adequate reuse facility capacity
+* Inspector training completion
 
-Failure to adhere to the Deconstruction Plan or meet salvage targets will result in:
-*   **Fines:** Calculated based on the weight of unsalvaged material sent to landfills.
-*   **Permit Holds:** Suspension of future building permits for the developer until fines are paid.
+---
+
+### Incentives
+
+To encourage early adoption and high performance:
+* Expedited permitting for projects exceeding diversion targets.
+* Reduced landfill tipping fees.
+* Public recognition for exemplary circular projects.
+
+---
+
+### Non-Compliance and Enforcement
+
+Failure to comply may result in:
+* **Fines:** Based on the weight of non-diverted material.
+* **Permit Holds:** Suspension of future permits until compliance is achieved.
+
+An appeals and variance process shall be available for documented hardship cases.
+
+---
 
 ## Supporting Resources
 
-*   **List of Certified Deconstruction Contractors:** [Link/Insert Reference]
-*   **Local Material Reuse Hubs:** [Link/Insert Reference]
-*   **Material Passport Template:** [Link/Insert Reference]
+* **Certified Deconstruction Contractors:** [Municipal registry link]
+* **Material Reuse Facilities:** [Local directory link]
+* **Material Passport Template:** [City-approved schema link]
