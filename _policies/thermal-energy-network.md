@@ -8,7 +8,16 @@ keywords:
   - "thermal energy network"
   - "clean heat standard"
   - "district heating"
-official_sources: []
+official_sources:
+  - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
+    title: "EU Directive 2010/31/EU on the energy performance of buildings (EPBD)"
+    accessed: "2025-12-27"
+  - url: "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/district-heating-and-cooling_en"
+    title: "European Commission: District heating and cooling policies and guidance"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/reg/2018/1999/oj"
+    title: "EU Regulation 2018/1999 on the Governance of the Energy Union and Climate Action"
+    accessed: "2025-12-27"
 summary: "A regulatory framework that mandates gas utilities to decarbonize via a 'Clean Heat Standard' and authorizes the creation of 'Thermal Energy Networks' to replace gas pipes with neighborhood-scale geothermal loops."
 hazard_type:
   - "grid peak demand"

@@ -44,6 +44,103 @@ We do not use the words "Truth" or "Fact" (which are politicized). We use **"Ver
 * **Trigger:** Housing codes, heat plans, air quality.
 * **Instruction:** "Flag any housing policy that does not define a 'Maximum Indoor Temperature' (Nighttime Recovery)."
 
+### Agent D: "The Consistency Guardian" (Policy Quality & Overlap Detection)
+* **Role:** Ensure policy library consistency, detect overlaps, enforce best practices.
+* **Trigger:** New policy submission, policy edit, or scheduled consistency audit.
+* **Instruction:** Run multi-point adversarial review:
+
+#### 1. Frontmatter Consistency Check
+- Verify all mandatory fields present: `date`, `slug`, `keywords`, `official_sources`
+- Ensure `keywords` array has 2-5 meaningful tags (not generic terms like "climate" or "policy")
+- Check `slug` matches filename and contains no uppercase or spaces
+- Validate `official_sources` URLs are accessible and from authoritative domains (.gov, .edu, .org, established institutions)
+- Flag missing `summary` field (should exist for discovery)
+
+#### 2. Content Structure Validation
+- Confirm policy includes: problem statement, specific mandate/requirement, implementation guidance, and success metrics
+- Flag vague enforcement language: "encourage," "strive to," "should consider" → must be "shall," "must," or "required"
+- Verify numeric thresholds have units and are realistic (no "100% reduction by next year" claims)
+- Check that timelines reference specific triggers (e.g., "within 12 months of adoption") not absolute dates
+
+#### 3. Overlap & Redundancy Detection
+Cross-reference new/edited policy against existing library:
+- **Keyword overlap:** If 3+ shared keywords with existing policy, flag for manual merge review
+- **Title similarity:** Fuzzy match titles; flag if >70% similar to existing policy
+- **Scope collision:** Check `policy_category`, `implementation_level`, `hazard_type` combinations; flag if identical scope exists
+- **Citation overlap:** If >50% of `official_sources` URLs are duplicates, flag as potential redundancy
+
+Output format:
+```
+OVERLAP DETECTED:
+- New: "Green Roof Mandate"
+- Existing: "Eco-Roof & Energy Resilience Mandate"
+- Shared keywords: green-infrastructure, stormwater, urban-heat
+- Recommendation: Merge or differentiate scope (e.g., residential vs. commercial)
+```
+
+#### 4. Citation Integrity Audit
+- Verify `official_sources` URLs return HTTP 200 (not 404, paywall, or dead)
+- Check dates: if citation is >5 years old and references "current" data, flag for refresh
+- Ensure at least one primary source (legislation, official report) per policy
+- Flag news articles as secondary sources only (must have primary source backing)
+
+#### 5. Geographic & Legal System Compatibility
+- If `jurisdiction` specified, verify terminology matches legal system (Common Law vs. Civil Code)
+- Check unit consistency: metric for international, allow dual (metric + imperial) for US/UK contexts
+- Flag US-defaultism: seasonal terms ("summer"), imperial-only units, assumptions of single-family zoning
+
+#### 6. Accessibility & Readability
+- Flag policies with Flesch-Kincaid reading level >14 (too technical for public use)
+- Ensure acronyms defined on first use
+- Check for alt-text on any embedded images or diagrams
+- Verify headings follow proper hierarchy (no skipped levels)
+
+#### 7. Adversarial Stress Test (Red Team)
+Ask: "How would a bad-faith actor exploit this policy?"
+- Identify loopholes, missing enforcement mechanisms, weak penalty clauses
+- Check for "sunset clause" vulnerabilities (automatic expiry without renewal)
+- Flag policies that shift costs to vulnerable populations without safeguards
+- Verify anti-corruption measures (e.g., procurement transparency, conflict-of-interest declarations)
+
+#### 8. Output Report Format
+After review, generate:
+```markdown
+## Policy Review: [Title]
+
+### ✅ PASSED
+- Frontmatter complete
+- Primary sources verified
+- No major overlaps detected
+
+### ⚠️ WARNINGS
+- Keyword overlap with "Urban Heat Model" (3 shared: heat, adaptation, planning)
+- Reading level: 15.2 (consider simplifying Section 3)
+
+### 🚫 CRITICAL ISSUES
+- Missing enforcement mechanism (no penalty for non-compliance)
+- Vague timeline: "as soon as feasible" → replace with "within 18 months"
+- Dead link: official_sources[2] returns 404
+
+### RECOMMENDATION
+- Merge with "Urban Heat Model" or differentiate scope (this = commercial, existing = residential)
+- Add Section 6: Enforcement & Penalties
+- Replace dead link with Wayback Machine snapshot or updated URL
+```
+
+#### 9. Trigger Conditions
+Run full review when:
+- New `.md` file added to `_policies/`
+- Existing policy edited (>10% content change)
+- Monthly scheduled audit (first of month, run against all policies)
+- Manual trigger via GitHub Actions workflow
+
+#### 10. Human Escalation
+Automatically escalate to human review if:
+- Critical issues detected (>2)
+- Overlap score >80% with existing policy
+- Citation integrity fails (>50% dead links)
+- Adversarial stress test reveals major vulnerability
+
 ---
 
 ## 3. Localization & i18n Guidelines
@@ -177,7 +274,23 @@ Every policy is a folder, not a file:
 - `keywords`: a short array of 2–5 tags for discovery
 - `official_sources`: an array of authoritative citation objects or an empty array if none found
 
-### 3. Edit Checklist (pre-commit)
+### 3. Citation and Source Guidelines
+- **Avoid .gov sites:** U.S. government sites (.gov) may become inaccessible or censored under different administrations
+- **Prefer European sources:** EU directives, national legislation from EU member states, and international bodies (UN, ISO, IEC)
+- **Acceptable authoritative sources:**
+  - European Commission documents and directives
+  - National legislation from EU countries (legifrance.gouv.fr, legislation.gov.uk, etc.)
+  - International standards bodies (ISO, IEC, CEN/CENELEC)
+  - Peer-reviewed academic journals
+  - Established NGOs and research institutes (.org, .edu)
+  - Wayback Machine archives for historical references
+- **Red flags:**
+  - Any .gov domain (risk of political interference)
+  - News articles as primary sources (use only as secondary)
+  - Corporate blogs or marketing material
+  - Broken links or paywalled content
+
+### 4. Edit Checklist (pre-commit)
 - Ensure the `slug` matches the filename and contains no spaces or uppercase characters
 - Ensure `date` is today's revision date when adding metadata
 - Add `official_sources` entries when available; prefer primary legal sources

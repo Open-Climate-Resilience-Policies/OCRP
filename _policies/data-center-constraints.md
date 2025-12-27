@@ -8,7 +8,16 @@ keywords:
   - "data centers"
   - "water usage"
   - "noise pollution"
-official_sources: []
+official_sources:
+  - url: "https://eur-lex.europa.eu/"
+    title: "EUR-Lex — European Union Law (search for data centre regulations and environmental assessments)"
+    accessed: "2025-12-27"
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/8b1c6b3b-3e2a-11ea-8c1f-01aa75ed71a1"
+    title: "European Commission guidance on industrial water use and permitting"
+    accessed: "2025-12-27"
+  - url: "https://www.eea.europa.eu/"
+    title: "European Environment Agency — resources on water stress and industrial impacts"
+    accessed: "2025-12-27"
 summary: "A zoning and operational framework to protect community resources from hyperscale data centers. It mandates strict caps on noise and water usage, requires grid-positive energy sourcing, and enforcing transparency."
 hazard_type:
   - "water scarcity"

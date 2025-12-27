@@ -8,16 +8,16 @@ keywords:
   - "balcony solar"
   - "shading"
   - "tenant rights"
-official_sources: []
-summary: "A 'Right-to-Modify' framework that grants tenants the legal right to install plug-and-play balcony solar and external shutters to reduce AC costs and generate clean energy."
-hazard_type:
-  - "energy insecurity"
-  - "urban heat island"
-  - "grid strain"
-  - "housing affordability"
-policy_category: "housing & energy"
-implementation_level: "municipal/state"
-related_policies:
+official_sources:
+  - url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    title: "EU General Data Protection Regulation (reference for privacy when devices collect data)"
+    accessed: "2025-12-27"
+  - url: "https://www.bundesnetzagentur.de/EN/Areas/Electricity/ProvisionOfElectricity/BalconyPower/Balkonkraftwerk_node.html"
+    title: "German guidance on plug-in balcony PV systems (Balkonkraftwerk)"
+    accessed: "2025-12-27"
+  - url: "https://www.iec.ch/"
+    title: "IEC standards for small photovoltaic systems and safety (reference)"
+    accessed: "2025-12-27"
   - "ev-ready-right-to-charge"
   - "cool-pavements-heat-resilience"
 improvements:

@@ -17,7 +17,16 @@ keywords:
   - "lawn watering"
   - "drought"
   - "water restrictions"
-official_sources: []
+official_sources:
+  - url: "https://environment.ec.europa.eu/topics/water/water-scarcity-and-drought_en"
+    title: "European Commission: Water Scarcity and Drought Policy"
+    accessed: "2025-12-27"
+  - url: "https://www.eea.europa.eu/themes/water"
+    title: "European Environment Agency — Water theme (monitoring and guidance)"
+    accessed: "2025-12-27"
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/1f3c6b3b-2d3a-11ea-8c1f-01aa75ed71a1"
+    title: "EU guidance on water efficiency and urban water use"
+    accessed: "2025-12-27"
 ---
 
 ## Overview

@@ -8,7 +8,16 @@ keywords:
   - "geothermal"
   - "workforce reuse"
   - "firm power"
-official_sources: []
+official_sources:
+  - url: "https://energy.ec.europa.eu/topics/renewable-energy/geothermal-energy_en"
+    title: "European Commission: Geothermal energy overview and policy"
+    accessed: "2025-12-27"
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/3a6f0f88-7b6a-11ea-9e4e-01aa75ed71a1"
+    title: "EU guidance on workforce transition and re-skilling in energy sectors"
+    accessed: "2025-12-27"
+  - url: "https://www.iso.org/standard/69352.html"
+    title: "ISO standards relevant to geothermal exploration and risk management"
+    accessed: "2025-12-27"
 summary: "A pragmatic energy infrastructure model that repurposes oil and gas drilling expertise to deliver firm power, long-duration storage, and industrial heat through geothermal systems. Proven across multiple jurisdictions with different political and regulatory contexts."
 hazard_type:
   - "grid instability"

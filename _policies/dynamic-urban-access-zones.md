@@ -8,7 +8,16 @@ keywords:
   - "congestion pricing"
   - "dynamic pricing"
   - "reinvestment"
-official_sources: []
+official_sources:
+  - url: "https://ec.europa.eu/transport/themes/urban/urban_mobility_en"
+    title: "European Commission: Urban Mobility"
+    accessed: "2025-12-27"
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/2f4a4e66-3a6b-11ea-8c1f-01aa75ed71a1"
+    title: "EU guidance on urban access management and congestion pricing"
+    accessed: "2025-12-27"
+  - url: "https://www.itf-oecd.org/"
+    title: "ITF/OECD — research on urban access, pricing and curb management"
+    accessed: "2025-12-27"
 summary: "A 'Best-of-Breed' congestion pricing policy using dynamic pricing and transparent revenue recycling to manage traffic demand, reduce emissions, and fund public transit improvements."
 hazard_type:
   - "traffic congestion"

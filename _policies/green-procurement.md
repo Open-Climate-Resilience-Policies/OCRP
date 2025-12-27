@@ -8,7 +8,16 @@ keywords:
   - "procurement"
   - "buy clean"
   - "carbon budgeting"
-official_sources: []
+official_sources:
+  - url: "https://eur-lex.europa.eu/eli/dir/2014/24/oj"
+    title: "EU Directive 2014/24/EU on public procurement"
+    accessed: "2025-12-27"
+  - url: "https://commission.europa.eu/business-economy-euro/public-procurement_en"
+    title: "European Commission: Public procurement — policy and implementation"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/dir/2014/24/oj"
+    title: "EU Directive 2014/24/EU on public procurement"
+    accessed: "2025-12-27"
 summary: "A governance framework that integrates carbon limits into the municipal financial budget and mandates 'Buy Clean' standards for concrete, steel, and fleets to decarbonize the supply chain."
 hazard_type:
   - "supply chain emissions (Scope 3)"

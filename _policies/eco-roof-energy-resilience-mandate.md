@@ -8,7 +8,16 @@ keywords:
   - "eco roof"
   - "solar mandates"
   - "green roofs"
-official_sources: []
+official_sources:
+  - url: "https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en"
+    title: "EU Biodiversity Strategy for 2030"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
+    title: "EU Directive 2010/31/EU on the energy performance of buildings (EPBD)"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/reg/2019/1020/oj"
+    title: "EU Regulation on market surveillance and compliance of products (relevant to roof materials)"
+    accessed: "2025-12-27"
 summary: "A comprehensive framework mandating solar or green roofs on all new buildings, with a robust phase-in plan for existing structures to ensure energy generation and climate resilience."
 hazard_type:
   - "energy insecurity"

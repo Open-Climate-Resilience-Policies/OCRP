@@ -8,16 +8,16 @@ keywords:
   - "retrofit"
   - "bulk purchasing"
   - "financing"
-official_sources: []
-summary: "A framework for 'Community-Scale Retrofitting' that enables neighborhoods to bulk-buy retrofits (insulation, heat pumps, solar) with integrated financing, lowering costs and accelerating decarbonization."
-hazard_type:
-  - "energy inefficiency"
-  - "greenhouse gas emissions"
-  - "energy poverty"
-policy_category: "energy"
-implementation_level: "municipal"
-related_policies:
-  - "building-performance-standards"
+official_sources:
+  - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
+    title: "EU Directive 2010/31/EU on energy performance of buildings (EPBD)"
+    accessed: "2025-12-27"
+  - url: "https://ec.europa.eu/energy/topics/energy-efficiency/energy-efficient-buildings/energy-performance-certificates_en"
+    title: "European Commission: Guidance on energy performance and retrofitting"
+    accessed: "2025-12-27"
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/5d6f0f88-7b6a-11ea-9e4e-01aa75ed71a1"
+    title: "EU guidance on financing energy renovation of buildings"
+    accessed: "2025-12-27"
   - "eco-roof-energy-resilience-mandate"
 
 improvements:

@@ -19,7 +19,16 @@ keywords:
   - "cohousing"
   - "housing cooperatives"
   - "community land trust"
-official_sources: []
+official_sources:
+  - url: "https://www.housingeurope.eu/"
+    title: "Housing Europe — European Federation of Public, Cooperative & Social Housing"
+    accessed: "2025-12-27"
+  - url: "https://commission.europa.eu/publications/social-europe_en"
+    title: "European Commission — Social and affordable housing policy resources"
+    accessed: "2025-12-27"
+  - url: "https://www.oecd.org/social/"
+    title: "OECD — Housing and social policy guidance"
+    accessed: "2025-12-27"
 improvements:
   - "Add `legal_references` for 'Functional Family' zoning changes and sample ordinance language."
   - "Include examples of successful CLT leases and standard lease terms."

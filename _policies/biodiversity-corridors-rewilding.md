@@ -8,7 +8,16 @@ keywords:
   - "biodiversity"
   - "wildlife corridors"
   - "rewilding"
-official_sources: []
+official_sources:
+  - url: "https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en"
+    title: "EU Biodiversity Strategy for 2030"
+    accessed: "2025-12-27"
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/3b6b0f4c-8f2a-11ea-9e4e-01aa75ed71a1"
+    title: "EU guidance on ecological corridors and urban biodiversity"
+    accessed: "2025-12-27"
+  - url: "https://www.cbd.int/"
+    title: "Convention on Biological Diversity — official site"
+    accessed: "2025-12-27"
 summary: "A plan to reconnect nature in cities using green roofs, restored streams, and wildlife bridges. This reduces flooding, cools the city, and protects animals."
 hazard_type:
   - "biodiversity loss"

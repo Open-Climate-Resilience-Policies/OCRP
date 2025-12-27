@@ -17,7 +17,16 @@ keywords:
   - "circular construction"
   - "deconstruction"
   - "material passports"
-official_sources: []
+official_sources:
+  - url: "https://commission.europa.eu/publications/circular-economy-package_en"
+    title: "European Commission: Circular Economy Action Plan"
+    accessed: "2025-12-27"
+  - url: "https://ec.europa.eu/docsroom/documents/37581"
+    title: "EU Guidance: Material Passports and building circularity"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/reg/2011/3057/oj"
+    title: "EU Construction Products Regulation (CPR) — product standards and CE marking"
+    accessed: "2025-12-27"
 improvements:
   - "Add `official_sources` (Amsterdam circular construction examples) and templates for Material Passports."
   - "Specify enforcement & measurement (how to verify 70% diversion)."

@@ -8,24 +8,34 @@ keywords:
     - "e-waste"
     - "repairability"
     - "right-to-repair"
-official_sources: []
+official_sources:
+    - url: "https://eur-lex.europa.eu/eli/dir/2012/19/oj"
+        title: "EU Directive 2012/19/EU on Waste Electrical and Electronic Equipment (WEEE Recast)"
+        accessed: "2025-12-27"
+    - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
+        title: "EU Directive 2008/98/EC on Waste Framework"
+        accessed: "2025-12-27"
+    - url: "https://single-market-economy.ec.europa.eu/sectors/retail/eu-right-repair_en"
+        title: "European Commission: Right to Repair - policies and guidance"
+        accessed: "2025-12-27"
 summary: "A 'Right-to-Repair' and recovery framework that mandates repairability scores for new devices, funds consumer repairs through producer fees, and establishes convenient curbside e-waste collection."
 hazard_type:
-  - "electronic waste"
-  - "resource depletion"
-  - "planned obsolescence"
-  - "hazardous leakage"
+    - "electronic waste"
+    - "resource depletion"
+    - "planned obsolescence"
+    - "hazardous leakage"
 policy_category: "waste management & economy"
 implementation_level: "municipal/state"
 related_policies:
-  - "organic-waste-ban"
-  - "circular-construction-model"
+    - "organic-waste-ban"
+    - "circular-construction-model"
 
 improvements:
     - "Add `legal_references` for landfill bans and retailer take-back obligations."
     - "Include `metrics` (tonnage diverted, repair-fund revenue) and targets."
     - "Document data-destruction and privacy protocols for collected devices."
 ---
+
 
 ## Overview
 
@@ -40,9 +50,9 @@ Consumers cannot currently judge if a $500 laptop will last 2 years or 10. By fo
 
 **The Policy:**
 1.  **Mandatory Repairability Index:** All electronics sold within the jurisdiction (Smartphones, Laptops, TVs, Washers) must display a **Score from 0-10** next to the price tag.
-    * *Criteria:* Availability of technical manuals, ease of disassembly (screws vs. glue), and price of spare parts.
+        * *Criteria:* Availability of technical manuals, ease of disassembly (screws vs. glue), and price of spare parts.
 2.  **The "Repair Fund" (EPR):** Manufacturers must pay an "Eco-Contribution" fee on every new device sold. This money goes into a **Consumer Repair Fund**.
-    * *The Benefit:* When a resident goes to a certified local repair shop, the Fund pays for a portion of the bill (e.g., $30 off a phone screen repair), making repair cheaper than replacement.
+        * *The Benefit:* When a resident goes to a certified local repair shop, the Fund pays for a portion of the bill (e.g., $30 off a phone screen repair), making repair cheaper than replacement.
 
 **Real-World Example:**
 * **France (AGEC Law):** Since 2021, France has mandated this 1-10 score. Results show **90% of consumers** find it useful, and companies like Samsung actually redesigned their TVs to get a higher score (e.g., replacing glue with clips) to stay competitive.
@@ -82,14 +92,14 @@ Local governments are often the largest tech buyers in a region. They can single
 To encourage states and municipalities to adopt this, frame it around **Economic Resilience**, not just "recycling."
 
 1.  **Job Creation (The "Local Repair" Argument):**
-    * Manufacturing happens overseas; **Repair happens locally.** A "Repair Fund" policy directly subsidizes local small businesses (repair cafes, independent technicians) rather than foreign factories.
-    * *Stat:* Remanufacturing and repair create 200x more jobs per ton of waste than landfilling.
+        * Manufacturing happens overseas; **Repair happens locally.** A "Repair Fund" policy directly subsidizes local small businesses (repair cafes, independent technicians) rather than foreign factories.
+        * *Stat:* Remanufacturing and repair create 200x more jobs per ton of waste than landfilling.
 
 2.  **Supply Chain Independence:**
-    * By keeping rare earth metals (gold, cobalt, lithium) circulating locally, the region becomes less vulnerable to global supply chain shocks.
+        * By keeping rare earth metals (gold, cobalt, lithium) circulating locally, the region becomes less vulnerable to global supply chain shocks.
 
 3.  **Fiscal Prudence:**
-    * "Circular Procurement" saves tax dollars. Extending the lifespan of municipal laptops from 3 years to 5 years reduces the IT capital budget by **40%**.
+        * "Circular Procurement" saves tax dollars. Extending the lifespan of municipal laptops from 3 years to 5 years reduces the IT capital budget by **40%**.
 
 ## Implementation Roadmap
 

@@ -4,7 +4,19 @@ title: The "Frequency First" Transit Mandate
 slug: frequency-first-transit
 status: Draft
 summary: "Prioritizes high-frequency transit service over fare reductions, mandating 15-minute headways on core routes before implementing fare-free programs."
+date: "2025-12-27"
 keywords: [transit, mobility, economics, urban-planning]
+official_sources:
+official_sources:
+  - url: "https://ec.europa.eu/transport/themes/urban/urban_mobility_en"
+    title: "European Commission: Urban Mobility"
+    accessed: "2025-12-27"
+  - url: "https://www.uitp.org/"
+    title: "UITP — International Association of Public Transport (guidance on frequency & scheduling)"
+    accessed: "2025-12-27"
+  - url: "https://civitas.eu/"
+    title: "CIVITAS — EU cities' initiative for cleaner and better transport"
+    accessed: "2025-12-27"
 ---
 
 # The "Frequency First" Transit Mandate

@@ -8,7 +8,19 @@ keywords:
   - "building performance"
   - "benchmarking"
   - "transparency"
-official_sources: []
+official_sources:
+  - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
+    title: "EU Directive 2010/31/EU on the energy performance of buildings (EPBD)"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/dir/2012/27/oj"
+    title: "EU Directive 2012/27/EU on energy efficiency (EED)"
+    accessed: "2025-12-27"
+  - url: "https://www.iso.org/standard/69426.html"
+    title: "ISO 50001:2018 — Energy management systems — Requirements with guidance for use"
+    accessed: "2025-12-27"
+  - url: "https://ec.europa.eu/energy/topics/energy-efficiency/energy-performance-of-buildings/energy-performance-certificates_en"
+    title: "European Commission: Energy Performance Certificates (EPBD implementation guidance)"
+    accessed: "2025-12-27"
 summary: "A framework for reducing building emissions through a phased approach of benchmarking, transparency, and mandatory performance standards."
 hazard_type:
   - "greenhouse gas emissions"

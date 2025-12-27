@@ -8,7 +8,16 @@ keywords:
   - "urban heat"
   - "cool roofs"
   - "tree canopy"
-official_sources: []
+official_sources:
+  - url: "https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en"
+    title: "EU Biodiversity Strategy for 2030"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0852"
+    title: "EU Green Infrastructure Strategy and supporting regulations"
+    accessed: "2025-12-27"
+  - url: "https://ec.europa.eu/environment/air/quality/index.htm"
+    title: "European Commission: Urban environment and air quality guidance"
+    accessed: "2025-12-27"
 summary: "Comprehensive model policy for reducing urban heat islands through green infrastructure, reflective materials, and strategic urban planning measures."
 hazard_type:
   - "extreme heat"

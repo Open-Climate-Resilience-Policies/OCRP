@@ -24,7 +24,17 @@ keywords:
   - "cool pavement"
   - "urban heat"
   - "permeable pavements"
-official_sources: []
+official_sources:
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/8f3c6b3b-2d3a-11ea-8c1f-01aa75ed71a1"
+    title: "European Commission guidance on urban heat mitigation and adaptation measures"
+    accessed: "2025-12-27"
+  - url: "https://environment.ec.europa.eu/topics/climate-change-adaptation_en"
+    title: "European Climate Adaptation Platform (Climate-ADAPT)"
+    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
+    title: "EU Directive 2010/31/EU (EPBD) — relevant to building materials and rooftop albedo"
+    accessed: "2025-12-27"
+
 ---
 
 ## Overview

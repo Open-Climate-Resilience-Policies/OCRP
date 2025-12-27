@@ -8,7 +8,16 @@ keywords:
   - "green roofs"
   - "sponge city"
   - "stormwater"
-official_sources: []
+official_sources:
+  - url: "https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en"
+    title: "EU Biodiversity Strategy for 2030"
+    accessed: "2025-12-27"
+  - url: "https://climate-adapt.eea.europa.eu/"
+    title: "Climate-ADAPT — European climate adaptation platform"
+    accessed: "2025-12-27"
+  - url: "https://ec.europa.eu/environment/soil/index_en.htm"
+    title: "European Commission: Soil and urban natural solutions guidance"
+    accessed: "2025-12-27"
 summary: "A framework for mandatory green roofs, solar integration, and permeable infrastructure to manage stormwater, reduce urban heat, and improve energy efficiency."
 hazard_type:
   - "urban heat island"

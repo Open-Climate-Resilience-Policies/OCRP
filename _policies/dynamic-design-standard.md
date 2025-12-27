@@ -2,13 +2,22 @@
 layout: policy
 title: The Dynamic Design Standard Act
 slug: dynamic-design-standard
-date: 2025-12-22
+date: "2025-12-22"
 summary: "Mandates climate-forward engineering that uses projected weather data instead of historical records to design infrastructure resilient to future climate conditions."
 keywords:
   - "infrastructure"
-  - "flooding"
   - "risk-management"
   - "engineering"
+official_sources:
+  - url: "https://ec.europa.eu/knowledge4policy/"
+    title: "European Commission Knowledge for Policy — resilience and adaptation resources"
+    accessed: "2025-12-27"
+  - url: "https://op.europa.eu/en/publication-detail/-/publication/9f3c6b3b-2d3a-11ea-8c1f-01aa75ed71a1"
+    title: "EU guidance on adaptive design and building resilience"
+    accessed: "2025-12-27"
+  - url: "https://www.iso.org/"
+    title: "ISO standards relevant to design resilience and risk management"
+    accessed: "2025-12-27"
 type: generic-policy
 policy_category: infrastructure & resilience
 implementation_level: regional
@@ -18,7 +27,7 @@ hazard_type:
 related_policies:
   - "urban-heat-model"
   - "green-roofs-sponge-city-model"
-official_sources: []
+
 ---
 
 # The Dynamic Design Standard Act

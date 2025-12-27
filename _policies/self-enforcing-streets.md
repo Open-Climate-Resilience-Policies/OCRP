@@ -2,7 +2,7 @@
 layout: policy
 title: The Self-Enforcing Street Design Code
 slug: self-enforcing-streets
-date: 2025-12-22
+date: "2025-12-22"
 summary: "Requires street design geometry to match posted speed limits, using narrow lanes and speed tables to naturally enforce safe speeds."
 keywords:
   - "transportation"
@@ -17,7 +17,16 @@ hazard_type:
   - "pedestrian safety"
 related_policies:
   - "15-minute-city-model"
-official_sources: []
+official_sources:
+  - url: "https://ec.europa.eu/transport/themes/urban/urban_mobility_en"
+    title: "European Commission: Urban Mobility policy and guidance"
+    accessed: "2025-12-27"
+  - url: "https://www.who.int/publications/i/item/9789241565684"
+    title: "WHO: Save Lives — A Road Safety Technical Package"
+    accessed: "2025-12-27"
+  - url: "https://ec.europa.eu/transport/road_safety/sites/default/files/pdf/ersr2020.pdf"
+    title: "European Road Safety Report — urban speed management guidance"
+    accessed: "2025-12-27"
 ---
 
 # The Self-Enforcing Street Design Code

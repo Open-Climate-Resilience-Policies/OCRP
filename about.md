@@ -1,3 +1,16 @@
+layout: default
+title: About
+permalink: /about/
+date: 2025-12-21
+slug: about
+keywords: [about, mission, team]
+official_sources:
+	- url: "https://op.europa.eu/"
+		title: "EU Open Data and Publications portal"
+		accessed: "2025-12-27"
+	- url: "https://ec.europa.eu/info/index_en"
+		title: "European Commission — official site"
+		accessed: "2025-12-27"
 ---
 layout: default
 title: About
@@ -5,7 +18,13 @@ permalink: /about/
 date: 2025-12-21
 slug: about
 keywords: [about, mission, team]
-official_sources: []
+official_sources:
+  - url: "https://op.europa.eu/"
+    title: "EU Open Data and Publications portal"
+    accessed: "2025-12-27"
+  - url: "https://ec.europa.eu/info/index_en"
+    title: "European Commission — official site"
+    accessed: "2025-12-27"
 ---
 
 # About OCRaP.net
@@ -58,9 +77,4 @@ A lexical construct that masquerades as an acronym but holds no allegiance to sp
 
 ## Our Philosophy
 
-- **Open Source (AGPL):** Because the code for our survival shouldn't be proprietary.
-- **Open Science:** Because data behind a paywall isn't data—it's a rumor.
-- **No Camps:** We don't care about your political tribe. We care about your citations.
 
-- [View on GitHub](https://github.com/Open-Climate-Resilience-Policies/OCRP)
-- [Join the Coalition](https://ocrap.net/contribute/)

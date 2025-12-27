@@ -2,7 +2,7 @@
 layout: policy
 title: The Nighttime Recovery Standard
 slug: reclaim-nighttime
-date: 2025-12-22
+date: "2025-12-22"
 summary: "Mandates all residential units maintain safe nighttime temperatures below 26°C for 8 hours to prevent heat-related health impacts during extreme heat events."
 keywords:
   - "health"
@@ -17,7 +17,19 @@ hazard_type:
 related_policies:
   - "urban-heat-model"
   - "healthy-home"
-official_sources: []
+official_sources:
+  - url: "https://www.who.int/publications/i/item/9789240045467"
+    title: "WHO: Heat and Health — Guidance for public health actions"
+    accessed: "2025-12-27"
+  - url: "https://www.eea.europa.eu/themes/climate-adaptation/impacts-and-vulnerability/urban-heat-islands"
+    title: "European Environment Agency: Urban Heat Islands and adaptation"
+    accessed: "2025-12-27"
+  - url: "https://www.ipcc.ch/report/ar6/wg2/"
+    title: "IPCC AR6 WG2: Impacts, Adaptation and Vulnerability (heat-related health impacts)"
+    accessed: "2025-12-27"
+  - url: "https://www.who.int/publications/i/item/9789240015129"
+    title: "WHO: Public health advice on preventing heat-related illness during heatwaves"
+    accessed: "2025-12-27"
 ---
 
 # The Nighttime Recovery Standard
