@@ -109,6 +109,7 @@
       .pa-section-title { font-size: 15px; font-weight: 700; margin: 0 0 8px 0; color: #0f172a; }
       .pa-note { font-size: 12px; color: #475569; margin: 0 0 8px 0; }
       .pa-form { display: grid; gap: 10px; }
+      .pa-form[hidden], .pa-summary[hidden] { display: none; }
       .pa-field { display: flex; flex-direction: column; gap: 4px; }
       .pa-field label { font-size: 13px; color: #0f172a; font-weight: 600; }
       .pa-field input, .pa-field textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 14px; font-family: inherit; background: #f8fafc; }
@@ -120,6 +121,9 @@
       .pa-btn.secondary { background: #e2e8f0; color: #0f172a; }
       .pa-btn:disabled { opacity: 0.65; cursor: not-allowed; box-shadow: none; }
       .pa-btn:hover:not(:disabled) { transform: translateY(-1px); }
+      .pa-copy-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; background: #e2e8f0; color: #0f172a; border: none; border-radius: 10px; cursor: pointer; font-weight: 700; }
+      .pa-copy-btn[hidden] { display: none !important; }
+      .pa-copy-btn:hover:not(:disabled) { transform: translateY(-1px); }
       .pa-role-options { display: grid; gap: 8px; }
       .pa-role { border: 1px solid #cbd5e1; border-radius: 12px; padding: 10px; display: flex; align-items: flex-start; gap: 10px; cursor: pointer; background: #f8fafc; }
       .pa-role input { margin-top: 4px; }
@@ -129,9 +133,12 @@
       .pa-summary { padding: 12px; background: #f1f5f9; border-radius: 12px; font-size: 13px; color: #0f172a; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
       .pa-context { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 10px; font-size: 13px; color: #0f172a; }
       .pa-context div { margin-bottom: 4px; }
-      .pa-output { width: 100%; min-height: 160px; border: 1px solid #cbd5e1; border-radius: 12px; padding: 12px; font-size: 13px; background: #0b1120; color: #e2e8f0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+      .pa-output { width: 100%; min-height: 160px; max-height: 260px; overflow: auto; border: 1px solid #cbd5e1; border-radius: 12px; padding: 12px; font-size: 13px; background: #0b1120; color: #e2e8f0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
       .pa-output.copied { border-color: #10b981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.3); }
-      .pa-status { min-height: 18px; font-size: 12px; color: #0f172a; }
+      .pa-status { min-height: 18px; font-size: 12px; color: #0f172a; background: #ecfdf3; border: 1px solid #bbf7d0; border-radius: 10px; padding: 8px 10px; margin-top: 6px; display: none; }
+      .pa-status.pa-error { background: #fef2f2; border-color: #fecdd3; color: #b91c1c; }
+      .pa-status.pa-success { background: #ecfdf3; border-color: #bbf7d0; color: #065f46; }
+      .pa-status.show { display: block; }
       .pa-error { color: #b91c1c; }
       .pa-success { color: #065f46; }
       .pa-hint { background: #0f172a; color: #e2e8f0; padding: 10px 12px; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,0.2); font-size: 13px; max-width: 260px; text-align: left; display: none; }
@@ -192,6 +199,7 @@
         <div id="pa-citizen-section" class="pa-section">
           <h2 class="pa-section-title">Your details</h2>
           <div class="pa-field"><label for="pa-name">Name</label><input id="pa-name" name="pa-name" autocomplete="name" placeholder="Your first and last name" /></div>
+          <div class="pa-field"><label for="pa-activist-level">Who are you writing to?</label><input id="pa-activist-level" name="pa-activist-level" placeholder="Example: City council, parks board, school district." /></div>
           <div class="pa-field"><label for="pa-motivation">Personal motivation</label><textarea id="pa-motivation" name="pa-motivation" placeholder="Example: My basement flooded last spring."></textarea></div>
         </div>
 
@@ -232,9 +240,9 @@
 
         <div class="pa-section">
           <h2 class="pa-section-title">Your prompt</h2>
-          <div class="pa-actions" style="justify-content: space-between; margin-bottom: 8px;">
-            <button type="button" class="pa-btn secondary" id="pa-refresh-context">Refresh</button>
+          <div class="pa-actions" style="justify-content: flex-end; margin-bottom: 8px;">
             <button type="button" class="pa-btn primary" id="pa-generate">Generate</button>
+            <button type="button" class="pa-copy-btn" id="pa-copy-output" aria-label="Copy generated prompt" hidden>📋 Copy</button>
           </div>
           <textarea id="pa-output" class="pa-output" readonly aria-label="Generated prompt"></textarea>
         </div>
@@ -253,11 +261,20 @@
 
   function setRole(role, elements) {
     state.role = role;
+    if (!state.profile) state.profile = {};
+    state.profile.role = role;
+    saveProfile(state.profile);
     const isActivist = role === 'activist';
     elements.citizenSection.hidden = !isActivist;
     elements.professionalSection.hidden = isActivist;
     elements.roleActivist.classList.toggle('active', isActivist);
     elements.rolePro.classList.toggle('active', !isActivist);
+    const activistInput = elements.roleActivist.querySelector('input');
+    const proInput = elements.rolePro.querySelector('input');
+    if (activistInput) activistInput.checked = isActivist;
+    if (proInput) proInput.checked = !isActivist;
+    // Clear generated prompt when switching roles to avoid cross-template carryover
+    clearOutput(elements);
   }
 
   function updateContextDisplay(context, elements) {
@@ -274,13 +291,30 @@
     elements.country.value = profile.country || '';
   }
 
+  function hydrateProfessionalFields(profile, elements) {
+    if (!profile) return;
+    if (profile.level) elements.level.value = profile.level;
+    if (profile.barrier) elements.barrier.value = profile.barrier;
+  }
+
+  function hydrateActivistFields(profile, elements) {
+    if (!profile) return;
+    if (profile.target_level) elements.activistLevel.value = profile.target_level;
+  }
+
   function showProfileSummary(profile, elements) {
-    if (!profile) {
+    if (!profile || (!profile.city && !profile.region && !profile.country)) {
       elements.profileSummary.hidden = true;
       elements.profileForm.hidden = false;
       return;
     }
-    elements.summaryName.textContent = profile.name || 'Unknown';
+    // Show name only if it exists
+    if (profile.name) {
+      elements.summaryName.textContent = profile.name;
+      elements.summaryName.style.display = 'block';
+    } else {
+      elements.summaryName.style.display = 'none';
+    }
     const parts = [profile.city, profile.region, profile.country].filter(Boolean).join(', ');
     elements.summaryLocation.textContent = parts || 'Location not set';
     elements.profileSummary.hidden = false;
@@ -292,6 +326,11 @@
     elements.status.classList.remove('pa-error', 'pa-success');
     if (type === 'error') elements.status.classList.add('pa-error');
     if (type === 'success') elements.status.classList.add('pa-success');
+    if (message) {
+      elements.status.classList.add('show');
+    } else {
+      elements.status.classList.remove('show');
+    }
   }
 
   function copyToClipboard(text, elements) {
@@ -303,7 +342,7 @@
         temp.select();
         document.execCommand('copy');
         document.body.removeChild(temp);
-        showStatus('✓ Prompt copied, paste into your favourite LLM.', 'success', elements);
+        showStatus('Prompt generated and ready to be pasted into your AI.', 'success', elements);
         highlightOutput(elements);
       } catch (err) {
         showStatus('Unable to copy automatically. Please copy manually.', 'error', elements);
@@ -311,7 +350,7 @@
       return;
     }
     navigator.clipboard.writeText(text).then(() => {
-      showStatus('✓ Prompt copied, paste into your favourite LLM.', 'success', elements);
+      showStatus('Prompt generated and ready to be pasted into your AI.', 'success', elements);
       highlightOutput(elements);
     }).catch(() => {
       showStatus('Unable to copy automatically. Please copy manually.', 'error', elements);
@@ -327,8 +366,22 @@
     }
   }
 
+  function updateCopyVisibility(elements) {
+    const hasText = !!elements.output.value && elements.output.value.trim().length > 0;
+    elements.copyOutput.hidden = !hasText;
+  }
+
+  function clearOutput(elements) {
+    elements.output.value = '';
+    elements.copyOutput.hidden = true;
+    updateCopyVisibility(elements);
+  }
+
   function init() {
     state.profile = loadProfile();
+    if (state.profile && state.profile.role) {
+      state.role = state.profile.role;
+    }
     let context = scrapeContext();
     const { container, launch, panel } = buildWidget(context.title);
 
@@ -341,6 +394,7 @@
       professionalSection: panel.querySelector('#pa-professional-section'),
       name: panel.querySelector('#pa-name'),
       motivation: panel.querySelector('#pa-motivation'),
+      activistLevel: panel.querySelector('#pa-activist-level'),
       level: panel.querySelector('#pa-level'),
       barrier: panel.querySelector('#pa-barrier'),
       samples: panel.querySelector('#pa-samples'),
@@ -357,9 +411,9 @@
       contextTitle: panel.querySelector('#pa-context-title'),
       contextUrl: panel.querySelector('#pa-context-url'),
       contextLength: panel.querySelector('#pa-context-length'),
-      refreshContext: panel.querySelector('#pa-refresh-context'),
       generate: panel.querySelector('#pa-generate'),
       output: panel.querySelector('#pa-output'),
+      copyOutput: panel.querySelector('#pa-copy-output'),
       status: panel.querySelector('#pa-status'),
       close: panel.querySelector('.pa-close'),
     };
@@ -367,6 +421,12 @@
     context = scrapeContext();
     updateContextDisplay(context, elements);
     setRole(state.role, elements);
+    hydrateProfessionalFields(state.profile, elements);
+    hydrateActivistFields(state.profile, elements);
+    // Ensure a clean slate on load so stale text never keeps the copy button visible
+    elements.output.value = '';
+    elements.copyOutput.hidden = true;
+    updateCopyVisibility(elements);
     
     // Display profile UI: show summary if profile exists, otherwise show form
     showProfileSummary(state.profile, elements);
@@ -402,6 +462,7 @@
       if (panel.classList.contains('open')) {
         closePanel();
       } else {
+        updateCopyVisibility(elements);
         openPanel();
       }
     });
@@ -436,6 +497,7 @@
       elements.profileForm.hidden = false;
       elements.profileSummary.hidden = true;
       elements.city.focus();
+      updateCopyVisibility(elements);
     });
 
     elements.cancelProfile.addEventListener('click', () => {
@@ -443,6 +505,7 @@
       if (state.profile && (state.profile.city || state.profile.region || state.profile.country)) {
         elements.profileSummary.hidden = false;
       }
+      updateCopyVisibility(elements);
     });
 
     elements.saveProfile.addEventListener('click', () => {
@@ -466,29 +529,24 @@
       });
     });
 
-    elements.refreshContext.addEventListener('click', () => {
-      context = scrapeContext();
-      updateContextDisplay(context, elements);
-      showStatus('Context refreshed from this page.', 'success', elements);
-    });
-
     elements.generate.addEventListener('click', () => {
       const isActivist = state.role === 'activist';
       const motivation = elements.motivation.value.trim();
+      const activistLevel = elements.activistLevel.value.trim();
       const level = elements.level.value.trim();
       const barrier = elements.barrier.value.trim();
       const samples = elements.samples.value.trim();
       const name = elements.name.value.trim();
 
       if (isActivist) {
-        if (!name) {
-          showStatus('Please enter your name.', 'error', elements);
-          elements.name.focus();
-          return;
-        }
         if (!motivation) {
           showStatus('Please add your personal motivation.', 'error', elements);
           elements.motivation.focus();
+          return;
+        }
+        if (!activistLevel) {
+          showStatus('Who are you writing to? Add the target level of government.', 'error', elements);
+          elements.activistLevel.focus();
           return;
         }
       } else {
@@ -509,13 +567,39 @@
       const region = (state.profile && state.profile.region) || '';
       const country = (state.profile && state.profile.country) || '';
 
+      // Persist activist target level so it follows the user between policies
+      if (!state.profile) state.profile = {};
+      if (activistLevel) state.profile.target_level = activistLevel;
+      saveProfile(state.profile);
+      hydrateActivistFields(state.profile, elements);
+
+      // Persist professional context so it follows the user between policies
+      state.profile.level = level;
+      state.profile.barrier = barrier;
+      saveProfile(state.profile);
+      hydrateProfessionalFields(state.profile, elements);
+
       if (isActivist) {
         const location = [city, region].filter(Boolean).join(', ') || 'my community';
+        const targetLevel = activistLevel || 'local decision makers';
+        const nameLine = name ? `My name is ${name}.` : 'I am a resident and constituent.';
         prompt = `Please review this new prompt for a fresh start with your AI assistant. Do not blend this with previous prompts.
 
 ---
+      Act as a concerned citizen and expert lobbyist. You have written many letters that effectively shifted policy in your community and know how to write a convincing argument.
 
-Act as a Civic Campaign Mentor. My name is ${name} from ${location}. I want to advocate for ${context.title} (Source: ${context.url}). Here is the policy text: ${context.content}. My personal reason is: ${motivation}. Please draft a persuasive letter to my council member and suggest 3 campaign tactics.`;
+      Writer context:
+      - ${nameLine}
+      - Location: ${location}
+      - Target audience: ${targetLevel}
+      - Policy: ${context.title} (Source: ${context.url})
+      - Personal motivation: ${motivation}
+      - Reference text: ${context.content}
+
+      Please draft:
+      1) A concise, evidence-minded letter to ${targetLevel} urging action, tailored to ${location}.
+      2) 3 practical follow-up actions (e.g., public comment, meeting ask, coalition outreach) with rationale.
+      Keep the tone constructive and specific to ${location}.`;
       } else {
         const location = [city, country].filter(Boolean).join(', ') || 'my jurisdiction';
         const sampleText = samples || 'No sample policies provided. Suggest suitable analogs.';
@@ -569,23 +653,27 @@ IMPORTANT: Explicitly reference ${location} throughout your response and avoid g
       }
 
       elements.output.value = prompt;
-      elements.copy.disabled = true;
       // Copy the textarea content to ensure what's copied matches what's displayed
       const textToCopy = elements.output.value;
       copyToClipboard(textToCopy, elements);
+      updateCopyVisibility(elements);
       // Keep the success message visible for 4 seconds
       setTimeout(() => {
         showStatus('', null, elements);
       }, 4000);
     });
 
-    elements.copy.addEventListener('click', () => {
+    elements.copyOutput.addEventListener('click', () => {
       const prompt = elements.output.value;
       if (!prompt) {
         showStatus('No prompt to copy yet.', 'error', elements);
+        updateCopyVisibility(elements);
         return;
       }
       copyToClipboard(prompt, elements);
+      setTimeout(() => {
+        showStatus('', null, elements);
+      }, 4000);
     });
 
     document.addEventListener('keydown', (event) => {
