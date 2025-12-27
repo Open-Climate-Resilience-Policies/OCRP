@@ -9,52 +9,6 @@ keywords:
   - "complete neighborhoods"
   - "walkability"
 official_sources:
-  - url: "https://ec.europa.eu/transport/themes/urban/urban_mobility_en"
-    title: "European Commission: Urban Mobility and Sustainable Transport"
-    accessed: "2025-12-27"
-  - url: "https://www.eltis.org/mobility-plans/sump-related-resources"
-    title: "Sustainable Urban Mobility Plans (SUMP) — guidance and resources"
-    accessed: "2025-12-27"
-  - url: "https://www.who.int/initiatives/urban-health"
-    title: "WHO: Urban Health and Healthy Cities initiatives"
-    accessed: "2025-12-27"
-summary: "A simple city planning model where residents can reach daily needs—like shops, schools, and parks—within a short walk or bike ride. This reduces traffic, cuts pollution, and improves health."
-hazard_type:
-  - "urban sprawl"
-  - "transportation emissions"
-  - "social isolation"
-  - "public health"
-policy_category: "urban planning"
-implementation_level: "municipal"
-related_policies:
-  - "urban-forest-management-model"
-improvements:
-  - "Standardize `policy_category` to use hyphenated tags (e.g., 'urban-planning')."
-  - "Include clear citations for quoted laws and data."
-  - "Add 'equity' and 'cost' sections or tags to align with other policies."
----
-
-## Overview
-
-
-
-The **"15-Minute City"** (also called a "Complete Neighborhood") is a global standard for better city planning. The goal is simple: everyone should be able to reach their daily needs—groceries, pharmacies, schools, and parks—within a 15-minute walk or bike ride from their home.
-
-Instead of separating housing far away from businesses (which forces people to drive), this model brings them closer together. This reduces car dependency, lowers pollution, and helps local businesses thrive.
-
-While Paris made this name famous, cities all over the world are using it. This document provides real-world examples, simple laws you can copy, and a checklist to get started.
-
-## Global Case Studies
-### 1. Melbourne, Australia: The "20-Minute Neighbourhood"
-title: "15-Minute City & Complete Neighborhoods Model"
-type: generic-policy
-date: "2025-12-21"
-slug: "15-minute-city-model"
-keywords:
-  - "15-minute city"
-  - "complete neighborhoods"
-  - "walkability"
-official_sources:
   - url: "https://www.cnu.org/publicsquare/2021/02/08/defining-15-minute-city"
     title: "Congress for the New Urbanism: Defining the 15-minute city"
     accessed: "2025-12-27"
@@ -93,7 +47,7 @@ improvements:
   - "Standardize `policy_category` to use hyphenated tags (e.g., 'urban-planning')."
   - "Include clear citations for quoted laws and data."
   - "Add 'equity' and 'cost' sections or tags to align with other policies."
-
+---
 
 ## Overview
 
@@ -216,4 +170,3 @@ If you are a city councilor or planner, use this checklist to launch this policy
 * **Ajuntament de Barcelona:** [Government Measure on Superblocks (PDF)](https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/en_gb_MESURA%20GOVERN%20SUPERILLES.pdf)
 * **WHO:** [Physical activity fact sheet](https://www.who.int/news-room/fact-sheets/detail/physical-activity)
 * **CATS:** [SmartCode resources](http://www.transect.org/codes.html)
- (See <attachments> above for file contents. You may not need to search or read the file again.)

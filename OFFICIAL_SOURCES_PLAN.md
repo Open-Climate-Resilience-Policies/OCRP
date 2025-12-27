@@ -4,6 +4,12 @@
 **Created**: 2025-12-22  
 **Goal**: Add authoritative sources to 27 policies currently with `official_sources: []`
 
+## Formatting guardrails (official_sources)
+- Keep `official_sources` as objects with `url`, `title`, and `accessed`; no bare URLs.
+- Mirror those citations in the policy body as Markdown links (no naked URLs) so pages render clickable.
+- Prefer authoritative domains per AGENTS.md (EU directives, .org/.edu, official PDFs; avoid .gov where possible).
+- Run `bundle exec jekyll build --strict_front_matter` after edits to catch malformed lists or indentation issues.
+
 ## Batching Strategy
 
 ### Batch 1: HIGH PRIORITY (12 policies)

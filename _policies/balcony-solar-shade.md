@@ -1,29 +1,52 @@
 ---
 layout: policy
-title: "Balcony Power & Shading Mandate"
+title: "Balcony Solar & Shading Mandate"
 type: generic-policy
 date: "2025-12-21"
 slug: "balcony-solar-shade"
 keywords:
   - "balcony solar"
-  - "shading"
+  - "exterior shading"
   - "tenant rights"
+  - "heat resilience"
+  - "grid interconnection"
+summary: "Allow balcony-mounted solar and exterior shading in multi-unit housing with simplified permitting, safety standards, and tenant protections."
+policy_area:
+  - "energy"
+  - "housing"
+  - "climate-resilience"
+status: "draft"
+jurisdiction: "municipal / regional"
+related_policies:
+  - "solar-ready-buildings"
+  - "tenant-energy-rights"
 official_sources:
-  - url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
-    title: "EU General Data Protection Regulation (reference for privacy when devices collect data)"
-    accessed: "2025-12-27"
   - url: "https://www.bundesnetzagentur.de/EN/Areas/Electricity/ProvisionOfElectricity/BalconyPower/Balkonkraftwerk_node.html"
     title: "German guidance on plug-in balcony PV systems (Balkonkraftwerk)"
     accessed: "2025-12-27"
-  - url: "https://www.iec.ch/"
-    title: "IEC standards for small photovoltaic systems and safety (reference)"
+  - url: "https://www.dke.de/en/working-guides/steckersolargerate"
+    title: "DKE/VDE guidance on plug-in PV devices (Steckersolargeräte)"
     accessed: "2025-12-27"
-  - "ev-ready-right-to-charge"
-  - "cool-pavements-heat-resilience"
+  - url: "https://standardscatalog.ul.com/standards/en/standard_1741"
+    title: "UL 1741: Inverters, Converters, Controllers and Interconnection System Equipment"
+    accessed: "2025-12-27"
+  - url: "https://standards.ieee.org/standard/1547-2018.html"
+    title: "IEEE 1547-2018: Interconnection and Interoperability of Distributed Energy Resources"
+    accessed: "2025-12-27"
+  - url: "https://www.cenelec.eu/dyn/www/f?p=104:110:0::::FSP_PROJECT,FSP_LANG_ID:57986,25"
+    title: "EN 50549-1: Requirements for generating plants to be connected in parallel with distribution networks"
+    accessed: "2025-12-27"
+  - url: "https://www.gov.uk/government/publications/approved-document-o-overheating"
+    title: "UK Approved Document O: Overheating (external shading guidance)"
+    accessed: "2025-12-27"
+  - url: "https://shop.sia.ch/en/products/building-technology/thermal-insulation-and-climate-protection/sia-180-2020"
+    title: "SIA 180:2020 Thermal insulation, protection against moisture and radiation (Switzerland)"
+    accessed: "2025-12-27"
 improvements:
-  - "Cite technical standards (UL 1741) in `official_sources` and link to guidance."
-  - "Clarify interactions with electrical code and utility interconnection rules."
-  - "Standardize related policy slugs (e.g., ev-ready-right-to-charge -> right-to-charge)."
+  - "Add verified adoption statistics (e.g., BNetzA/BMWK) once a stable public dataset is available."
+  - "Map utility notification timelines to jurisdictional interconnection rules (15–30 day target)."
+  - "Include cost/equity notes for low-income tenant support programs."
+
 ---
 
 ## Overview
@@ -43,10 +66,10 @@ Traditional solar requires permits, electricians, and inspections. "Balcony Sola
     * Professional electrician installation requirements.
     * Utility "Interconnection Agreements" (replaced with a simple "Notification" web form).
 2.  **The "Privileged Measure" (Tenant Right):** Landlords and HOAs cannot ban balcony solar. They may only request reasonable aesthetic standards (e.g., "panels must be black").
-    * *Safety:* Systems must use micro-inverters that auto-shutoff during grid outages (anti-islanding) and be UL-certified.
+    * *Safety:* Systems must use certified micro-inverters that auto-shutoff during grid outages (anti-islanding) and comply with UL 1741 / IEEE 1547 / EN 50549-1.
 
 **Real-World Example:**
-* **Germany:** In 2024, Germany passed a law declaring balcony solar a "privileged measure," meaning landlords can no longer block it without "substantial" cause. Over **700,000 systems** are now installed, mostly by renters, simply plugging them into standard outlets.
+* **Germany:** In 2024, Germany recognized balcony solar as a "privileged measure" under its plug-in PV guidance, meaning landlords can no longer block compliant systems without substantial cause (see BNetzA/DKE guidance).
 
 ## Policy 2: The "Right to Shade" (Geneva Model)
 

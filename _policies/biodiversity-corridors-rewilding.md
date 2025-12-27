@@ -18,23 +18,30 @@ official_sources:
   - url: "https://www.cbd.int/"
     title: "Convention on Biological Diversity — official site"
     accessed: "2025-12-27"
+  - url: "https://www.utrecht.nl/city-of-utrecht/green-roofed-bus-shelters-in-utrecht"
+    title: "Utrecht Bee Stops (green-roof bus shelters)"
+    accessed: "2025-12-27"
+  - url: "https://www.landscapeperformance.org/case-study-briefs/cheonggyecheon-stream-restoration-project"
+    title: "Cheonggyecheon Stream restoration (Seoul)"
+    accessed: "2025-12-27"
+  - url: "https://www.nparks.gov.sg/visit/parks/bukit-timah-nature-reserve/special-features/eco-link-bke"
+    title: "Eco-Link@BKE wildlife overpass (Singapore NParks)"
+    accessed: "2025-12-27"
 summary: "A plan to reconnect nature in cities using green roofs, restored streams, and wildlife bridges. This reduces flooding, cools the city, and protects animals."
 hazard_type:
   - "biodiversity loss"
   - "urban heat island"
   - "flooding"
   - "habitat fragmentation"
-policy_category: "environmental protection"
+policy_category: "environmental-protection"
 implementation_level: "municipal"
 related_policies:
   - "green-roofs-sponge-city-model"
   - "urban-forest-management-model"
 improvements:
-  - "Add `official_sources` and citations for case studies (Utrecht, Seoul)."
-  - "Include measurable targets (e.g., km of corridor, % canopy cover) for implementation."
-  - "Standardize `policy_category` values (use 'environmental-protection')."
-  - "Add guidance on maintenance costs and responsible department (parks/transport)."
----
+  - "Add measurable targets (e.g., km of corridor, % canopy cover) for implementation."
+  - "Include maintenance cost estimates and responsible department (parks/transport)."
+  - "Note monitoring metrics (pollinator counts, water temperature) for each pilot."
 
 ## Overview
 
@@ -60,7 +67,7 @@ All new and renovated small public structures must have a "green roof" planted w
 * **Cools the Street:** Metal roofs get hot; green roofs stay cool.
 
 **Real-World Example:**
-* **Utrecht, Netherlands:** The city transformed over 300 bus stops into [**"Bee Stops"**](https://www.utrecht.nl/city-of-utrecht/green-roofed-bus-shelters-in-utrecht) with green roofs. The project saved the local bee population and is paid for by the advertising company that manages the stops, costing the city nothing.
+* **Utrecht, Netherlands:** The city transformed over 300 bus stops into [**"Bee Stops"**](https://www.utrecht.nl/city-of-utrecht/green-roofed-bus-shelters-in-utrecht) with green roofs. The program is maintained by the advertising company that manages the shelters under its contract, avoiding direct city operating costs.
 
 
 

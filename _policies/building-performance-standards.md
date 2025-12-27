@@ -21,6 +21,24 @@ official_sources:
   - url: "https://ec.europa.eu/energy/topics/energy-efficiency/energy-performance-of-buildings/energy-performance-certificates_en"
     title: "European Commission: Energy Performance Certificates (EPBD implementation guidance)"
     accessed: "2025-12-27"
+  - url: "https://www.tokyo-co2tcap.jp/en/"
+    title: "Tokyo Metropolitan Government: Cap-and-Trade Program"
+    accessed: "2025-12-27"
+  - url: "https://doee.dc.gov/service/building-energy-performance-standards-beps"
+    title: "Washington, D.C.: Building Energy Performance Standards (BEPS)"
+    accessed: "2025-12-27"
+  - url: "https://www.boston.gov/departments/environment/building-emissions-reduction-and-disclosure-ordinance"
+    title: "Boston: Building Emissions Reduction and Disclosure Ordinance (BERDO 2.0)"
+    accessed: "2025-12-27"
+  - url: "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Climate-Action-Sustainability-and-Resiliency/Cutting-Denvers-Carbon-Pollution/Energize-Denver"
+    title: "Denver: Energize Denver Ordinance"
+    accessed: "2025-12-27"
+  - url: "https://www.energy.gov.au/energy-efficiency/commercial-buildings/commercial-building-disclosure"
+    title: "Australia: Commercial Building Disclosure Program"
+    accessed: "2025-12-27"
+  - url: "https://www.energy.ca.gov/programs-and-topics/programs/building-energy-benchmarking"
+    title: "California Energy Commission: Building Energy Benchmarking (AB 802)"
+    accessed: "2025-12-27"
 summary: "A framework for reducing building emissions through a phased approach of benchmarking, transparency, and mandatory performance standards."
 hazard_type:
   - "greenhouse gas emissions"
@@ -31,10 +49,9 @@ related_policies:
   - "circular-construction-model"
   - "green-roofs-sponge-city-model"
 improvements:
-  - "Standardize table formatting in Markdown to match project styles."
-  - "Add a 'metrics' field (EUI, PUE, target years) for quick reference."
-  - "Clarify enforcement mechanisms and responsible agency (e.g., building dept.)."
----
+  - "Add quick-reference metrics (EUI, emissions intensity, target years)."
+  - "Clarify enforcement authority, compliance cycles, and penalties."
+  - "Strengthen global case study sourcing with primary references."
 
 ## Overview
 
