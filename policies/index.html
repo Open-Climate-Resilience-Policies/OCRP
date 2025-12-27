@@ -7,9 +7,10 @@ title: Policy Library
 
 <p>Browse our collection of climate resilience policies and implementation examples.</p>
 
+<div id="policy-list">
 {% assign policies = site.policies | sort: 'title' %}
 {% for policy in policies %}
-<article class="policy-list-item">
+<article class="policy-list-item" data-policy-index="{{ forloop.index0 }}">
   <h3><a href="{{ policy.url | relative_url }}">{{ policy.title }}</a></h3>
   <p class="policy-summary">{{ policy.summary | default: "Generic climate resilience policy" }}</p>
   <div class="policy-meta">
@@ -19,5 +20,103 @@ title: Policy Library
   </div>
 </article>
 {% endfor %}
+</div>
 
-<p class="policy-count" role="status" aria-live="polite">Showing {{ policies.size }} policies</p>
+<p class="policy-count" role="status" aria-live="polite">Showing <span id="policy-count">{{ policies.size }}</span> policies</p>
+
+<nav class="pagination" role="navigation" aria-label="Pagination" id="pagination-nav" style="display: none;">
+  <a href="#" class="pagination-link" id="prev-link" rel="prev">‹ Previous</a>
+  <span class="pagination-current" id="page-indicator"></span>
+  <a href="#" class="pagination-link" id="next-link" rel="next">Next ›</a>
+</nav>
+
+<script>
+(function() {
+  const perPage = 10;
+  const policyItems = Array.from(document.querySelectorAll('.policy-list-item'));
+  const totalPolicies = policyItems.length;
+  const totalPages = Math.ceil(totalPolicies / perPage);
+  const paginationNav = document.getElementById('pagination-nav');
+  const prevLink = document.getElementById('prev-link');
+  const nextLink = document.getElementById('next-link');
+  const pageIndicator = document.getElementById('page-indicator');
+  const policyCount = document.getElementById('policy-count');
+  
+  let currentPage = 1;
+  
+  function getPageFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const page = parseInt(params.get('page')) || 1;
+    return Math.max(1, Math.min(page, totalPages));
+  }
+  
+  function updateURL(page) {
+    const url = new URL(window.location);
+    if (page === 1) {
+      url.searchParams.delete('page');
+    } else {
+      url.searchParams.set('page', page);
+    }
+    window.history.pushState({}, '', url);
+  }
+  
+  function showPage(page) {
+    currentPage = page;
+    const startIndex = (page - 1) * perPage;
+    const endIndex = startIndex + perPage;
+    
+    policyItems.forEach((item, index) => {
+      if (index >= startIndex && index < endIndex) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+    
+    pageIndicator.textContent = `Page ${page} of ${totalPages}`;
+    
+    if (totalPages > 1) {
+      paginationNav.style.display = 'flex';
+      
+      if (page === 1) {
+        prevLink.style.display = 'none';
+      } else {
+        prevLink.style.display = 'inline-block';
+      }
+      
+      if (page === totalPages) {
+        nextLink.style.display = 'none';
+      } else {
+        nextLink.style.display = 'inline-block';
+      }
+    }
+    
+    policyCount.textContent = totalPolicies;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
+  prevLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (currentPage > 1) {
+      const newPage = currentPage - 1;
+      updateURL(newPage);
+      showPage(newPage);
+    }
+  });
+  
+  nextLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (currentPage < totalPages) {
+      const newPage = currentPage + 1;
+      updateURL(newPage);
+      showPage(newPage);
+    }
+  });
+  
+  window.addEventListener('popstate', function() {
+    showPage(getPageFromURL());
+  });
+  
+  showPage(getPageFromURL());
+})();
+</script>

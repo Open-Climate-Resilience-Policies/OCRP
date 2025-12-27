@@ -48,6 +48,40 @@ layout: default
   </div>
 </article>
 
+{% comment %} Related policies based on shared keywords {% endcomment %}
+{% if page.keywords %}
+  {% assign related_policies = "" | split: "" %}
+  {% for policy in site.policies %}
+    {% if policy.url != page.url and policy.keywords %}
+      {% assign shared_keywords = 0 %}
+      {% for keyword in page.keywords %}
+        {% if policy.keywords contains keyword %}
+          {% assign shared_keywords = shared_keywords | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      {% if shared_keywords > 0 %}
+        {% assign related_policies = related_policies | push: policy %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  
+  {% if related_policies.size > 0 %}
+  <aside class="related-policies" role="complementary" aria-labelledby="related-policies-heading">
+    <h2 id="related-policies-heading">Related Policies</h2>
+    <ul class="related-policies-list">
+      {% for policy in related_policies limit: 5 %}
+      <li>
+        <a href="{{ policy.url | relative_url }}">
+          <strong>{{ policy.title }}</strong>
+          {% if policy.summary %}<span class="related-summary">{{ policy.summary | truncate: 120 }}</span>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+{% endif %}
+
 {% comment %} Previous / Next navigation for browsing policies alphabetically {% endcomment %}
 {% assign policies_sorted = site.policies | sort: 'title' %}
 {% assign current_index = nil %}
