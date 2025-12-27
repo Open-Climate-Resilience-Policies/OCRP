@@ -432,6 +432,15 @@ test -f _site/index.html
 - No Liquid errors in build log
 - No YAML parsing errors in build log
 
+---
+
+## 12. Local Development Commands
+
+- **Python tools:** `python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt` (needed for `consistency_guardian.py`, `validate_frontmatter.py`, `find_broken_links.py`).
+- **Run guardian on all policies:** `python scripts/consistency_guardian.py --all` (use `--changed` for staged/modified only).
+- **Preferred local webserver:** `bundle exec jekyll serve --livereload` (requires `bundle install`).
+
+
 ### HTML validation
 **Purpose:**
 - Catch broken markup that causes rendering or accessibility failures.
