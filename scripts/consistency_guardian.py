@@ -104,25 +104,33 @@ class ConsistencyGuardian:
         self.timeout = int(os.getenv('CG_TIMEOUT_SECONDS', '30'))
         self.all_policies = list(self.policies_dir.glob("*.md"))
         
-    def parse_policy(self, filepath: Path) -> tuple[dict, str]:
-        """Extract frontmatter and content from policy file."""
+    def parse_policy(self, filepath: Path) -> tuple[dict, str, bool]:
+        """Extract frontmatter and content from policy file. Returns (frontmatter, content, is_properly_closed)."""
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
         
         # Split frontmatter and content
         parts = re.split(r'^---\s*$', content, flags=re.MULTILINE, maxsplit=2)
         if len(parts) < 3:
-            return {}, content
+            return {}, content, False
         
         frontmatter = yaml.safe_load(parts[1]) or {}
         markdown_content = parts[2].strip()
         
-        return frontmatter, markdown_content
+        # Check if frontmatter is properly closed (should have exactly 3 parts: opening, content, body)
+        is_properly_closed = len(parts) == 3
+        
+        return frontmatter, markdown_content, is_properly_closed
     
-    def check_frontmatter_consistency(self, review: PolicyReview, frontmatter: dict, filepath: Path):
+    def check_frontmatter_consistency(self, review: PolicyReview, frontmatter: dict, filepath: Path, is_properly_closed: bool):
         """Check 1: Frontmatter Consistency"""
         required_fields = ['date', 'slug', 'keywords', 'official_sources']
         missing = [f for f in required_fields if f not in frontmatter]
+        
+        # Check frontmatter delimiters first
+        if not is_properly_closed:
+            review.add_critical("Frontmatter not properly closed: missing closing '---' delimiter after frontmatter")
+            return  # Skip other checks if frontmatter is malformed
         
         if missing:
             review.add_critical(f"Missing required frontmatter fields: {', '.join(missing)}")
@@ -153,9 +161,26 @@ class ConsistencyGuardian:
     
     def check_content_structure(self, review: PolicyReview, content: str):
         """Check 2: Content Structure Validation"""
-        vague_terms = re.findall(r'\b(encourage|strive to|should consider|may wish to)\b', content, re.IGNORECASE)
-        if vague_terms:
-            review.add_critical(f"Vague enforcement language detected: {', '.join(set(vague_terms[:3]))} → use 'shall', 'must', 'required'")
+        # Expanded vague language detection
+        vague_patterns = {
+            'encourage': r'\b(encourage[ds]?|encouraging)\b',
+            'strive to': r'\bstrive[sd]?\s+to\b',
+            'should consider': r'\bshould\s+consider\b',
+            'may wish to': r'\bmay\s+wish\s+to\b',
+            'best effort': r'\bbest\s+effort[s]?\b',
+            'as soon as feasible': r'\bas\s+soon\s+as\s+(feasible|possible|practicable)\b',
+            'whenever possible': r'\bwhenever\s+(possible|practicable|feasible)\b',
+            'should': r'\bshould\b(?!\s+(be|have|not))',  # "should" not followed by be/have/not
+        }
+        
+        found_vague = []
+        for term, pattern in vague_patterns.items():
+            matches = re.findall(pattern, content, re.IGNORECASE)
+            if matches:
+                found_vague.append(term)
+        
+        if found_vague:
+            review.add_critical(f"Vague enforcement language detected: {', '.join(found_vague[:5])} → use 'shall', 'must', 'required'")
         
         # Check for numeric thresholds without units
         nums_without_units = re.findall(r'\b(\d+(?:\.\d+)?)\s*(?![°CFKcmkgmlftsq])', content)
@@ -176,7 +201,7 @@ class ConsistencyGuardian:
             if other_policy_path == filepath:
                 continue
             
-            other_fm, _ = self.parse_policy(other_policy_path)
+            other_fm, _, _ = self.parse_policy(other_policy_path)
             other_keywords = set(other_fm.get('keywords', []))
             other_title = other_fm.get('title', other_policy_path.stem)
             
@@ -268,10 +293,31 @@ class ConsistencyGuardian:
     
     def adversarial_stress_test(self, review: PolicyReview, content: str, llm_enabled: bool = False):
         """Check 7: Adversarial Stress Test (Red Team)"""
-        # Basic pattern matching for common vulnerabilities
-        if not re.search(r'\b(penalty|fine|enforcement|violation|compliance)\b', content, re.IGNORECASE):
-            review.add_critical("No enforcement mechanism or penalty clause detected")
+        # Enhanced enforcement mechanism detection
+        enforcement_indicators = {
+            'permit_license': r'\b(permit|license|approval|authorization)\s+(required|conditioning|shall\s+be\s+issued|revoked)\b',
+            'penalty': r'\b(fine|penalty|sanction|violation|non-compliance)\s*(?:shall|must|of)\b',
+            'inspection': r'\b(inspect|verify|audit|monitor|compliance\s+report)\b',
+            'bonding': r'\b(bond|guarantee|deposit|escrow)\b',
+            'disclosure': r'\b(public\s+registry|disclosure|transparency|notice|display)\b',
+            'market_mechanism': r'\b(credits?|offsets?|ineligible|disqualified|subsidy|benefit)\b',
+        }
         
+        found_mechanisms = []
+        for mechanism_type, pattern in enforcement_indicators.items():
+            if re.search(pattern, content, re.IGNORECASE):
+                found_mechanisms.append(mechanism_type.replace('_', ' '))
+        
+        if not found_mechanisms:
+            review.add_critical("No enforcement mechanism or penalty clause detected")
+        elif len(found_mechanisms) == 1 and found_mechanisms[0] == 'penalty':
+            review.add_warning("Only penalty-based enforcement found; consider inspection or verification mechanisms")
+        
+        # Check for enforcement authority
+        if not re.search(r'\b(department|authority|municipality|jurisdiction|agency|inspector)\s+(shall|must|responsible)\b', content, re.IGNORECASE):
+            review.add_warning("No clear enforcement authority specified")
+        
+        # Check for sunset clauses
         if re.search(r'\b(sunset|expire|repeal|terminate)\b.*\bautomatically\b', content, re.IGNORECASE):
             review.add_warning("Potential sunset clause vulnerability (automatic expiry)")
         
@@ -348,11 +394,11 @@ Respond in JSON format:
     def review_policy(self, filepath: Path) -> PolicyReview:
         """Run full review on a single policy."""
         review = PolicyReview(str(filepath))
-        review.frontmatter, review.content = self.parse_policy(filepath)
+        review.frontmatter, review.content, is_properly_closed = self.parse_policy(filepath)
         
         print(f"Reviewing {filepath.name}...")
         
-        self.check_frontmatter_consistency(review, review.frontmatter, filepath)
+        self.check_frontmatter_consistency(review, review.frontmatter, filepath, is_properly_closed)
         self.check_content_structure(review, review.content)
         self.check_overlap_redundancy(review, review.frontmatter, filepath)
         self.check_citation_integrity(review, review.frontmatter)

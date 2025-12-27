@@ -62,6 +62,56 @@ We do not use the words "Truth" or "Fact" (which are politicized). We use **"Ver
 - Verify numeric thresholds have units and are realistic (no "100% reduction by next year" claims)
 - Check that timelines reference specific triggers (e.g., "within 12 months of adoption") not absolute dates
 
+**Enforcement Language Requirements:**
+
+Every policy mandate MUST use binding language. Replace weak verbs with enforceable alternatives:
+
+| ❌ Vague (Non-binding) | ✅ Enforceable | Context |
+| :--- | :--- | :--- |
+| encourage | shall, must, required to | Primary mandates |
+| strive to | shall achieve, required to meet | Performance targets |
+| should consider | shall evaluate, must assess | Procedural requirements |
+| may wish to | shall provide option to | Optional pathways within mandatory framework |
+| best effort | shall demonstrate compliance with | Accountability measures |
+| as soon as feasible | within [X] months of [trigger event] | Timelines |
+| whenever possible | except where documented infeasibility prevents | Exemptions |
+
+**Enforcement Mechanism Checklist:**
+
+Every policy must define at least ONE of the following enforcement structures:
+
+1. **Permit/License Conditioning**
+   - "No [permit type] shall be issued unless applicant demonstrates..."
+   - "Existing licenses shall be revoked if holder fails to..."
+   
+2. **Penalty Structures**
+   - "Violation shall result in [fine amount or formula]"
+   - "Penalties shall escalate: first offense $X, second $Y, third [license suspension]"
+   
+3. **Inspection & Verification**
+   - "Municipality shall conduct inspections [frequency]"
+   - "Owner shall submit annual compliance report verified by [authority]"
+   
+4. **Performance Bonding**
+   - "Applicant shall post [performance bond] released upon [verification]"
+   
+5. **Transparency & Disclosure**
+   - "Non-compliance shall be published on public registry"
+   - "Buildings failing to meet standards shall display [notice] visible to public"
+
+6. **Market Mechanisms**
+   - "Buildings exceeding cap shall purchase [credits/offsets]"
+   - "Non-compliant properties ineligible for [subsidy/tax benefit]"
+
+**Red Flags for Unenforceability:**
+
+- No specified enforcement authority (who checks compliance?)
+- No inspection trigger or schedule (when is compliance verified?)
+- No consequence for non-compliance (what happens if ignored?)
+- Subjective standards without measurement protocol ("reasonable effort")
+- Voluntary participation without incentive structure
+- Sunset clauses without renewal mechanism
+
 #### 3. Overlap & Redundancy Detection
 Cross-reference new/edited policy against existing library:
 - **Keyword overlap:** If 3+ shared keywords with existing policy, flag for manual merge review
