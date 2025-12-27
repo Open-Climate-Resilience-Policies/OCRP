@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  {% assign absolute_url = site.url | append: page.url %}
+  {% assign default_og_image = site.url | append: '/assets/img/icon-512.png' %}
+  {% assign og_image = page.og_image | default: page.image | default: default_og_image %}
+  {% assign og_desc = page.summary | default: site.description %}
+  {% assign is_policy = 'false' %}
+  {% if page.collection == 'policies' or page.layout == 'policy' %}
+    {% assign is_policy = 'true' %}
+  {% endif %}
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ og_desc | strip | escape }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:url" content="{{ absolute_url }}">
+  <meta property="og:type" content="{% if is_policy == 'true' %}article{% else %}website{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ og_desc | strip | escape }}">
+  <meta name="twitter:image" content="{{ og_image }}">
   <link rel="stylesheet" href="{{ '/assets/css/variables.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="manifest" href="{{ '/assets/manifest/site.webmanifest' | relative_url }}">
@@ -40,8 +57,23 @@
   <footer role="contentinfo">
     <p>&copy; 2025 {{ site.title }}. Code licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="license noopener">AGPL-3.0</a>. <a href="https://github.com/Open-Climate-Resilience-Policies/OCRP">View on GitHub</a>.</p>
     <p>Community-driven • Open Source • Climate Action</p>
+    <div class="share-controls" aria-label="Share this page">
+      {% assign hashtags_text = '' %}
+      {% if is_policy == 'true' and page.keywords %}
+        {% for k in page.keywords %}
+          {% assign tag = k | downcase | replace: ' ', '' | replace: '-', '' | replace: '/', '' | replace: '.', '' %}
+          {% assign hashtags_text = hashtags_text | append: '#' | append: tag | append: ' ' %}
+        {% endfor %}
+      {% endif %}
+      <button type="button" class="share-btn" id="share-btn" aria-haspopup="true" aria-expanded="false" data-hashtags="{{ hashtags_text | strip }}">Share</button>
+      <div class="share-fallback" id="share-fallback" hidden>
+        <button type="button" class="share-option" id="share-bsky">Share to Bluesky</button>
+        <button type="button" class="share-option" id="share-masto">Share to Mastodon</button>
+      </div>
+    </div>
   </footer>
 
   <script src="{{ '/assets/js/policy-engine.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/share.js' | relative_url }}" defer></script>
 </body>
 </html>
