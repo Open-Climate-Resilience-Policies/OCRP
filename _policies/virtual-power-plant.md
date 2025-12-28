@@ -1,33 +1,62 @@
 ---
 layout: policy
-title: "Virtual Power Plant (VPP) & Bi-Directional Resilience Protocol"
+title: Virtual Power Plant (VPP) & Bi-Directional Resilience Protocol
 type: generic-policy
-summary: "Pays residents to share stored energy from home batteries and EVs during peak demand, creating a virtual power plant that stabilizes the grid."
-date: "2025-12-27"
-slug: "virtual-power-plant"
+summary: Pays residents to share stored energy from home batteries and EVs during
+  peak demand, creating a virtual power plant that stabilizes the grid.
+date: '2025-12-27'
+slug: virtual-power-plant
 keywords:
-  - "virtual power plant"
-  - "distributed energy"
-  - "grid resilience"
-  - "battery storage"
+- virtual power plant
+- distributed energy
+- grid resilience
+- battery storage
 official_sources:
-  - title: "EU Directive 2019/944 on Internal Market for Electricity"
-    url: "https://eur-lex.europa.eu/eli/dir/2019/944/oj"
-    note: "EU directive establishing common rules for electricity markets, including provisions on demand response, aggregation, energy storage, active customers, and citizen energy communities (Articles 15-17, 32, 36, 40, 54)."
-  - title: "EU Directive 2024/1711 on Electricity Market Design"
-    url: "https://energy.ec.europa.eu/topics/markets-and-consumers/market-legislation/electricity-market-design_en"
-    note: "EU electricity market reform (entered force July 16, 2024) covering distributed energy resources, demand response, energy storage, market coupling, and 15-minute trading intervals under ACER oversight."
-  - title: "EU Regulation 2024/1747 on Electricity Market Rules"
-    url: "https://energy.ec.europa.eu/topics/markets-and-consumers/market-legislation/electricity-market-design_en"
-    note: "Companion regulation to Directive 2024/1711, establishing detailed market rules for integration of renewable energy, flexibility services, and distributed generation."
-  - title: "ISO 15118-20:2022 — Vehicle to Grid Communication Interface"
-    url: "https://www.iso.org/standard/77845.html"
-    note: "International standard for bidirectional EV charging communication (V2G), covering power transfer protocols, wireless communication, and automatic connection requirements (published April 2022, 561 pages)."
-  - title: "UL 1741 / Smart Inverter Requirements"
-    url: "http://web.archive.org/web/20191028161037/https://standardscatalog.ul.com/standards/en/standard_1741_2"
-    note: "Safety and anti-islanding requirements for inverters; UL catalog reference (archived)."
+- title: EU Directive 2019/944 on Internal Market for Electricity
+  url: https://eur-lex.europa.eu/eli/dir/2019/944/oj
+  note: EU directive establishing common rules for electricity markets, including
+    provisions on demand response, aggregation, energy storage, active customers,
+    and citizen energy communities (Articles 15-17, 32, 36, 40, 54).
+- title: EU Directive 2024/1711 on Electricity Market Design
+  url: https://energy.ec.europa.eu/topics/markets-and-consumers/electricity-market-design_en
+  note: EU electricity market reform (entered force July 16, 2024) covering distributed
+    energy resources, demand response, energy storage, market coupling, and 15-minute
+    trading intervals under ACER oversight.
+- title: EU Regulation 2024/1747 on Electricity Market Rules
+  url: https://energy.ec.europa.eu/topics/markets-and-consumers/electricity-market-design_en
+  note: Companion regulation to Directive 2024/1711, establishing detailed market
+    rules for integration of renewable energy, flexibility services, and distributed
+    generation.
+- title: "ISO 15118-20:2022 \u2014 Vehicle to Grid Communication Interface"
+  url: https://www.iso.org/standard/77845.html
+  note: International standard for bidirectional EV charging communication (V2G),
+    covering power transfer protocols, wireless communication, and automatic connection
+    requirements (published April 2022, 561 pages).
+- title: UL 1741 / Smart Inverter Requirements
+  url: http://web.archive.org/web/20191028161037/https://standardscatalog.ul.com/standards/en/standard_1741_2
+  note: Safety and anti-islanding requirements for inverters; UL catalog reference
+    (archived).
+- title: Virtual power plant
+  url: https://en.wikipedia.org/wiki/Virtual_power_plant
+  note: Defines VPP aggregation models, control strategies, and grid services use
+    cases.
+  accessed: '2025-12-28'
+- title: Vehicle-to-grid
+  url: https://en.wikipedia.org/wiki/Vehicle-to-grid
+  note: Summarizes bidirectional charging architectures, standards, and resilience
+    applications.
+  accessed: '2025-12-28'
+- title: "Kempton, W. & Tomi\u0107, J. (2005). Vehicle-to-grid power implementation.\
+    \ Journal of Power Sources 144:268-279"
+  url: https://linkinghub.elsevier.com/retrieve/pii/S0378775305000352
+  note: Quantifies grid services revenue potential and operational constraints for
+    V2G fleets.
+- title: Lund, H. & Kempton, W. (2008). Integration of renewable energy into the transport
+    and electricity sectors through V2G. Energy Policy 36(9):3578-3587
+  url: https://linkinghub.elsevier.com/retrieve/pii/S0301421508002838
+  note: Peer-reviewed assessment of V2G-enabled virtual power plants for balancing
+    extreme-weather peaks.
 ---
-
 ## Overview
 
     We typically build expensive "Peaker Plants" (gas/coal) that run only a few hours a year during heatwaves. This is inefficient and dirty. Meanwhile, electric vehicles (like the Ford F-150 Lightning) and home batteries sit idle with massive stored energy.
@@ -36,7 +65,7 @@ This policy creates a **"Bring Your Own Device" (BYOD)** market. The utility pay
 ## Policy 1: The "Bring Your Own Battery" (BYOD) Rebate
 
 **Concept:**
-Batteries are expensive. The utility should subsidize them because they save the grid money. In exchange, the utility gets "control rights" to discharge the battery during critical peaks (e.g., 5-8 PM).
+Batteries are expensive. The utility shall subsidize them because shared storage saves the grid money. In exchange, the utility receives "control rights" to discharge the battery during critical peaks (e.g., 5-8 PM).
 
 **The Policy:**
 1.  **Upfront Capacity Payment:** The utility offers an upfront rebate (e.g., $850 per kW) to any resident who installs a compatible home battery and signs a "Control Agreement".
@@ -64,7 +93,7 @@ An electric truck (like the Ford F-150 Lightning) holds ~10 Tesla Powerwalls wor
 ## Policy 3: The "Grid Services" Revenue Share
 
 **Concept:**
-When a homeowner shares their energy, they should be paid the same rate as a gas power plant.
+When a homeowner shares their energy, they shall be paid the same rate as a gas power plant.
 
 **The Policy:**
 1.  **The "Net-Export" Premium:** During declared "Flex Alerts" (high grid stress), the utility pays a premium rate (e.g., $2.00/kWh, which is ~10x the normal rate) for every kWh sent *back* to the grid from a car or battery.

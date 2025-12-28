@@ -1,55 +1,55 @@
 ---
 layout: policy
-title: "Food & Organic Waste Model"
+title: Food & Organic Waste Model
 type: generic-policy
 policy_kind: model-policy
 jurisdiction_level: municipal/state
-date: "2025-12-27"
-slug: "food-and-organic-waste"
+date: '2025-12-27'
+slug: food-and-organic-waste
 keywords:
-  - "food waste"
-  - "organic waste"
-  - "composting"
-  - "food recovery"
+- food waste
+- organic waste
+- composting
+- food recovery
 official_sources:
-  - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
-    title: "EU Directive 2008/98/EC on Waste Framework"
-    accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/food/safety/food_waste_en"
-    title: "European Commission: Food Waste Prevention and Awareness"
-    accessed: "2025-12-27"
-  - url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L0851"
-    title: "Directive (EU) 2018/851 amending the Waste Framework Directive"
-    accessed: "2025-12-27"
-  - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
-    title: "EU Directive 2008/98/EC on Waste Framework"
-    accessed: "2025-12-27"
-  - url: "https://www.epa.gov/sustainable-management-food"
-    title: "U.S. EPA: Reducing the Impact of Wasted Food"
-    accessed: "2025-12-27"
-  - url: "https://refed.org"
-    title: "ReFED: Roadmap to Reduce U.S. Food Waste"
-    accessed: "2025-12-27"
-summary: "A combined model to keep edible food out of the waste stream and to divert remaining organics into compost or anaerobic digestion, protecting climate, soil and food security while creating local economic value."
+- url: https://eur-lex.europa.eu/eli/dir/2008/98/oj?locale=en
+  title: Directive 2008/98/EC on waste (Waste Framework Directive)
+  accessed: '2025-12-27'
+- url: https://food.ec.europa.eu/food-safety/food-waste_en
+  title: 'European Commission DG SANTE: Food waste prevention and monitoring'
+  accessed: '2025-12-27'
+- url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L0851
+  title: Directive (EU) 2018/851 updating the Waste Framework Directive
+  accessed: '2025-12-27'
+- url: https://environment.ec.europa.eu/topics/waste-and-recycling/waste-framework-directive_en
+  title: 'European Commission: Waste Framework Directive implementation guidance'
+  accessed: '2025-12-28'
+- url: https://www.epa.gov/sustainable-management-food
+  title: 'U.S. EPA: Reducing the Impact of Wasted Food'
+  accessed: '2025-12-27'
+- url: https://refed.org/
+  title: 'ReFED: Roadmap to Reduce U.S. Food Waste'
+  accessed: '2025-12-27'
+summary: A combined model to keep edible food out of the waste stream and to divert
+  remaining organics into compost or anaerobic digestion, protecting climate, soil
+  and food security while creating local economic value.
 hazard_type:
-  - "methane emissions"
-  - "landfill capacity"
-  - "soil degradation"
-  - "food insecurity"
-policy_category: "waste management"
-implementation_level: "municipal/state"
+- methane emissions
+- landfill capacity
+- soil degradation
+- food insecurity
+policy_category: waste management
+implementation_level: municipal/state
 related_policies:
-  - "circular-economy-framework"
-  - "urban-agriculture-zoning"
-  - "circular-construction-model"
-
+- circular-economy-framework
+- urban-agriculture-zoning
+- circular-construction-model
 improvements:
-  - "Merge food recovery and organics treatment sections; add unified targets and timelines."
-  - "Clarify funding mechanisms for curbside pickup and processing capacity."
-  - "Add language protecting small food businesses from burdensome compliance costs."
-  - "Include bin specifications and contamination thresholds in a technical annex."
+- Merge food recovery and organics treatment sections; add unified targets and timelines.
+- Clarify funding mechanisms for curbside pickup and processing capacity.
+- Add language protecting small food businesses from burdensome compliance costs.
+- Include bin specifications and contamination thresholds in a technical annex.
 ---
-
 ## Overview
 
 Food and organic waste together form the largest single component of many municipal waste streams. When edible food is wasted it exacerbates food insecurity and when organics are landfilled they produce methane, a powerful short-term greenhouse gas. This combined model prioritizes "people-first" recovery of edible food, then safe collection and treatment of residual organics so nutrients return to local soils.
@@ -61,7 +61,7 @@ Food and organic waste together form the largest single component of many munici
 ## 1. Food Recovery & Redistribution (Edible Food First)
 
 ### Rationale
-Preventing edible food waste reduces emissions and strengthens local food security. Donation must be encouraged and de-risked through legal protections.
+Preventing edible food waste reduces emissions and strengthens local food security. Donation must be mandated and de-risked through legal protections.
 
 ### Key Measures
 - Liability protection / Good Samaritan provisions for donors.

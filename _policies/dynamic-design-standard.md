@@ -2,31 +2,31 @@
 layout: policy
 title: The Dynamic Design Standard Act
 slug: dynamic-design-standard
-date: "2025-12-22"
-summary: "Mandates climate-forward engineering that uses projected weather data instead of historical records to design infrastructure resilient to future climate conditions."
+date: '2025-12-22'
+summary: Mandates climate-forward engineering that uses projected weather data instead
+  of historical records to design infrastructure resilient to future climate conditions.
 keywords:
-  - "infrastructure"
-  - "risk-management"
-  - "engineering"
+- infrastructure
+- risk-management
+- engineering
 official_sources:
-  - url: "https://ec.europa.eu/knowledge4policy/"
-    title: "European Commission Knowledge for Policy — resilience and adaptation resources"
-    accessed: "2025-12-27"
-  - url: "https://www.iso.org/"
-    title: "ISO standards relevant to design resilience and risk management"
-    accessed: "2025-12-27"
+- url: https://knowledge4policy.ec.europa.eu/home_en
+  title: "European Commission Knowledge for Policy \u2014 resilience and adaptation\
+    \ resources"
+  accessed: '2025-12-27'
+- url: https://www.iso.org/home.html
+  title: ISO standards relevant to design resilience and risk management
+  accessed: '2025-12-27'
 type: generic-policy
 policy_category: infrastructure & resilience
 implementation_level: regional
 hazard_type:
-  - "flooding"
-  - "extreme weather"
+- flooding
+- extreme weather
 related_policies:
-  - "urban-heat-model"
-  - "green-roofs-sponge-city-model"
-
+- urban-heat-model
+- green-roofs-sponge-city-model
 ---
-
 # The Dynamic Design Standard Act
 *Also known as: The "Stationarity is Dead" Act*
 
@@ -92,7 +92,7 @@ Infrastructure documentation cannot be a static PDF filed in a basement.
 
 ### 🧪 Science Check
 * **The Data Gap:** Do accurate "Projected IDF Curves" actually exist for your specific region? If not, is the **1.25x Multiplier** a scientifically sound proxy, or is it too blunt an instrument?
-* **Model Selection:** Should we mandate RCP 8.5 (Worst Case) or RCP 4.5 (Moderate)? What is the cost difference?
+* **Model Selection:** Determine whether to mandate RCP 8.5 (Worst Case) or RCP 4.5 (Moderate) and quantify the cost difference.
 
 ### 💼 Business Reality
 * **The "Gold Plating" Argument:** Developers, does this standard make housing unaffordable? Would you prefer a "Risk Disclosure" (letting buyers take the risk) over a mandate?

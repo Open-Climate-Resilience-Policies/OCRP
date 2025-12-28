@@ -1,38 +1,37 @@
 ---
 layout: policy
-title: "Urban Heat Island Mitigation Model Policy"
-type: "generic-policy"
-date: "2025-12-21"
-slug: "urban-heat-model"
+title: Urban Heat Island Mitigation Model Policy
+type: generic-policy
+date: '2025-12-21'
+slug: urban-heat-model
 keywords:
-  - "urban heat"
-  - "cool roofs"
-  - "tree canopy"
+- urban heat
+- cool roofs
+- tree canopy
 official_sources:
-  - url: "https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en"
-    title: "EU Biodiversity Strategy for 2030"
-    accessed: "2025-12-27"
-  - url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0852"
-    title: "EU Green Infrastructure Strategy and supporting regulations"
-    accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/environment/air/quality/index.htm"
-    title: "European Commission: Urban environment and air quality guidance"
-    accessed: "2025-12-27"
-summary: "Comprehensive model policy for reducing urban heat islands through green infrastructure, reflective materials, and strategic urban planning measures."
+- url: https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en
+  title: EU Biodiversity Strategy for 2030
+  accessed: '2025-12-27'
+- url: https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en
+  title: 'European Commission: EU Taxonomy Regulation guidance for sustainable activities'
+  accessed: '2025-12-28'
+- url: https://environment.ec.europa.eu/topics/air_en
+  title: 'European Commission: Urban environment and air quality guidance'
+  accessed: '2025-12-27'
+summary: Comprehensive model policy for reducing urban heat islands through green
+  infrastructure, reflective materials, and strategic urban planning measures.
 hazard_type:
-  - "extreme heat"
-  - "urban heat island"
+- extreme heat
+- urban heat island
 level_of_government_applicability:
-  - "municipal"
-  - "regional"
-implementation_horizon: "medium-term"
+- municipal
+- regional
+implementation_horizon: medium-term
 fiscal_profile:
-  cost_range: "medium"
-  cost_type: "public and private investment"
-language: "en"
-
+  cost_range: medium
+  cost_type: public and private investment
+language: en
 ---
-
 # Urban Heat Island Mitigation Model Policy
 
 ## Policy Overview
@@ -155,7 +154,7 @@ This ordinance shall apply to all new development, major renovations, and munici
 
 ## Customization Guidance
 
-Municipalities should adapt this model policy to reflect:
+Municipalities shall adapt this model policy to reflect:
 - Local climate conditions and heat risk profiles
 - Existing tree canopy coverage and urban forest conditions
 - Available funding and implementation capacity
@@ -163,4 +162,4 @@ Municipalities should adapt this model policy to reflect:
 - Regional vegetation and species selection
 - Local building codes and zoning regulations
 
-*This model policy is provided by the Open Climate Resilience Policies project. Communities are encouraged to adapt and customize this policy to meet local needs and conditions.*
+*This model policy is provided by the Open Climate Resilience Policies project. Communities can adapt and customize this policy to meet local needs and conditions.*

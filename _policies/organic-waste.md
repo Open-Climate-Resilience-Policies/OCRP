@@ -2,7 +2,7 @@
 layout: policy
 title: "[ARCHIVED] Organic Waste (merged)"
 date: "2025-12-27"
-slug: "organic-waste-archived"
+slug: "organic-waste"
 keywords:
   - "organic waste"
   - "compost"

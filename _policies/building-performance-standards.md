@@ -1,53 +1,58 @@
 ---
 layout: policy
-title: "Building Performance Standards & Transparency"
+title: Building Performance Standards & Transparency
 type: generic-policy
-date: "2025-12-21"
-slug: "building-performance-standards"
+date: '2025-12-21'
+slug: building-performance-standards
 keywords:
-  - "building performance"
-  - "benchmarking"
-  - "transparency"
+- building performance
+- benchmarking
+- transparency
 official_sources:
-  - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
-    title: "EU Directive 2010/31/EU on the energy performance of buildings (EPBD)"
-    accessed: "2025-12-27"
-  - url: "https://eur-lex.europa.eu/eli/dir/2012/27/oj"
-    title: "EU Directive 2012/27/EU on energy efficiency (EED)"
-    accessed: "2025-12-27"
-  - url: "https://www.iso.org/standard/69426.html"
-    title: "ISO 50001:2018 — Energy management systems — Requirements with guidance for use"
-    accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/energy/topics/energy-efficiency/energy-performance-of-buildings/energy-performance-certificates_en"
-    title: "European Commission: Energy Performance Certificates (EPBD implementation guidance)"
-    accessed: "2025-12-27"
-  - url: "https://doee.dc.gov/service/building-energy-performance-standards-beps"
-    title: "Washington, D.C.: Building Energy Performance Standards (BEPS)"
-    accessed: "2025-12-27"
-  - url: "https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760"
-    title: "Tokyo Metropolitan Government - Tokyo Cap-and-Trade Program overview (English briefing deck)"
-    accessed: "2025-12-28"
-  - url: "https://www.boston.gov/departments/environment/berdo"
-    title: "City of Boston Environment Department - Building Emissions Reduction and Disclosure Ordinance (BERDO) hub"
-    accessed: "2025-12-28"
-  - url: "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Climate-Action-Sustainability-and-Resiliency/Cutting-Denvers-Carbon-Pollution/Efficient-Commercial-Buildings/Denver-Building-Regulations/Energize-Denver-Building-Performance-Policy/Buildings-25000-sq-ft-or-Larger/Technical-Guidance-25k-or-more"
-    title: "City and County of Denver - Energize Denver performance policy technical guidance for buildings >=25,000 sq ft"
-    accessed: "2025-12-28"
-summary: "A framework for reducing building emissions through a phased approach of benchmarking, transparency, and mandatory performance standards."
+- url: https://eur-lex.europa.eu/eli/dir/2010/31/oj
+  title: EU Directive 2010/31/EU on the energy performance of buildings (EPBD)
+  accessed: '2025-12-27'
+- url: https://eur-lex.europa.eu/eli/dir/2012/27/oj
+  title: EU Directive 2012/27/EU on energy efficiency (EED)
+  accessed: '2025-12-27'
+- url: https://www.iso.org/standard/69426.html
+  title: "ISO 50001:2018 \u2014 Energy management systems \u2014 Requirements with\
+    \ guidance for use"
+  accessed: '2025-12-27'
+- url: https://energy.ec.europa.eu/index_en
+  title: 'European Commission: Energy Performance Certificates (EPBD implementation
+    guidance)'
+  accessed: '2025-12-27'
+- url: https://doee.dc.gov/service/building-energy-performance-standards-beps
+  title: 'Washington, D.C.: Building Energy Performance Standards (BEPS)'
+  accessed: '2025-12-27'
+- url: https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760
+  title: Tokyo Metropolitan Government - Tokyo Cap-and-Trade Program overview (English
+    briefing deck)
+  accessed: '2025-12-28'
+- url: https://library.municode.com/ma/boston/codes/code_of_ordinances?nodeId=PTIICOOR_CH7AIAQUPR_ARTIIIBUEMREDEDO_S7-3.2BUEMREDEDO
+  title: "Boston Code of Ordinances \xA77-3.2 Building Emissions Reduction and Disclosure\
+    \ Ordinance (Municode)"
+  accessed: '2025-12-28'
+- url: https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Climate-Action-Sustainability-and-Resiliency/Cutting-Denvers-Carbon-Pollution/Efficient-Commercial-Buildings/Denver-Building-Regulations/Energize-Denver-Building-Performance-Policy/Buildings-25000-sq-ft-or-Larger/Technical-Guidance-25k-or-more
+  title: City and County of Denver - Energize Denver performance policy technical
+    guidance for buildings >=25,000 sq ft
+  accessed: '2025-12-28'
+summary: A framework for reducing building emissions through a phased approach of
+  benchmarking, transparency, and mandatory performance standards.
 hazard_type:
-  - "greenhouse gas emissions"
-  - "energy inefficiency"
-policy_category: "energy"
-implementation_level: "municipal"
+- greenhouse gas emissions
+- energy inefficiency
+policy_category: energy
+implementation_level: municipal
 related_policies:
-  - "circular-construction-model"
-  - "green-roofs-sponge-city-model"
+- circular-construction-model
+- green-roofs-sponge-city-model
 improvements:
-  - "Add quick-reference metrics (EUI, emissions intensity, target years)."
-  - "Clarify enforcement authority, compliance cycles, and penalties."
-  - "Strengthen global case study sourcing with primary references."
+- Add quick-reference metrics (EUI, emissions intensity, target years).
+- Clarify enforcement authority, compliance cycles, and penalties.
+- Strengthen global case study sourcing with primary references.
 ---
-
 ## Overview
 
 Building energy policies generally fall into two main categories: **Benchmarking & Transparency Laws** (reporting data to leverage market forces) and **Building Performance Standards (BPS)** (requiring actual improvements to avoid fines). While New York City’s Local Law 97 is a famous example of a Performance Standard, many jurisdictions globally have successfully implemented variations of these policies to decarbonize the built environment.

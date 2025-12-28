@@ -1,35 +1,35 @@
 ---
 layout: policy
-title: "Green Roofs & Sponge City Infrastructure Model"
+title: Green Roofs & Sponge City Infrastructure Model
 type: generic-policy
-date: "2025-12-21"
-slug: "green-roofs-sponge-city-model"
+date: '2025-12-21'
+slug: green-roofs-sponge-city-model
 keywords:
-  - "green roofs"
-  - "sponge city"
-  - "stormwater"
+- green roofs
+- sponge city
+- stormwater
 official_sources:
-  - url: "https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en"
-    title: "EU Biodiversity Strategy for 2030"
-    accessed: "2025-12-27"
-  - url: "https://climate-adapt.eea.europa.eu/"
-    title: "Climate-ADAPT — European climate adaptation platform"
-    accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/environment/soil/index_en.htm"
-    title: "European Commission: Soil and urban natural solutions guidance"
-    accessed: "2025-12-27"
-summary: "A framework for mandatory green roofs, solar integration, and permeable infrastructure to manage stormwater, reduce urban heat, and improve energy efficiency."
+- url: https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en
+  title: EU Biodiversity Strategy for 2030
+  accessed: '2025-12-27'
+- url: https://climate-adapt.eea.europa.eu/
+  title: "Climate-ADAPT \u2014 European climate adaptation platform"
+  accessed: '2025-12-27'
+- url: https://environment.ec.europa.eu/topics/soil-health_en
+  title: 'European Commission: Soil and urban natural solutions guidance'
+  accessed: '2025-12-27'
+summary: A framework for mandatory green roofs, solar integration, and permeable infrastructure
+  to manage stormwater, reduce urban heat, and improve energy efficiency.
 hazard_type:
-  - "urban heat island"
-  - "flooding"
-  - "stormwater runoff"
-policy_category: "infrastructure"
-implementation_level: "municipal"
+- urban heat island
+- flooding
+- stormwater runoff
+policy_category: infrastructure
+implementation_level: municipal
 related_policies:
-  - "urban-heat-model"
-  - "urban-forest-management-model"
+- urban-heat-model
+- urban-forest-management-model
 ---
-
 ## Overview
 
 This model policy establishes standards for "Living Roofs" and "Sponge City" infrastructure. It aims to utilize underused roof space for stormwater management, thermal regulation, and energy generation, while simultaneously reducing surface runoff and recharging groundwater through permeable surfaces.

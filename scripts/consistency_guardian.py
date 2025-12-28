@@ -102,6 +102,13 @@ class ConsistencyGuardian:
         self.lmstudio_base = os.getenv('LMSTUDIO_BASE_URL', LLM_PROVIDERS['lm-studio'])
         # Request timeout (seconds)
         self.timeout = int(os.getenv('CG_TIMEOUT_SECONDS', '30'))
+        self.min_policy_lines = int(os.getenv('CG_MIN_POLICY_LINES', '120'))
+        self.section_keywords = {
+            'problem statement': ['problem', 'context', 'overview', 'background'],
+            'mandate/requirements': ['mandate', 'policy', 'requirements', 'obligation'],
+            'implementation guidance': ['implementation', 'roadmap', 'program', 'steps'],
+            'metrics/verification': ['metrics', 'verification', 'monitoring', 'success', 'compliance']
+        }
         self.all_policies = list(self.policies_dir.glob("*.md"))
         
     def parse_policy(self, filepath: Path) -> tuple[dict, str, bool]:
@@ -158,6 +165,21 @@ class ConsistencyGuardian:
         # Check for summary
         if 'summary' not in frontmatter:
             review.add_warning("Missing 'summary' field (improves discoverability)")
+
+        official_sources = frontmatter.get('official_sources', []) or []
+        if official_sources and len(official_sources) < 3:
+            review.add_warning(f"official_sources should cite at least 3 authoritative references (found {len(official_sources)})")
+        if official_sources:
+            domains = set()
+            for source in official_sources:
+                if isinstance(source, dict) and 'url' in source:
+                    parsed = urlparse(source['url'])
+                    domain = parsed.netloc or parsed.path.split('/')[0]
+                    if domain:
+                        domains.add(domain)
+            if len(domains) == 1 and len(official_sources) > 1:
+                domain = next(iter(domains)) or 'single domain'
+                review.add_warning(f"official_sources all point to {domain}; diversify citations per Integrity Engine guidance")
     
     def check_content_structure(self, review: PolicyReview, content: str):
         """Check 2: Content Structure Validation"""
@@ -191,6 +213,27 @@ class ConsistencyGuardian:
         absolute_dates = re.findall(r'\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}\b', content)
         if absolute_dates:
             review.add_warning(f"Found {len(absolute_dates)} absolute dates; consider relative timelines (e.g., 'within 12 months of adoption')")
+
+    def check_length_and_sections(self, review: PolicyReview, content: str):
+        """Check supplemental structure requirements (line count + section coverage)."""
+        non_empty_lines = [line for line in content.splitlines() if line.strip()]
+        line_count = len(non_empty_lines)
+        if line_count < self.min_policy_lines:
+            review.add_warning(
+                f"Policy body has {line_count} non-empty lines (<{self.min_policy_lines}); expand problem, mandate, implementation, and metrics sections"
+            )
+
+        headings = [title.strip().lower() for _, title in re.findall(r'^(#{1,6})\s+(.*)', content, re.MULTILINE)]
+        missing_sections = []
+        for label, keywords in self.section_keywords.items():
+            if not any(any(keyword in heading for keyword in keywords) for heading in headings):
+                missing_sections.append(label)
+
+        if missing_sections:
+            review.add_warning(
+                "Missing required sections: " + ', '.join(missing_sections) +
+                ". Add explicit headings for each step of the Integrity Engine workflow."
+            )
     
     def check_overlap_redundancy(self, review: PolicyReview, frontmatter: dict, filepath: Path):
         """Check 3: Overlap & Redundancy Detection"""
@@ -399,6 +442,7 @@ Respond in JSON format:
         print(f"Reviewing {filepath.name}...")
         
         self.check_frontmatter_consistency(review, review.frontmatter, filepath, is_properly_closed)
+        self.check_length_and_sections(review, review.content)
         self.check_content_structure(review, review.content)
         self.check_overlap_redundancy(review, review.frontmatter, filepath)
         self.check_citation_integrity(review, review.frontmatter)

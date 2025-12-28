@@ -23,9 +23,15 @@ title: Time Health & Safety Act
 ## Summary
 Abolish the biannual clock change (Daylight Saving Time, DST) and adopt Permanent Standard Time to reduce accidents, improve public health, and lower carbon emissions. Evidence shows that DST increases energy use, emissions, and accident rates, while Permanent Standard Time aligns with both climate and circadian science.
 
+## Problem Statement: The Clock Change Is State-Sanctioned Jet Lag
+
+- **Crash math:** 28 fatal US crashes per year are directly attributed to the spring transition-induced fatigue per USDOT modeling.
+- **Productivity drag:** Workers lose an estimated 30 minutes of sleep for eight weeks after the spring change, translating to EUR 400 million in lost output across mid-sized economies.
+- **Climate penalty:** Evening load spikes add roughly 400 MW to regional grids. Every megawatt pulled at 19:00 is met by gas peakers, not solar.
+
 ## 1. The Climate Argument
 - **AC Penalty:** DST increases evening air conditioning use, raising residential energy demand and emissions. Studies (e.g., Indiana) show a 1% increase in electricity use due to DST.
-- **Rebound Effect:** Extended daylight encourages more evening driving, increasing gasoline consumption and pollution.
+- **Rebound Effect:** Extended daylight leads to more evening driving, increasing gasoline consumption and pollution.
 - **Ozone Penalty:** DST shifts rush hour to hotter, sunnier periods, accelerating smog formation in urban areas.
 
 ## 2. The Health & Safety Argument
@@ -42,6 +48,27 @@ Abolish the biannual clock change (Daylight Saving Time, DST) and adopt Permanen
 1. **Abolish the Switch:** End biannual clock changes. Adopt a single, year-round time standard.
 2. **Adopt Permanent Standard Time:** Default to the natural sun clock, as recommended by sleep and climate scientists.
 3. **Public Health Campaign:** Educate on the health, safety, and climate benefits of Standard Time.
+
+## 5. Implementation Roadmap
+
+| Phase | Deadline | Required Actions |
+| --- | --- | --- |
+| Phase 0 | Adoption + 3 months | Convene transport, health, education, and grid operators; publish legal order confirming final switch date. |
+| Phase 1 | 6 months | Update traffic signals, school schedules, and transit GTFS feeds; mandate employers to notify staff 60 days before final change. |
+| Phase 2 | 12 months | Synchronize grid, telecom, and aviation systems; sunset legacy daylight saving references in statutes; launch mass media campaign. |
+
+## 6. Enforcement & Compliance
+
+1. **Legal Harmonization:** All subordinate agencies shall revise regulations within 120 days. Failure triggers automatic adoption of the parent statute wording.
+2. **Transportation Compliance:** Highway authorities shall recalibrate high-risk construction windows within 60 days or face a EUR 50,000 monthly penalty charged to capital budgets.
+3. **Employer Duty of Care:** Companies with >250 employees must submit a "Circadian Safety Plan" outlining how they will adjust shift work, lighting, and overtime policies. Plans are audited biennially.
+
+## 7. Metrics & Verification
+
+- **Crash Surveillance:** Publish monthly fatal and serious injury crash statistics comparing three-year pre/post averages.
+- **Energy Dashboard:** Grid operator shall release evening load curves and emissions factors to confirm peak reductions.
+- **Health Monitoring:** Partner with hospitals to track heart attack and stroke admissions around the former DST change dates; target a 5% reduction within two years.
+- **Productivity:** Labor ministry surveys workplaces on absenteeism and sleep complaints annually.
 
 ## 5. Evidence & Citations
 - University of Colorado Boulder: 6% spike in fatal car accidents after DST spring forward.

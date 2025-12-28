@@ -9,9 +9,9 @@ keywords:
   - "dynamic pricing"
   - "reinvestment"
 official_sources:
-  - url: "http://web.archive.org/web/20251022230720/https://itf-oecd.org/"
+  - url: "https://web.archive.org/web/20251022230720/https://itf-oecd.org/"
     title: "ITF/OECD — research on urban access, pricing and curb management (archived)"
-    accessed: "2025-12-27"
+    accessed: "2025-12-28"
 summary: "A 'Best-of-Breed' congestion pricing policy using dynamic pricing and transparent revenue recycling to manage traffic demand, reduce emissions, and fund public transit improvements."
 hazard_type:
   - "traffic congestion"

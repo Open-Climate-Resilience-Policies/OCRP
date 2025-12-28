@@ -1,31 +1,32 @@
 ---
 layout: policy
-title: "Urban Lawn Watering Policy Model"
+title: Urban Lawn Watering Policy Model
 type: generic-policy
-summary: "A comprehensive framework for managing urban water consumption through mandatory lawn watering restrictions, exceptions, educational best practices, and enforcement strategies."
+summary: A comprehensive framework for managing urban water consumption through mandatory
+  lawn watering restrictions, exceptions, educational best practices, and enforcement
+  strategies.
 hazard_type:
-  - "drought"
-  - "water scarcity"
-policy_category: "water management"
-implementation_level: "municipal"
+- drought
+- water scarcity
+policy_category: water management
+implementation_level: municipal
 related_policies:
-  - "urban-forest-management-model"
-  - "urban-forest-management-model"
-date: "2025-12-21"
-slug: "urban-lawn-watering-model"
+- urban-forest-management-model
+- urban-forest-management-model
+date: '2025-12-21'
+slug: urban-lawn-watering-model
 keywords:
-  - "lawn watering"
-  - "drought"
-  - "water restrictions"
+- lawn watering
+- drought
+- water restrictions
 official_sources:
-  - url: "https://www.unwater.org/water-facts/scarcity"
-    title: "UN Water: Global water scarcity facts"
-    accessed: "2025-12-27"
-  - url: "https://www.eea.europa.eu/themes/water"
-    title: "European Environment Agency — Water theme (monitoring and guidance)"
-    accessed: "2025-12-27"
+- url: https://www.unwater.org/water-facts/water-scarcity
+  title: 'UN Water: Global water scarcity facts'
+  accessed: '2025-12-27'
+- url: https://www.eea.europa.eu/en/topics
+  title: "European Environment Agency \u2014 Water theme (monitoring and guidance)"
+  accessed: '2025-12-27'
 ---
-
 ## Overview
 
 This model policy outlines best practices for urban lawn watering, designed to manage peak demand on water treatment infrastructure and ensure water reserves for emergencies. The framework combines mandatory enforceable restrictions with educational cultural practices to reduce overall water demand while maintaining functional green spaces.
@@ -40,7 +41,7 @@ Municipalities implement these bylaws to manage peak demand on water treatment p
 Residential properties with odd-numbered addresses are permitted to water on odd-numbered calendar days, while even-numbered addresses water on even days.
 
 **Best Practice Variation:**
-In high-drought areas or during times of crisis, this schedule should be reduced to:
+In high-drought areas or during times of crisis, this schedule shall be reduced to:
 - One day per week (e.g., aligned with garbage collection days)
 - Specific fixed days (e.g., Odd addresses on Monday/Thursday, Even addresses on Tuesday/Friday) to further space out demand on the system.
 
@@ -65,13 +66,13 @@ This provision allows bylaw officers to ticket evident wastage immediately witho
 ### Emergency Tier Systems
 
 **The Policy:**
-Bylaws should contain defined "Levels" of restriction that can be triggered by the municipality based on reservoir levels or drought conditions.
+Bylaws shall contain defined "Levels" of restriction that can be triggered by the municipality based on reservoir levels or drought conditions.
 
 **Best Practice Structure:**
 - **Level 1:** Standard restrictions (Odd/Even, Time-of-Day).
 - **Level 2:** Reduced days (e.g., 1 day/week) or tighter hours.
 - **Level 3:** Total ban on all outdoor lawn watering.
-  - *Note:* Level 3 should typically still allow hand-watering of food gardens (vegetables/fruit) to support local food security.
+  - *Note:* Level 3 shall continue to allow hand-watering of food gardens (vegetables/fruit) to support local food security.
 
 ## Exceptions and Permits
 
@@ -97,12 +98,12 @@ Mandatory policies are most effective when paired with education on how to maint
 
 **Guidance:**
 Educate residents that established lawns only need **2.5 cm (1 inch)** of water per week, including rainfall.
-- **Tool:** Encourage the use of a rain gauge (or a tuna can) to help residents visualize this limit and avoid over-watering.
+- **Tool:** Water utilities shall distribute standardized rain gauges (or approved 2.5 cm calibration cups) with annual water bills and require their use during enforcement visits to verify compliance with the weekly allotment.
 
 ### Mowing Height Policy
 
 **Guidance:**
-Encourage a mowing height of **3 inches (7.5 cm)**.
+Municipal horticulture bylaws shall set a minimum mowing height of **3 inches (7.5 cm)** during drought declarations.
 - **Benefit:** Taller grass shades the soil, reduces evaporation, and develops deeper roots that are more drought-resistant compared to short-cut grass.
 
 ### Dormancy Acceptance ("Brown is Gold")

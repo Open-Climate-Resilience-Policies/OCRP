@@ -2,7 +2,7 @@
 layout: policy
 title: "[ARCHIVED] Food Waste (merged)"
 date: "2025-12-27"
-slug: "food-waste-archived"
+slug: "food-waste"
 keywords:
   - "food waste"
   - "composting"
@@ -11,9 +11,9 @@ official_sources:
   - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
     title: "EU Directive 2008/98/EC on Waste and Repealing Certain Directives"
     accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/food/safety/food_waste_en"
-    title: "European Commission Food Waste Prevention and Awareness"
-    accessed: "2025-12-27"
+  - url: "https://web.archive.org/web/20210521140759/https://ec.europa.eu/food/safety/food_waste_en"
+    title: "European Commission Food Waste Prevention and Awareness (archived)"
+    accessed: "2025-12-28"
 summary: "A practical waste management framework that keeps food and organic materials out of landfills through mandatory separation, unit-based pricing, and food donation protections. This reduces methane emissions, extends landfill life, and strengthens local food security."
 hazard_type:
   - "methane emissions"
@@ -106,7 +106,7 @@ Food recovery can be enforced upstream, before waste enters the municipal system
 "The City shall establish variable-rate pricing for landfill waste collection based on container size or weight."
 
 **Section 3.2: Diversion Incentives**  
-"Recycling and organic waste collection services shall be provided at a flat or subsidized rate to encourage diversion from landfill disposal."
+"Recycling and organic waste collection services shall be provided at a flat or subsidized rate so diversion from landfill disposal remains the cheapest option."
 
 ## Todo: Implementation Roadmap
 

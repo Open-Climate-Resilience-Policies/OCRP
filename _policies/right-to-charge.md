@@ -97,3 +97,9 @@ To allow the market to adapt, the policy follows a 3-Phase "Trigger" timeline.
 * **Target:** Smaller Buildings (<50 units) and Commercial Retrofits.
 * **Incentive:** Launch a "Conduit Rebate" program covering 50% of the cost for older buildings to upgrade their electrical panels to support future chargers.
 * **Micromobility:** Mandatory inspections of commercial bike rooms to ensure fire compliance.
+
+## Enforcement & Compliance
+
+1.  **Permit Holds:** Building permits and Certificates of Occupancy shall not be issued until inspectors verify conduit capacity, EMS installation, and micromobility room compliance for all new construction.
+2.  **Tenant Remedies:** Landlords or HOAs that ignore Right-to-Charge requests for more than 60 days shall be fined $250 per day until the installation is approved or a documented capacity exemption is granted.
+3.  **Fire Code Authority:** The Fire Marshal may issue immediate stop-use orders for bike rooms lacking UL-listed equipment or required fire-rated construction. Buildings remain under order until violations are cured and verified.

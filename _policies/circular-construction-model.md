@@ -21,9 +21,9 @@ official_sources:
   - url: "https://ec.europa.eu/docsroom/documents/37581"
     title: "EU Guidance: Material Passports and building circularity"
     accessed: "2025-12-27"
-  - url: "https://eur-lex.europa.eu/eli/reg/2011/3057/oj"
-    title: "EU Construction Products Regulation (CPR) — product standards and CE marking"
-    accessed: "2025-12-27"
+  - url: "https://eur-lex.europa.eu/eli/reg/2011/305/oj?locale=en"
+    title: "Regulation (EU) No 305/2011 — Construction Products Regulation (CPR)"
+    accessed: "2025-12-28"
 improvements:
   - "Clarify diversion measurement and verification requirements."
   - "Introduce tiered compliance by building type and size."
@@ -120,7 +120,7 @@ Material Passports must:
 #### Data Governance
 * Passports shall be stored in a city-approved digital registry.
 * Data must be accessible to future owners and authorized professionals.
-* Formats should be open and machine-readable where feasible.
+* Formats must be open and machine-readable. If a proprietary format is unavoidable, the applicant shall provide a conversion plan and reader access instructions.
 * Minimum retention period: **50 years**.
 
 ---
@@ -144,7 +144,7 @@ Progression between phases is contingent on:
 
 ### Incentives
 
-To encourage early adoption and high performance:
+To secure early adoption and high performance:
 * Expedited permitting for projects exceeding diversion targets.
 * Reduced landfill tipping fees.
 * Public recognition for exemplary circular projects.

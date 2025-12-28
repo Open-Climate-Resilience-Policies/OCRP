@@ -82,6 +82,14 @@ Kinetic energy increases exponentially with speed. A small reduction in speed cr
 
 ***
 
+## 4. Enforcement & Penalties
+
+1.  **Design Certification:** A construction permit shall be issued only after stamped plans certify that design speed, lane widths, and vertical deflection meet this code, and any active permit shall be suspended if the certification is missing. The transportation department shall log this approval as a mandatory pre-condition for every corridor project.
+2.  **Field Verification:** Inspectors shall conduct post-construction audits within 90 days of opening. Streets that fail the geometry test trigger immediate closure to through traffic, and the applicable building permit shall be revoked until the retrofit is verified.
+3.  **Financial Consequences:** Developers and contractors that open a non-compliant street shall pay fines up to $25,000 per segment and reimburse the city for temporary traffic-calming installations. Repeat violations trigger a two-year suspension from future city contracts and ineligibility for new right-of-way permits.
+
+***
+
 ## 🤝 For the Business Community (BIA)
 
 **Bottom Line Impact:**

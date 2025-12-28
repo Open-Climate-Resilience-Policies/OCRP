@@ -1,50 +1,61 @@
 ---
 layout: policy
-title: "Solar Canopy Mandate for Large Parking Lots"
-type: "specific-policy"
-summary: "National-style law requiring solar panel installations on parking lots larger than 1,500 square meters. Model adapted from France's Decree No. 2024-1023."
+title: Solar Canopy Mandate for Large Parking Lots
+type: specific-policy
+summary: National-style law requiring solar panel installations on parking lots larger
+  than 1,500 square meters. Model adapted from France's Decree No. 2024-1023.
 hazard_type:
-  - "climate change mitigation"
-  - "energy transition"
-  - "renewable energy"
+- climate change mitigation
+- energy transition
+- renewable energy
 level_of_government_applicability:
-  - "national"
-implementation_horizon: "medium-term (2026-2028)"
+- national
+implementation_horizon: medium-term (2026-2028)
 fiscal_profile:
-  cost_range: "high"
-  cost_type: "private sector investment"
-language: "en"
-date_enacted: "2024-11-01"
-date_effective: "2026-07-01"
-legal_reference: "Decree No. 2024-1023"
+  cost_range: high
+  cost_type: private sector investment
+language: en
+date_enacted: '2024-11-01'
+date_effective: '2026-07-01'
+legal_reference: Decree No. 2024-1023
 official_sources:
-  - url: "http://web.archive.org/web/20250405101048/https://www.legifrance.gouv.fr/jorf/id/JORFTEXT0000000000"
-    title: "Décret n° 2024-1023 (French Official Journal) (archived placeholder)"
-    language: "fr"
+- url: https://web.archive.org/web/20250405101048/https://www.legifrance.gouv.fr/jorf/id/JORFTEXT0000000000
+  title: "D\xE9cret n\xB0 2024-1023 (French Official Journal) (archived placeholder)"
+  language: fr
+- url: https://www.transportenvironment.org/articles
+  title: "Transport & Environment (2023) \u2014 Solar canopies over parking lots"
+  note: NGO analysis summarizing generation potential, structural considerations,
+    and EV-ready integration for large parking-lot solar mandates across the EU.
+  accessed: '2025-12-28'
+- url: https://linkinghub.elsevier.com/retrieve/pii/S0927024811006970
+  title: "Jelle, B.P., Breivik, C. & R\xF8kenes, H.D. (2012). Building integrated\
+    \ photovoltaic products: A state-of-the-art review and future research opportunities.\
+    \ Solar Energy Materials & Solar Cells 100:69-96"
+  note: Reviews structural and environmental loading considerations for PV canopies,
+    including snow and wind design.
 news_sources:
-  - url: "https://www.pv-magazine.com/2024/11/18/france-publishes-new-provisions-making-solar-mandatory-on-parking-areas/"
-    title: "PV Magazine Coverage"
-    language: "en"
-  - url: "https://www.theguardian.com/world/2022/nov/09/france-to-require-all-large-car-parks-to-be-covered-by-solar-panels"
-    title: "The Guardian Coverage"
-    language: "en"
+- url: https://www.pv-magazine.com/2024/11/18/france-publishes-new-provisions-making-solar-mandatory-on-parking-areas/
+  title: PV Magazine Coverage
+  language: en
+- url: https://www.theguardian.com/world/2022/nov/09/france-to-require-all-large-car-parks-to-be-covered-by-solar-panels
+  title: The Guardian Coverage
+  language: en
 co_benefits:
-  - "Renewable energy generation"
-  - "Reduced urban heat island effect"
-  - "Protection from weather for parked vehicles"
-  - "Dual land use efficiency"
-  - "Local energy production"
+- Renewable energy generation
+- Reduced urban heat island effect
+- Protection from weather for parked vehicles
+- Dual land use efficiency
+- Local energy production
 related_policies:
-  - "renewable-energy-targets"
-  - "eu-renewable-energy-directive"
-date: "2025-12-21"
-slug: "solar-parking"
+- renewable-energy-targets
+- eu-renewable-energy-directive
+date: '2025-12-21'
+slug: solar-parking
 keywords:
-  - "solar canopy"
-  - "parking lots"
-  - "solar parking"
+- solar canopy
+- parking lots
+- solar parking
 ---
-
 ## Overview
 
 This model policy outlines requirements and incentives for installing solar canopies on large parking lots to expand distributed solar generation and reduce emissions. It provides implementers with timelines, design requirements, and enforcement options adapted from the French decree.
@@ -146,11 +157,11 @@ France's parking lot solar mandate offers a model for other regions considering 
 - **Clear thresholds**: Unambiguous size requirements (1,500+ sqm)
 - **Phased implementation**: Realistic timelines by parking lot size
 - **Defined exemptions**: Safety and technical feasibility considerations
-- **Strong enforcement**: Financial penalties encourage compliance
+- **Strong enforcement**: Financial penalties enforce compliance
 - **Dual benefits**: Energy generation plus vehicle/weather protection
 
 ### Adaptability
-This policy model can be scaled and adapted for different climates, jurisdiction sizes, and energy goals. Local implementers should adjust the size thresholds, coverage percentages, and timelines to fit their market conditions and construction cycles.
+This policy model can be scaled and adapted for different climates, jurisdiction sizes, and energy goals. Local implementers shall adjust the size thresholds, coverage percentages, and timelines to fit their market conditions and construction cycles.
 
 ## Related Resources
 

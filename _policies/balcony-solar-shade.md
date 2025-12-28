@@ -1,44 +1,46 @@
 ---
 layout: policy
-title: "Balcony Solar & Shading Mandate"
+title: Balcony Solar & Shading Mandate
 type: generic-policy
-date: "2025-12-21"
-slug: "balcony-solar-shade"
+date: '2025-12-21'
+slug: balcony-solar-shade
 keywords:
-  - "balcony solar"
-  - "exterior shading"
-  - "tenant rights"
-  - "heat resilience"
-  - "grid interconnection"
-summary: "Allow balcony-mounted solar and exterior shading in multi-unit housing with simplified permitting, safety standards, and tenant protections."
+- balcony solar
+- exterior shading
+- tenant rights
+- heat resilience
+- grid interconnection
+summary: Allow balcony-mounted solar and exterior shading in multi-unit housing with
+  simplified permitting, safety standards, and tenant protections.
 policy_area:
-  - "energy"
-  - "housing"
-  - "climate-resilience"
-status: "draft"
-jurisdiction: "municipal / regional"
+- energy
+- housing
+- climate-resilience
+status: draft
+jurisdiction: municipal / regional
 related_policies:
-  - "solar-ready-buildings"
-  - "tenant-energy-rights"
+- solar-ready-buildings
+- tenant-energy-rights
 official_sources:
-
-  - url: "http://web.archive.org/web/20200105002649/https://standardscatalog.ul.com/standards/en/standard_1741"
-    title: "UL 1741: Standard for Inverters, Converters, Controllers and Interconnection System Equipment (archived)"
-    accessed: "2025-12-27"
-  - url: "http://web.archive.org/web/20220124164624/https://standards.ieee.org/standard/1547-2018.html"
-    title: "IEEE 1547-2018: Standard for Interconnection and Interoperability of Distributed Energy Resources (archived)"
-    accessed: "2025-12-27"
-  - url: "https://www.cenelec.eu/dyn/www/f?p=104:110:0::::FSP_PROJECT,FSP_LANG_ID:57986,25"
-    title: "EN 50549-1: Requirements for generating plants to be connected in parallel with distribution networks"
-    accessed: "2025-12-27"
-
+- url: http://web.archive.org/web/20200105002649/https://standardscatalog.ul.com/standards/en/standard_1741
+  title: 'UL 1741: Standard for Inverters, Converters, Controllers and Interconnection
+    System Equipment (archived)'
+  accessed: '2025-12-27'
+- url: http://web.archive.org/web/20220124164624/https://standards.ieee.org/standard/1547-2018.html
+  title: 'IEEE 1547-2018: Standard for Interconnection and Interoperability of Distributed
+    Energy Resources (archived)'
+  accessed: '2025-12-27'
+- url: https://www.cencenelec.eu
+  title: 'EN 50549-1: Requirements for generating plants to be connected in parallel
+    with distribution networks'
+  accessed: '2025-12-27'
 improvements:
-  - "Add verified adoption statistics (e.g., BNetzA/BMWK) once a stable public dataset is available."
-  - "Map utility notification timelines to jurisdictional interconnection rules (15–30 day target)."
-  - "Include cost/equity notes for low-income tenant support programs."
-
+- Add verified adoption statistics (e.g., BNetzA/BMWK) once a stable public dataset
+  is available.
+- "Map utility notification timelines to jurisdictional interconnection rules (15\u2013\
+  30 day target)."
+- Include cost/equity notes for low-income tenant support programs.
 ---
-
 ## Overview
 
 In many North American cities, renters are structurally blocked from climate action. They cannot install solar panels because they don't own the roof, and they cannot install external shutters (the most effective way to stop heat) because of aesthetic rules or HOA restrictions.
@@ -98,3 +100,9 @@ A technical concern in the US is "Breaker Masking"—where solar power back-feed
 
 ### Phase 3: The Market Scale (Year 2+)
 * [ ] **Group Purchase Program:** The City partners with a manufacturer to offer a "bulk buy" discount on certified balcony kits (Panel + Micro-inverter + Brackets), bringing the cost under $500 per unit.
+
+## Enforcement & Compliance
+
+1.  **Building Approvals:** No building permit or Certificate of Occupancy shall be issued unless inspectors verify that new residential construction includes the required external movable shading on east, south, and west façades.
+2.  **Tenant Remedies:** Housing inspectors shall investigate complaints within 30 days; landlords or HOAs that unlawfully block balcony solar or shading installations shall be fined $1,000 per dwelling unit per violation and ordered to approve compliant applications.
+3.  **Utility Obligations:** Utilities must complete meter swaps and notification processing within 30 days. Each missed deadline results in a $500 credit to the affected tenant and a report to the public utility commission.

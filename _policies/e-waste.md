@@ -84,9 +84,9 @@ Local governments are often the largest tech buyers in a region. They can single
 
 ***
 
-## How to Encourage Adoption (The "Pitch" to Local Govs)
+## Adoption Playbook (The "Pitch" to Local Govs)
 
-To encourage states and municipalities to adopt this, frame it around **Economic Resilience**, not just "recycling."
+To secure state and municipal adoption, frame the policy around **Economic Resilience**, not just "recycling."
 
 1.  **Job Creation (The "Local Repair" Argument):**
         * Manufacturing happens overseas; **Repair happens locally.** A "Repair Fund" policy directly subsidizes local small businesses (repair cafes, independent technicians) rather than foreign factories.

@@ -3,21 +3,28 @@ layout: policy
 title: The "Frequency First" Transit Mandate
 slug: frequency-first-transit
 status: Draft
-summary: "Prioritizes high-frequency transit service over fare reductions, mandating 15-minute headways on core routes before implementing fare-free programs."
-date: "2025-12-27"
-keywords: [transit, mobility, economics, urban-planning]
+summary: Prioritizes high-frequency transit service over fare reductions, mandating
+  15-minute headways on core routes before implementing fare-free programs.
+date: '2025-12-27'
+keywords:
+- transit
+- mobility
+- economics
+- urban-planning
 official_sources:
-  - url: "https://content.tfl.gov.uk/bus-action-plan.pdf"
-    title: "Transport for London Bus Action Plan (2022) — Downs-Thomson parity and headway elasticities"
-    accessed: "2025-12-28"
-  - url: "https://transitcenter.org/wp-content/uploads/2019/02/TC_WhosOnBoard_Final_digital-1-1.pdf"
-    title: "TransitCenter 'Who's On Board 2019' report (PDF) — rider priorities for frequency vs. fare-free programs"
-    accessed: "2025-12-28"
-  - url: "https://www.iledefrance-mobilites.fr/le-versement-mobilite"
-    title: "Île-de-France Mobilités — Versement Mobilité employer payroll levy for transit operations"
-    accessed: "2025-12-28"
+- url: https://content.tfl.gov.uk/bus-action-plan.pdf
+  title: "Transport for London Bus Action Plan (2022) \u2014 Downs-Thomson parity\
+    \ and headway elasticities"
+  accessed: '2025-12-28'
+- url: https://transitcenter.org/wp-content/uploads/2019/02/TC_WhosOnBoard_Final_digital-1-1.pdf
+  title: "TransitCenter 'Who's On Board 2019' report (PDF) \u2014 rider priorities\
+    \ for frequency vs. fare-free programs"
+  accessed: '2025-12-28'
+- url: https://www.iledefrance-mobilites.fr/404
+  title: "\xCEle-de-France Mobilit\xE9s \u2014 Versement Mobilit\xE9 employer payroll\
+    \ levy for transit operations"
+  accessed: '2025-12-28'
 ---
-
 # The "Frequency First" Transit Mandate
 *Also known as: The "Show Up and Go" Act*
 
@@ -90,7 +97,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 * **Rural Reality:** Does the Downs-Thomson Paradox apply in a town of 10,000 people? Or is this just "Big City" physics?
 
 ### 💼 Business Reality
-* **The "Freeloader" Problem:** Why should a business pay the Transit Tax if their employees all drive? Should the tax be based on *location* (proximity to transit) or *usage*?
+* **The "Freeloader" Problem:** Define how businesses benefiting from high-frequency service share the Transit Tax even if their employees currently drive. Decide whether the levy is based on *location* (proximity to transit) or *usage*.
 
 ### 🏠 Local Life
 * **Equity:** "Free Transit" feels like a huge help to the poor. Is a "Means-Tested Pass" (lots of paperwork) actually a barrier? How do we make the discount automatic?

@@ -1,60 +1,61 @@
 ---
 layout: policy
-title: "15-Minute City & Complete Neighborhoods Model"
+title: 15-Minute City & Complete Neighborhoods Model
 type: generic-policy
-date: "2025-12-21"
-slug: "15-minute-city-model"
+date: '2025-12-21'
+slug: 15-minute-city-model
 keywords:
-  - "15-minute city"
-  - "complete neighborhoods"
-  - "walkability"
+- 15-minute city
+- complete neighborhoods
+- walkability
 official_sources:
-  - url: "https://www.cnu.org/publicsquare/2021/02/08/defining-15-minute-city"
-    title: "Congress for the New Urbanism: Defining the 15-minute city"
-    accessed: "2025-12-27"
-  - url: "https://www.planning.vic.gov.au/guides-and-resources/strategies-and-initiatives/20-minute-neighbourhoods"
-    title: "Victoria Planning: 20-minute neighbourhoods"
-    accessed: "2025-12-27"
-  - url: "https://www.planning.vic.gov.au/guides-and-resources/strategies-and-initiatives/plan-melbourne"
-    title: "Plan Melbourne 2017–2050"
-    accessed: "2025-12-27"
-  - url: "https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods"
-    title: "Victoria Suburban Revitalisation: 20-minute neighbourhood pilots"
-    accessed: "2025-12-28"
-  - url: "https://www.portland.gov/phb/inclusionary-housing"
-    title: "City of Portland: Inclusionary Housing"
-    accessed: "2025-12-27"
-  - url: "https://www.c40.org/case-studies/barcelona-superblocks/"
-    title: "C40 Cities: Barcelona Superblocks case study"
-    accessed: "2025-12-27"
-  - url: "https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/en_gb_MESURA%20GOVERN%20SUPERILLES.pdf"
-    title: "Ajuntament de Barcelona: Government Measure on Superblocks (2016)"
-    accessed: "2025-12-27"
-  - url: "https://www.who.int/news-room/fact-sheets/detail/physical-activity"
-    title: "WHO: Physical activity fact sheet"
-    accessed: "2025-12-27"
-  - url: "http://www.transect.org/codes.html"
-    title: "Center for Applied Transect Studies: SmartCode resources"
-    accessed: "2025-12-27"
-  - url: "https://auo.org.au/new-20-minute-neighbourhood-scorecard/"
-    title: "Australian Urban Observatory: 20 Minute Neighbourhood Scorecard"
-    accessed: "2025-12-28"
-summary: "A planning model where residents can reach daily needs—like shops, schools, and parks—within a short walk or bike ride. This reduces vehicle dependence and supports public health."
+- url: https://www.cnu.org/publicsquare/2021/02/08/defining-15-minute-city
+  title: 'Congress for the New Urbanism: Defining the 15-minute city'
+  accessed: '2025-12-27'
+- url: https://www.planning.vic.gov.au/guides-and-resources/strategies-and-initiatives/20-minute-neighbourhoods
+  title: 'Victoria Planning: 20-minute neighbourhoods'
+  accessed: '2025-12-27'
+- url: https://www.planning.vic.gov.au/guides-and-resources/strategies-and-initiatives/plan-melbourne
+  title: "Plan Melbourne 2017\u20132050"
+  accessed: '2025-12-27'
+- url: https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods
+  title: 'Victoria Suburban Revitalisation: 20-minute neighbourhood pilots'
+  accessed: '2025-12-28'
+- url: https://www.portland.gov/phb/inclusionary-housing
+  title: 'City of Portland: Inclusionary Housing'
+  accessed: '2025-12-27'
+- url: https://www.c40.org/case-studies/barcelona-superblocks/
+  title: 'C40 Cities: Barcelona Superblocks case study'
+  accessed: '2025-12-27'
+- url: https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/en_gb_MESURA%20GOVERN%20SUPERILLES.pdf
+  title: 'Ajuntament de Barcelona: Government Measure on Superblocks (2016)'
+  accessed: '2025-12-27'
+- url: https://www.who.int/news-room/fact-sheets/detail/physical-activity
+  title: 'WHO: Physical activity fact sheet'
+  accessed: '2025-12-27'
+- url: https://transect.org/codes.html
+  title: 'Center for Applied Transect Studies: SmartCode resources'
+  accessed: '2025-12-27'
+- url: https://research-repository.rmit.edu.au/articles/educational_resource/AUO_20_Minute_Neighbourhood_Scorecard/20452608/1
+  title: 'RMIT Australian Urban Observatory: 20 Minute Neighbourhood Scorecard'
+  accessed: '2025-12-28'
+summary: "A planning model where residents can reach daily needs\u2014like shops,\
+  \ schools, and parks\u2014within a short walk or bike ride. This reduces vehicle\
+  \ dependence and supports public health."
 hazard_type:
-  - "urban sprawl"
-  - "transportation emissions"
-  - "social isolation"
-  - "public health"
-policy_category: "urban planning"
-implementation_level: "municipal"
+- urban sprawl
+- transportation emissions
+- social isolation
+- public health
+policy_category: urban planning
+implementation_level: municipal
 related_policies:
-  - "urban-forest-management-model"
+- urban-forest-management-model
 improvements:
-  - "Standardize `policy_category` to use hyphenated tags (e.g., 'urban-planning')."
-  - "Include clear citations for quoted laws and data."
-  - "Add 'equity' and 'cost' sections or tags to align with other policies."
+- Standardize `policy_category` to use hyphenated tags (e.g., 'urban-planning').
+- Include clear citations for quoted laws and data.
+- Add 'equity' and 'cost' sections or tags to align with other policies.
 ---
-
 ## Overview
 
 The **15‑minute city** is a planning concept where most daily needs are reachable within a short walk or bike ride from home. The idea is widely discussed in planning circles, but definitions vary; the core intent is access to daily needs by foot or bicycle in about 15 minutes. (CNU)
@@ -187,4 +188,4 @@ If you are a city councilor or planner, use this checklist to launch this policy
 * **WHO:** [Physical activity fact sheet](https://www.who.int/news-room/fact-sheets/detail/physical-activity)
 * **CATS:** [SmartCode resources](http://www.transect.org/codes.html)
 * **Victoria Suburban Revitalisation:** [20-minute neighbourhood pilots](https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods)
-* **Australian Urban Observatory:** [20 Minute Neighbourhood Scorecard](https://auo.org.au/new-20-minute-neighbourhood-scorecard/)
+* **Australian Urban Observatory:** [20 Minute Neighbourhood Scorecard](https://doi.org/10.25439/rmt.20452608.v1)

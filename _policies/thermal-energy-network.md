@@ -1,35 +1,46 @@
 ---
 layout: policy
-title: "Clean Heat Standard & Thermal Energy Networks (TENs)"
+title: Clean Heat Standard & Thermal Energy Networks (TENs)
 type: generic-policy
-date: "2025-12-21"
-slug: "thermal-energy-network"
+date: '2025-12-21'
+slug: thermal-energy-network
 keywords:
-  - "thermal energy network"
-  - "clean heat standard"
-  - "district heating"
+- thermal energy network
+- clean heat standard
+- district heating
 official_sources:
-  - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
-    title: "EU Directive 2010/31/EU on the energy performance of buildings (EPBD)"
-    accessed: "2025-12-27"
-  - url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0660"
-    title: "EU Strategy for Energy System Integration (COM/2020/299)"
-    accessed: "2025-12-27"
-  - url: "https://eur-lex.europa.eu/eli/reg/2018/1999/oj"
-    title: "EU Regulation 2018/1999 on the Governance of the Energy Union and Climate Action"
-    accessed: "2025-12-27"
-summary: "A regulatory framework that mandates gas utilities to decarbonize via a 'Clean Heat Standard' and authorizes the creation of 'Thermal Energy Networks' to replace gas pipes with neighborhood-scale geothermal loops."
+- url: https://eur-lex.europa.eu/eli/dir/2010/31/oj
+  title: EU Directive 2010/31/EU on the energy performance of buildings (EPBD)
+  accessed: '2025-12-27'
+- url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0660
+  title: EU Strategy for Energy System Integration (COM/2020/299)
+  accessed: '2025-12-27'
+- url: https://eur-lex.europa.eu/eli/reg/2018/1999/oj
+  title: EU Regulation 2018/1999 on the Governance of the Energy Union and Climate
+    Action
+  accessed: '2025-12-27'
+- url: https://en.wikipedia.org/wiki/District_heating
+  title: District heating
+  note: Describes centralized thermal networks, typical supply temperatures, and seasonal
+    efficiency considerations.
+  accessed: '2025-12-28'
+- url: https://linkinghub.elsevier.com/retrieve/pii/S0360544214002369
+  title: Lund, H. et al. (2014). 4th Generation District Heating (4GDH). Energy 68:1-11
+  note: Peer-reviewed framework detailing low-temperature district energy systems
+    and their role in winter peak reduction.
+summary: A regulatory framework that mandates gas utilities to decarbonize via a 'Clean
+  Heat Standard' and authorizes the creation of 'Thermal Energy Networks' to replace
+  gas pipes with neighborhood-scale geothermal loops.
 hazard_type:
-  - "grid peak demand"
-  - "natural gas leakage"
-  - "heating affordability"
-policy_category: "energy & infrastructure"
-implementation_level: "municipal/state"
+- grid peak demand
+- natural gas leakage
+- heating affordability
+policy_category: energy & infrastructure
+implementation_level: municipal/state
 related_policies:
-  - "data-center-constraints"
-  - "building-performance-standards"
+- data-center-constraints
+- building-performance-standards
 ---
-
 ## Overview
 
 Replacing gas boilers with air-source heat pumps one-by-one is essential but creates a massive winter peak load on the electric grid. The "Volts" approach emphasizes **Networked Geothermal** (GeoGrids). By connecting buildings with water pipes, we can harvest waste heat from supermarkets, data centers, or the ground itself, reducing electric demand by ~40% compared to air-source heat pumps.
@@ -74,3 +85,32 @@ A "Cooling Only" air conditioner is just a broken heat pump. The hardware is 95%
 **The Policy:**
 1.  **The Reversing Valve Mandate:** Effective immediately, no central air conditioning unit may be sold or installed unless it includes a reversing valve (making it a two-way heat pump).
     * *Why?* The cost difference is negligible (<$200 manufacturing cost). This ensures that every time an AC breaks, the home accidentally gets a backup heater, reducing gas reliance without a "ban".
+
+## Implementation Roadmap
+
+| Phase | Trigger | Required Actions |
+| --- | --- | --- |
+| Phase 0 | Adoption + 6 months | Publish Clean Heat Standard regulations, launch credit registry, and identify first 10 leak-prone pipe segments for TEN feasibility. |
+| Phase 1 | Year 1 | Utilities file Thermal Transition Plans showing which districts move from gas to geo; workforce board certifies pipefitters for geothermal installation. |
+| Phase 2 | Years 2-4 | Execute the first TEN conversions, retire 5% of leak-prone mains annually, and deploy reversing-valve requirement across HVAC distributors. |
+| Phase 3 | Year 5 onward | Scale TENs to all downtown districts slated for gas main replacement; require municipalities to integrate TEN corridors into capital plans. |
+
+## Financing & Equity Tools
+
+- **Clean Heat Credit Floor Price:** Set a minimum EUR 150 per ton CO2e to guarantee that utilities fund deep retrofits instead of paying cheap penalties.
+- **Thermal Transition Bonds:** State green bank issues 20-year bonds backed by utility tariffs to cover upfront TEN construction, prioritizing low-income neighborhoods.
+- **Tenant Protections:** Landlords receiving public money for heat pump conversions shall freeze rent for 24 months and document tenant communications in multiple languages.
+
+## Enforcement & Compliance
+
+1.  **Permit Conditioning:** No gas main replacement permit shall be issued until the applicant demonstrates that a TEN feasibility study was completed within the prior 24 months.
+2.  **Performance Benchmarks:** Gas utilities must prove a year-on-year reduction in delivered fossil energy of at least 4%. Missing the target triggers the Alternative Compliance Payment described in Policy 1.
+3.  **Inspection Regime:** Thermal loops shall undergo hydraulic and leak testing every 5 years. Failure to submit test results results in suspension of cost recovery in rates.
+4.  **Customer Protection:** Utilities must provide temporary electric resistance heating at their expense if a TEN outage exceeds 8 hours during the heating season.
+
+## Metrics & Verification
+
+- **Peak Load Reduction:** Track winter evening electric demand in TEN-served districts; target 40% lower peak kW compared to adjacent air-source-only neighborhoods.
+- **Methane Leakage:** Publish kilometers of gas mains decommissioned and the associated methane abatement (tonnes CO2e) each quarter.
+- **Workforce Transition:** Report the number of former gas fitters retrained and employed on TEN projects; goal is zero net job loss.
+- **Affordability Index:** Monitor average heating bills before and after TEN conversion; require <5% increase for low-income households, backed by rate relief if exceeded.

@@ -1,38 +1,40 @@
 ---
 layout: policy
-title: "Data Center Constraints & Community Protection"
+title: Data Center Constraints & Community Protection
 type: generic-policy
-date: "2025-12-21"
-slug: "data-center-constraints"
+date: '2025-12-21'
+slug: data-center-constraints
 keywords:
-  - "data centers"
-  - "water usage"
-  - "noise pollution"
+- data centers
+- water usage
+- noise pollution
 official_sources:
-  - url: "https://eur-lex.europa.eu/"
-    title: "EUR-Lex — European Union Law (search for data centre regulations and environmental assessments)"
-    accessed: "2025-12-27"
-  - url: "https://www.eea.europa.eu/"
-    title: "European Environment Agency — resources on water stress and industrial impacts"
-    accessed: "2025-12-27"
-summary: "A zoning and operational framework to protect community resources from hyperscale data centers. It mandates strict caps on noise and water usage, requires grid-positive energy sourcing, and enforcing transparency."
+- url: https://eur-lex.europa.eu/homepage.html
+  title: "EUR-Lex \u2014 European Union Law (search for data centre regulations and\
+    \ environmental assessments)"
+  accessed: '2025-12-27'
+- url: https://www.eea.europa.eu/en
+  title: "European Environment Agency \u2014 resources on water stress and industrial\
+    \ impacts"
+  accessed: '2025-12-27'
+summary: A zoning and operational framework to protect community resources from hyperscale
+  data centers. It mandates strict caps on noise and water usage, requires grid-positive
+  energy sourcing, and enforcing transparency.
 hazard_type:
-  - "water scarcity"
-  - "grid instability"
-  - "noise pollution"
-  - "air quality"
-policy_category: "infrastructure"
-implementation_level: "municipal"
+- water scarcity
+- grid instability
+- noise pollution
+- air quality
+policy_category: infrastructure
+implementation_level: municipal
 related_policies:
-  - "building-performance-standards"
-  - "eco-roof-energy-resilience-mandate"
-
+- building-performance-standards
+- eco-roof-energy-resilience-mandate
 improvements:
-  - "Add `technical_refs` for noise (dBC) and water engineering standards."
-  - "Clarify how CUE will be measured and audited with a sample reporting template."
-  - "Add guidance on community benefits agreements and decommissioning bonds."
+- Add `technical_refs` for noise (dBC) and water engineering standards.
+- Clarify how CUE will be measured and audited with a sample reporting template.
+- Add guidance on community benefits agreements and decommissioning bonds.
 ---
-
 ## Overview
 
 Data centers are the industrial factories of the digital age. While essential, a single hyperscale facility can consume the water of a small city and the electricity of 50,000 homes. Without strict guardrails, these facilities compete directly with residents for essential infrastructure.
@@ -75,7 +77,7 @@ Data centers emit a constant, low-frequency mechanical hum (often described as "
 ## Policy 3: Grid Synergy & Transparency (CUE/PUE)
 
 **Concept:**
-Data centers should stabilize the grid, not destabilize it. Efficiency (PUE) is not enough; we must measure Carbon Usage Effectiveness (CUE) to ensure the *source* of the energy is clean.
+Data centers shall stabilize the grid, not destabilize it. Efficiency (PUE) is not enough; we must measure Carbon Usage Effectiveness (CUE) to ensure the *source* of the energy is clean.
 
 **The Policy:**
 1.  **Renewable Additionality:** Developers must fund **new** renewable generation (e.g., a local solar farm) equivalent to 100% of their load. Buying "unbundled" credits from out-of-state is not permitted.

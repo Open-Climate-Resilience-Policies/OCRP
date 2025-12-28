@@ -1,39 +1,52 @@
 ---
 layout: policy
-title: "Cool Pavements & Heat Resilience Strategy"
+title: Cool Pavements & Heat Resilience Strategy
 type: generic-policy
-summary: "A comprehensive public realm adaptation strategy that mandates high-albedo and permeable road surfaces, establishes a Right to Cool for tenants, and enforces heat-based labor protections to reduce urban heat risk."
+summary: A comprehensive public realm adaptation strategy that mandates high-albedo
+  and permeable road surfaces, establishes a Right to Cool for tenants, and enforces
+  heat-based labor protections to reduce urban heat risk.
 hazard_type:
-  - "urban heat island"
-  - "heat stress"
-  - "stormwater flooding"
-  - "public health"
-policy_category: "infrastructure-health"
-implementation_level: "municipal"
+- urban heat island
+- heat stress
+- stormwater flooding
+- public health
+policy_category: infrastructure-health
+implementation_level: municipal
 related_policies:
-  - "15-minute-city-model"
-  - "biodiversity-corridors-rewilding"
+- 15-minute-city-model
+- biodiversity-corridors-rewilding
 improvements:
-  - "Define enforceable metrics for SRI, WBGT, and indoor temperature thresholds."
-  - "Clarify winter performance, maintenance requirements, and costs."
-  - "Separate baseline housing standards from emergency heat powers."
-  - "Specify enforcement authority, inspection triggers, and appeals."
-date: "2025-12-21"
-slug: "cool-pavement"
+- Define enforceable metrics for SRI, WBGT, and indoor temperature thresholds.
+- Clarify winter performance, maintenance requirements, and costs.
+- Separate baseline housing standards from emergency heat powers.
+- Specify enforcement authority, inspection triggers, and appeals.
+date: '2025-12-21'
+slug: cool-pavement
 keywords:
-  - "cool pavement"
-  - "urban heat"
-  - "permeable pavements"
+- cool pavement
+- urban heat
+- permeable pavements
 official_sources:
-  - url: "https://www.iso.org/standard/67188.html"
-    title: "ISO 7243:2017 — Ergonomics of the thermal environment: assessment of heat stress using WBGT"
-    accessed: "2025-12-27"
-  - url: "https://www.astm.org/e1980-11r19.html"
-    title: "ASTM E1980 — Standard practice for calculating solar reflectance index of horizontal and low-sloped opaque surfaces"
-    accessed: "2025-12-27"
-
+- url: https://www.iso.org/standard/67188.html
+  title: "ISO 7243:2017 \u2014 Ergonomics of the thermal environment: assessment of\
+    \ heat stress using WBGT"
+  accessed: '2025-12-27'
+- url: https://store.astm.org/e1980-11r19.html
+  title: "ASTM E1980 \u2014 Standard practice for calculating solar reflectance index\
+    \ of horizontal and low-sloped opaque surfaces"
+  accessed: '2025-12-27'
+- url: https://en.wikipedia.org/wiki/Permeable_paving
+  title: Permeable paving
+  note: Overview of permeable pavement materials, installation practices, and hydrologic
+    performance considerations.
+  accessed: '2025-12-28'
+- url: http://web.archive.org/web/20230210202809/https://onlinelibrary.wiley.com/doi/10.1111/j.1747-6593.2006.00056.x
+  title: Scholz, M. & Grabowiecki, P. (2007). Review of permeable pavement systems.
+    Water and Environment Journal 21(2):113-124
+  note: Peer-reviewed synthesis of permeable pavement performance, including winter
+    maintenance and de-icing dynamics.
+  accessed: '2025-12-28'
 ---
-
 ## Overview
 
 As climate change intensifies, the Urban Heat Island effect produces temperatures 3–6°C higher than surrounding areas, with disproportionate impacts on low-income neighborhoods, renters, outdoor workers, and older adults. Streets and sidewalks act as thermal batteries, while poorly cooled homes and unprotected labor conditions increase health risks.

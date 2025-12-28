@@ -12,9 +12,9 @@ official_sources:
   - url: "https://energy.ec.europa.eu/topics/renewable-energy/geothermal-energy_en"
     title: "European Commission: Geothermal energy overview and policy"
     accessed: "2025-12-27"
-  - url: "https://www.iso.org/standard/69352.html"
-    title: "ISO standards relevant to geothermal exploration and risk management"
-    accessed: "2025-12-27"
+  - url: "https://www.irena.org/Energy-Transition/Technology/Geothermal-energy"
+    title: "IRENA: Geothermal energy technology and market briefing"
+    accessed: "2025-12-28"
 summary: "A pragmatic energy infrastructure model that repurposes oil and gas drilling expertise to deliver firm power, long-duration storage, and industrial heat through geothermal systems. Proven across multiple jurisdictions with different political and regulatory contexts."
 hazard_type:
   - "grid instability"
@@ -137,7 +137,7 @@ Managing legacy oil infrastructure while extending economic value.
 "Geothermal wells may be permitted through existing oil, gas, or mining authorities, provided environmental and water protections are met."
 
 **Section 2.2: Workforce Continuity**  
-"Policies shall encourage reuse of existing drilling equipment, service providers, and skilled labor where technically feasible."
+"Policies shall require reuse of existing drilling equipment, service providers, and skilled labor wherever technically feasible, and applicants must document any claimed infeasibility."
 
 ### C. Procurement & Market Access
 
@@ -150,6 +150,12 @@ Managing legacy oil infrastructure while extending economic value.
 "Procurement decisions shall prioritize reliability, duration, and cost over technology labels."
 
 ## Todo: Implementation Roadmap
+
+### D. Enforcement & Compliance
+
+1.  **Permit Conditioning:** No geothermal pilot or commercial permit shall be issued until the applicant files a Workforce Continuity Plan that lists legacy rigs, service contracts, and labor pools to be reused. Plans must be approved by the subsurface regulator.
+2.  **Performance Bonds:** Developers shall post a performance bond that is forfeited if the project fails to meet the reuse commitments outlined in the Workforce Continuity Plan.
+3.  **Annual Reporting:** Operators must submit annual reports quantifying local labor hours, reused equipment, and any deviations. Repeated non-compliance triggers fines and suspends access to future solicitations.
 
 ### Phase 1: Institutional Fit (Months 1–6)
 - [ ] **Regulatory Mapping:** Identify existing drilling and subsurface authorities.
