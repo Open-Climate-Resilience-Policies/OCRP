@@ -18,6 +18,9 @@ official_sources:
   - url: "https://www.planning.vic.gov.au/guides-and-resources/strategies-and-initiatives/plan-melbourne"
     title: "Plan Melbourne 2017–2050"
     accessed: "2025-12-27"
+  - url: "https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods"
+    title: "Victoria Suburban Revitalisation: 20-minute neighbourhood pilots"
+    accessed: "2025-12-28"
   - url: "https://www.portland.gov/phb/inclusionary-housing"
     title: "City of Portland: Inclusionary Housing"
     accessed: "2025-12-27"
@@ -33,6 +36,9 @@ official_sources:
   - url: "http://www.transect.org/codes.html"
     title: "Center for Applied Transect Studies: SmartCode resources"
     accessed: "2025-12-27"
+  - url: "https://auo.org.au/new-20-minute-neighbourhood-scorecard/"
+    title: "Australian Urban Observatory: 20 Minute Neighbourhood Scorecard"
+    accessed: "2025-12-28"
 summary: "A planning model where residents can reach daily needs—like shops, schools, and parks—within a short walk or bike ride. This reduces vehicle dependence and supports public health."
 hazard_type:
   - "urban sprawl"
@@ -65,6 +71,16 @@ Melbourne built this idea into their official long‑term plan, *[Plan Melbourne
 
 **How it Works (The "Hallmarks" Test):**
 A neighborhood isn’t just "zoned" for shops; it has to meet a clear set of criteria to count as a 20‑minute neighbourhood. These include walkability, access to local services, and safe cycling networks. (Victoria Planning)
+
+Victoria’s checklist distills the hallmarks into measurable outcomes:
+* Safe, accessible, and well-connected walking and cycling routes that prioritize active travel. (Victoria Planning)
+* High-quality public spaces plus open space within the catchment so residents can spend time locally. (Victoria Planning)
+* Local services, daily destinations, and reliable transit connections so the neighborhood provides both essentials and higher-order trips. (Victoria Planning)
+* Housing density and thriving local economies sufficient to keep shops, clinics, and transit viable. (Victoria Planning)
+
+The Suburban Revitalisation pilots in Strathmore, Sunshine West, and Croydon South received $120,000 to add parklets, temporary cycle lanes, murals, and mobile libraries, demonstrating how small capital projects can close gaps in the hallmarks. (Victoria Suburban Revitalisation)
+
+Local governments can baseline progress using the Australian Urban Observatory 20 Minute Neighbourhood Scorecard, developed with Victoria’s Department of Environment, Land, Water and Planning and the City of Port Phillip to map liveability indicators. (Australian Urban Observatory)
 
 ### 2. Portland, Oregon, USA: Inclusionary Housing + Neighborhood Access
 **The Policy:**
@@ -170,3 +186,5 @@ If you are a city councilor or planner, use this checklist to launch this policy
 * **Ajuntament de Barcelona:** [Government Measure on Superblocks (PDF)](https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/en_gb_MESURA%20GOVERN%20SUPERILLES.pdf)
 * **WHO:** [Physical activity fact sheet](https://www.who.int/news-room/fact-sheets/detail/physical-activity)
 * **CATS:** [SmartCode resources](http://www.transect.org/codes.html)
+* **Victoria Suburban Revitalisation:** [20-minute neighbourhood pilots](https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods)
+* **Australian Urban Observatory:** [20 Minute Neighbourhood Scorecard](https://auo.org.au/new-20-minute-neighbourhood-scorecard/)

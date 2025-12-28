@@ -26,6 +26,21 @@ official_sources:
   - url: "http://web.archive.org/web/20240615043021/https://www.oecd.org/social/"
     title: "OECD — Housing and social policy guidance (archived)"
     accessed: "2025-12-27"
+  - url: "https://www.wohnfonds.wien.at/fileadmin/user_upload/Downloads/Soziale_Nachhaltigkeit_Kriterienkatalog.pdf"
+    title: "wohnfonds_wien: Soziale Nachhaltigkeit criteria for Vienna land tenders"
+    accessed: "2025-12-28"
+  - url: "https://council.vancouver.ca/20080624/icam20080624dec.htm"
+    title: "City of Vancouver: June 24, 2008 in-camera decisions - Purchase of 1700 Kingsway for social housing"
+    accessed: "2025-12-28"
+  - url: "https://www.chf.bc.ca/?section=sanford-housing-society"
+    title: "Co-operative Housing Federation of BC - Sanford Housing Society profile for The Brice apartments"
+    accessed: "2025-12-28"
+  - url: "https://eumiesawards.com/heritageobject/de-warren-cooperative-housing/"
+    title: "EUmies Awards case study - De Warren cooperative housing, Amsterdam"
+    accessed: "2025-12-28"
+  - url: "https://www.cityofkingston.ca/media/5zfnc4ru/planning_report_densitybydesign_issuesoptions.pdf"
+    title: "City of Kingston: Density by Design Issues & Options Report (2025)"
+    accessed: "2025-12-28"
 improvements:
   - "Add legal references and defensible zoning definitions for Functional Family reforms."
   - "Define enforcement mechanisms for shared-space requirements."
@@ -60,7 +75,7 @@ Municipalities shall adopt a **Cohousing Overlay Zone** applicable to residentia
 * **Resilience:** The "Common House" serves as a built-in emergency hub during power outages or heat waves.
 
 **Real-World Example:**
-* **Vienna, Austria:** The city uses a "Social Sustainability" scoring matrix for new developments. Developers *must* propose how residents will interact and share resources to win land bids. This effectively mandates the community-building aspect of cohousing into all social housing.
+* **Vienna, Austria:** The city uses a "Social Sustainability" scoring matrix for new developments. Developers *must* propose how residents will interact and share resources to win land bids. This effectively mandates the community-building aspect of cohousing into all social housing.[^1]
 
 ## Policy 2: The "Public Land for Public Good" Pipeline
 
@@ -76,8 +91,8 @@ The biggest barrier to Co-ops and Cohousing is the high cost of land. Speculativ
 * **Control:** Ensuring land stays in community hands prevents future displacement/gentrification.
 
 **Real-World Examples:**
-* **Vancouver, Canada:** The City leased municipal land valued at over $100M to the **Community Land Trust Foundation of BC** for a nominal rate. This enabled the construction of 58 affordable homes at 1700 Kingsway that would have been financially impossible otherwise.
-* **Amsterdam, Netherlands:** The "Zelfbouw" (Self-Build) policy sets aside specific plots exclusively for citizen-led co-ops. This enabled projects like **De Warren**, a carbon-positive co-op built by its residents with a massive shared "energy facade."
+* **Vancouver, Canada:** The City purchased the 1700 Kingsway parcel for social housing and leased it to the **Community Land Trust Foundation of BC**, allowing The Brice to deliver 48 permanently affordable homes while the land remains in public hands.[^2]
+* **Amsterdam, Netherlands:** The "Zelfbouw" (Self-Build) policy sets aside specific plots exclusively for citizen-led co-ops. This enabled projects like **De Warren**, a carbon-positive co-op built by its residents with a massive shared "energy facade."[^3]
 
 ## Policy 3: Zoning for "Invisible Density" & Functional Families
 
@@ -98,7 +113,7 @@ Many zoning codes define a "household" as related family members, effectively ma
 * **Missing Middle:** Allows gentle density in established neighborhoods.
 
 **Real-World Example:**
-* **Kingston, Ontario:** The city is exploring zoning reforms to allow "missing middle" density and recognize "forming groups." Advocates are using the city's climate emergency declaration to argue that sharing distinct, smaller units on a single lot (Cluster Housing) is a key climate strategy.
+* **Kingston, Ontario:** The city is exploring zoning reforms to allow "missing middle" density and recognize "forming groups." Advocates are using the city's climate emergency declaration to argue that sharing distinct, smaller units on a single lot (Cluster Housing) is a key climate strategy.[^4]
 
 ## Equity and Anti-Displacement Measures
 
@@ -126,3 +141,8 @@ All cohousing and cooperative projects must adopt formal governance to ensure lo
 | **Year 3** | Formalize social-value-based public land disposition; require annual compliance reports on shared spaces and equity metrics. |
 
 # Appendix A: Cohousing Governance Checklist
+
+[^1]: wohnfonds_wien, *Soziale Nachhaltigkeit* criteria catalog for Vienna land tenders (2021).
+[^2]: City of Vancouver, *In-Camera Decisions Released (June 24, 2008)* authorizing the purchase of 1700 Kingsway for social housing; Co-operative Housing Federation of BC, *Sanford Housing Society - The Brice* profile describing the 48 permanently affordable homes on the site.
+[^3]: EUmies Awards, *De Warren Cooperative Housing* (2024) highlighting Amsterdam's first resident-built cooperative and its shared energy systems.
+[^4]: City of Kingston, *Density by Design - Issues & Options Report* (2025) outlining functional-family definitions and cluster housing pilots.

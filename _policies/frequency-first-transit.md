@@ -7,13 +7,15 @@ summary: "Prioritizes high-frequency transit service over fare reductions, manda
 date: "2025-12-27"
 keywords: [transit, mobility, economics, urban-planning]
 official_sources:
-official_sources:
-  - url: "https://www.uitp.org/"
-    title: "UITP — International Association of Public Transport (guidance on frequency & scheduling)"
-    accessed: "2025-12-27"
-  - url: "https://civitas.eu/"
-    title: "CIVITAS — EU cities' initiative for cleaner and better transport"
-    accessed: "2025-12-27"
+  - url: "https://content.tfl.gov.uk/bus-action-plan.pdf"
+    title: "Transport for London Bus Action Plan (2022) — Downs-Thomson parity and headway elasticities"
+    accessed: "2025-12-28"
+  - url: "https://transitcenter.org/wp-content/uploads/2019/02/TC_WhosOnBoard_Final_digital-1-1.pdf"
+    title: "TransitCenter 'Who's On Board 2019' report (PDF) — rider priorities for frequency vs. fare-free programs"
+    accessed: "2025-12-28"
+  - url: "https://www.iledefrance-mobilites.fr/le-versement-mobilite"
+    title: "Île-de-France Mobilités — Versement Mobilité employer payroll levy for transit operations"
+    accessed: "2025-12-28"
 ---
 
 # The "Frequency First" Transit Mandate
@@ -28,7 +30,7 @@ official_sources:
 ## 1. The Value Stack (Why This Matters)
 
 ### 🧪 The Science: "The Downs-Thomson Paradox"
-Traffic engineering proves that you cannot solve congestion by building roads; you can only solve it by improving transit.
+Traffic engineering proves that you cannot solve congestion by building roads; you can only solve it by improving transit.[^1]
 * **The Paradox:** The speed of car traffic on a city's road network is determined by the speed of the equivalent public transit trip.
 * **The Reality:** If the bus is slow or infrequent, everyone drives, clogging the roads until driving becomes as slow as the bus. To speed up traffic, you *must* make the bus faster than the car.
 * **The Conclusion:** Frequency is the only mechanism that shifts mode-share. Price is secondary.
@@ -37,7 +39,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 ### ❤️ The Life: "The Freedom of 'No Schedule'"
 * **The Pain:** If a bus comes every 60 minutes, you are a prisoner to the schedule. If you miss it, you are late for work.
 * **The Promise:** If a bus comes every 10 minutes, you don't need a schedule. You just walk to the stop. This is **"Freedom of Movement."**
-* **The Choice:** Riders consistently poll that they would rather pay $2.50 for a reliable bus than pay $0.00 for a bus that never comes.
+* **The Choice:** Riders consistently poll that they would rather pay $2.50 for a reliable bus than pay $0.00 for a bus that never comes.[^2]
 
 ### 💼 The Business: "The Employee Pipeline"
 * **The Cost:** "Free Transit" often leads to dirty, poorly maintained systems that the middle class abandons. This turns transit into a "welfare service" rather than a "workforce utility."
@@ -57,7 +59,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 
 ### 2.3 The "Transit Benefit" Tax (The Revenue Replacement)
 * **Mechanism:** If fares are reduced, the lost revenue must be legally replaced *before* the reduction takes effect.
-* **Source:** A payroll tax on large employers (>50 staff) located within 500m of a high-frequency corridor. They are the primary beneficiaries of the labor access; they pay for the pipeline.
+* **Source:** A payroll tax on large employers (>50 staff) located within 500m of a high-frequency corridor. They are the primary beneficiaries of the labor access; they pay for the pipeline.[^3]
 
 ***
 
@@ -94,3 +96,7 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 * **Equity:** "Free Transit" feels like a huge help to the poor. Is a "Means-Tested Pass" (lots of paperwork) actually a barrier? How do we make the discount automatic?
 
 👉 **[Join the Official Discussion on GitHub]({{ discussion_url }})**
+
+[^1]: Transport for London, *Bus Action Plan* (2022), documenting the Downs–Thomson effect on transit speed and congestion.
+[^2]: TransitCenter, *Who's On Board 2019* rider survey, showing reliability outranks free fares for mode choice.
+[^3]: Île-de-France Mobilités, *Versement Mobilité* payroll levy structure funding high-frequency service.

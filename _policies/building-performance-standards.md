@@ -24,6 +24,15 @@ official_sources:
   - url: "https://doee.dc.gov/service/building-energy-performance-standards-beps"
     title: "Washington, D.C.: Building Energy Performance Standards (BEPS)"
     accessed: "2025-12-27"
+  - url: "https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760"
+    title: "Tokyo Metropolitan Government - Tokyo Cap-and-Trade Program overview (English briefing deck)"
+    accessed: "2025-12-28"
+  - url: "https://www.boston.gov/departments/environment/berdo"
+    title: "City of Boston Environment Department - Building Emissions Reduction and Disclosure Ordinance (BERDO) hub"
+    accessed: "2025-12-28"
+  - url: "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Climate-Action-Sustainability-and-Resiliency/Cutting-Denvers-Carbon-Pollution/Efficient-Commercial-Buildings/Denver-Building-Regulations/Energize-Denver-Building-Performance-Policy/Buildings-25000-sq-ft-or-Larger/Technical-Guidance-25k-or-more"
+    title: "City and County of Denver - Energize Denver performance policy technical guidance for buildings >=25,000 sq ft"
+    accessed: "2025-12-28"
 summary: "A framework for reducing building emissions through a phased approach of benchmarking, transparency, and mandatory performance standards."
 hazard_type:
   - "greenhouse gas emissions"
@@ -58,20 +67,20 @@ Policies can be categorized by their mechanism and stringency:
 These jurisdictions have moved beyond data collection and legally require buildings to hit specific efficiency targets.
 
 ### Tokyo, Japan: The Pioneer
-*   **Policy:** Tokyo Cap-and-Trade Program (Launched 2010).
+*   **Policy:** Tokyo Cap-and-Trade Program (Launched 2010).[^1]
 *   **Details:** The world’s first urban cap-and-trade scheme targeting buildings. Large commercial/industrial buildings must reduce CO2 emissions by a set percentage (e.g., 27%) vs. their base year.
 *   **Result:** Over 90% of facilities met targets by the second phase, largely through operational improvements rather than buying credits.
 
 ### Washington, D.C., USA
-*   **Policy:** Building Energy Performance Standards (BEPS).
+*   **Policy:** Building Energy Performance Standards (BEPS).[^2]
 *   **Details:** Buildings falling below the median Energy Star score for their property type enter a "compliance cycle." They must reduce energy use by 20% or implement a specific list of energy-saving measures.
 
 ### Boston, Massachusetts, USA
-*   **Policy:** BERDO 2.0 (Building Emissions Reduction and Disclosure Ordinance).
+*   **Policy:** BERDO 2.0 (Building Emissions Reduction and Disclosure Ordinance).[^3]
 *   **Details:** Updated in 2021 to set declining emissions caps. By 2050, all large buildings must be net-zero.
 
 ### Denver, Colorado, USA
-*   **Policy:** Energize Denver Ordinance.
+*   **Policy:** Energize Denver Ordinance.[^4]
 *   **Details:** Sets targets based on **Energy Use Intensity (EUI)** rather than just carbon, requiring buildings to reach a specific energy performance level by 2030.
 
 ## Global Case Studies: Disclosure & Labeling (Market Shaming)
@@ -99,3 +108,8 @@ To manage pushback from real estate stakeholders while ensuring progress, a **Ph
 1.  **Years 1-3 (Level 1):** Mandatory Disclosure only. Build the data baseline and allow owners to understand their performance.
 2.  **Sunset Clause:** Legislation automatically triggers Level 3 (Performance Standards) after Year 3.
 3.  **Year 4+ (Level 3):** Mandatory caps take effect. This gives owners time to prepare and retrofit but guarantees regulatory action.
+
+[^1]: Tokyo Metropolitan Government, *Tokyo Cap-and-Trade Program* overview deck (2023) detailing compliance statistics and reduction trajectories.
+[^2]: District of Columbia DOEE, *Building Energy Performance Standards (BEPS)* final rule and compliance cycles (2021).
+[^3]: City of Boston Environment Department, *BERDO program hub* (accessed 2025) summarizing emissions caps and compliance pathways.
+[^4]: City and County of Denver, *Energize Denver Technical Guidance for Buildings >=25,000 sq ft* (2025) outlining EUI targets through 2030.
