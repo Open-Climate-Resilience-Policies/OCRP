@@ -109,6 +109,25 @@ class ConsistencyGuardian:
             'implementation guidance': ['implementation', 'roadmap', 'program', 'steps'],
             'metrics/verification': ['metrics', 'verification', 'monitoring', 'success', 'compliance']
         }
+        self.unit_tokens = [
+            '°C', '°F', 'celsius', 'fahrenheit', 'kelvin',
+            'm³', 'm3', 'liters', 'liter', 'litres', 'litre', 'l',
+            'mw', 'mwh', 'kw', 'kwh', 'gw', 'gwh',
+            'dba', 'dbc', 'μg/m³', 'ug/m3', 'mg/nm³', '%', 'percent',
+            'km', 'm', 'minutes', 'minute', 'hours', 'hour', 'days', 'day', 'months', 'month', 'years', 'year'
+        ]
+        self.unit_regex = re.compile(r'^\s*(?:' + '|'.join(re.escape(u) for u in self.unit_tokens) + r')', re.IGNORECASE)
+        self.acronym_allowlist = {
+            'PUE', 'WUE', 'CUE', 'MW', 'MWH', 'KW', 'KWH', 'GW', 'GWH',
+            'NOX', 'PM', 'PM25', 'PM2', 'EPA', 'ISO', 'IEC', 'EU', 'KPIS', 'KPI', 'CBA', 'PPA', 'REC', 'IT',
+            'LLM', 'KP', 'DBA', 'DBC', 'KWH', 'MWD'
+        }
+        self.prefix_skip_words = {
+            'policy', 'policies', 'phase', 'phases', 'principle', 'principles', 'months', 'month',
+            'years', 'year', 'minutes', 'minute', 'days', 'day', 'step', 'stage', 'chapter',
+            'appendix', 'section', 'option', 'table', 'row', 'column', 'agent'
+        }
+        self.range_unit_tokens = {token.lower().strip('%') for token in self.unit_tokens if token}
         self.all_policies = list(self.policies_dir.glob("*.md"))
         
     def parse_policy(self, filepath: Path) -> tuple[dict, str, bool]:
@@ -205,7 +224,7 @@ class ConsistencyGuardian:
             review.add_critical(f"Vague enforcement language detected: {', '.join(found_vague[:5])} → use 'shall', 'must', 'required'")
         
         # Check for numeric thresholds without units
-        nums_without_units = re.findall(r'\b(\d+(?:\.\d+)?)\s*(?![°CFKcmkgmlftsq])', content)
+        nums_without_units = self._find_numbers_without_units(content)
         if len(nums_without_units) > 5:
             review.add_warning("Multiple numeric values may be missing units")
         
@@ -322,7 +341,7 @@ class ConsistencyGuardian:
                 review.add_warning(f"Average sentence length {avg_words_per_sentence:.1f} words (consider simplifying for readability)")
         
         # Check for undefined acronyms (very basic heuristic)
-        acronyms = re.findall(r'\b[A-Z]{2,}\b', content)
+        acronyms = self._filter_acronyms(content)
         if len(acronyms) > 10:
             review.add_warning(f"Found {len(acronyms)} potential acronyms; ensure all are defined on first use")
         
@@ -359,6 +378,54 @@ class ConsistencyGuardian:
         # Check for enforcement authority
         if not re.search(r'\b(department|authority|municipality|jurisdiction|agency|inspector)\s+(shall|must|responsible)\b', content, re.IGNORECASE):
             review.add_warning("No clear enforcement authority specified")
+
+    def _find_numbers_without_units(self, content: str) -> List[str]:
+        text = re.sub(r'https?://\S+', ' ', content)
+        text = re.sub(r'ISO/IEC\s+\d[\d\-]*', ' ', text, flags=re.IGNORECASE)
+        text = re.sub(r'ISO\s+\d[\d\-]*', ' ', text, flags=re.IGNORECASE)
+        text = re.sub(r'IEC\s+\d[\d\-]*', ' ', text, flags=re.IGNORECASE)
+        text = re.sub(r'PM\s*\d+(?:\.\d+)?', ' ', text, flags=re.IGNORECASE)
+        text = re.sub(r'\b\d{1,2}:\d{2}\b', ' ', text)
+        text = re.sub(r'^(#{1,6}\s+)\d+(?:\.\d+)?', r'\1', text, flags=re.MULTILINE)
+        text = re.sub(r'^\s*\d+\.\s+', '', text, flags=re.MULTILINE)
+
+        nums_without_units = []
+        for match in re.finditer(r'\b\d+(?:\.\d+)?\b', text):
+            num = match.group()
+            if len(num) == 4 and num.startswith(('19', '20')):
+                continue  # treat as year
+            prefix_idx = max(0, match.start() - 1)
+            if text[prefix_idx:match.start()] in {'-', '/', ':'}:
+                continue
+            following = text[match.end():match.end() + 12]
+            if following.startswith(':'):
+                continue  # time remaining after cleanup
+            prefix_window = text[max(0, match.start() - 25):match.start()].lower()
+            last_word = re.findall(r'[a-z]+', prefix_window)
+            if last_word and last_word[-1] in self.prefix_skip_words:
+                continue
+            stripped_following = following.lstrip()
+            if stripped_following.startswith(('–', '-')):
+                range_tail = stripped_following.lstrip('–-')
+                range_match = re.match(r'\s*\d+(?:\.\d+)?\s*([a-zA-Z°µ/%-]+)', range_tail)
+                if range_match:
+                    fragment = range_match.group(1).lower()
+                    if any(fragment.startswith(token) for token in self.range_unit_tokens):
+                        continue
+            if self.unit_regex.search(following):
+                continue
+            nums_without_units.append(num)
+        return nums_without_units
+
+    def _filter_acronyms(self, content: str) -> List[str]:
+        acronyms = re.findall(r'\b[A-Z]{2,}\b', content)
+        filtered = []
+        for acronym in acronyms:
+            token = acronym.strip('.').upper()
+            if token in self.acronym_allowlist:
+                continue
+            filtered.append(acronym)
+        return filtered
         
         # Check for sunset clauses
         if re.search(r'\b(sunset|expire|repeal|terminate)\b.*\bautomatically\b', content, re.IGNORECASE):
