@@ -11,11 +11,8 @@ official_sources:
   - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
     title: "EU Directive 2008/98/EC on Waste Framework Directive"
     accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/environment/topics/waste-and-recycling/organic-waste_en"
-    title: "European Commission: Organic waste & composting guidance"
-    accessed: "2025-12-27"
-  - url: "https://op.europa.eu/en/publication-detail/-/publication/5d6f0f88-7b6a-11ea-9e4e-01aa75ed71a1"
-    title: "EU guidance on separate collection and recycling targets"
+  - url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018L0851"
+    title: "Directive (EU) 2018/851 amending the Waste Framework Directive"
     accessed: "2025-12-27"
 summary: "A policy banning organic waste from landfills to cut methane emissions, mandating municipal 'Brown Bin' collection, and requiring the resulting compost be applied to local farms and parks to regenerate soil."
 hazard_type:

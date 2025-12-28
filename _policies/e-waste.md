@@ -15,9 +15,6 @@ official_sources:
   - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
     title: "EU Directive 2008/98/EC on Waste Framework"
     accessed: "2025-12-27"
-  - url: "https://single-market-economy.ec.europa.eu/sectors/retail/eu-right-repair_en"
-    title: "European Commission: Right to Repair - policies and guidance"
-    accessed: "2025-12-27"
 summary: "A 'Right-to-Repair' and recovery framework that mandates repairability scores for new devices, funds consumer repairs through producer fees, and establishes convenient curbside e-waste collection."
 hazard_type:
   - "electronic waste"

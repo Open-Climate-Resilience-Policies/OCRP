@@ -8,9 +8,6 @@ date: "2025-12-27"
 keywords: [transit, mobility, economics, urban-planning]
 official_sources:
 official_sources:
-  - url: "https://ec.europa.eu/transport/themes/urban/urban_mobility_en"
-    title: "European Commission: Urban Mobility"
-    accessed: "2025-12-27"
   - url: "https://www.uitp.org/"
     title: "UITP — International Association of Public Transport (guidance on frequency & scheduling)"
     accessed: "2025-12-27"

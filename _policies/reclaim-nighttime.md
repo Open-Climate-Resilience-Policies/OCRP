@@ -18,17 +18,17 @@ related_policies:
   - "urban-heat-model"
   - "healthy-home"
 official_sources:
-  - url: "https://www.who.int/publications/i/item/9789240045467"
-    title: "WHO: Heat and Health — Guidance for public health actions"
+  - url: "https://www.gov.uk/government/publications/heatwave-plan-for-england"
+    title: "UK Heatwave Plan for England (UKHSA & Met Office guidance)"
     accessed: "2025-12-27"
-  - url: "https://www.eea.europa.eu/themes/climate-adaptation/impacts-and-vulnerability/urban-heat-islands"
-    title: "European Environment Agency: Urban Heat Islands and adaptation"
+  - url: "https://www.ipcc.ch/report/ar6/wg2/"
+    title: "IPCC AR6 WGII — Impacts, Adaptation and Vulnerability"
     accessed: "2025-12-27"
   - url: "https://www.ipcc.ch/report/ar6/wg2/"
     title: "IPCC AR6 WG2: Impacts, Adaptation and Vulnerability (heat-related health impacts)"
     accessed: "2025-12-27"
-  - url: "https://www.who.int/publications/i/item/9789240015129"
-    title: "WHO: Public health advice on preventing heat-related illness during heatwaves"
+  - url: "https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health"
+    title: "WHO fact sheet: Climate change, heat and health"
     accessed: "2025-12-27"
 ---
 

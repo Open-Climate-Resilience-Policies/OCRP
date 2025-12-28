@@ -18,9 +18,6 @@ keywords:
   - "deconstruction"
   - "material passports"
 official_sources:
-  - url: "https://commission.europa.eu/publications/circular-economy-package_en"
-    title: "European Commission: Circular Economy Action Plan"
-    accessed: "2025-12-27"
   - url: "https://ec.europa.eu/docsroom/documents/37581"
     title: "EU Guidance: Material Passports and building circularity"
     accessed: "2025-12-27"

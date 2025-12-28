@@ -23,11 +23,8 @@ official_sources:
   - url: "https://www.housingeurope.eu/"
     title: "Housing Europe — European Federation of Public, Cooperative & Social Housing"
     accessed: "2025-12-27"
-  - url: "https://commission.europa.eu/publications/social-europe_en"
-    title: "European Commission — Social and affordable housing policy resources"
-    accessed: "2025-12-27"
-  - url: "https://www.oecd.org/social/"
-    title: "OECD — Housing and social policy guidance"
+  - url: "http://web.archive.org/web/20240615043021/https://www.oecd.org/social/"
+    title: "OECD — Housing and social policy guidance (archived)"
     accessed: "2025-12-27"
 improvements:
   - "Add legal references and defensible zoning definitions for Functional Family reforms."

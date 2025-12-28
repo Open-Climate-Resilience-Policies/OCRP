@@ -22,12 +22,6 @@ official_sources:
   - url: "https://eur-lex.europa.eu/eli/dir/2010/31/oj"
     title: "EU Directive 2010/31/EU on the energy performance of buildings (EPBD)"
     accessed: "2025-12-27"
-  - url: "https://op.europa.eu/en/publication-detail/-/publication/5d6f0f88-7b6a-11ea-9e4e-01aa75ed71a1"
-    title: "EU guidance on financing energy renovation of buildings"
-    accessed: "2025-12-27"
-  - url: "https://commission.europa.eu/publications/smart-finance-smart-buildings_en"
-    title: "European Commission: Smart Finance for Smart Buildings initiative"
-    accessed: "2025-12-27"
 improvements:
   - "Add case_studies for pilot retrofit zones and repayment performance."
   - "Include grid constraint assessment checklist for clustered deployments."

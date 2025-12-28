@@ -4,15 +4,15 @@ slug: time-health-safety-act
 summary: "Abolishes biannual clock changes and adopts permanent standard time to reduce accidents, improve public health, and lower carbon emissions."
 keywords: [time, daylight saving, standard time, health, safety]
 official_sources:
-  - title: "University of Colorado Boulder DST Accident Study"
-    url: "https://www.colorado.edu/today/2020/03/25/daylight-saving-time-linked-higher-risk-fatal-car-crashes"
-    note: "Study showing 6% spike in fatal car accidents after DST spring forward."
-  - title: "Mexico DST Abolition Policy (2022)"
-    url: "https://www.gob.mx/salud/prensa/abolition-dst-mexico-2022"
-    note: "Official government summary of DST abolition and health rationale."
-  - title: "American Academy of Sleep Medicine Position Statement"
-    url: "https://aasm.org/advocacy/position-statements/permanent-standard-time/"
-    note: "Sleep scientists' consensus on permanent standard time."
+  - title: "Fatal crash risk after daylight saving time"
+    url: "https://pubmed.ncbi.nlm.nih.gov/32108051/"
+    note: "University of Colorado Boulder researchers quantify a 6% increase in fatal crashes after the spring transition (2020)."
+  - title: "Mexico scraps daylight saving time"
+    url: "https://www.taipeitimes.com/News/world/archives/2022/10/27/2003787828"
+    note: "Taipei Times coverage of Mexico's 2022 vote ending DST."
+  - title: "AASM position statement on permanent standard time"
+    url: "https://pubmed.ncbi.nlm.nih.gov/33372253/"
+    note: "Peer-reviewed statement from the American Academy of Sleep Medicine supporting permanent standard time."
 status: Draft
 layout: policy
 title: Time Health & Safety Act

@@ -9,14 +9,11 @@ keywords:
   - "induction"
   - "healthy homes"
 official_sources:
-  - url: "https://www.who.int/publications/i/item/9789240034865"
-    title: "WHO Housing and Health Guidelines"
+  - url: "https://pubmed.ncbi.nlm.nih.gov/26960814/"
+    title: "Gas cooking, indoor NO2 and childhood asthma risk (Lin et al., 2013)"
     accessed: "2025-12-27"
-  - url: "https://www.euro.who.int/en/health-topics/environment-and-health/urban-health"
-    title: "WHO Regional Office for Europe — Urban Health resources"
-    accessed: "2025-12-27"
-  - url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMCXXXXX"
-    title: "Peer-reviewed study on gas stoves and asthma (placeholder DOI to be replaced with exact citation)"
+  - url: "http://web.archive.org/web/20230315013653/https://www.euro.who.int/en/health-topics/environment-and-health/urban-health"
+    title: "WHO Regional Office for Europe — Urban Health resources (archived)"
     accessed: "2025-12-27"
 summary: "A public health-focused policy that phases out gas cooking to improve indoor air quality (IAQ) and mandates 'Induction-Ready' circuits to future-proof housing."
 hazard_type:

@@ -24,8 +24,8 @@ official_sources:
     url: "https://www.iso.org/standard/77845.html"
     note: "International standard for bidirectional EV charging communication (V2G), covering power transfer protocols, wireless communication, and automatic connection requirements (published April 2022, 561 pages)."
   - title: "UL 1741 / Smart Inverter Requirements"
-    url: "https://standardscatalog.ul.com/standards/en/standard_1741_2"
-    note: "Safety and anti-islanding requirements for inverters; UL catalog reference."
+    url: "http://web.archive.org/web/20191028161037/https://standardscatalog.ul.com/standards/en/standard_1741_2"
+    note: "Safety and anti-islanding requirements for inverters; UL catalog reference (archived)."
 ---
 
 ## Overview

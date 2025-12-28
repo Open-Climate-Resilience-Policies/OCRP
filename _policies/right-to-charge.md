@@ -26,9 +26,6 @@ official_sources:
   - url: "https://eur-lex.europa.eu/eli/reg/2023/1804/oj"
     title: "EU Regulation 2023/1804 on Alternative Fuels Infrastructure (successor to 2014/94/EU)"
     accessed: "2025-12-27"
-  - url: "https://ec.europa.eu/transport/themes/urban/urban_mobility_en"
-    title: "European Commission: Urban Mobility and Sustainable Transport"
-    accessed: "2025-12-27"
 ---
 
 ## Overview
