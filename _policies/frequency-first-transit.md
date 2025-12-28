@@ -12,6 +12,9 @@ keywords:
 - economics
 - urban-planning
 official_sources:
+- url: https://en.wikipedia.org/wiki/Headway
+  title: 'Wikipedia: Headway'
+  accessed: '2025-12-28'
 - url: https://content.tfl.gov.uk/bus-action-plan.pdf
   title: "Transport for London Bus Action Plan (2022) \u2014 Downs-Thomson parity\
     \ and headway elasticities"

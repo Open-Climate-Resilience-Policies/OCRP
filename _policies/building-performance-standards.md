@@ -9,6 +9,9 @@ keywords:
 - benchmarking
 - transparency
 official_sources:
+- url: https://en.wikipedia.org/wiki/Low-energy_building
+  title: 'Wikipedia: Low-energy building'
+  accessed: '2025-12-28'
 - url: https://eur-lex.europa.eu/eli/dir/2010/31/oj
   title: EU Directive 2010/31/EU on the energy performance of buildings (EPBD)
   accessed: '2025-12-27'

@@ -9,6 +9,9 @@ keywords:
   - "dynamic pricing"
   - "reinvestment"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Low-emission_zone
+    title: 'Wikipedia: Low-emission zone'
+    accessed: '2025-12-28'
   - url: "https://web.archive.org/web/20251022230720/https://itf-oecd.org/"
     title: "ITF/OECD — research on urban access, pricing and curb management (archived)"
     accessed: "2025-12-28"

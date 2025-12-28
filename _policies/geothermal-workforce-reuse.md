@@ -9,6 +9,9 @@ keywords:
   - "workforce reuse"
   - "firm power"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Geothermal_energy
+    title: 'Wikipedia: Geothermal energy'
+    accessed: '2025-12-28'
   - url: "https://energy.ec.europa.eu/topics/renewable-energy/geothermal-energy_en"
     title: "European Commission: Geothermal energy overview and policy"
     accessed: "2025-12-27"

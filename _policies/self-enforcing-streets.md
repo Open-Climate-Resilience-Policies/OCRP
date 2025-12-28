@@ -18,6 +18,9 @@ hazard_type:
 related_policies:
   - "15-minute-city-model"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Traffic_calming
+    title: 'Wikipedia: Traffic calming'
+    accessed: '2025-12-28'
   - url: "https://www.who.int/publications/i/item/9789241565684"
     title: "WHO: Save Lives — A Road Safety Technical Package"
     accessed: "2025-12-27"

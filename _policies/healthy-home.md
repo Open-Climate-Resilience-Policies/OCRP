@@ -9,6 +9,9 @@ keywords:
   - "induction"
   - "healthy homes"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Indoor_air_quality
+    title: 'Wikipedia: Indoor air quality'
+    accessed: '2025-12-28'
   - url: "https://pubmed.ncbi.nlm.nih.gov/26960814/"
     title: "Gas cooking, indoor NO2 and childhood asthma risk (Lin et al., 2013)"
     accessed: "2025-12-27"

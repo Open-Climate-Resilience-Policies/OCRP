@@ -18,6 +18,9 @@ keywords:
   - "deconstruction"
   - "material passports"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Circular_economy
+    title: 'Wikipedia: Circular economy'
+    accessed: '2025-12-28'
   - url: "https://ec.europa.eu/docsroom/documents/37581"
     title: "EU Guidance: Material Passports and building circularity"
     accessed: "2025-12-27"

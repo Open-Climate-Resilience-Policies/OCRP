@@ -19,6 +19,9 @@ date_enacted: '2024-11-01'
 date_effective: '2026-07-01'
 legal_reference: Decree No. 2024-1023
 official_sources:
+- url: https://en.wikipedia.org/wiki/Solar_carport
+  title: 'Wikipedia: Solar carport'
+  accessed: '2025-12-28'
 - url: https://web.archive.org/web/20250405101048/https://www.legifrance.gouv.fr/jorf/id/JORFTEXT0000000000
   title: "D\xE9cret n\xB0 2024-1023 (French Official Journal) (archived placeholder)"
   language: fr

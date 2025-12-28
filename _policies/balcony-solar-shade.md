@@ -22,6 +22,9 @@ related_policies:
 - solar-ready-buildings
 - tenant-energy-rights
 official_sources:
+- url: https://en.wikipedia.org/wiki/Brise_soleil
+  title: 'Wikipedia: Brise soleil'
+  accessed: '2025-12-28'
 - url: http://web.archive.org/web/20200105002649/https://standardscatalog.ul.com/standards/en/standard_1741
   title: 'UL 1741: Standard for Inverters, Converters, Controllers and Interconnection
     System Equipment (archived)'

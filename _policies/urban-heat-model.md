@@ -9,6 +9,9 @@ keywords:
 - cool roofs
 - tree canopy
 official_sources:
+- url: https://en.wikipedia.org/wiki/Urban_heat_island
+  title: 'Wikipedia: Urban heat island'
+  accessed: '2025-12-28'
 - url: https://environment.ec.europa.eu/strategy/biodiversity-strategy-2030_en
   title: EU Biodiversity Strategy for 2030
   accessed: '2025-12-27'

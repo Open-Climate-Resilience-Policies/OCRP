@@ -20,6 +20,9 @@ keywords:
   - "right to charge"
   - "micromobility"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Charging_station
+    title: 'Wikipedia: Charging station'
+    accessed: '2025-12-28'
   - url: "https://eur-lex.europa.eu/eli/dir/2014/94/oj"
     title: "EU Directive 2014/94/EU on the Deployment of Alternative Fuels Infrastructure"
     accessed: "2025-12-27"

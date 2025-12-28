@@ -8,6 +8,9 @@ keywords:
   - "composting"
   - "food recovery"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Food_loss_and_waste
+    title: 'Wikipedia: Food loss and waste'
+    accessed: '2025-12-28'
   - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
     title: "EU Directive 2008/98/EC on Waste and Repealing Certain Directives"
     accessed: "2025-12-27"

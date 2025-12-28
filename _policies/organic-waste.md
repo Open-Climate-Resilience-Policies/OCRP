@@ -8,6 +8,9 @@ keywords:
   - "compost"
   - "soil regeneration"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Anaerobic_digestion
+    title: 'Wikipedia: Anaerobic digestion'
+    accessed: '2025-12-28'
   - url: "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
     title: "EU Directive 2008/98/EC on Waste Framework Directive"
     accessed: "2025-12-27"

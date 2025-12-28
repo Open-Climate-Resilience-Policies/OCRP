@@ -9,6 +9,9 @@ keywords:
   - "repairability"
   - "right-to-repair"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Electronic_waste
+    title: 'Wikipedia: Electronic waste'
+    accessed: '2025-12-28'
   - url: "https://eur-lex.europa.eu/eli/dir/2012/19/oj"
     title: "EU Directive 2012/19/EU on Waste Electrical and Electronic Equipment (WEEE Recast)"
     accessed: "2025-12-27"

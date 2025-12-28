@@ -4,6 +4,9 @@ slug: time-health-safety-act
 summary: "Abolishes biannual clock changes and adopts permanent standard time to reduce accidents, improve public health, and lower carbon emissions."
 keywords: [time, daylight saving, standard time, health, safety]
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Daylight_saving_time
+    title: 'Wikipedia: Daylight saving time'
+    accessed: '2025-12-28'
   - title: "Fatal crash risk after daylight saving time"
     url: "https://pubmed.ncbi.nlm.nih.gov/32108051/"
     note: "University of Colorado Boulder researchers quantify a 6% increase in fatal crashes after the spring transition (2020)."

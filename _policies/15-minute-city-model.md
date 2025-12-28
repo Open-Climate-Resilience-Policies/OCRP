@@ -9,6 +9,9 @@ keywords:
 - complete neighborhoods
 - walkability
 official_sources:
+- url: https://en.wikipedia.org/wiki/15-minute_city
+  title: 'Wikipedia: 15-minute city'
+  accessed: '2025-12-28'
 - url: https://www.cnu.org/publicsquare/2021/02/08/defining-15-minute-city
   title: 'Congress for the New Urbanism: Defining the 15-minute city'
   accessed: '2025-12-27'

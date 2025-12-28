@@ -9,6 +9,9 @@ keywords:
   - "buy clean"
   - "carbon budgeting"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Sustainable_procurement
+    title: 'Wikipedia: Sustainable procurement'
+    accessed: '2025-12-28'
   - url: "https://eur-lex.europa.eu/eli/dir/2014/24/oj"
     title: "EU Directive 2014/24/EU on public procurement"
     accessed: "2025-12-27"

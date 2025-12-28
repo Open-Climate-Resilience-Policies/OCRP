@@ -9,6 +9,9 @@ keywords:
 - water usage
 - noise pollution
 official_sources:
+- url: https://en.wikipedia.org/wiki/Data_center
+  title: 'Wikipedia: Data center'
+  accessed: '2025-12-28'
 - url: https://eur-lex.europa.eu/homepage.html
   title: "EUR-Lex \u2014 European Union Law (search for data centre regulations and\
     \ environmental assessments)"

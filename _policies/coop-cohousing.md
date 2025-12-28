@@ -20,6 +20,9 @@ keywords:
   - "housing cooperatives"
   - "community land trust"
 official_sources:
+  - url: https://en.wikipedia.org/wiki/Cohousing
+    title: 'Wikipedia: Cohousing'
+    accessed: '2025-12-28'
   - url: "https://www.housingeurope.eu/"
     title: "Housing Europe — European Federation of Public, Cooperative & Social Housing"
     accessed: "2025-12-27"

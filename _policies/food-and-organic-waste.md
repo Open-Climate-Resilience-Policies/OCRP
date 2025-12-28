@@ -12,6 +12,9 @@ keywords:
 - composting
 - food recovery
 official_sources:
+- url: https://en.wikipedia.org/wiki/Composting
+  title: 'Wikipedia: Composting'
+  accessed: '2025-12-28'
 - url: https://eur-lex.europa.eu/eli/dir/2008/98/oj?locale=en
   title: Directive 2008/98/EC on waste (Waste Framework Directive)
   accessed: '2025-12-27'

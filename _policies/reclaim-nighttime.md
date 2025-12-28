@@ -20,6 +20,9 @@ related_policies:
 - urban-heat-model
 - healthy-home
 official_sources:
+- url: https://en.wikipedia.org/wiki/Thermal_comfort
+  title: 'Wikipedia: Thermal comfort'
+  accessed: '2025-12-28'
 - url: https://www.gov.uk/government/collections/heat
   title: UK Heatwave Plan for England (UKHSA & Met Office guidance)
   accessed: '2025-12-27'

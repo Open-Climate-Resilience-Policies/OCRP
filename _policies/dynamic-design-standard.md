@@ -10,6 +10,9 @@ keywords:
 - risk-management
 - engineering
 official_sources:
+- url: https://en.wikipedia.org/wiki/Climate_change_adaptation
+  title: 'Wikipedia: Climate change adaptation'
+  accessed: '2025-12-28'
 - url: https://knowledge4policy.ec.europa.eu/home_en
   title: "European Commission Knowledge for Policy \u2014 resilience and adaptation\
     \ resources"

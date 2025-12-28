@@ -20,6 +20,9 @@ keywords:
 - drought
 - water restrictions
 official_sources:
+- url: https://en.wikipedia.org/wiki/Water_conservation
+  title: 'Wikipedia: Water conservation'
+  accessed: '2025-12-28'
 - url: https://www.unwater.org/water-facts/water-scarcity
   title: 'UN Water: Global water scarcity facts'
   accessed: '2025-12-27'
