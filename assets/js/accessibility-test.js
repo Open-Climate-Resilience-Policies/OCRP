@@ -10,10 +10,10 @@
  */
 
 const { test, expect } = require('@playwright/test');
-const AxeBuilder = require('axe-playwright').default;
+const { injectAxe, checkA11y } = require('axe-playwright');
 
-// Test configuration
-const BASE_URL = 'http://localhost:4000';
+// Use Playwright's configured baseURL instead of hardcoding
+// This allows the test to work with different environments (local, CI, etc.)
 const AXE_CONFIG = {
   runOnly: {
     type: 'tag',
@@ -53,63 +53,62 @@ function formatViolations(violations, impact) {
 
 test.describe('WCAG 2.2 AA Accessibility Tests', () => {
   
-  test('Home page accessibility', async ({ page }) => {
-    await page.goto(BASE_URL);
+  test('Home page accessibility', async ({ page, baseURL }) => {
+    await page.goto(baseURL);
+    await injectAxe(page);
     
-    const results = await new AxeBuilder({ page })
-      .withTags(AXE_CONFIG.runOnly.values)
-      .analyze();
-    
-    const analysis = analyzeResults(results);
-    
-    // Log all violations for review
-    console.log(`\nHome Page Results: ${analysis.total} total violations`);
-    console.log(formatViolations(analysis.critical, 'critical'));
-    console.log(formatViolations(analysis.serious, 'serious'));
-    console.log(formatViolations(analysis.moderate, 'moderate'));
-    console.log(formatViolations(analysis.minor, 'minor'));
-    
-    // Enforce thresholds (fail on critical or serious)
-    expect(analysis.critical.length, 'Critical violations must be zero').toBe(0);
-    expect(analysis.serious.length, 'Serious violations must be zero').toBe(0);
+    // Run accessibility check and report violations
+    await checkA11y(page, null, {
+      runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag22aa'] }
+    }, (violations) => {
+      const critical = violations.filter(v => v.impact === 'critical');
+      const serious = violations.filter(v => v.impact === 'serious');
+      
+      console.log(`\nHome Page: ${violations.length} total violations`);
+      console.log(formatViolations(critical, 'critical'));
+      console.log(formatViolations(serious, 'serious'));
+      
+      expect(critical.length, 'Critical violations must be zero').toBe(0);
+      expect(serious.length, 'Serious violations must be zero').toBe(0);
+    });
   });
   
-  test('Policy index page accessibility', async ({ page }) => {
-    await page.goto(`${BASE_URL}/policies/`);
+  test('Policy index page accessibility', async ({ page, baseURL }) => {
+    await page.goto(`${baseURL}/policies/`);
+    await injectAxe(page);
     
-    const results = await new AxeBuilder({ page })
-      .withTags(AXE_CONFIG.runOnly.values)
-      .analyze();
-    
-    const analysis = analyzeResults(results);
-    
-    console.log(`\nPolicy Index Results: ${analysis.total} total violations`);
-    console.log(formatViolations(analysis.critical, 'critical'));
-    console.log(formatViolations(analysis.serious, 'serious'));
-    console.log(formatViolations(analysis.moderate, 'moderate'));
-    console.log(formatViolations(analysis.minor, 'minor'));
-    
-    expect(analysis.critical.length, 'Critical violations must be zero').toBe(0);
-    expect(analysis.serious.length, 'Serious violations must be zero').toBe(0);
+    await checkA11y(page, null, {
+      runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag22aa'] }
+    }, (violations) => {
+      const critical = violations.filter(v => v.impact === 'critical');
+      const serious = violations.filter(v => v.impact === 'serious');
+      
+      console.log(`\nPolicy Index: ${violations.length} total violations`);
+      console.log(formatViolations(critical, 'critical'));
+      console.log(formatViolations(serious, 'serious'));
+      
+      expect(critical.length, 'Critical violations must be zero').toBe(0);
+      expect(serious.length, 'Serious violations must be zero').toBe(0);
+    });
   });
   
-  test('Sample policy page accessibility', async ({ page }) => {
+  test('Sample policy page accessibility', async ({ page, baseURL }) => {
     // Test solar-parking as it has full official_sources
-    await page.goto(`${BASE_URL}/policies/solar-parking/`);
+    await page.goto(`${baseURL}/policies/solar-parking/`);
+    await injectAxe(page);
     
-    const results = await new AxeBuilder({ page })
-      .withTags(AXE_CONFIG.runOnly.values)
-      .analyze();
-    
-    const analysis = analyzeResults(results);
-    
-    console.log(`\nSample Policy Results: ${analysis.total} total violations`);
-    console.log(formatViolations(analysis.critical, 'critical'));
-    console.log(formatViolations(analysis.serious, 'serious'));
-    console.log(formatViolations(analysis.moderate, 'moderate'));
-    console.log(formatViolations(analysis.minor, 'minor'));
-    
-    expect(analysis.critical.length, 'Critical violations must be zero').toBe(0);
-    expect(analysis.serious.length, 'Serious violations must be zero').toBe(0);
+    await checkA11y(page, null, {
+      runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag22aa'] }
+    }, (violations) => {
+      const critical = violations.filter(v => v.impact === 'critical');
+      const serious = violations.filter(v => v.impact === 'serious');
+      
+      console.log(`\nSample Policy: ${violations.length} total violations`);
+      console.log(formatViolations(critical, 'critical'));
+      console.log(formatViolations(serious, 'serious'));
+      
+      expect(critical.length, 'Critical violations must be zero').toBe(0);
+      expect(serious.length, 'Serious violations must be zero').toBe(0);
+    });
   });
 });

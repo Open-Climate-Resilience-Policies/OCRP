@@ -1,7 +1,5 @@
-const { defineConfig, devices } = require('@playwright/test');
-
-module.exports = defineConfig({
-  testDir: './',
+module.exports = {
+  testDir: 'assets/js',
   testMatch: '**/accessibility-test.js',
   timeout: 30000,
   expect: {
@@ -17,17 +15,10 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
   },
 
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-  ],
-
   webServer: {
     command: 'cd _site && python3 -m http.server 8080',
     url: 'http://localhost:8080',
     reuseExistingServer: !process.env.CI,
     timeout: 120000,
   },
-});
+};
