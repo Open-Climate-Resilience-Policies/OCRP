@@ -2,26 +2,47 @@
 
 A collaborative repository of climate resilience policies, strategies, and best practices for municipalities and organizations worldwide. This site is built with Jekyll and hosted on GitHub Pages.
 
-## 🚀 Project Structure
+## 🚀 Quick Start
 
+### For Contributors
+1. **Understand the structure**: See [REPOSITORY_ORGANIZATION.md](REPOSITORY_ORGANIZATION.md) for directory guide
+2. **Add a policy**: Copy template from `templates/policy-template.md` to `_policies/`
+3. **Validate**: Run `python scripts/consistency_guardian.py --all`
+4. **Submit**: Create a PR with passing checks
+
+### For Developers
+```bash
+# Setup
+python3 -m venv venv
+source venv/bin/activate
+pip install -r scripts/requirements.txt
+
+# Local development
+bundle exec jekyll serve --livereload  # http://localhost:4000
+
+# Quality checks
+python scripts/consistency_guardian.py --all
 ```
-/
-├── _layouts/            # Jekyll layouts
-│   ├── default.html     # Main page layout
-│   └── policy.html      # Policy page layout
-├── _policies/           # Policy collection (markdown files)
-│   ├── urban-heat-model.md
-│   └── ...
-├── assets/
-│   ├── css/             # Stylesheets
-│   └── img/             # Images and SVG files
-├── policies/            # Policy listing page (paginated)
-│   └── index.md
-├── _config.yml          # Jekyll configuration
-├── index.md             # Home page
-├── about.md             # About page
-└── contribute.md        # Contribution guide
-```
+
+## 📁 Project Structure
+
+**Content** (What we publish):
+- `_policies/` — 31 climate resilience policies (markdown with frontmatter)
+- `_layouts/` — Jekyll templates for policy rendering
+- `assets/` — CSS, JavaScript, images served to visitors
+
+**Tools** (How we maintain quality):
+- `scripts/` — Production tools (consistency checker, validators, link scanner)
+- `scripts/tools/` — Experimental tools (not used in standard workflow)
+- `templates/` — Policy authoring templates and guides
+
+**Supporting**:
+- `archive/` — Deprecated policies and backups
+- `evidence/` — Supporting research documents
+- `data/` — Auto-generated indices and metadata
+- `.github/` — GitHub Actions workflows (planned)
+
+**Full guide**: See [REPOSITORY_ORGANIZATION.md](REPOSITORY_ORGANIZATION.md)
 
 ## 🌐 Live Site
 
