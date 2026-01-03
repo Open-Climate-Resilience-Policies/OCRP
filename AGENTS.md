@@ -484,11 +484,71 @@ test -f _site/index.html
 
 ---
 
-## 12. Local Development Commands
+## 12. Repository Directory Structure
 
-- **Python tools:** `python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt` (needed for `consistency_guardian.py`, `validate_frontmatter.py`, `find_broken_links.py`).
-- **Run guardian on all policies:** `python scripts/consistency_guardian.py --all` (use `--changed` for staged/modified only).
+### `/scripts` - Quality Assurance Tools (Primary)
+Python tools for maintaining policy quality and repository health:
+- **`consistency_guardian.py`** - Agent D quality checker (Check 1-8, including inline link validation)
+- **`validate_frontmatter.py`** - YAML frontmatter validation
+- **`find_broken_links.py`** - Scans official_sources for dead URLs
+- **`apply_wayback_replacements.py`** - Auto-archives dead links via Wayback Machine
+- **`detect_redundancy.py`** - Identifies overlapping policies
+- **`build_taxonomy.py`** - Generates policy taxonomy
+
+**Setup:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**Common Commands:**
+```bash
+# Full quality check (recommended before commits)
+python scripts/consistency_guardian.py --all
+
+# Check only modified policies
+python scripts/consistency_guardian.py --changed
+
+# Auto-update redirected links
+python scripts/consistency_guardian.py --update-redirects --all
+
+# Validate YAML frontmatter
+python scripts/validate_frontmatter.py
+
+# Find broken official_sources links
+python scripts/find_broken_links.py
+```
+
+### `/tools` - Experimental Verification Tools (Deprecated)
+Legacy claim extraction and verification harness - **not actively maintained**:
+- `extract_claims.py` - Extracts verifiable claims from policies
+- `verify_harness_template.py` - LLM-based claim verification (skeleton)
+- `ensure_overviews.py` - Policy overview generation helper
+
+**Status:** These tools are experimental and not part of the standard workflow. The consistency guardian (`scripts/`) has replaced most verification needs.
+
+### `/assets` - Public-Facing Static Assets
+CSS, JavaScript, and images served to site visitors:
+- `assets/css/` - Stylesheets
+- `assets/js/` - Client-side interactive features
+- `assets/images/` - Icons, diagrams, illustrations
+
+### Other Key Directories
+- **`/_policies`** - Policy markdown source files (content)
+- **`/_layouts`** - Jekyll page templates
+- **`/_site`** - Generated static site (git-ignored, built by Jekyll)
+- **/`archive`** - Deprecated policies and backup files
+- **/`templates`** - Policy authoring templates
+- **/`evidence`** - Supporting documentation and research
+
+---
+
+## 13. Local Development Commands
+
 - **Preferred local webserver:** `bundle exec jekyll serve --livereload` (requires `bundle install`).
+- **Run quality checks:** See `/scripts` commands above.
+- **Build site:** `bundle exec jekyll build --strict_front_matter`
 
 
 ### HTML validation
@@ -562,7 +622,7 @@ test -f _site/index.html
 
 ---
 
-## 12. Definition of Done (For Any New Tool or Major Change)
+## 14. Definition of Done (For Any New Tool or Major Change)
 
 A change is not considered complete until all of the following are true:
 
