@@ -64,7 +64,7 @@ Traditional solar requires permits, electricians, and inspections. "Balcony Sola
     * *Safety:* Systems must use certified micro-inverters that auto-shutoff during grid outages (anti-islanding) and comply with UL 1741 / IEEE 1547 / EN 50549-1.
 
 **Real-World Example:**
-* **Germany:** In 2024, Germany recognized balcony solar as a "privileged measure" under its plug-in PV guidance, meaning landlords can no longer block compliant systems without substantial cause (see BNetzA/DKE guidance).
+* **Germany:** In 2024, [Germany recognized balcony solar](https://www.bundesnetzagentur.de/EN/Areas/Energy/Companies/RenewableEnergy/Facts_Figures_EEG/start.html) as a "privileged measure" under its plug-in PV guidance, meaning landlords can no longer block compliant systems without substantial cause (see BNetzA/DKE guidance).
 
 ## Policy 2: The "Right to Shade" (Geneva Model)
 
@@ -77,8 +77,8 @@ Air conditioning is reactive (removing heat after it enters). Shutters are proac
 2.  **Retrofit Right:** Tenants in existing buildings have the "Right to Shade." Landlords cannot unreasonably deny the installation of **non-permanent** external shading (e.g., clamp-on awnings or suction-mounted shutters) that do not drill into the facade.
 
 **Real-World Example:**
-* **Geneva, Switzerland:** Building codes effectively mandate external shading to meet energy efficiency targets. This is why most Swiss apartments feature "storen" (external blinds) that can be lowered during the day, drastically reducing the need for AC even in summer heatwaves.
-* **United Kingdom:** The new **"Part O" Building Regulation** (2022) legally requires new homes to be designed to limit overheating, explicitly pushing developers toward external shading rather than just adding more AC.
+* **Geneva, Switzerland:** [Building codes](https://www.ge.ch/legislation/rsg/f/s/rsg_l5_05.html) effectively mandate external shading to meet energy efficiency targets. This is why most Swiss apartments feature "storen" (external blinds) that can be lowered during the day, drastically reducing the need for AC even in summer heatwaves.
+* **United Kingdom:** The new [**"Part O" Building Regulation**](https://www.gov.uk/government/publications/overheating-approved-document-o) (2022) legally requires new homes to be designed to limit overheating, explicitly pushing developers toward external shading rather than just adding more AC.
 
 ## Policy 3: Grid Safety & "Breaker Masking"
 

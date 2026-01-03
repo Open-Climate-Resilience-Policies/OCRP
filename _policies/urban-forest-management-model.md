@@ -50,8 +50,8 @@ The framework is built on four pillars: Policy Principles, Planning, Regulations
 - Account for the "forest footprint" of city procurement decisions (timber, food, materials)
 
 **Examples in Practice:**
-- **Oslo, Norway**: Protects the "Marka" forest ring from development sprawl and tracks deforestation impact of goods purchased by the city ([Oslo Climate Strategy 2030](https://www.oslo.kommune.no/politics-and-administration/green-oslo/best-practices/climate-strategy/#gref))
-- **Mexico City, Mexico**: Focuses on preventing illegal logging and sprawl in the "Suelo de Conservación" (conservation land) that serves as the city's primary water source ([Green Infrastructure Strategy](https://www.c40.org/case-studies/mexico-city-creating-a-green-infrastructure-system/))
+- **Oslo, Norway**: Protects the ["Marka" forest ring](https://www.oslo.kommune.no/politics-and-administration/green-oslo/best-practices/climate-strategy/#gref) from development sprawl and tracks deforestation impact of goods purchased by the city
+- **Mexico City, Mexico**: Focuses on preventing illegal logging and sprawl in the ["Suelo de Conservación"](https://www.c40.org/case-studies/mexico-city-creating-a-green-infrastructure-system/) (conservation land) that serves as the city's primary water source
 
 ### 2. Treat Forests as Essential Infrastructure
 
@@ -64,8 +64,8 @@ The framework is built on four pillars: Policy Principles, Planning, Regulations
 - Use infrastructure planning methodologies (asset management, lifecycle costing) for tree management
 
 **Examples in Practice:**
-- **Sacramento, California, USA**: Trees are legally recognized as a form of utility and infrastructure for cooling and air quality, integrated into the city's Climate Action & Adaptation Plan ([Sacramento Urban Forest Plan](https://www.cityofsacramento.gov/ParksandRec/Parks/Urban-Forestry/masterplan))
-- **Jakarta, Indonesia**: Utilized infrastructure mapping approaches to target tree planting in flood-prone areas where trees act as natural water management systems ([Cities4Forests Jakarta Project](https://cities4forests.com/jakarta/))
+- **Sacramento, California, USA**: Trees are legally recognized as a form of [utility and infrastructure](https://www.cityofsacramento.gov/ParksandRec/Parks/Urban-Forestry/masterplan) for cooling and air quality, integrated into the city's Climate Action & Adaptation Plan
+- **Jakarta, Indonesia**: Utilized [infrastructure mapping approaches](https://cities4forests.com/jakarta/) to target tree planting in flood-prone areas where trees act as natural water management systems
 
 ### 3. Prioritize Equity
 
@@ -78,8 +78,8 @@ The framework is built on four pillars: Policy Principles, Planning, Regulations
 - Target public investment in areas with the greatest need and least existing coverage
 
 **Examples in Practice:**
-- **Vancouver, Canada**: Set a goal to double street tree density in specific low-income neighborhoods like the Downtown Eastside to address inequity ([Urban Forest Strategy](https://vancouver.ca/files/cov/urban-forest-strategy.pdf))
-- **Glasgow, Scotland**: Adopted a "10 trees for every person" target with explicit focus on urban areas to ensure residents in "grey" areas have access to green space ([Clyde Climate Forest](https://clyderebuild.co.uk/our-work/clyde-climate-forest))
+- **Vancouver, Canada**: Set a goal to double street tree density in specific low-income neighborhoods like the [Downtown Eastside](https://vancouver.ca/files/cov/urban-forest-strategy.pdf) to address inequity
+- **Glasgow, Scotland**: Adopted a ["10 trees for every person"](https://clyderebuild.co.uk/our-work/clyde-climate-forest) target with explicit focus on urban areas to ensure residents in "grey" areas have access to green space
 
 ### 4. Use the "Right Tree, Right Place"
 

@@ -55,7 +55,7 @@ The City Charter is amended to require a **"Carbon Budget"** be passed simultane
 3.  **The "Gatekeeper" Rule:** No capital project (e.g., a new road or library) can be approved for funding unless its projected emissions fit within the department's remaining Carbon Cap.
 
 **Real-World Example:**
-* **Oslo, Norway:** Since 2017, Oslo has integrated its climate budget into its financial budget. They count carbon reduction measures line-by-line. If a measure (e.g., electric buses) is delayed, the budget is "unbalanced," and the city must cut emissions elsewhere or stop projects to close the gap.
+* **Oslo, Norway:** Since 2017, [Oslo has integrated its climate budget](https://www.oslo.kommune.no/politics-and-administration/green-oslo/best-practices/climate-budget/#gref) into its financial budget. They count carbon reduction measures line-by-line. If a measure (e.g., electric buses) is delayed, the budget is "unbalanced," and the city must cut emissions elsewhere or stop projects to close the gap.
 
 ## Policy 2: "Buy Clean" Infrastructure (Concrete & Steel)
 
@@ -69,7 +69,7 @@ Construction materials (specifically concrete and steel) account for ~11% of glo
     * *Ratchet:* The limit tightens by 5-10% every 2 years, forcing suppliers to innovate (e.g., using injected CO2 or recycled aggregates) to keep winning government contracts.
 
 **Real-World Example:**
-* **Buy Clean California Act:** State projects are prohibited from buying steel, glass, or insulation that exceeds specific GWP limits. This forced suppliers to map their supply chains to stay eligible for state contracts.
+* **Buy Clean California Act:** [State projects](https://www.dgs.ca.gov/PD/Resources/Page-Content/Procurement-Division-Resources-List-Folder/Buy-Clean-California-Act) are prohibited from buying steel, glass, or insulation that exceeds specific GWP limits. This forced suppliers to map their supply chains to stay eligible for state contracts.
 
 ## Policy 3: The "Shadow Carbon Price" (Incentivizing Green Providers)
 
@@ -85,7 +85,7 @@ In all public tenders (RFPs), the City applies a **Shadow Carbon Price** (e.g., 
 * **Outcome:** This rewards innovation. A company that invests in electric trucks or low-carbon materials can now beat a cheaper, dirtier competitor.
 
 **Real-World Example:**
-* **Vancouver, Canada:** The city uses a shadow carbon price in its capital planning to justify buying electric heat pumps over gas boilers. Even if gas is cheaper upfront, the shadow price makes it "expensive" on the ledger, justifying the green investment.
+* **Vancouver, Canada:** The city uses a [shadow carbon price](https://vancouver.ca/green-vancouver/carbon-pricing.aspx) in its capital planning to justify buying electric heat pumps over gas boilers. Even if gas is cheaper upfront, the shadow price makes it "expensive" on the ledger, justifying the green investment.
 
 ## Policy 4: The Zero-Emission Fleet Mandate
 

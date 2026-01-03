@@ -111,7 +111,7 @@ This mandate supports national and regional renewable energy transition goals by
 Major retailers and commercial property owners are implementing solar parking canopies as part of capital upgrades:
 
 **Carrefour Supermarket Chain:**
-- **350 solar carport installations** planned
+- [**350 solar carport installations** planned](https://www.carrefour.com/en/group/csr)
 - **450 gigawatt hours** annual production expected
 - **180,000 parking spaces** to be covered
 - **First installations**: connected to grid in 2025
