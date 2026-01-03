@@ -328,18 +328,29 @@ class ConsistencyGuardian:
         if news_only and len(official_sources) == len(news_only):
             review.add_warning("Only news articles as sources; add primary sources (legislation, reports)")
     
-    def check_inline_examples(self, review: PolicyReview, content: str, frontmatter: dict):
-        """Check 5.5: Verify inline links to real-world examples and precedents"""
+    def check_inline_examples(self, review: PolicyReview, content: str, frontmatter: dict, update_redirects: bool = False):
+        """Check 5.5: Verify inline links to real-world examples and precedents
+        
+        Args:
+            review: PolicyReview object to track issues
+            content: Policy markdown content
+            frontmatter: Policy frontmatter dict
+            update_redirects: If True, captures redirect destinations (used by auto-update)
+        
+        Returns:
+            Dict of redirected URLs {old_url: new_url} if update_redirects=True
+        """
         # Extract all inline markdown links [text](url)
         inline_links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
         
         if not inline_links:
             review.add_warning("No inline links to real-world examples detected; consider citing precedents")
-            return
+            return {} if update_redirects else None
         
         # Validate URLs
         dead_links = []
         domains = []
+        redirected_urls = {}  # Track {old_url: new_url}
         
         for link_text, url in inline_links:
             # Skip internal fragment links
@@ -355,6 +366,13 @@ class ConsistencyGuardian:
             if url.startswith('http://') or url.startswith('https://'):
                 try:
                     response = requests.head(url, timeout=self.timeout, allow_redirects=True)
+                    
+                    # Capture redirect destination if URL changed
+                    if response.url != url:
+                        redirected_urls[url] = response.url
+                        if update_redirects:
+                            review.add_pass(f"Redirect captured: {url} → {response.url}")
+                    
                     if response.status_code >= 400:
                         dead_links.append((link_text, url, response.status_code))
                 except requests.RequestException as e:
@@ -392,6 +410,66 @@ class ConsistencyGuardian:
             review.add_warning("No authoritative sources (.gov, .edu, legislation sites) found in inline examples")
         
         review.add_pass(f"Inline examples: {len(inline_links)} links, {len(set(domains))} unique domains")
+        
+        return redirected_urls if update_redirects else None
+    
+    def update_inline_link_redirects(self, filepath: Path) -> Dict[str, str]:
+        """Detect and update inline links that have been redirected.
+        
+        Follows HTTP redirects and updates the policy file to point to final URLs.
+        Only updates if the final URL appears to be valid (not an error page).
+        
+        Returns:
+            Dict of updated URLs {old_url: new_url}
+        """
+        with open(filepath, 'r') as f:
+            content = f.read()
+        
+        # Parse policy to get content
+        frontmatter, policy_content, _ = self.parse_policy(filepath)
+        
+        # Extract inline links and check for redirects
+        inline_links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', policy_content)
+        updates = {}
+        
+        for link_text, url in inline_links:
+            # Skip fragments and relative links
+            if url.startswith('#') or not url.startswith('http'):
+                continue
+            
+            try:
+                response = requests.head(url, timeout=self.timeout, allow_redirects=True)
+                # Only update if:
+                # 1. A redirect occurred (response.url != url)
+                # 2. Final page is accessible (status 2xx-3xx, not 4xx/5xx)
+                # 3. Final URL doesn't look like an error page
+                if response.url != url and response.status_code < 400:
+                    final_url = response.url
+                    # Reject URLs that look like error pages
+                    error_patterns = ['/error', '/404', '/not-found', '?error=', 'page-not-found']
+                    if not any(pattern in final_url.lower() for pattern in error_patterns):
+                        updates[url] = final_url
+            except requests.RequestException:
+                # Skip URLs that can't be checked
+                pass
+        
+        # Apply updates to the file
+        if updates:
+            new_content = content
+            for old_url, new_url in updates.items():
+                # Use re.escape to handle special characters in URL
+                escaped_old = re.escape(old_url)
+                new_content = re.sub(
+                    f'\\({escaped_old}\\)',
+                    f'({new_url})',
+                    new_content
+                )
+            
+            # Write updated content back
+            with open(filepath, 'w') as f:
+                f.write(new_content)
+        
+        return updates
     
     def check_geographic_compatibility(self, review: PolicyReview, content: str, frontmatter: dict):
         """Check 5: Geographic & Legal System Compatibility"""
@@ -606,13 +684,14 @@ Respond in JSON format:
 
 def main():
     parser = argparse.ArgumentParser(description="Agent D: Consistency Guardian - Policy Quality Checker")
-    parser.add_argument('policy', nargs='?', help="Path to specific policy file to review")
+    parser.add_argument('policy', nargs='*', help="Path to specific policy file(s) to review")
     parser.add_argument('--all', action='store_true', help="Review all policies")
     parser.add_argument('--changed', action='store_true', help="Review only git-modified policies")
     parser.add_argument('--llm', choices=['ollama', 'llama-cpp', 'lm-studio'], help="Enable LLM-powered adversarial analysis")
     parser.add_argument('--model', default='llama3', help="LLM model name (default: llama3)")
     parser.add_argument('--policies-dir', default='_policies', help="Path to policies directory")
     parser.add_argument('--output', help="Save report to file instead of stdout")
+    parser.add_argument('--update-redirects', action='store_true', help="Automatically update inline links that have been redirected")
     
     args = parser.parse_args()
     
@@ -621,6 +700,37 @@ def main():
         llm_provider=args.llm,
         llm_model=args.model
     )
+    
+    # Handle redirect update mode
+    if args.update_redirects:
+        policies_to_check = []
+        if args.all:
+            policies_to_check = guardian.all_policies
+        elif args.changed:
+            import subprocess
+            result = subprocess.run(['git', 'diff', '--name-only', 'HEAD'], capture_output=True, text=True)
+            policies_to_check = [Path(f) for f in result.stdout.split('\n') if f.startswith('_policies/') and f.endswith('.md')]
+        elif args.policy:
+            policies_to_check = [Path(p) for p in args.policy]
+        
+        if policies_to_check:
+            print("🔗 Checking for and updating redirected inline links...\n")
+            total_updates = 0
+            policies_updated = 0
+            
+            for policy_path in policies_to_check:
+                updates = guardian.update_inline_link_redirects(policy_path)
+                if updates:
+                    print(f"📝 {policy_path.name}:")
+                    for old_url, new_url in updates.items():
+                        print(f"   ✓ Updated to final destination")
+                        print(f"     {old_url[:65]}...")
+                        print(f"     → {new_url[:65]}...")
+                    total_updates += len(updates)
+                    policies_updated += 1
+            
+            print(f"\n✅ Complete: {policies_updated} policies updated, {total_updates} links improved")
+            sys.exit(0)
     
     reviews = []
     
@@ -634,7 +744,9 @@ def main():
         for filepath in changed_files:
             reviews.append(guardian.review_policy(Path(filepath)))
     elif args.policy:
-        reviews.append(guardian.review_policy(Path(args.policy)))
+        # Handle both single and multiple policy files
+        for policy_file in args.policy:
+            reviews.append(guardian.review_policy(Path(policy_file)))
     else:
         parser.print_help()
         sys.exit(1)
