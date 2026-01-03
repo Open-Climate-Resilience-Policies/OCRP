@@ -1,9 +1,25 @@
 ---
+layout: policy
 title: "Sea Level Rise, Coastal Construction, and Climate Risk Policy"
 summary: "A policy framework governing construction, redevelopment, and infrastructure investment in coastal and low-lying areas exposed to sea level rise, integrating climate risk disclosure, nature-based protection, managed retreat, and financial accountability."
+slug: "sea-level"
 type: "Climate-adaptation-and-land-use"
 jurisdiction: "Generic / Coastal"
+date: "2026-01-03"
 date_enacted: "2026-01-03"
+keywords:
+  - coastal-resilience
+  - climate-risk
+  - nature-based-adaptation
+official_sources:
+  - title: "BC Sea Level Rise Adaptation Guidelines"
+    url: "https://www2.gov.bc.ca/gov/content/safety/natural-disaster-management/hazard-mitigation/sea-level-rise-adaptation-guidelines"
+  - title: "OECD Coastal Adaptation"
+    url: "https://www.oecd.org/environment/"
+  - title: "New Zealand Coastal Policy Statement"
+    url: "https://www.doc.govt.nz/about-us/our-role/how-we-do-our-work/new-zealand-coastal-policy-statement/"
+  - title: "UK Shoreline Management Plans"
+    url: "https://www.gov.uk/government/publications/shoreline-management-plans-smps"
 related_policies:
   - "Integrated Freshwater, Wetland, and Marine Ecosystem Management Policy"
   - "Biodiversity Corridors & Rewilding Mandate"
@@ -21,6 +37,23 @@ Its objectives are to:
 
 ---
 
+## Enforcement Framework
+
+**Permit Conditioning:**
+- No building, development, or infrastructure permit shall be issued in coastal flood risk zones unless applicant submits a Climate Risk Assessment per Policy 1.
+- Permits shall require certification by a qualified coastal engineer.
+
+**Compliance Verification:**
+- Authority shall inspect completed structures within 12 months of occupancy to verify adaptive design features are installed.
+- Non-compliance shall result in stop-work orders and penalties per local regulations.
+
+**Consequences for Violation:**
+- First violation: Written notice; 90-day compliance deadline.
+- Second violation: Fine of not less than 10% of project value; 30-day deadline.
+- Habitual violation (3+ in 5 years): Permit application suspension; performance bonding required thereafter.
+
+---
+
 ## Scope
 
 This policy applies to:
@@ -33,12 +66,12 @@ This policy applies to:
 
 ## Policy 1: Forward-Looking Sea Level Rise Risk Assessment
 
-Construction decisions must be based on **projected future conditions**, not historical baselines.
+Construction decisions shall be based on **projected future conditions**, not historical baselines.
 
 Requirements:
-1. Planning and permitting must use the best available sea level rise and coastal flood projections.
-2. Risk must be assessed across multiple time horizons aligned with asset lifespan.
-3. Uncertainty must be addressed through precautionary design and adaptive capacity.
+1. Planning and permitting shall require peer-reviewed sea level rise projections extending to 2100 (minimum), using RCP 4.5 and RCP 8.5 climate scenarios.
+2. Risk shall be assessed across three time horizons: 2050, 2075, 2100, aligned with asset operational lifespan.
+3. Design safety margin shall be 0.5 m above projected maximum still-water levels to account for uncertainty and subsidence.
 
 ---
 
@@ -47,22 +80,26 @@ Requirements:
 Development that creates future public liability is prohibited.
 
 Requirements:
-1. New permanent construction in areas subject to chronic inundation or severe erosion must be avoided.
-2. Where avoidance is not feasible, proponents must demonstrate:
-   - no increase in risk to adjacent lands or ecosystems
-   - no reliance on future public-funded protection
-3. Temporary, relocatable, or low-intensity uses are preferred in high-risk zones.
+1. New permanent construction in areas where projected 100-year still-water level (2100) would cause inundation or erosion exceeding 0.5 m shall be prohibited unless an exemption is approved by [Authority].
+2. Where Authority grants exemption, proponent shall demonstrate via certified engineering report:
+   - No net increase in flood or erosion risk to adjacent properties or infrastructure (verified via 2D hydraulic modeling)
+   - No reliance on future public funding for insurance, repairs, or protection works
+   - Performance bond posted equal to 150% of estimated future climate damages (bond held 50 years post-construction)
+3. In high-risk zones (>25% probability of economic loss over 50-year horizon), only temporary (<10-year lifespan), relocatable, or agricultural uses shall be permitted without exemption.
 
 ---
 
 ## Policy 3: Adaptive Construction and Infrastructure Design
 
-Where construction proceeds, it must be climate-adaptive by default.
+Where construction proceeds, it shall be climate-adaptive by default.
 
 Requirements:
-1. Structures must incorporate adaptive features enabling elevation, flood tolerance, or future relocation.
-2. Critical infrastructure must maintain safe operation or fail safely under future scenarios.
-3. Designs must allow future retrofits without disproportionate cost.
+1. All structures in flood-risk zones shall incorporate one or more adaptive features:
+   - Elevation above projected 2100 still-water level plus 1 m freeboard
+   - Flood-tolerant construction (permeable first floor; mechanical systems above flood elevation)
+   - Foundation design enabling future elevation without structural failure
+2. Critical infrastructure (hospitals, water treatment, substations) shall maintain safe operation under 2100 scenarios or shall be relocated.
+3. Buildings with >50-year expected lifespan shall include mechanical connections permitting future elevation.
 
 ---
 
@@ -71,9 +108,9 @@ Requirements:
 Natural systems are treated as **primary coastal defense infrastructure**.
 
 Requirements:
-1. Tidal wetlands, dunes, reefs, and natural shorelines must be protected and restored.
-2. Hard armoring is permitted only where nature-based solutions are demonstrably infeasible.
-3. Coastal protection must not block sediment movement or wetland migration.
+1. Tidal wetlands, dunes, reefs, and natural shorelines shall be protected; no net loss is required (measured in hectares). Restoration projects shall achieve net gain of 25% above baseline within 10 years post-project.
+2. Hard armoring (bulkheads, seawalls) is permitted only when proponent demonstrates via written feasibility assessment that nature-based solutions (wetland restoration, dune building, living shorelines) cannot achieve the same coastal defense function within project budget and timeline. Assessment shall be reviewed by [Authority] and made public.
+3. Coastal protection designs shall not impede sediment transport or prevent wetland landward migration; designs shall include sediment bypass structures where appropriate.
 
 ---
 
@@ -82,27 +119,27 @@ Requirements:
 Planned retreat is a legitimate adaptation strategy.
 
 Requirements:
-1. Authorities must identify zones where retreat is the safest long-term option.
-2. Planning instruments must enable gradual withdrawal from high-risk areas.
-3. Transitioned lands should be restored for ecosystem function, flood storage, or public use.
+1. Authorities shall identify and map Managed Retreat Zones where 100-year (2100) inundation probability exceeds 50%. Zones shall be updated every 5 years.
+2. Planning instruments (zoning bylaws, development prohibitions, land acquisition programs) shall be enacted within 24 months of zone identification to enable gradual withdrawal from high-risk areas.
+3. Transitioned lands shall be restored within 10 years of acquisition; restoration plans shall specify end-use (wetland, floodplain, public access, habitat) and measurable success criteria.
 
 ---
 
 ## Policy 6: Indigenous Rights and Coastal Governance
 
 Requirements:
-1. Indigenous rights, title, and governance interests must be recognized in coastal decisions.
-2. Indigenous knowledge must inform risk assessment and adaptation planning.
-3. Co-governance mechanisms should be established where applicable.
+1. Indigenous rights, title, and governance interests shall be formally recognized in coastal decision-making; proponents shall engage Indigenous communities within the policy jurisdiction at the earliest planning stage, with a minimum 120-day consultation period before permit issuance.
+2. Indigenous knowledge holders shall be invited to contribute to risk assessment and adaptation planning; contributions shall be documented in project files and acknowledged in final reports.
+3. Where Indigenous title or governance interests apply, co-governance mechanisms (co-management boards, joint decision-making, Indigenous lead authority) shall be established prior to major infrastructure or land-use decisions in affected areas.
 
 ---
 
 ## Policy 7: Community Risk Transparency
 
 Requirements:
-1. Coastal risk information must be publicly accessible and understandable.
-2. Communities must be meaningfully involved in adaptation decisions.
-3. Public investments must be justified in terms of avoided future risk.
+1. Coastal risk information (maps, projections, uncertainty ranges) shall be published on [Authority] website and updated annually. Maps shall show 2050, 2075, 2100 scenarios using RCP 4.5 and RCP 8.5 in plain language.
+2. For any public infrastructure investment exceeding $[X] million in coastal areas, [Authority] shall conduct a public consultation process including at least two open forums, written summary-and-response period (30 days minimum), and online comment portal. Comments shall be documented and addressed.
+3. Public investments shall be justified in a public document stating the specific coastal risks avoided, quantified in terms of property at risk, population exposed, and ecosystem benefits (hectares protected).
 
 ---
 
