@@ -25,19 +25,15 @@ layout: default
   <div class="policy-sources">
     {% if page.official_sources %}
     <h2>Official Sources</h2>
-    <ul>
-      {% for source in page.official_sources %}
-      <li><a href="{{ source.url }}">{{ source.title }}</a></li>
-      {% endfor %}
+    <ul>{% for source in page.official_sources %}
+      <li><a href="{{ source.url }}">{{ source.title }}</a></li>{% endfor %}
     </ul>
     {% endif %}
 
     {% if page.news_sources %}
     <h2>News Coverage</h2>
-    <ul>
-      {% for source in page.news_sources %}
-      <li><a href="{{ source.url }}">{{ source.title }}</a></li>
-      {% endfor %}
+    <ul>{% for source in page.news_sources %}
+      <li><a href="{{ source.url }}">{{ source.title }}</a></li>{% endfor %}
     </ul>
     {% endif %}
   </div>
@@ -70,15 +66,13 @@ layout: default
     <h2 id="related-policies-heading">Related Policies</h2>
     <ul class="related-policies-list">
       {% for policy in related_policies limit: 5 %}
+      <li>{% for policy in related_policies limit: 5 %}
       <li>
         <a href="{{ policy.url | relative_url }}">
           <strong>{{ policy.title }}</strong>
           {% if policy.summary %}<span class="related-summary">{{ policy.summary | truncate: 120 }}</span>{% endif %}
         </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </aside>
+      </li>ide>
   {% endif %}
 {% endif %}
 

@@ -103,9 +103,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: |
-          npm init -y
-          npm install --save-dev @playwright/test @axe-core/playwright
+        run: npm install --save-dev @playwright/test @axe-core/playwright
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
@@ -174,15 +172,8 @@ jobs:
           });
           EOF
 
-      - name: Start local server
-        run: |
-          cd _site
-          python3 -m http.server 8080 &
-          sleep 3
-          echo "✅ Server started on port 8080"
-
       - name: Run accessibility tests
-        run: npx playwright test accessibility-test.js
+        run: npx playwright test
 
       - name: Upload test results
         if: always()
