@@ -3,6 +3,17 @@
 Agent D: The Consistency Guardian
 Run adversarial quality checks on policy files to ensure consistency and best practices.
 
+Checks Performed:
+  1. Frontmatter Consistency: Validates YAML structure, required fields, slug format
+  2. Length & Sections: Ensures policy has minimum content and required sections
+  3. Content Structure: Detects vague enforcement language and missing specifications
+  4. Overlap & Redundancy: Identifies similar policies in the library
+  5. Citation Integrity: Validates URLs in official_sources, detects dead links
+  5.5. Inline Examples: Verifies inline markdown links to real-world precedents exist and are accessible
+  6. Geographic Compatibility: Checks for imperial-only units, hemisphere assumptions
+  7. Readability: Calculates Flesch-Kincaid and flags overly complex sentences
+  8. Adversarial Stress Test: Red-teams the policy for enforcement gaps and loopholes
+
 Usage:
     python scripts/consistency_guardian.py _policies/solar-parking.md
     python scripts/consistency_guardian.py --all
@@ -317,6 +328,71 @@ class ConsistencyGuardian:
         if news_only and len(official_sources) == len(news_only):
             review.add_warning("Only news articles as sources; add primary sources (legislation, reports)")
     
+    def check_inline_examples(self, review: PolicyReview, content: str, frontmatter: dict):
+        """Check 5.5: Verify inline links to real-world examples and precedents"""
+        # Extract all inline markdown links [text](url)
+        inline_links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+        
+        if not inline_links:
+            review.add_warning("No inline links to real-world examples detected; consider citing precedents")
+            return
+        
+        # Validate URLs
+        dead_links = []
+        domains = []
+        
+        for link_text, url in inline_links:
+            # Skip internal fragment links
+            if url.startswith('#'):
+                continue
+            
+            # Extract domain for diversity check
+            domain_match = re.search(r'https?://(?:www\.)?([^/]+)', url)
+            if domain_match:
+                domains.append(domain_match.group(1))
+            
+            # Validate external URLs (skip local/relative links)
+            if url.startswith('http://') or url.startswith('https://'):
+                try:
+                    response = requests.head(url, timeout=self.timeout, allow_redirects=True)
+                    if response.status_code >= 400:
+                        dead_links.append((link_text, url, response.status_code))
+                except requests.RequestException as e:
+                    dead_links.append((link_text, url, str(e)))
+        
+        # Report dead links
+        if dead_links:
+            for text, url, error in dead_links:
+                review.add_critical(f"Dead inline link: [{text}]({url}) - {error}")
+        
+        # Check for source diversity
+        if domains and len(set(domains)) == 1:
+            review.add_warning(f"All inline examples cite same domain ({domains[0]}); consider diverse sources")
+        
+        # Check minimum example threshold
+        if len(inline_links) < 2:
+            review.add_warning("Only 1 inline example found; policies should cite 2-4 real-world precedents")
+        
+        # Check for authoritative sources (not just news articles)
+        authoritative_patterns = [
+            r'\.gov',
+            r'\.edu',
+            r'europa\.eu',
+            r'legislation\.',
+            r'parliament\.',
+            r'\.org(?!/news)',  # .org but not news subdomain
+        ]
+        
+        authoritative_count = 0
+        for _, url in inline_links:
+            if any(re.search(pattern, url, re.IGNORECASE) for pattern in authoritative_patterns):
+                authoritative_count += 1
+        
+        if inline_links and authoritative_count == 0:
+            review.add_warning("No authoritative sources (.gov, .edu, legislation sites) found in inline examples")
+        
+        review.add_pass(f"Inline examples: {len(inline_links)} links, {len(set(domains))} unique domains")
+    
     def check_geographic_compatibility(self, review: PolicyReview, content: str, frontmatter: dict):
         """Check 5: Geographic & Legal System Compatibility"""
         # Check for seasonal terms (US-defaultism)
@@ -354,7 +430,7 @@ class ConsistencyGuardian:
                     review.add_warning(f"Heading hierarchy skip detected (h{levels[i-1]} to h{levels[i]})")
     
     def adversarial_stress_test(self, review: PolicyReview, content: str, llm_enabled: bool = False):
-        """Check 7: Adversarial Stress Test (Red Team)"""
+        """Check 8: Adversarial Stress Test (Red Team)"""
         # Enhanced enforcement mechanism detection
         enforcement_indicators = {
             'permit_license': r'\b(permit|license|approval|authorization)\s+(required|conditioning|shall\s+be\s+issued|revoked)\b',
@@ -513,6 +589,7 @@ Respond in JSON format:
         self.check_content_structure(review, review.content)
         self.check_overlap_redundancy(review, review.frontmatter, filepath)
         self.check_citation_integrity(review, review.frontmatter)
+        self.check_inline_examples(review, review.content, review.frontmatter)
         self.check_geographic_compatibility(review, review.content, review.frontmatter)
         self.check_readability(review, review.content)
         self.adversarial_stress_test(review, review.content, llm_enabled=bool(self.llm_provider))

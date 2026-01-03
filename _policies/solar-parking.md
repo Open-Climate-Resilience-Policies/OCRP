@@ -19,9 +19,10 @@ date_enacted: '2024-11-01'
 date_effective: '2026-07-01'
 legal_reference: Decree No. 2024-1023
 official_sources:
-- url: https://en.wikipedia.org/wiki/Solar_carport
-  title: 'Wikipedia: Solar carport'
+- url: https://www.theguardian.com/world/2022/nov/09/france-to-require-all-large-car-parks-to-be-covered-by-solar-panels
+  title: 'France to require all large car parks to be covered by solar panels'
   accessed: '2025-12-28'
+  note: Coverage of France's solar parking mandate approved by the French Senate
 - url: https://web.archive.org/web/20250405101048/https://www.legifrance.gouv.fr/jorf/id/JORFTEXT0000000000
   title: "D\xE9cret n\xB0 2024-1023 (French Official Journal) (archived placeholder)"
   language: fr
@@ -107,15 +108,19 @@ This mandate supports national and regional renewable energy transition goals by
 
 ## Real-World Implementation
 
-### Corporate Response
-Major retailers and commercial property owners are implementing solar parking canopies as part of capital upgrades:
+### Real-World Implementation Examples
 
-**Carrefour Supermarket Chain:**
-- [**350 solar carport installations** planned](https://www.carrefour.com/en/group/csr)
-- **450 gigawatt hours** annual production expected
-- **180,000 parking spaces** to be covered
-- **First installations**: connected to grid in 2025
-- **Target**: 50% completion by 2026
+**France's National Mandate:**
+- [Legislation approved by French Senate](https://www.theguardian.com/world/2022/nov/09/france-to-require-all-large-car-parks-to-be-covered-by-solar-panels) requires all large car parks covered by solar panels
+- Expected to generate **up to 11 gigawatts** of power nationally
+- Applies to car parks with 80+ vehicles
+- Major retailers and commercial property owners implementing across the country
+
+**Borgo Solar Car Park, Corsica:**
+- Large-scale solar parking installation operational since before the mandate
+- Backed by Renewables Infrastructure Group (UK green energy investor)
+- Demonstrates technical and financial viability of solar canopies
+- Integration with EV charging infrastructure
 
 ### Site Design Considerations
 - **Structural engineering**: Canopies must be designed for local wind and snow loads
