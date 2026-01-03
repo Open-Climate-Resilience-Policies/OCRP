@@ -210,3 +210,7 @@ To allow the market to adapt, the policy follows a phased trigger timeline.
 4. **Transparency & Audits:** The city publishes annual metrics on electric-vehicle-ready compliance rates, Right-to-Charge requests, approvals, denials, micromobility enforcement actions, and audit findings so the Integrity Engine can verify progress and target future inspections.
 5. **Data retention:** Owners must store inspection photos, conduit test results, and mediation correspondence for at least ten years so auditors can reconstruct compliance history during disputes.
 6. **Public integrity dashboard:** The municipality maintains an accessible dashboard showing complaint resolution times, fine collections, and micromobility enforcement sweeps, along with contacts for each responsible agency.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/15) to share your ideas.

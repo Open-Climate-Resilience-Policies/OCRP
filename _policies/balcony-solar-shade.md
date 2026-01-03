@@ -109,3 +109,7 @@ A technical concern in the US is "Breaker Masking"—where solar power back-feed
 1.  **Building Approvals:** No building permit or Certificate of Occupancy shall be issued unless inspectors verify that new residential construction includes the required external movable shading on east, south, and west façades.
 2.  **Tenant Remedies:** Housing inspectors shall investigate complaints within 30 days; landlords or HOAs that unlawfully block balcony solar or shading installations shall be fined $1,000 per dwelling unit per violation and ordered to approve compliant applications.
 3.  **Utility Obligations:** Utilities must complete meter swaps and notification processing within 30 days. Each missed deadline results in a $500 credit to the affected tenant and a report to the public utility commission.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/3) to share your ideas.

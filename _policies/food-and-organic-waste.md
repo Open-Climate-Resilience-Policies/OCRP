@@ -52,7 +52,7 @@ The policy aligns municipal practice with jurisdictions that mandate **separate 
 
 **Real-World Examples:**
 * **Milan, Italy:** The city's [mandatory organics separation program](https://www.comune.milano.it/en/news/milan-first-european-city-separate-collection-organic-waste) achieved 60% diversion rates through universal curbside collection and commercial food service mandates.
-* **San Francisco, USA:** The [mandatory composting ordinance](https://sfenvironment.org/mandatory-recycling-composting-ordinance) requires all residents and businesses to separate compostables, achieving 80% landfill diversion.
+* **San Francisco, USA:** The city's mandatory composting ordinance requires all residents and businesses to separate compostables, achieving 80% landfill diversion. Details available on [SF.gov Recycling Programs](https://sfgov.org/topics/composting-recycling).
 * **South Korea:** The [volume-based food waste fee system](https://www.recycling-magazine.com/2019/04/15/south-korea-food-waste-wonder/) uses RFID-tagged bins that charge by weight, reducing food waste generation by 30%.
 
 ## Definitions

@@ -210,3 +210,7 @@ Integrity reviewers shall run the following countermeasures before each major pr
 - IEA and IRENA technical briefings document the performance ranges assumed in this ordinance, ensuring planners cite accepted engineering data rather than vendor slide decks.
 - Germany’s district-heat deployments and the Netherlands geothermal master plan demonstrate how municipal utilities treat geothermal as baseline infrastructure, providing templates for metering, tariff filings, and customer protection.
 - University of Calgary research on repurposing oil and gas wells provides design parameters for converting idle assets, proving the workforce continuity and asset-reuse claims that underpin this policy.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/17) to share your ideas.

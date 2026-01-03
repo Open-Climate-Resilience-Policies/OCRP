@@ -192,3 +192,7 @@ Requirements apply to:
 - **Heat:** Average peak-heat-period roof surface temperatures reduced by 8–12°C relative to baseline black roofs, validated through thermal imaging campaigns.
 - **Energy:** Biosolar installations document ≥ 2% PV efficiency gain plus quantifiable kWh output linked to public dashboards.
 - **Equity:** At least 40% of resilience-bond funding flows to priority neighborhoods identified in hazard and income maps, ensuring atmospheric-river protections reach the most exposed residents.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/18) to share your ideas.

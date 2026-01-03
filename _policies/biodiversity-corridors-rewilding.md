@@ -123,3 +123,7 @@ If you are a city planner or council member, follow these steps to get started.
 ### Phase 3: Major Infrastructure (Months 6-12+)
 - [ ] **Grant Writing:** Apply for FEMA/Flood mitigation grants to fund Stream Daylighting projects (frame it as "flood control," not just "nature").
 - [ ] **Feasibility Study:** Commission an engineering study for a Wildlife Bridge at the #1 worst roadkill location identified in Phase 1.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/4) to share your ideas.

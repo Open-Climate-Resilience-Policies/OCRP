@@ -46,7 +46,7 @@ By shifting practices, the policy aims to:
 * **Lower Embodied Carbon:** Preserve the energy and emissions embedded in existing materials.
 * **Strengthen Local Economies:** Support reuse, repair, and salvage industries.
 
-This framework aligns with leading circular economy strategies, including those implemented by **[Amsterdam](https://www.amsterdam.nl/en/policy/circular-economy/)**, which targets full circularity by 2050 through material tracking and reuse-first policies.
+This framework aligns with leading circular economy strategies. See [Ellen MacArthur Foundation](https://ellenmacarthurfoundation.org/) and [C40 Cities Case Studies](https://www.c40.org/case-studies/) for global examples and best practices.
 
 ## Scope
 
@@ -169,3 +169,7 @@ An appeals and variance process shall be available for documented hardship cases
 * **Certified Deconstruction Contractors:** [Municipal registry link]
 * **Material Reuse Facilities:** [Local directory link]
 * **Material Passport Template:** [City-approved schema link]
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/6) to share your ideas.

@@ -149,3 +149,7 @@ All cohousing and cooperative projects must adopt formal governance to ensure lo
 [^2]: City of Vancouver, *In-Camera Decisions Released (June 24, 2008)* authorizing the purchase of 1700 Kingsway for social housing; Co-operative Housing Federation of BC, *Sanford Housing Society - The Brice* profile describing the 48 permanently affordable homes on the site.
 [^3]: EUmies Awards, *De Warren Cooperative Housing* (2024) highlighting Amsterdam's first resident-built cooperative and its shared energy systems.
 [^4]: City of Kingston, *Density by Design - Issues & Options Report* (2025) outlining functional-family definitions and cluster housing pilots.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/10) to share your ideas.

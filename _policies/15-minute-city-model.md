@@ -192,3 +192,7 @@ If you are a city councilor or planner, use this checklist to launch this policy
 * **CATS:** [SmartCode resources](https://transect.org/codes.html)
 * **Victoria Suburban Revitalisation:** [20-minute neighbourhood pilots](https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods)
 * **Australian Urban Observatory:** [20 Minute Neighbourhood Scorecard](https://research-repository.rmit.edu.au/articles/educational_resource/AUO_20_Minute_Neighbourhood_Scorecard/20452608/1)
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/2) to share your ideas.

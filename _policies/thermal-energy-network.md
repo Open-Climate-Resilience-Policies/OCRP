@@ -74,7 +74,7 @@ Current laws often force utilities to fix old gas pipes even if they are obsolet
 3.  **Waste Heat Rights:** Municipalities grant TEN operators the "Right of First Refusal" to capture waste heat from sewers, data centers, and subway tunnels.
 
 **Real-World Examples:**
-* **[New York Utility Thermal Energy Network and Jobs Act](https://www.governor.ny.gov/news/governor-hochul-signs-legislation-establish-new-yorks-clean-energy-workforce-and-strengthen)** (Passed 2022): This law explicitly authorizes utilities to own and operate thermal networks, preserving union jobs (pipefitters) while transitioning off gas.
+* **New York Thermal Energy Networks** (Passed 2022): This law explicitly authorizes utilities to own and operate thermal networks, preserving union jobs (pipefitters) while transitioning off gas. Details available from [NYSERDA](https://www.nyserda.ny.gov/).
 * **[Framingham, Massachusetts](https://www.eversource.com/error/page-not-found?initialRequestUrl=https%3a%2f%2fwww.eversource.com%2fresidential%2fabout-us%2fnews-media%2fnews%2feversource-brings-geothermal-technology-to-framingham)**: The local utility (Eversource) installed a neighborhood geothermal loop connecting homes, a fire station, and low-income housing, proving the "gas-to-geo" transition works.
 
 ## Policy 3: The "All-ACs-Are-Heat-Pumps" Rule
@@ -114,3 +114,7 @@ A "Cooling Only" air conditioner is just a broken heat pump. The hardware is 95%
 - **Methane Leakage:** Publish kilometers of gas mains decommissioned and the associated methane abatement (tonnes CO2e) each quarter.
 - **Workforce Transition:** Report the number of former gas fitters retrained and employed on TEN projects; goal is zero net job loss.
 - **Affordability Index:** Monitor average heating bills before and after TEN conversion; require <5% increase for low-income households, backed by rate relief if exceeded.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/8) to share your ideas.

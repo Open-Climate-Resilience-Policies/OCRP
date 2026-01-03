@@ -121,3 +121,7 @@ To manage pushback from real estate stakeholders while ensuring progress, a **Ph
 [^2]: District of Columbia DOEE, *Building Energy Performance Standards (BEPS)* final rule and compliance cycles (2021).
 [^3]: City of Boston Environment Department, *BERDO program hub* (accessed 2025) summarizing emissions caps and compliance pathways.
 [^4]: City and County of Denver, *Energize Denver Technical Guidance for Buildings >=25,000 sq ft* (2025) outlining EUI targets through 2030.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/5) to share your ideas.

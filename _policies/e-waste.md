@@ -109,3 +109,7 @@ To secure state and municipal adoption, frame the policy around **Economic Resil
 
 ### Phase 3: The Market Shift (Year 3+)
 - [ ] **The State/Provincial Push:** Lobby the higher level of government to implement the **"Repair Fund"** (EPR fee), as this requires state-level legislative power to tax manufacturers.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/7) to share your ideas.

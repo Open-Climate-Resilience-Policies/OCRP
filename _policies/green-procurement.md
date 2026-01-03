@@ -113,3 +113,7 @@ Municipal fleets are high-visibility leaders. Transitioning them creates the bas
 ### Phase 3: The Market Force (Year 3+)
 - [ ] **Binding Budget:** The Carbon Budget becomes binding. Departments overspending carbon must purchase offsets or cut services.
 - [ ] **The Ratchet:** Tighten the Concrete GWP limit to 90% of the regional average. Now, only the top-performing suppliers can bid on city work.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/9) to share your ideas.

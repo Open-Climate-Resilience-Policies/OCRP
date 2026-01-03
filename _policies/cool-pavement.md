@@ -177,3 +177,7 @@ Additional requirements:
 - Expand permeable resurfacing in non-arterial networks.
 - Enforce Right to Cool during heat season and emergencies.
 - Publish an annual heat resilience report with metrics.
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/12) to share your ideas.

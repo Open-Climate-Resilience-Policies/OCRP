@@ -225,3 +225,7 @@ The Aggregator exists to coordinate equitable, affordable, and high-quality buil
 | **Trust** | Homeowner vets contractors alone. | **Aggregator vets contractors**; community relies on peer trust. |
 | **Speed** | One home at a time; scheduling delays. | **Assembly-line delivery**; teams move door-to-door. |
 | **Grid** | Random installs strain the grid. | Coordinated batteries can form a **Virtual Power Plant (VPP)**. |
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/11) to share your ideas.
