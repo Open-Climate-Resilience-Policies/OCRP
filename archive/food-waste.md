@@ -143,3 +143,8 @@ Use this checklist to phase in the policy without service disruption.
   https://refed.org
 * **Institute for Local Self-Reliance:** Food Waste Reduction Hierarchy  
   https://ilsr.org/food-waste-hierarchy/
+
+
+## Discussion on GitHub
+
+Join the [GitHub discussion](https://github.com/Open-Climate-Resilience-Policies/OCRP/discussions/16) to share your ideas.
