@@ -17,12 +17,18 @@ The `consistency_guardian.py` script now includes automated validation of **real
    - Timeout: 5 seconds per URL (configurable via `CG_TIMEOUT_SECONDS`)
    - Gracefully handles network errors and redirects
 
-### 3. **Source Diversity**
+### 3. **Redirect Detection & Optimization** ✨ NEW
+   - Detects when URLs redirect to other locations
+   - Automatically updates links to their final destinations
+   - Filters out error pages to prevent redirect chains to 404s
+   - Keeps links fresh and direct without requiring manual updates
+
+### 4. **Source Diversity**
    - Tracks all unique domains cited in inline examples
    - **Warning**: If all examples cite the same domain
    - Encourages cross-domain citations for credibility
 
-### 4. **Authoritative Sources**
+### 5. **Authoritative Sources**
    - Checks for presence of authoritative domains:
      - `.gov` - Government sources
      - `.edu` - Educational institutions
@@ -66,10 +72,54 @@ python scripts/consistency_guardian.py _policies/solar-parking.md
 python scripts/consistency_guardian.py --all
 ```
 
+### Update Redirected Links Automatically ✨ NEW
+```bash
+# Update redirects in a specific policy
+python scripts/consistency_guardian.py --update-redirects _policies/urban-heat-model.md
+
+# Update redirects in all policies
+python scripts/consistency_guardian.py --update-redirects --all
+
+# Update only modified policies
+python scripts/consistency_guardian.py --update-redirects --changed
+```
+
 ### Integration with Git Workflow
 ```bash
 python scripts/consistency_guardian.py --changed  # Check only modified files
 ```
+
+## Redirect Updates Explained
+
+When links redirect (HTTP 301/302), the checker can automatically update them to point to their final destinations:
+
+### Example Redirect Update
+**Before:**
+```markdown
+[Paris Urban Cooling Strategy](https://old-domain.fr/page)
+```
+
+**After automatic update:**
+```markdown
+[Paris Urban Cooling Strategy](https://www.paris.fr/new-location/urban-cooling)
+```
+
+### What Gets Updated
+✅ **Updated redirects:**
+- HTTP → HTTPS upgrades
+- Domain migrations (old.gov → new.gov)
+- URL restructuring (site.com/old-path → site.com/new-structure)
+
+❌ **Rejected redirects:**
+- Redirects to error pages (`/404`, `/not-found`)
+- Redirect chains that end in 4xx/5xx status
+- URLs with error indicators in path
+
+### Safety Features
+- Only updates when final page returns 2xx-3xx status
+- Filters URLs containing `/error`, `/404`, `page-not-found`
+- Preserves original link text - only changes destination URL
+- Non-destructive: original URL preserved in git history
 
 ## When To Fix
 
@@ -129,14 +179,22 @@ if response.status_code >= 400:
 
 ### Network Resilience
 - Timeout: 5 seconds (prevents hanging on unresponsive servers)
-- Redirects: Followed automatically
+- Redirects: Followed automatically (up to system default, typically 30 hops)
 - Exceptions: Caught and reported with error details
+
+### Redirect Handling
+- Captures final destination URL when following redirects
+- Compares final URL with original to detect changes
+- Auto-update mode (`--update-redirects`) rewrites policy files with improved URLs
+- Error page detection prevents broken redirect chains
 
 ### Edge Cases Handled
 - Fragment links (`#section`) - Skipped (internal navigation)
 - Relative links (`/path/page`) - Skipped (local site navigation)
-- HTTP → HTTPS redirects - Followed, accepted
+- HTTP → HTTPS redirects - Followed, accepted, and can be auto-updated
 - Rate limiting - Reported with HTTP status
+- Redirect loops - Caught by requests library timeout
+- Error pages with 2xx status - Filtered by URL pattern matching
 
 ## Integration with CI/CD
 
@@ -148,14 +206,15 @@ When automated checks are enabled (Phase 2), dead inline links will:
 ## Future Enhancements
 
 Possible expansions:
-- [ ] Archive check: Propose Wayback Machine snapshots for dead links
+- [x] Redirect detection: Follow and update redirected links automatically ✅ **COMPLETED**
 - [ ] Domain classification: Automate categorization (gov/edu/org/news)
 - [ ] Example quality metrics: Score based on authority and diversity
 - [ ] Snapshot integration: Auto-archive examples at submission time
 - [ ] LLM analysis: Use local LLM to verify example relevance to policy
+- [ ] Batch Wayback Machine archiving: Submit all external links for preservation
 
 ---
 
 **Maintained by:** Agent D (Consistency Guardian)  
-**Last Updated:** 2025-12-28  
+**Last Updated:** 2026-01-03  
 **Status:** Production (Check 5.5)
