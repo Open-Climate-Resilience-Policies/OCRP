@@ -45,6 +45,11 @@ Engineering has traditionally relied on "Stationarity"—the idea that the futur
 * **The Reality:** Rainfall intensity in many regions has increased by >20% since 1990.
 * **The Fix:** We mandate the use of **Projected Intensity-Duration-Frequency (IDF) Curves**. If you are building a bridge to last until 2075, you must use the projected weather of 2075, not the weather of 1990.
 
+**Real-World Examples:**
+* **Netherlands:** The [Delta Programme](https://english.deltaprogramma.nl/) uses climate scenarios (KNMI'14) to design flood defenses for 2050 and 2100, incorporating sea level rise and increased river discharge projections.
+* **New York City:** The [Climate Resiliency Design Guidelines](https://www.nyc.gov/site/orr/initiatives/climate-resiliency-design-guidelines.page) require all city-funded infrastructure to use forward-looking climate projections, including updated rainfall intensity curves.
+* **Singapore:** The [Code of Practice on Surface Water Drainage](https://www.pub.gov.sg/codes-of-practice) requires engineers to use climate-adjusted rainfall intensities, increasing design storm depths by 20-40%.
+
 ### ❤️ The Life: "The Dry Basement Guarantee"
 * **The Pain:** Neighborhoods built in the last decade are flooding during "routine" storms because the pipes were sized for a climate that no longer exists.
 * **The Promise:** By sizing drainage for the *future* storm, we protect residents from the trauma and cost of repetitive flooding.

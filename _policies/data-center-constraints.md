@@ -53,7 +53,9 @@ This policy treats new data centers as a **Conditional Use**: approval is earned
 1. **Do not allow “by-right” approvals**.
 2. **Require hard caps** on local resource impacts (water, power, noise, air).
 3. **Make performance public** so residents and regulators can verify compliance.
-
+**Real-World Context:**
+- **Ireland:** Facing grid constraints, the country imposed a [moratorium on new data center connections](https://www.gov.ie/en/department-of-climate-energy-and-the-environment/publications/data-centre-energy-and-sustainability-performance-reporting-obligations/) in the Dublin region and requires mandatory energy/water reporting under EED Article 12.
+- **Amsterdam, Netherlands:** The city implemented a [temporary ban on new data centers](https://www.amsterdam.nl/en/policy/sustainability/data-centres/) until a sustainable framework could address energy consumption and land use conflicts, prioritizing residential and industrial needs over hyperscale computing.
 ## Key Definitions
 
 - **Data Center:** A facility primarily used for computing, data storage, and network operations, including colocation and hyperscale campuses.

@@ -38,6 +38,11 @@ This model policy outlines best practices for urban lawn watering, designed to m
 
 Municipalities implement these bylaws to manage peak demand on water treatment plants and ensure reserves for emergencies such as firefighting.
 
+**Real-World Examples:**
+* **Cape Town, South Africa:** During the 2018 water crisis, the city implemented [strict water restrictions](https://www.capetown.gov.za/Family%20and%20home/residential-utility-services/residential-water-and-sanitation-services/make-water-savings-permanent) limiting outdoor watering to two days per week, helping avoid "Day Zero" reservoir depletion.
+* **California, USA:** The [Model Water Efficient Landscape Ordinance](https://water.ca.gov/Programs/Water-Use-And-Efficiency/MWELO) requires irrigation controllers with weather-based or soil moisture sensors to prevent watering during rain.
+* **Sydney, Australia:** The city's [water restrictions framework](https://www.sydneywater.com.au/water-the-environment/how-we-manage-water/water-restrictions.html) uses tiered levels that progressively ban specific irrigation practices as reservoir levels drop.
+
 ### Odd/Even Scheduling
 
 **The Policy:**

@@ -54,6 +54,10 @@ Before mechanical cooling is installed, landlords must install **external shadin
 ### 3.2 The "Cool Room" Variance
 If central AC is not feasible, the landlord may designate one "Recovery Room" that meets the standard.
 
+**Real-World Context:**
+- **Paris, France:** The city's [Heat Wave Action Plan](https://www.paris.fr/pages/plan-canicule-5433) identifies vulnerable populations and designates "îlots de fraîcheur" (cool islands) including air-conditioned public buildings where residents can seek refuge during extreme heat events.
+- **Phoenix, Arizona:** The city operates [Heat Relief Network](https://www.phoenix.gov/heat) with cooling centers and hydration stations, recognizing that nighttime heat stress is a public health emergency requiring infrastructure response.
+
 ## 4. Compliance Timeline
 
 1.  **12-Month Retrofit Clock:** Within 12 months of ordinance adoption, every landlord shall file a compliance plan identifying which units already meet the <span data-measure="temp" data-value="26">26°C</span> recovery target and which require upgrades.

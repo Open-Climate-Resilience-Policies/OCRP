@@ -50,6 +50,11 @@ This framework establishes a **hierarchy-based system** that:
 
 The policy aligns municipal practice with jurisdictions that mandate **separate collection of bio-waste** and prohibit its routine disposal.
 
+**Real-World Examples:**
+* **Milan, Italy:** The city's [mandatory organics separation program](https://www.comune.milano.it/en/news/milan-first-european-city-separate-collection-organic-waste) achieved 60% diversion rates through universal curbside collection and commercial food service mandates.
+* **San Francisco, USA:** The [mandatory composting ordinance](https://sfenvironment.org/mandatory-recycling-composting-ordinance) requires all residents and businesses to separate compostables, achieving 80% landfill diversion.
+* **South Korea:** The [volume-based food waste fee system](https://www.recycling-magazine.com/2019/04/15/south-korea-food-waste-wonder/) uses RFID-tagged bins that charge by weight, reducing food waste generation by 30%.
+
 ## Definitions
 
 - **Bio-waste:** Biodegradable garden and park waste, food and kitchen waste from households, offices, restaurants, wholesale, canteens, caterers, and comparable retail and processing facilities as referenced in Directive (EU) 2018/851.

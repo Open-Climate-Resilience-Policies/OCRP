@@ -57,6 +57,10 @@ Kinetic energy increases exponentially with speed. A small reduction in speed cr
 * **The Profit:** This reclaimed space is converted into wider sidewalks and "Furniture Zones" (outdoor dining/retail displays).
 * **The Stat:** Streets with high "Walkability Scores" and outdoor seating generate **+30-50% higher revenue** for local retail compared to car-centric stroads.
 
+**Real-World Examples:**
+* **Barcelona, Spain:** The [Superblocks program](https://www.barcelona.cat/barcelona-pel-clima/en/actions/superblocks) redesigns entire neighborhoods with traffic-calmed interiors, reducing through-traffic speeds to 10 km/h (6 mph) through physical geometry, not enforcement.
+* **Netherlands:** The [Sustainable Safety](https://swov.nl/en/facts-figures/factsheet/sustainable-safety) national program mandates self-explaining road design where geometry matches function—residential streets are physically designed for 30 km/h maximum speeds.
+
 ***
 
 ## 2. Implementation Mechanisms
