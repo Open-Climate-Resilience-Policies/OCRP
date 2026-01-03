@@ -46,7 +46,7 @@ By shifting practices, the policy aims to:
 * **Lower Embodied Carbon:** Preserve the energy and emissions embedded in existing materials.
 * **Strengthen Local Economies:** Support reuse, repair, and salvage industries.
 
-This framework aligns with leading circular economy strategies, including those implemented by **Amsterdam**, which targets full circularity by 2050 through material tracking and reuse-first policies.
+This framework aligns with leading circular economy strategies, including those implemented by **[Amsterdam](https://www.amsterdam.nl/en/policy/circular-economy/)**, which targets full circularity by 2050 through material tracking and reuse-first policies.
 
 ## Scope
 

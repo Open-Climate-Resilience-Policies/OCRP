@@ -45,11 +45,13 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 * **The Reality:** If the bus is slow or infrequent, everyone drives, clogging the roads until driving becomes as slow as the bus. To speed up traffic, you *must* make the bus faster than the car.
 * **The Conclusion:** Frequency is the only mechanism that shifts mode-share. Price is secondary.
 
+Research from the **[Transport for London Bus Action Plan (2022)](https://content.tfl.gov.uk/bus-action-plan.pdf)** documents the Downs–Thomson effect on transit speed and congestion in one of the world's largest transit systems.
+
 
 ### ❤️ The Life: "The Freedom of 'No Schedule'"
 * **The Pain:** If a bus comes every 60 minutes, you are a prisoner to the schedule. If you miss it, you are late for work.
 * **The Promise:** If a bus comes every 10 minutes, you don't need a schedule. You just walk to the stop. This is **"Freedom of Movement."**
-* **The Choice:** Riders consistently poll that they would rather pay $2.50 for a reliable bus than pay $0.00 for a bus that never comes.[^2]
+* **The Choice:** Riders consistently poll that they would rather pay $2.50 for a reliable bus than pay $0.00 for a bus that never comes. This finding comes from the **[TransitCenter "Who's On Board 2019" rider survey](https://transitcenter.org/wp-content/uploads/2019/02/TC_WhosOnBoard_Final_digital-1-1.pdf)**, which shows reliability outranks free fares for mode choice.[^2]
 
 ### 💼 The Business: "The Employee Pipeline"
 * **The Cost:** "Free Transit" often leads to dirty, poorly maintained systems that the middle class abandons. This turns transit into a "welfare service" rather than a "workforce utility."
@@ -70,6 +72,8 @@ Traffic engineering proves that you cannot solve congestion by building roads; y
 ### 2.3 The "Transit Benefit" Tax (The Revenue Replacement)
 * **Mechanism:** If fares are reduced, the lost revenue must be legally replaced *before* the reduction takes effect.
 * **Source:** A payroll tax on large employers (>50 staff) located within 500m of a high-frequency corridor. They are the primary beneficiaries of the labor access; they pay for the pipeline.[^3]
+
+This model is proven in practice: **[Île-de-France Mobilités](https://www.iledefrance-mobilites.fr/)** in Paris uses a *Versement Mobilité* payroll levy structure to fund high-frequency service across the region.
 
 ***
 

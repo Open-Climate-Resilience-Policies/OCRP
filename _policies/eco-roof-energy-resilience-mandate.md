@@ -54,7 +54,7 @@ This policy, the **"Eco-Roof & Energy Resilience Mandate,"** is a "Best-of-Breed
 This policy applies to all **New Residential** and **New Commercial** developments. Developers must select one of the following compliance paths to receive a building permit.
 
 ### A. The Commercial & Multi-Family Standard (France/Toronto Model)
-*Based on France’s "Climate and Resilience Act" and Toronto’s "Green Roof Bylaw".*
+*Based on [France's "Climate and Resilience Act"](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924) and [Toronto's "Green Roof Bylaw"](https://www.toronto.ca/city-government/planning-development/official-plan-guidelines/green-roofs/green-roof-bylaw/).*
 
 **Applicability:** Buildings with a footprint larger than **250 m² (2,700 sq. ft)**.
 
@@ -66,7 +66,7 @@ This policy applies to all **New Residential** and **New Commercial** developmen
     *   *Benefit:* Vegetation cools the solar panels, increasing efficiency by up to 5%, while panels shade plants, reducing drought stress.
 
 ### B. The Residential Standard (California/Tokyo Model)
-*Based on California’s "Title 24" and Tokyo’s 2025 Solar Mandate.*
+*Based on [California's "Title 24"](https://energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards) and [Tokyo's 2025 Solar Mandate](https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760).*
 
 **Applicability:** Single-family homes and small residential buildings.
 
@@ -113,7 +113,7 @@ To satisfy the requirement for insulation, the policy legally defines a "Complia
 
 | Policy Feature | Inspired By |
 | :--- | :--- |
-| **Commercial "Choice" (Solar or Green)** | France (Climate & Resilience Law) |
-| **Mandatory Residential Solar** | California (Title 24), Tokyo (2025 Mandate) |
-| **Green Roof Coverage %** | Toronto (Green Roof Bylaw), Hamburg |
-| **Phase-In Timeline** | European Union (Solar Rooftop Initiative) |
+| **Commercial "Choice" (Solar or Green)** | [France (Climate & Resilience Law)](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924) |
+| **Mandatory Residential Solar** | [California (Title 24)](https://energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards), [Tokyo (2025 Mandate)](https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760) |
+| **Green Roof Coverage %** | [Toronto (Green Roof Bylaw)](https://www.toronto.ca/city-government/planning-development/official-plan-guidelines/green-roofs/green-roof-bylaw/), Hamburg |
+| **Phase-In Timeline** | [European Union (Solar Rooftop Initiative)](https://ec.europa.eu/info/news/welcome-board-agreement-faster-solar-energy-deployment-and-new-rules-supporting-union-industry_en) |
