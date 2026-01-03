@@ -9,9 +9,6 @@ keywords:
   - "repairability"
   - "right-to-repair"
 official_sources:
-  - url: https://en.wikipedia.org/wiki/Electronic_waste
-    title: 'Wikipedia: Electronic waste'
-    accessed: '2025-12-28'
   - url: "https://eur-lex.europa.eu/eli/dir/2012/19/oj"
     title: "EU Directive 2012/19/EU on Waste Electrical and Electronic Equipment (WEEE Recast)"
     accessed: "2025-12-27"
@@ -55,7 +52,7 @@ Consumers cannot currently judge if a $500 laptop will last 2 years or 10. By fo
         * *The Benefit:* When a resident goes to a certified local repair shop, the Fund pays for a portion of the bill (e.g., $30 off a phone screen repair), making repair cheaper than replacement.
 
 **Real-World Example:**
-* **France (AGEC Law):** Since 2021, [France has mandated this 1-10 score](https://www.ecologie.gouv.fr/indice-reparabilite). Results show **90% of consumers** find it useful, and companies like Samsung actually redesigned their TVs to get a higher score (e.g., replacing glue with clips) to stay competitive.
+* **France (AGEC Law):** Since 2021, [France has mandated this 1-10 score](https://www.ecologie.gouv.fr/politiques-publiques/indice-reparabilite). Results show **90% of consumers** find it useful, and companies like Samsung actually redesigned their TVs to get a higher score (e.g., replacing glue with clips) to stay competitive.
 
 ## Policy 2: "Curbside Electronics" & Retailer Take-Back
 
@@ -68,8 +65,7 @@ If recycling a TV requires borrowing a truck and driving to a dump on a Saturday
 3.  **Landfill Ban:** It is strictly illegal to place electronics in the regular trash bin (enforced via spot checks).
 
 **Real-World Example:**
-* **New York State:** The ["Electronic Equipment Recycling and Reuse Act"](https://www.dec.ny.gov/chemical/65583.html) mandates free, convenient collection. While it faced funding hurdles initially, it successfully diverted hundreds of millions of pounds of toxic lead and mercury from landfills.
-* **Aurora, Colorado:** Uses a specialized ["Techno Rescue"](https://www.auroragov.org/residents/trash___recycling/electronics_recycling) partner to run specific e-cycling events, ensuring data destruction and preventing hazardous waste leakage.
+* **New York State:** The ["Electronic Equipment Recycling and Reuse Act"](https://dec.ny.gov/environmental-protection/recycling-composting/electronic-waste-recycling) mandates free, convenient collection and manufacturer take-back programs. The program successfully diverted hundreds of millions of pounds of toxic lead and mercury from landfills while ensuring proper data destruction and preventing hazardous waste leakage.
 
 ## Policy 3: Public Leadership (Circular Procurement)
 
@@ -83,7 +79,7 @@ Local governments are often the largest tech buyers in a region. They can single
 
 **Real-World Example:**
 * **Denver Water:** Partnered with [**Blue Star Recyclers**](https://bluestarrecyclers.org/), a non-profit that employs people with autism to disassemble electronics. This creates local jobs while ensuring ethical recycling, rather than shipping waste overseas.
-* **City of Toronto:** Implemented a [Circular Economy Procurement plan](https://www.toronto.ca/services-payments/recycling-organics-garbage/long-term-waste-strategy/circular-economy/) that explicitly weights "repairability" and "end-of-life takeback" in city tenders.
+* **City of Toronto:** Operates a comprehensive [electronics recycling program](https://www.toronto.ca/services-payments/recycling-organics-garbage/houses/what-goes-in-my-blue-bin/electronic-waste/) through its "Long Term Waste Management Strategy" that emphasizes circular economy principles and convenient collection.
 
 ***
 
