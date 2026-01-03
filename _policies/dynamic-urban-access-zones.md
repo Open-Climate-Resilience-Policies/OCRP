@@ -86,7 +86,7 @@ Zones must be drawn to:
 - A forward pricing schedule must be published at least 30 days in advance.
 - Real-time adjustments may only occur within the published bounds.
 
-This mirrors the operational transparency of Singapore’s ERP system and London’s Congestion Charge, where TfL publishes the daily rate table and exempts critical vehicles.
+This mirrors the operational transparency of Singapore's ERP system and [London's Congestion Charge](https://tfl.gov.uk/modes/driving/congestion-charge), where TfL publishes the daily rate table and exempts critical vehicles.
 
 ## Policy 3: Equity Mechanisms (Non-Optional)
 

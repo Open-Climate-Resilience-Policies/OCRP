@@ -117,7 +117,7 @@ Landlords and homeowner associations **shall not unreasonably restrict** a resid
 Rent increases, service reductions, or lease terminations in response to a Right-to-Charge request are prohibited and subject to fines. The housing department shall maintain a hotline and mediation program for renters whose landlords fail timelines or attempt retaliation.
 
 **City Support Materials:**
-The city publishes standard request forms, lease and association addenda, and a technical checklist so applicants, landlords, and inspectors have a common workflow, mirroring California Civil Code Section 1947.6. Materials shall include a transparent fee calculator, inspection close-out checklist, and sample billing language for the energy management platforms.
+The city publishes standard request forms, lease and association addenda, and a technical checklist so applicants, landlords, and inspectors have a common workflow, mirroring [California Civil Code Section 1947.6](https://california.public.law/codes/civil_code_section_1947.6). Materials shall include a transparent fee calculator, inspection close-out checklist, and sample billing language for the energy management platforms.
 
 **Workflow for request handling:**
 1. Residents submit the standardized form along with preliminary contractor estimates and proof of parking rights.
@@ -143,7 +143,7 @@ Micromobility is essential for low-carbon trips, but uncertified lithium-ion bat
 **The Policy:**
 1. **Safe Storage Rooms:** Multi-family and commercial buildings with more than ten dwellings shall provide secure, ground-level or elevator-accessible micromobility rooms separated from primary egress paths.
 2. **Minimum Safety Features:** Rooms must have one-hour fire-resistance construction, sprinkler or fire detection tied to the central alarm, mechanical ventilation, signage banning corridor charging, tamper-resistant receptacles, and lockable racks to prevent blockage of exits.
-3. **Certified Devices Only:** Charging is limited to devices and batteries certified under UL2849 or another recognized standard. Non-certified or damaged batteries must be removed, mirroring New York enforcement actions that target uncertified sales statewide.
+3. **Certified Devices Only:** Charging is limited to devices and batteries certified under UL2849 or another recognized standard. Non-certified or damaged batteries must be removed, mirroring [New York enforcement actions](https://www.nysenate.gov/legislation/bills/2023/A8134) that target uncertified sales statewide.
 4. **Retail & Education Measures:** Where authority allows, the city restricts sale or lease of uncertified batteries/devices and publishes a tenant-facing NFPA-aligned safety guide plus multilingual notices for building lobbies.
 
 **Verification:**
