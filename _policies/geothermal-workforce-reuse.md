@@ -62,9 +62,11 @@ This ordinance expresses power and heat obligations in **megawatts (MW)** for in
 
 ## Evidence Snapshots
 
-- **Germany’s municipal utilities** (documented by IEA-GIA) treat deep geothermal heat as a backbone resource for cities such as Munich, pairing drilling risk controls with district-heat tariff protections. Their governance template underpins Policy 5’s dashboard and tariff clauses.
-- **The Netherlands’ geothermal master plan** shows how horticulture clusters and heat networks co-plan wells, reinjection, and community benefits, providing concrete scopes for Phase 2 pilot alignment and heat-offtake agreements.
-- **Alberta well-repurposing research** from the University of Calgary proves that idle oil and gas wells can host geothermal loops, validating the workforce continuity thresholds and decommissioning bond sizing codified here.
+**Real-World Examples:**
+- **Munich, Germany:** The city's [geothermal district heating system](https://www.swm.de/english/company/energy-supply/geothermal-energy) serves thousands of homes with deep geothermal wells (up to 3,000m), demonstrating firm baseload heat delivery with transparent tariff structures.
+- **Hellisheidi, Iceland:** The [Hellisheidi Geothermal Power Plant](https://www.on.is/en/about-on/power-generation/hellisheidi-geothermal-power-plant/) combines electricity generation with direct carbon capture and reinjection, showing how traffic-light protocols and real-time monitoring ensure safety.
+- **Netherlands Greenhouse Sector:** The [Dutch geothermal master plan](https://www.kasalsenergiebron.nl/en/) coordinates drilling permits, reinjection standards, and heat offtake agreements across horticulture clusters, validating the workforce continuity approach.
+- **Alberta, Canada:** The [University of Calgary's repurposing research](https://www.ucalgary.ca/labs/geothermal-energy/advancements/repurposing-wells) proves idle oil and gas wells can host geothermal loops, providing the technical basis for workforce transition and decommissioning bond requirements.
 
 ## Policy Mandates
 

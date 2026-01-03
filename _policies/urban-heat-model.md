@@ -45,6 +45,11 @@ Urban heat islands (UHIs) occur when cities replace natural land cover with dens
 
 Urban areas experience elevated temperatures compared to surrounding rural areas due to built environment materials and lack of vegetation. This policy describes modeling approaches and interventions to reduce heat exposure and protect vulnerable populations.
 
+**Real-World Examples:**
+- **Paris, France:** The [Urban Cooling Strategy](https://www.paris.fr/pages/ilots-de-chaleur-5466) mandates cool roofs and urban greening to reduce heat island effects by 2°C, with mandatory tree planting targets for all new developments.
+- **Melbourne, Australia:** The [Urban Forest Strategy](https://www.melbourne.vic.gov.au/community/greening-the-city/urban-forest/Pages/urban-forest-strategy.aspx) aims for 40% tree canopy coverage by 2040, using measurable precinct-level targets and cooling performance metrics.
+- **Athens, Greece:** The city's [Resilience Strategy](https://www.cityresilience.org/athens) deployed 25 pocket parks and 50,000 trees in heat-vulnerable neighborhoods, reducing surface temperatures by up to 5°C during heatwaves.
+
 ## Key Objectives
 
 1. Reduce average urban temperatures by 2-5°F over baseline conditions

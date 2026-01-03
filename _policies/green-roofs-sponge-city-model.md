@@ -39,6 +39,11 @@ related_policies:
 
 Atmospheric rivers and convective downpours now deliver multi-hour rainfall pulses that exceed the design envelope of traditional grey drainage. European and North American cities that paired **green roofs**, **biosolar systems**, and **permeable public space** documented measurable reductions in combined sewer overflows (CSO), roof membrane failures, and surface temperatures. This policy converts those precedents into enforceable mandates with calibration pathways rather than slogans.
 
+**Real-World Examples:**
+- **Copenhagen, Denmark:** The city's [Climate Adaptation Plan](https://en.klimatilpasning.dk/) requires all new buildings to manage stormwater on-site through green roofs, permeable surfaces, and blue-green infrastructure, achieving 30% CSO reduction.
+- **Portland, Oregon:** The [Green Streets program](https://www.portland.gov/bes/stormwater/green-street-stewards) integrates bioswales and permeable pavement into right-of-way reconstructions, treating 5 billion gallons of stormwater annually.
+- **China's Sponge Cities:** The [national Sponge City initiative](http://www.china.org.cn/china/2017-10/13/content_41723964.htm) mandates that 30 pilot cities absorb and reuse 70% of rainfall through green roofs, permeable surfaces, and retention ponds by 2030.
+
 ## Scope
 
 Requirements apply to:
