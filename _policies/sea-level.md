@@ -175,17 +175,17 @@ Requirements:
 ## Canadian and International Examples (Non-exhaustive)
 
 ### Canada
-- **British Columbia Sea Level Rise Adaptation Guidelines**: Forward-looking projections integrated into coastal planning and development review.
-- **Climate Ready BC and provincial coastal flood strategies**: Emphasis on adaptive planning and managed retreat.
+- **[British Columbia Sea Level Rise Adaptation Guidelines](https://www2.gov.bc.ca/gov/content/safety/natural-disaster-management/hazard-mitigation/sea-level-rise-adaptation-guidelines)**: Forward-looking projections integrated into coastal planning and development review.
+- **[Climate Ready BC](https://www2.gov.bc.ca/gov/content/environment/climate-change/adaptation/community-based-planning)** and provincial coastal flood strategies: Emphasis on adaptive planning and managed retreat.
 - **Managed retreat discussions in Atlantic Canada**: Municipal and provincial consideration of relocation from high-risk coastal zones.
-- **Gwaii Haanas coastal governance**: Integrated land–sea management with Indigenous co-governance.
+- **[Gwaii Haanas coastal governance](https://www.pc.gc.ca/en/proms/shnl-nhs/co-management)**: Integrated land–sea management with Indigenous co-governance.
 
 ### International
-- **Netherlands – Delta Programme**: Long-term adaptive coastal planning using multiple future scenarios.
-- **United Kingdom – Shoreline Management Plans**: Policy-based decisions on hold-the-line, managed realignment, or no active intervention.
-- **New Zealand – Coastal Policy Statement**: Strong direction to avoid new development in areas at risk from coastal hazards.
-- **United States – FEMA and state coastal programs**: Integration of flood mapping, insurance signals, and land use planning.
-- **OECD coastal adaptation guidance**: Explicit recognition of insurance retreat and risk-based planning.
+- **[Netherlands – Delta Programme](https://www.deltaprogramme.nl/english)**: Long-term adaptive coastal planning using multiple future scenarios.
+- **[United Kingdom – Shoreline Management Plans](https://www.gov.uk/government/publications/shoreline-management-plans-smps)**: Policy-based decisions on hold-the-line, managed realignment, or no active intervention.
+- **[New Zealand – Coastal Policy Statement](https://www.doc.govt.nz/about-us/our-role/how-we-do-our-work/new-zealand-coastal-policy-statement/)**: Strong direction to avoid new development in areas at risk from coastal hazards.
+- **[United States – FEMA and state coastal programs](https://www.fema.gov/flood-maps/coastal)**: Integration of flood mapping, insurance signals, and land use planning.
+- **[OECD coastal adaptation guidance](https://www.oecd.org/environment/cc/coastal-resilience/)**: Explicit recognition of managed retreat and risk-based planning.
 
 ---
 

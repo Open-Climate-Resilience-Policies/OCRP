@@ -90,10 +90,10 @@ Requirements:
 4. Marine pathways (vessel biofouling, ballast water) shall be addressed where applicable per international maritime standards (International Maritime Organization guidelines).
 
 **Canadian example:**  
-The **Great Lakes basin invasive species programs** demonstrate coordinated freshwater invasive management across jurisdictions, recognizing invasive species as a core driver of wetland and coastal habitat loss.
+The **[Great Lakes basin invasive species programs](https://www.epa.gov/greatlakes/great-lakes-binational-toxics-strategy)** demonstrate coordinated freshwater invasive management across jurisdictions, recognizing invasive species as a core driver of wetland and coastal habitat loss.
 
 **International examples:**  
-EU Invasive Alien Species Regulation; New Zealand Biosecurity framework.
+[EU Invasive Alien Species Regulation (1143/2014)](https://ec.europa.eu/environment/nature/invasivealien/index_en.htm); [New Zealand Biosecurity Act 1993](https://www.beehive.govt.nz/information/biosecurity)
 
 ---
 
@@ -108,7 +108,7 @@ Requirements:
 4. Enforcement mechanisms shall include inspection authority with power to issue stop-work orders for non-compliance; inspection schedule shall be monthly during active construction.
 
 **Canadian example:**  
-British Columbia’s **Integrated Stormwater Management Planning** approach explicitly links erosion control, runoff management, and stream health protection.
+British Columbia's **[Integrated Stormwater Management Planning](https://www2.gov.bc.ca/gov/content/environment/air-land-water-climate-change/water/integrated-water-management)** approach explicitly links erosion control, runoff management, and stream health protection.
 
 ---
 
@@ -123,7 +123,7 @@ Requirements:
 4. Fish passage restoration is mandatory for all in-stream barriers; barrier removal or redesign shall be completed within [X] years of project approval; post-restoration monitoring shall track species passage for minimum 3 years.
 
 **Canadian example:**  
-The **Still Creek restoration program (Metro Vancouver)** demonstrates urban stream daylighting, riparian restoration, invasive removal, and rainwater integration to support fish and wildlife recovery.
+The **[Still Creek Integrated Watershed and Stream Restoration (Metro Vancouver)](https://www.metrovancouver.org/services/liquid-waste/integrated-watershed-management/still-creek-restoration)** demonstrates urban stream daylighting, riparian restoration, invasive removal, and rainwater integration to support fish and wildlife recovery.
 
 ---
 
@@ -137,8 +137,8 @@ Requirements:
 3. Require proponents to demonstrate meaningful engagement (minimum 120-day consultation period) and accommodation of Indigenous concerns in project design; engagement process shall be documented and made public.
 
 **Canadian examples:**
-- **Gwaii Haanas Cooperative Management Board**, a joint federal–Haida governance model spanning terrestrial and marine ecosystems
-- **Indigenous Protected and Conserved Areas (IPCAs)**, which provide a national framework for Indigenous-led conservation across land and water
+- **[Gwaii Haanas Cooperative Management Board](https://www.pc.gc.ca/en/proms/shnl-nhs/co-management)**, a joint federal–Haida governance model spanning terrestrial and marine ecosystems
+- **[Indigenous Protected and Conserved Areas (IPCAs)](https://www.canada.ca/en/services/environment/conservation/nature/indigenous-protected-conserved-areas.html)**, which provide a national framework for Indigenous-led conservation across land and water
 
 **International examples:**  
 New Zealand’s Te Mana o te Wai freshwater governance; Australia’s Sea Country and Indigenous Protected Areas.
