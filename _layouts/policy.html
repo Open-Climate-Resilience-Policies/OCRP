@@ -64,17 +64,16 @@ layout: default
   {% if related_policies.size > 0 %}
   <aside class="related-policies" role="complementary" aria-labelledby="related-policies-heading">
     <h2 id="related-policies-heading">Related Policies</h2>
-    <ul class="related-policies-list">
-      {% for policy in related_policies limit: 5 %}
-      <li>{% for policy in related_policies limit: 5 %}
+    <ul class="related-policies-list">{% for policy in related_policies limit: 5 %}
       <li>
         <a href="{{ policy.url | relative_url }}">
           <strong>{{ policy.title }}</strong>
           {% if policy.summary %}<span class="related-summary">{{ policy.summary | truncate: 120 }}</span>{% endif %}
         </a>
-      </li>ide>
+      </li>{% endfor %}
+    </ul>
+  </aside>
   {% endif %}
-{% endif %}
 
 {% comment %} Previous / Next navigation for browsing policies alphabetically {% endcomment %}
 {% assign policies_sorted = site.policies | sort: 'title' %}
