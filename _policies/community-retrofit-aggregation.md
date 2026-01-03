@@ -39,7 +39,7 @@ Individual, house-by-house retrofits are slow, expensive, and administratively c
 This policy establishes the **Community Retrofit Aggregation & Financing Tool (CRAFT)**: a delivery and financing framework that enables communities to upgrade buildings collectively while protecting residents from financial and technical risk.
 
 **Real-World Examples:**
-* **Energiesprong, Netherlands:** The [Energiesprong approach](https://energiesprong.org/) pioneered street-by-street deep retrofits using prefabricated facades and roofs, cutting installation time to days and enabling financing through energy savings.
+* **Energiesprong, Netherlands:** The [Energiesprong approach](https://www.energiesprong.org/) pioneered street-by-street deep retrofits using prefabricated facades and roofs, cutting installation time to days and enabling financing through energy savings.
 * **Bristol, UK:** The city's [Retrofit West program](https://www.retrofitwest.org.uk/) aggregates demand across neighborhoods to train local workers and deliver coordinated whole-house retrofits with verified energy savings.
 * **Belgium:** The [EnergyHop program](https://energyhop.eu/) combines neighborhood aggregation with standardized technical packages and consumer protection frameworks, reducing retrofit costs by 20-30%.
 

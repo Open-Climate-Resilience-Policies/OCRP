@@ -166,7 +166,7 @@ The framework is built on four pillars: Policy Principles, Planning, Regulations
 - Penalties for unauthorized removal
 
 **Examples in Practice:**
-- **Toronto, Canada**: Private tree protection bylaws require permits to remove trees of certain diameter, with significant fines for violations ([Strategic Forest Management Plan](https://www.toronto.ca/city-government/accountability-operations-customer-service/long-term-vision-plans-and-strategies/strategic-forest-management-plan/))
+- **Toronto, Canada**: Private tree protection bylaws require permits to remove trees of certain diameter, with significant fines for violations ([Strategic Forest Management Plan](https://www.toronto.ca/city-government/accountability-operations-customer-service/long-term-vision-plans-and-strategies/))
 
 ### Development Standards
 
@@ -303,7 +303,7 @@ The framework is built on four pillars: Policy Principles, Planning, Regulations
 **Example City Implementations:**
 - Vancouver Urban Forest Strategy: [https://vancouver.ca/files/cov/urban-forest-strategy.pdf](https://vancouver.ca/files/cov/urban-forest-strategy.pdf)
 - Sacramento Urban Forest Master Plan: [https://www.cityofsacramento.gov/ParksandRec/Parks/Urban-Forestry/masterplan](https://www.cityofsacramento.gov/ParksandRec/Parks/Urban-Forestry/masterplan)
-- Toronto Strategic Forest Management Plan: [https://www.toronto.ca/city-government/accountability-operations-customer-service/long-term-vision-plans-and-strategies/strategic-forest-management-plan/](https://www.toronto.ca/city-government/accountability-operations-customer-service/long-term-vision-plans-and-strategies/strategic-forest-management-plan/)
+- Toronto Strategic Forest Management Plan: [https://www.toronto.ca/city-government/accountability-operations-customer-service/long-term-vision-plans-and-strategies/strategic-forest-management-plan/](https://www.toronto.ca/city-government/accountability-operations-customer-service/long-term-vision-plans-and-strategies/)
 - Oslo Climate Strategy 2030: [https://www.oslo.kommune.no/politics-and-administration/green-oslo/best-practices/climate-strategy/](https://www.oslo.kommune.no/politics-and-administration/green-oslo/best-practices/climate-strategy/)
 - Clyde Climate Forest: [https://clyderebuild.co.uk/our-work/clyde-climate-forest](https://clyderebuild.co.uk/our-work/clyde-climate-forest)
 - Cities4Forests Jakarta Project: [https://cities4forests.com/jakarta/](https://cities4forests.com/jakarta/)

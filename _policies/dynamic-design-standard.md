@@ -48,7 +48,7 @@ Engineering has traditionally relied on "Stationarity"—the idea that the futur
 **Real-World Examples:**
 * **Netherlands:** The [Delta Programme](https://english.deltaprogramma.nl/) uses climate scenarios (KNMI'14) to design flood defenses for 2050 and 2100, incorporating sea level rise and increased river discharge projections.
 * **New York City:** The [Climate Resiliency Design Guidelines](https://www.nyc.gov/site/orr/initiatives/climate-resiliency-design-guidelines.page) require all city-funded infrastructure to use forward-looking climate projections, including updated rainfall intensity curves.
-* **Singapore:** The [Code of Practice on Surface Water Drainage](https://www.pub.gov.sg/codes-of-practice) requires engineers to use climate-adjusted rainfall intensities, increasing design storm depths by 20-40%.
+* **Singapore:** The [Code of Practice on Surface Water Drainage](https://www.pub.gov.sg/404?item=%2fcodes-of-practice&user=extranet%5cAnonymous&site=Default) requires engineers to use climate-adjusted rainfall intensities, increasing design storm depths by 20-40%.
 
 ### ❤️ The Life: "The Dry Basement Guarantee"
 * **The Pain:** Neighborhoods built in the last decade are flooding during "routine" storms because the pipes were sized for a climate that no longer exists.

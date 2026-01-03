@@ -74,7 +74,7 @@ Batteries are expensive. The utility shall subsidize them because shared storage
 3.  **Islanding Guarantee:** The homeowner retains 100% control during a grid outage. The battery automatically disconnects from the grid ("islands") to power the home indefinitely using solar.
 
 **Real-World Example:**
-* **Green Mountain Power (Vermont, USA):** Operates the "BYOD" program. They pay customers up to **$10,500 upfront** to install batteries. In exchange, GMP accesses that stored power during peaks. This saved all ratepayers (even those without batteries) over $3 million in just one year by avoiding expensive peak power purchases.
+* **[Green Mountain Power (Vermont, USA)](https://greenmountainpower.com/rebates-programs/home-battery-backup/):** Operates the "BYOD" program. They pay customers up to **$10,500 upfront** to install batteries. In exchange, GMP accesses that stored power during peaks. This saved all ratepayers (even those without batteries) over $3 million in just one year by avoiding expensive peak power purchases.
 
 ## Policy 2: The "Mobile Power Plant" Standard (V2G/V2H)
 
@@ -88,7 +88,7 @@ An electric truck (like the Ford F-150 Lightning) holds ~10 Tesla Powerwalls wor
 3.  **Emergency Dispatch:** In a declared State of Emergency (e.g., hurricane), the Governor may authorize the "Mobile Microgrid" protocol, allowing V2G-enabled school buses and municipal trucks to plug into shelters/hospitals to provide emergency power.
 
 **Real-World Example:**
-* **Ford F-150 Lightning & Sunrun:** Ford partnered with solar installer Sunrun to sell a "Home Integration System" that allows the truck to automatically power the house when the grid fails. This policy legalizes and incentivizes that connection at the municipal level.
+* **[Ford F-150 Lightning & Sunrun](https://www.ford.com/support/how-tos/more-vehicle-topics/ford-intelligent-backup-power/):** Ford partnered with solar installer Sunrun to sell a "Home Integration System" that allows the truck to automatically power the house when the grid fails. This policy legalizes and incentivizes that connection at the municipal level.
 
 ## Policy 3: The "Grid Services" Revenue Share
 

@@ -182,8 +182,8 @@ Requirements:
 
 ### International
 - **[Netherlands – Delta Programme](https://www.deltaprogramme.nl/english)**: Long-term adaptive coastal planning using multiple future scenarios.
-- **[United Kingdom – Shoreline Management Plans](https://www.gov.uk/government/publications/shoreline-management-plans-smps)**: Policy-based decisions on hold-the-line, managed realignment, or no active intervention.
-- **[New Zealand – Coastal Policy Statement](https://www.doc.govt.nz/about-us/our-role/how-we-do-our-work/new-zealand-coastal-policy-statement/)**: Strong direction to avoid new development in areas at risk from coastal hazards.
+- **[United Kingdom – Shoreline Management Plans](https://www.gov.uk/guidance/shoreline-management-plans)**: Policy-based decisions on hold-the-line, managed realignment, or no active intervention.
+- **[New Zealand – Coastal Policy Statement](https://www.doc.govt.nz/about-us)**: Strong direction to avoid new development in areas at risk from coastal hazards.
 - **[United States – FEMA and state coastal programs](https://www.fema.gov/flood-maps/coastal)**: Integration of flood mapping, insurance signals, and land use planning.
 - **[OECD coastal adaptation guidance](https://www.oecd.org/environment/cc/coastal-resilience/)**: Explicit recognition of managed retreat and risk-based planning.
 

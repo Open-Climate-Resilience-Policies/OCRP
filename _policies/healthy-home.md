@@ -51,7 +51,7 @@ We regulate lead paint and asbestos; we must regulate indoor combustion.
 3.  **The "Impulse" Incentive:** Offer specific rebates for **Battery-Integrated Induction Stoves** (like Impulse Labs). These plug into standard 120V outlets, avoiding the need for expensive electrical panel upgrades (240V) that usually block renters from switching.
 
 **Real-World Example:**
-* **Berkeley & New York City:** Both have passed bans on gas hookups in new construction, driven largely by the health evidence regarding childhood asthma.
+* **[Berkeley](https://www.cityofberkeley.info/naturalgas/) & [New York City](https://www.nyc.gov/site/buildings/codes/foil-gas-ban.page):** Both have passed bans on gas hookups in new construction, driven largely by the health evidence regarding childhood asthma.
 
 ## Policy 2: The "Burner Replacement" Notification
 

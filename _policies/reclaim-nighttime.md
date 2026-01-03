@@ -56,7 +56,7 @@ If central AC is not feasible, the landlord may designate one "Recovery Room" th
 
 **Real-World Context:**
 - **Paris, France:** The city's [Heat Wave Action Plan](https://www.paris.fr/pages/plan-canicule-5433) identifies vulnerable populations and designates "îlots de fraîcheur" (cool islands) including air-conditioned public buildings where residents can seek refuge during extreme heat events.
-- **Phoenix, Arizona:** The city operates [Heat Relief Network](https://www.phoenix.gov/heat) with cooling centers and hydration stations, recognizing that nighttime heat stress is a public health emergency requiring infrastructure response.
+- **Phoenix, Arizona:** The city operates [Heat Relief Network](https://www.phoenix.gov/administration/departments/heat.html) with cooling centers and hydration stations, recognizing that nighttime heat stress is a public health emergency requiring infrastructure response.
 
 ## 4. Compliance Timeline
 

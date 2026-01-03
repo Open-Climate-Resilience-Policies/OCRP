@@ -66,7 +66,7 @@ This policy applies to all **New Residential** and **New Commercial** developmen
     *   *Benefit:* Vegetation cools the solar panels, increasing efficiency by up to 5%, while panels shade plants, reducing drought stress.
 
 ### B. The Residential Standard (California/Tokyo Model)
-*Based on [California's "Title 24"](https://energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards) and [Tokyo's 2025 Solar Mandate](https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760).*
+*Based on [California's "Title 24"](https://www.energy.ca.gov/) and [Tokyo's 2025 Solar Mandate](https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760).*
 
 **Applicability:** Single-family homes and small residential buildings.
 
@@ -114,6 +114,6 @@ To satisfy the requirement for insulation, the policy legally defines a "Complia
 | Policy Feature | Inspired By |
 | :--- | :--- |
 | **Commercial "Choice" (Solar or Green)** | [France (Climate & Resilience Law)](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924) |
-| **Mandatory Residential Solar** | [California (Title 24)](https://energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards), [Tokyo (2025 Mandate)](https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760) |
+| **Mandatory Residential Solar** | [California (Title 24)](https://www.energy.ca.gov/), [Tokyo (2025 Mandate)](https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760) |
 | **Green Roof Coverage %** | [Toronto (Green Roof Bylaw)](https://www.toronto.ca/city-government/planning-development/official-plan-guidelines/green-roofs/green-roof-bylaw/), Hamburg |
 | **Phase-In Timeline** | [European Union (Solar Rooftop Initiative)](https://ec.europa.eu/info/news/welcome-board-agreement-faster-solar-energy-deployment-and-new-rules-supporting-union-industry_en) |

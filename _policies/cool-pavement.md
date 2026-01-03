@@ -80,8 +80,8 @@ All **non-arterial surfaces** (parking lanes, alleys, sidewalks) must use:
 - Responsibility: Department of Transportation or Public Works.
 
 #### Real-World Examples
-- **Phoenix, AZ:** CoolSeal pilot observed surface temperature reductions up to 12°F at midday.
-- **Los Angeles, CA:** Reflective coatings reduced ambient air temperatures by up to 2.1°F during heat events.
+- **[Phoenix, AZ](https://www.phoenix.gov/administration/departments/streets/initiatives/pavement-maintenance/cool-pavement-program.html):** CoolSeal pilot observed surface temperature reductions up to 12°F at midday.
+- **[Los Angeles, CA](https://streetsla.lacity.org/cool-pavement-pilot-program):** Reflective coatings reduced ambient air temperatures by up to 2.1°F during heat events.
 
 ## Policy 2: Right to Cool (Baseline Housing Standard)
 

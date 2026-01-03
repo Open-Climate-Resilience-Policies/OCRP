@@ -75,7 +75,7 @@ Current laws often force utilities to fix old gas pipes even if they are obsolet
 
 **Real-World Examples:**
 * **[New York Utility Thermal Energy Network and Jobs Act](https://www.governor.ny.gov/news/governor-hochul-signs-legislation-establish-new-yorks-clean-energy-workforce-and-strengthen)** (Passed 2022): This law explicitly authorizes utilities to own and operate thermal networks, preserving union jobs (pipefitters) while transitioning off gas.
-* **[Framingham, Massachusetts](https://www.eversource.com/content/residential/about-us/news-media/news/eversource-brings-geothermal-technology-to-framingham)**: The local utility (Eversource) installed a neighborhood geothermal loop connecting homes, a fire station, and low-income housing, proving the "gas-to-geo" transition works.
+* **[Framingham, Massachusetts](https://www.eversource.com/error/page-not-found?initialRequestUrl=https%3a%2f%2fwww.eversource.com%2fresidential%2fabout-us%2fnews-media%2fnews%2feversource-brings-geothermal-technology-to-framingham)**: The local utility (Eversource) installed a neighborhood geothermal loop connecting homes, a fire station, and low-income housing, proving the "gas-to-geo" transition works.
 
 ## Policy 3: The "All-ACs-Are-Heat-Pumps" Rule
 

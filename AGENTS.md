@@ -486,24 +486,33 @@ test -f _site/index.html
 
 ## 12. Repository Directory Structure
 
-### `/scripts` - Quality Assurance Tools (Primary)
-Python tools for maintaining policy quality and repository health:
+### `/scripts` - Quality Assurance & Maintenance Tools
+**Primary** Python tools for maintaining policy quality and repository health.
+
+#### Main Production Tools
 - **`consistency_guardian.py`** - Agent D quality checker (Check 1-8, including inline link validation)
 - **`validate_frontmatter.py`** - YAML frontmatter validation
 - **`find_broken_links.py`** - Scans official_sources for dead URLs
 - **`apply_wayback_replacements.py`** - Auto-archives dead links via Wayback Machine
 - **`detect_redundancy.py`** - Identifies overlapping policies
 - **`build_taxonomy.py`** - Generates policy taxonomy
+- **`requirements.txt`** - Python dependencies for all tools
 
-**Setup:**
+#### `/scripts/tools/` - Experimental Verification Tools (Legacy)
+Not actively maintained. Replaced by consistency_guardian capabilities:
+- `extract_claims.py` - Extracts verifiable claims from policies
+- `verify_harness_template.py` - LLM-based claim verification (skeleton)
+- `ensure_overviews.py` - Policy overview generation helper
+- `preview_server.py` - Development server utility
+- `move_improvements_to_frontmatter.py` - Metadata migration helper
+
+**Setup & Common Commands:**
 ```bash
+# Setup
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
-```
+pip install -r scripts/requirements.txt
 
-**Common Commands:**
-```bash
 # Full quality check (recommended before commits)
 python scripts/consistency_guardian.py --all
 
@@ -520,27 +529,28 @@ python scripts/validate_frontmatter.py
 python scripts/find_broken_links.py
 ```
 
-### `/tools` - Experimental Verification Tools (Deprecated)
-Legacy claim extraction and verification harness - **not actively maintained**:
-- `extract_claims.py` - Extracts verifiable claims from policies
-- `verify_harness_template.py` - LLM-based claim verification (skeleton)
-- `ensure_overviews.py` - Policy overview generation helper
-
-**Status:** These tools are experimental and not part of the standard workflow. The consistency guardian (`scripts/`) has replaced most verification needs.
-
 ### `/assets` - Public-Facing Static Assets
 CSS, JavaScript, and images served to site visitors:
-- `assets/css/` - Stylesheets
-- `assets/js/` - Client-side interactive features
-- `assets/images/` - Icons, diagrams, illustrations
+- **`assets/css/`** - Stylesheets (site-wide styles)
+- **`assets/js/`** - Client-side interactive features
+  - `accessibility-test.js` - WCAG 2.2 AA compliance testing
+  - `connectivity.js` - Network connectivity utilities
+  - `policy-engine.js` - Policy filtering and display logic
+  - `share.js` - Social sharing utilities
+- **`assets/images/`** - Icons, diagrams, illustrations
+- **`assets/manifest/`** - Web app manifest files
 
-### Other Key Directories
-- **`/_policies`** - Policy markdown source files (content)
-- **`/_layouts`** - Jekyll page templates
-- **`/_site`** - Generated static site (git-ignored, built by Jekyll)
-- **/`archive`** - Deprecated policies and backup files
-- **/`templates`** - Policy authoring templates
-- **/`evidence`** - Supporting documentation and research
+### Core Content Directories
+- **`/_policies/`** - Policy markdown source files (31 policies)
+- **`/_layouts/`** - Jekyll page templates (default.html, policy.html)
+- **`/_site/`** - Generated static site (git-ignored, built by Jekyll)
+
+### Supporting Directories
+- **`/archive/`** - Deprecated policies, backup files (.bak), and migration records
+- **`/templates/`** - Policy authoring templates and style guides
+- **`/evidence/`** - Supporting documentation, research PDFs, and source files
+- **`/data/`** - Structured data files (taxonomy, indices)
+- **`/.github/`** - GitHub workflows and Actions configuration (planned CI/CD)
 
 ---
 

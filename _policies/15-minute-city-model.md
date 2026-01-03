@@ -189,6 +189,6 @@ If you are a city councilor or planner, use this checklist to launch this policy
 * **C40 Cities:** [Barcelona Superblocks case study](https://www.c40.org/case-studies/barcelona-superblocks/)
 * **Ajuntament de Barcelona:** [Government Measure on Superblocks (PDF)](https://ajuntament.barcelona.cat/ecologiaurbana/sites/default/files/en_gb_MESURA%20GOVERN%20SUPERILLES.pdf)
 * **WHO:** [Physical activity fact sheet](https://www.who.int/news-room/fact-sheets/detail/physical-activity)
-* **CATS:** [SmartCode resources](http://www.transect.org/codes.html)
+* **CATS:** [SmartCode resources](https://transect.org/codes.html)
 * **Victoria Suburban Revitalisation:** [20-minute neighbourhood pilots](https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods)
-* **Australian Urban Observatory:** [20 Minute Neighbourhood Scorecard](https://doi.org/10.25439/rmt.20452608.v1)
+* **Australian Urban Observatory:** [20 Minute Neighbourhood Scorecard](https://research-repository.rmit.edu.au/articles/educational_resource/AUO_20_Minute_Neighbourhood_Scorecard/20452608/1)

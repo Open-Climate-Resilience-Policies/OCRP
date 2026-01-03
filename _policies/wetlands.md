@@ -93,7 +93,7 @@ Requirements:
 The **[Great Lakes basin invasive species programs](https://www.epa.gov/greatlakes/great-lakes-binational-toxics-strategy)** demonstrate coordinated freshwater invasive management across jurisdictions, recognizing invasive species as a core driver of wetland and coastal habitat loss.
 
 **International examples:**  
-[EU Invasive Alien Species Regulation (1143/2014)](https://ec.europa.eu/environment/nature/invasivealien/index_en.htm); [New Zealand Biosecurity Act 1993](https://www.beehive.govt.nz/information/biosecurity)
+[EU Invasive Alien Species Regulation (1143/2014)](https://environment.ec.europa.eu/topics/nature-and-biodiversity/invasive-alien-species_en); [New Zealand Biosecurity Act 1993](https://www.beehive.govt.nz/information/biosecurity)
 
 ---
 
@@ -123,7 +123,7 @@ Requirements:
 4. Fish passage restoration is mandatory for all in-stream barriers; barrier removal or redesign shall be completed within [X] years of project approval; post-restoration monitoring shall track species passage for minimum 3 years.
 
 **Canadian example:**  
-The **[Still Creek Integrated Watershed and Stream Restoration (Metro Vancouver)](https://www.metrovancouver.org/services/liquid-waste/integrated-watershed-management/still-creek-restoration)** demonstrates urban stream daylighting, riparian restoration, invasive removal, and rainwater integration to support fish and wildlife recovery.
+The **[Still Creek Integrated Watershed and Stream Restoration (Metro Vancouver)](https://metrovancouver.org/search/Pages/page-not-found.aspx)** demonstrates urban stream daylighting, riparian restoration, invasive removal, and rainwater integration to support fish and wildlife recovery.
 
 ---
 
@@ -138,7 +138,7 @@ Requirements:
 
 **Canadian examples:**
 - **[Gwaii Haanas Cooperative Management Board](https://www.pc.gc.ca/en/proms/shnl-nhs/co-management)**, a joint federal–Haida governance model spanning terrestrial and marine ecosystems
-- **[Indigenous Protected and Conserved Areas (IPCAs)](https://www.canada.ca/en/services/environment/conservation/nature/indigenous-protected-conserved-areas.html)**, which provide a national framework for Indigenous-led conservation across land and water
+- **[Indigenous Protected and Conserved Areas (IPCAs)](https://www.canada.ca/errors/404.html)**, which provide a national framework for Indigenous-led conservation across land and water
 
 **International examples:**  
 New Zealand’s Te Mana o te Wai freshwater governance; Australia’s Sea Country and Indigenous Protected Areas.
