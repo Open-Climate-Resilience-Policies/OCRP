@@ -7,18 +7,22 @@ title: Home
 
 A collaborative repository of climate resilience policies, strategies, and best practices for municipalities and organizations worldwide.
 
+<div class="feature-grid">
+  <div class="feature-item">
+    <h3>🌍 Open Access</h3>
+    <p>Free and accessible climate resilience policies for everyone</p>
+  </div>
+  <div class="feature-item">
+    <h3>🤝 Community-Driven</h3>
+    <p>Collaboratively developed and maintained by experts worldwide</p>
+  </div>
+  <div class="feature-item">
+    <h3>📚 Evidence-Based</h3>
+    <p>Policies grounded in scientific research and real-world implementation</p>
+  </div>
+</div>
+
 [Explore Policies]({{ site.baseurl }}/policies/)
-
-## 🌍 Open Access
-Free and accessible climate resilience policies for everyone
-
-## 🤝 Community-Driven
-Collaboratively developed and maintained by experts worldwide
-
-## 📚 Evidence-Based
-Policies grounded in scientific research and real-world implementation
-
----
 
 ## What is OCRP?
 
