@@ -1,16 +1,3 @@
-layout: default
-title: About
-permalink: /about/
-date: 2025-12-21
-slug: about
-keywords: [about, mission, team]
-official_sources:
-	- url: "https://op.europa.eu/"
-		title: "EU Open Data and Publications portal"
-		accessed: "2025-12-27"
-	- url: "https://ec.europa.eu/info/index_en"
-		title: "European Commission — official site"
-		accessed: "2025-12-27"
 ---
 layout: default
 title: About
