@@ -34,11 +34,32 @@ jobs:
         run: |
           bundle config set --local path 'vendor/bundle'
           bundle install
+      
+      - name: Install Python dependencies
+        run: pip install pyyaml
+      
+      - name: Validate frontmatter
+        run: python3 scripts/validate_frontmatter.py
           
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --strict_front_matter
         env:
           JEKYLL_ENV: production
+      
+      - name: Verify critical pages exist
+        run: |
+          MISSING=""
+          for page in about/index.html contribute/index.html policies/index.html; do
+            if [ ! -f "_site/$page" ]; then
+              echo "❌ Missing: $page"
+              MISSING="$MISSING $page"
+            fi
+          done
+          if [ -n "$MISSING" ]; then
+            echo "Critical pages missing:$MISSING"
+            exit 1
+          fi
+          echo "✅ All critical pages generated"
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

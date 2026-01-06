@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 import glob, re, sys, os
 import yaml
+from datetime import date, datetime
 
-POL_DIR = os.path.join(os.path.dirname(__file__), '..', '_policies')
+REPO_ROOT = os.path.join(os.path.dirname(__file__), '..')
+POL_DIR = os.path.join(REPO_ROOT, '_policies')
 
-ALLOWED_SCALAR = (str, int, float, bool)
+# Root-level pages that must have valid frontmatter
+CRITICAL_PAGES = ['about.md', 'contribute.md', 'index.md']
+
+ALLOWED_SCALAR = (str, int, float, bool, date, datetime)
 
 def is_allowed(value):
     if isinstance(value, ALLOWED_SCALAR):
@@ -27,7 +32,14 @@ def extract_frontmatter(text):
 
 def main():
     errors = []
+    # Scan policy files
     files = sorted(glob.glob(os.path.join(POL_DIR, '*.md')))
+    # Add critical root-level pages
+    for page in CRITICAL_PAGES:
+        page_path = os.path.join(REPO_ROOT, page)
+        if os.path.exists(page_path):
+            files.append(page_path)
+    
     for f in files:
         with open(f, 'r', encoding='utf-8') as fh:
             s = fh.read()
@@ -48,7 +60,7 @@ def main():
         for f,msg in errors:
             print(f'- {f}: {msg}')
         sys.exit(2)
-    print('Frontmatter validation passed: all values use simple YAML types')
+    print(f'✅ Frontmatter validation passed: {len(files)} files checked')
 
 if __name__ == "__main__":
     main()

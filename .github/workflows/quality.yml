@@ -36,6 +36,21 @@ jobs:
           test -d _site/policies
           echo "✅ Jekyll build completed successfully"
 
+      - name: Verify critical pages exist
+        run: |
+          MISSING=""
+          for page in about/index.html contribute/index.html policies/index.html; do
+            if [ ! -f "_site/$page" ]; then
+              echo "❌ Missing: $page"
+              MISSING="$MISSING $page"
+            fi
+          done
+          if [ -n "$MISSING" ]; then
+            echo "Critical pages missing:$MISSING"
+            exit 1
+          fi
+          echo "✅ All critical pages generated"
+
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
