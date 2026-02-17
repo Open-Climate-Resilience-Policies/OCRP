@@ -1,7 +1,12 @@
+env/
+vendor/bundle/
+dist/
+tmp/
+
 # macOS
 .DS_Store
 
-# IDE
+# IDE/project files
 .vscode/
 .idea/
 
@@ -14,7 +19,7 @@ __pycache__/
 # Node
 node_modules/
 
-# Jekyll
+# Jekyll build/cache
 _site/
 .sass-cache/
 .jekyll-cache/
@@ -24,30 +29,35 @@ _site/
 vendor/
 vendor/bundle/
 
-# Local env
+# Local env/config/logs
 .env
 .env.*
 *.log
 
-# Misc
+# Misc build/test
 coverage/
 dist/
 tmp/
-# macOS-specific files
-.DS_Store
 
-# IDE
-.vscode/
-.idea/
-
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Lock files
 Gemfile.lock
 
 # Backup files
 *.bak
 *.bak.*
 backups/
+
+# Spec Kitty/AI tool worktrees and dashboards
+.claude/
+.codex/
+.opencode/
+.windsurf/
+.gemini/
+.cursor/
+.qwen/
+.kilocode/
+.augment/
+.roo/
+.amazonq/
+.github/copilot/
+.kittify/.dashboard
