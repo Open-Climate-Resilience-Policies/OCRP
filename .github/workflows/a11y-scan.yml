@@ -1,0 +1,50 @@
+name: Accessibility Scanner
+
+# Runs manually (workflow_dispatch) so you can trigger scans on demand.
+# Optionally, uncomment the schedule block to run weekly.
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 9 * * 1'  # Every Monday at 09:00 UTC
+
+# ──────────────────────────────────────────────────────────────────────────────
+# TOKEN SETUP (one-time, requires repo admin access)
+# ──────────────────────────────────────────────────────────────────────────────
+# The github/accessibility-scanner action explicitly requires a PAT — it cannot
+# use the default GITHUB_TOKEN (see https://github.com/github/accessibility-scanner).
+#
+# Create a fine-grained PAT with the following permissions scoped to this repo:
+#   - actions: write
+#   - contents: write
+#   - issues: write
+#   - pull-requests: write
+#   - metadata: read
+#
+# Then store it as a repository secret named GH_TOKEN:
+#   Repository → Settings → Secrets and variables → Actions → New repository secret
+
+# The scanner uses a PAT (GH_TOKEN) for all operations; drop the default
+# GITHUB_TOKEN permissions to enforce least privilege.
+permissions: {}
+
+jobs:
+  accessibility_scanner:
+    name: Scan ocrap.net for Accessibility Issues
+    runs-on: ubuntu-latest
+    steps:
+      - uses: github/accessibility-scanner@v2
+        with:
+          urls: |
+            https://ocrap.net
+            https://ocrap.net/policies/
+            https://ocrap.net/about/
+            https://ocrap.net/contribute/
+            https://ocrap.net/policies/solar-parking/
+          repository: Open-Climate-Resilience-Policies/OCRP
+          token: ${{ secrets.GH_TOKEN }}
+          # cache_key: a filename used by the scanner to cache results between runs
+          # so it can distinguish new findings from previously-reported ones.
+          cache_key: ocrap.net
+          # Set to true if you don't have GitHub Copilot or prefer manual
+          # triage of filed issues:
+          # skip_copilot_assignment: true
