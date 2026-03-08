@@ -64,4 +64,41 @@ A lexical construct that masquerades as an acronym but holds no allegiance to sp
 
 ## Our Philosophy
 
+## AI Assistance & Quality Assurance {#quality-assurance}
 
+Much of the policy content in this library was drafted or normalised with the help of AI language models. We believe transparency about this is essential—so here is exactly how it works and what safeguards are in place.
+
+### How AI is used
+
+- **Policy normalisation:** Raw policy text from legislation, municipal codes, and official reports is fed to AI tools to reformat it into our standard structure (problem statement, mandate, implementation guidance, enforcement, citations).
+- **Gap analysis:** AI agents flag vague enforcement language, missing thresholds, and potential loopholes so human editors can strengthen them.
+- **Citation checking:** Automated tools verify that every `official_sources` URL is reachable and from an authoritative domain.
+
+### What AI does *not* do
+
+- AI does **not** invent citations or fabricate data. Every policy must link to a real, verifiable source.
+- AI does **not** publish content autonomously. All substantive changes require human review before they reach the main branch.
+- AI does **not** weaken enforcement language. Our consistency checker flags and rejects any edit that replaces binding terms ("shall", "must") with vague alternatives ("encourage", "strive to").
+
+### The Integrity Engine
+
+Our four-agent review chain acts as an internal quality control board:
+
+| Agent | Role | Trigger |
+| --- | --- | --- |
+| **The Scientist** | Cross-references claims against peer-reviewed evidence | Any health or engineering claim |
+| **The CFO** | Stress-tests economic assumptions and supply-chain timelines | Any cost or procurement mandate |
+| **The Sleep Doctor** | Audits indoor temperature and public-health thresholds | Any housing or heat policy |
+| **The Consistency Guardian** | Checks structure, citations, overlap, and enforcement language | Every new or edited policy |
+
+### Known limitations
+
+Despite these safeguards, AI-assisted content can contain errors. Specifically:
+
+- A cited source may be misrepresented or summarised inaccurately.
+- Numeric thresholds may be transcribed incorrectly.
+- Legal terminology may not translate correctly across jurisdictions.
+
+**If you find an error, please report it.** Use the "🚩 Report an Issue" button at the bottom of any page, or [open a GitHub Issue directly](https://github.com/Open-Climate-Resilience-Policies/OCRP/issues/new?labels=content-error&template=content_error.md&title=Content+error%3A+). We treat every credible correction as a priority.
+
+---
