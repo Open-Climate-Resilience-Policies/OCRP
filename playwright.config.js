@@ -15,6 +15,25 @@ module.exports = {
     trace: 'on-first-retry',
   },
 
+  projects: [
+    {
+      name: 'Desktop Chrome',
+      use: {
+        browserName: 'chromium',
+        viewport: { width: 1280, height: 720 },
+      },
+    },
+    {
+      name: 'Mobile Chrome',
+      use: {
+        browserName: 'chromium',
+        viewport: { width: 375, height: 812 },
+        hasTouch: true,
+        isMobile: true,
+      },
+    },
+  ],
+
   webServer: {
     command: 'cd _site && python3 -m http.server 8080',
     url: 'http://localhost:8080',

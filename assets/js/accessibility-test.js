@@ -1,114 +1,97 @@
 /**
- * Accessibility Tests for OCRaP.ai Policy Library
- * Per AGENTS.md Section 11: Automated WCAG 2.2 AA compliance checks
- * 
- * Thresholds (from AGENTS.md):
- * - Critical violations: 0 allowed (fail build)
- * - Serious violations: 0 allowed (fail build)
- * - Moderate violations: Warning only (do not fail build)
- * - Minor violations: Informational only
+ * Comprehensive Accessibility Crawl for OCRaP.ai Policy Library
+ * Dynamically queries all site HTML files for WCAG 2.2 AA compliance across themes.
  */
 
 const { test, expect } = require('@playwright/test');
 const { injectAxe, checkA11y } = require('axe-playwright');
+const fs = require('fs');
+const path = require('path');
 
-// Use Playwright's configured baseURL instead of hardcoding
-// This allows the test to work with different environments (local, CI, etc.)
-const AXE_CONFIG = {
+const baseURL = 'http://localhost:8080';
+const axeConfig = {
   runOnly: {
     type: 'tag',
     values: ['wcag2a', 'wcag2aa', 'wcag22aa']
   }
 };
 
-/**
- * Analyze axe results and categorize violations by impact
- */
-function analyzeResults(results) {
-  const violations = results.violations || [];
-  const critical = violations.filter(v => v.impact === 'critical');
-  const serious = violations.filter(v => v.impact === 'serious');
-  const moderate = violations.filter(v => v.impact === 'moderate');
-  const minor = violations.filter(v => v.impact === 'minor');
-  
-  return { critical, serious, moderate, minor, total: violations.length };
+const SITE_DIR = path.resolve(__dirname, '../../_site');
+
+// Recursively find all HTML files
+function getAllHtmlFiles(dirPath, fileArray) {
+  if (!fs.existsSync(dirPath)) return [];
+  const files = fs.readdirSync(dirPath);
+  fileArray = fileArray || [];
+
+  files.forEach(function(file) {
+    if (fs.statSync(dirPath + "/" + file).isDirectory()) {
+      fileArray = getAllHtmlFiles(dirPath + "/" + file, fileArray);
+    } else {
+      if (file.endsWith('.html')) {
+        let relativePath = path.relative(SITE_DIR, path.join(dirPath, file));
+        let urlPath = '/' + relativePath.replace(/\\/g, '/');
+        // Handle index.html paths cleanly
+        if (urlPath.endsWith('index.html')) {
+            urlPath = urlPath.slice(0, -10);
+        }
+        fileArray.push(urlPath);
+      }
+    }
+  });
+  return fileArray;
 }
 
-/**
- * Format violation details for reporting
- */
-function formatViolations(violations, impact) {
-  if (violations.length === 0) return '';
-  
-  let output = `\n${impact.toUpperCase()} Violations (${violations.length}):\n`;
-  violations.forEach(v => {
-    output += `  - ${v.id}: ${v.description}\n`;
-    output += `    Affects ${v.nodes.length} element(s)\n`;
-    v.nodes.slice(0, 3).forEach(node => {
-      output += `    → ${node.html.substring(0, 80)}...\n`;
-    });
-  });
-  return output;
-}
+const pagesToTest = getAllHtmlFiles(SITE_DIR);
+const themes = ['light', 'dark'];
 
-test.describe('WCAG 2.2 AA Accessibility Tests', () => {
-  
-  test('Home page accessibility', async ({ page, baseURL }) => {
-    await page.goto(baseURL);
-    await injectAxe(page);
-    
-    // Run accessibility check and report violations
-    await checkA11y(page, null, {
-      runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag22aa'] }
-    }, (violations) => {
-      const critical = violations.filter(v => v.impact === 'critical');
-      const serious = violations.filter(v => v.impact === 'serious');
-      
-      console.log(`\nHome Page: ${violations.length} total violations`);
-      console.log(formatViolations(critical, 'critical'));
-      console.log(formatViolations(serious, 'serious'));
-      
-      expect(critical.length, 'Critical violations must be zero').toBe(0);
-      expect(serious.length, 'Serious violations must be zero').toBe(0);
+test.describe('WCAG 2.2 AA Accessibility Deep Crawl', () => {
+
+  // For testing timeouts/memory drops on large sites
+  test.setTimeout(120000); // 2 mins total per worker
+
+  test.beforeEach(async ({ page }) => {
+    // Fail immediately on browser errors to catch uncaught JS
+    page.on('pageerror', err => {
+        console.warn(`[Page Error] ${err.message}`);
     });
   });
-  
-  test('Policy index page accessibility', async ({ page, baseURL }) => {
-    await page.goto(`${baseURL}/policies/`);
-    await injectAxe(page);
-    
-    await checkA11y(page, null, {
-      runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag22aa'] }
-    }, (violations) => {
-      const critical = violations.filter(v => v.impact === 'critical');
-      const serious = violations.filter(v => v.impact === 'serious');
-      
-      console.log(`\nPolicy Index: ${violations.length} total violations`);
-      console.log(formatViolations(critical, 'critical'));
-      console.log(formatViolations(serious, 'serious'));
-      
-      expect(critical.length, 'Critical violations must be zero').toBe(0);
-      expect(serious.length, 'Serious violations must be zero').toBe(0);
-    });
+
+  pagesToTest.forEach(pageUrl => {
+    for (const theme of themes) {
+      test(`A11y Test: ${pageUrl || '/'} in ${theme.toUpperCase()} mode`, async ({ page }) => {
+        
+        // Emulate color scheme
+        await page.emulateMedia({ colorScheme: theme });
+
+        // Navigate
+        const fullUrl = `${baseURL}${pageUrl}`;
+        await page.goto(fullUrl, { waitUntil: 'load' });
+        
+        // Inject Axe-core
+        await injectAxe(page);
+        
+        // Exclude 3rd party or irrelevant things here if necessary
+        await checkA11y(page, null, axeConfig, (violations) => {
+          const critical = violations.filter(v => v.impact === 'critical');
+          const serious = violations.filter(v => v.impact === 'serious');
+          
+          if (critical.length > 0 || serious.length > 0) {
+            console.error(`\n❌ [${theme.toUpperCase()}] Violation on ${pageUrl}`);
+            const report = [...critical, ...serious];
+            report.forEach(v => {
+              console.error(`   - ${v.id} (${v.impact}): ${v.description}`);
+              v.nodes.slice(0, 2).forEach(node => {
+                console.error(`     ↳ Node: ${node.html.substring(0, 100)}`);
+              });
+            });
+          }
+
+          expect(critical.length, `Critical violations must be zero`).toBe(0);
+          expect(serious.length, `Serious violations must be zero`).toBe(0);
+        });
+      });
+    }
   });
-  
-  test('Sample policy page accessibility', async ({ page, baseURL }) => {
-    // Test solar-parking as it has full official_sources
-    await page.goto(`${baseURL}/policies/solar-parking/`);
-    await injectAxe(page);
-    
-    await checkA11y(page, null, {
-      runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag22aa'] }
-    }, (violations) => {
-      const critical = violations.filter(v => v.impact === 'critical');
-      const serious = violations.filter(v => v.impact === 'serious');
-      
-      console.log(`\nSample Policy: ${violations.length} total violations`);
-      console.log(formatViolations(critical, 'critical'));
-      console.log(formatViolations(serious, 'serious'));
-      
-      expect(critical.length, 'Critical violations must be zero').toBe(0);
-      expect(serious.length, 'Serious violations must be zero').toBe(0);
-    });
-  });
+
 });

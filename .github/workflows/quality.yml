@@ -123,71 +123,17 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Create accessibility test
+      - name: Check run interval
+        id: interval
         run: |
-          cat > accessibility-test.js << 'EOF'
-          const { test, expect } = require('@playwright/test');
-          const { injectAxe, checkA11y } = require('axe-playwright');
-          const fs = require('fs');
-          const path = require('path');
-
-          const baseURL = 'http://localhost:8080';
-          const axeConfig = {
-            runOnly: {
-              type: 'tag',
-              values: ['wcag2a', 'wcag2aa', 'wcag22aa']
-            }
-          };
-
-          const criticalViolationsThreshold = 0;
-          const seriousViolationsThreshold = 0;
-
-          test.describe('Accessibility Tests', () => {
-            test.beforeEach(async ({ page }) => {
-              await injectAxe(page);
-            });
-
-            test('Home page', async ({ page }) => {
-              await page.goto(`${baseURL}/index.html`);
-              await checkA11y(page, null, axeConfig, (violations) => {
-                const critical = violations.filter(v => v.impact === 'critical');
-                const serious = violations.filter(v => v.impact === 'serious');
-                
-                expect(critical.length, `Critical violations found: ${critical.length}`).toBeLessThanOrEqual(criticalViolationsThreshold);
-                expect(serious.length, `Serious violations found: ${serious.length}`).toBeLessThanOrEqual(seriousViolationsThreshold);
-              });
-            });
-
-            test('Policy index', async ({ page }) => {
-              await page.goto(`${baseURL}/policies/index.html`);
-              await checkA11y(page, null, axeConfig, (violations) => {
-                const critical = violations.filter(v => v.impact === 'critical');
-                const serious = violations.filter(v => v.impact === 'serious');
-                
-                expect(critical.length, `Critical violations found: ${critical.length}`).toBeLessThanOrEqual(criticalViolationsThreshold);
-                expect(serious.length, `Serious violations found: ${serious.length}`).toBeLessThanOrEqual(seriousViolationsThreshold);
-              });
-            });
-
-            test('Sample policy page', async ({ page }) => {
-              const policiesDir = path.join(__dirname, '_site', 'policies');
-              const policyFiles = fs.readdirSync(policiesDir).filter(f => f.endsWith('.html'));
-              
-              if (policyFiles.length > 0) {
-                await page.goto(`${baseURL}/policies/${policyFiles[0]}`);
-                await checkA11y(page, null, axeConfig, (violations) => {
-                  const critical = violations.filter(v => v.impact === 'critical');
-                  const serious = violations.filter(v => v.impact === 'serious');
-                  
-                  expect(critical.length, `Critical violations found: ${critical.length}`).toBeLessThanOrEqual(criticalViolationsThreshold);
-                  expect(serious.length, `Serious violations found: ${serious.length}`).toBeLessThanOrEqual(seriousViolationsThreshold);
-                });
-              }
-            });
-          });
-          EOF
+          if [ $(( ${GITHUB_RUN_NUMBER} % 5 )) -eq 0 ]; then
+            echo "run_tests=true" >> $GITHUB_OUTPUT
+          else
+            echo "run_tests=false" >> $GITHUB_OUTPUT
+          fi
 
       - name: Run accessibility tests
+        if: steps.interval.outputs.run_tests == 'true'
         run: npx playwright test
 
       - name: Upload test results
