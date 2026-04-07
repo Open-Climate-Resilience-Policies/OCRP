@@ -45,6 +45,18 @@ jobs:
         run: bundle exec jekyll build --strict_front_matter
         env:
           JEKYLL_ENV: production
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          
+      - name: Install NPM dependencies
+        run: npm ci || npm install
+        
+      - name: Build Search Index
+        run: npm run build:search
       
       - name: Verify critical pages exist
         run: |
