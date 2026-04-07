@@ -42,3 +42,7 @@ exclude:
   - archive/
   - "*.bak"
   - "*.bak.*"
+  - node_modules
+  - package.json
+  - package-lock.json
+  - playwright.config.js

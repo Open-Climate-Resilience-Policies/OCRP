@@ -221,6 +221,11 @@ Automatically escalate to human review if:
 - Maintain lightweight, usable, accessible design
 - Test at both mobile and desktop widths before committing
 
+### Theming and Dark Mode
+- **Never use hardcoded hex colors for generic backgrounds (`#ffffff`) or text (`#000000`).**
+- Use existing CSS variables (`var(--color-bg)`, `var(--color-text)`, etc.) which are bound to the `[data-theme]` architecture in `variables.css`.
+- Support user preference via `prefers-color-scheme: dark`.
+
 ---
 
 ## 5. Interactive Tools Standards

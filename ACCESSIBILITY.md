@@ -34,6 +34,11 @@ To contribute to OCRP, you must follow our core accessibility requirements (`AGE
 - Prefer native controls (`button`/`input`/`select`). Avoid div-as-button.
 - Touch targets must be sized/spaced to prevent mis-taps (minimum 24×24 CSS pixels per WCAG 2.2).
 
+### Light/Dark Color Mode Dual Contrast
+- All interfaces must be tested in both Light and Dark mode to ensure WCAG 2.2 AA color contrast passing thresholds (4.5:1 text/bg, 3:1 non-text/bg).
+- Support user operating system defaults via `prefers-color-scheme: dark`.
+- Do not utilize hardcoded background or text color hashes. Use custom CSS properties (`var(--color-bg)`) bound to `[data-theme]` to guarantee theme switching works without regressions.
+
 ## 4. Reporting & Severity Taxonomy
 If you encounter an accessibility barrier, please [Report an Issue on GitHub](https://github.com/Open-Climate-Resilience-Policies/OCRP/issues/new). We prioritize based on:
 - **Critical:** Prevents a user from completing a core task (e.g., "Cannot navigate policy text").

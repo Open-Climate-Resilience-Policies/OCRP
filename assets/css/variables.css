@@ -1,12 +1,15 @@
-:root {
+:root, [data-theme="light"] {
   /* WCAG 2.2 AA compliant colors */
   --color-primary: #004b50;        /* Contrast ratio 11.59:1 with white */
   --color-primary-light: #006b70;  /* Contrast ratio 7.93:1 with white */
-  --color-accent: #1a7029;         /* Contrast ratio 7.01:1 with white (darker green for better contrast) */
-  --color-text: #1a1d1f;           /* Contrast ratio 16.1:1 with white (darker for better readability) */
+  --color-primary-dark: #002d30;
+  --color-accent: #1a7029;         /* Contrast ratio 7.01:1 with white */
+  --color-text: #1a1d1f;           /* Contrast ratio 16.1:1 with white */
   --color-text-light: #4a4f54;     /* Contrast ratio 8.59:1 with white */
+  --color-text-muted: #6c757d;
   --color-bg: #ffffff;
   --color-bg-light: #f8f9fa;
+  --color-bg-secondary: #f8f9fa;
   --color-border: #dee2e6;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -14,4 +17,36 @@
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
   --max-width: 1200px;
+}
+
+/* Dark mode default if OS says so */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #1bb7c1;        /* Adjusted for contrast on dark */
+    --color-primary-light: #4cdadd;  
+    --color-primary-dark: #0f838a;
+    --color-accent: #4ade62;         
+    --color-text: #e8e8e8;           
+    --color-text-light: #a0a6ab;     
+    --color-text-muted: #8a9096;
+    --color-bg: #121212;
+    --color-bg-light: #1e1e1e;
+    --color-bg-secondary: #242424;
+    --color-border: #333333;
+  }
+}
+
+/* Hard override */
+[data-theme="dark"] {
+  --color-primary: #1bb7c1;
+  --color-primary-light: #4cdadd;  
+  --color-primary-dark: #0f838a;
+  --color-accent: #4ade62;         
+  --color-text: #e8e8e8;           
+  --color-text-light: #a0a6ab;     
+  --color-text-muted: #8a9096;
+  --color-bg: #121212;
+  --color-bg-light: #1e1e1e;
+  --color-bg-secondary: #242424;
+  --color-border: #333333;
 }
