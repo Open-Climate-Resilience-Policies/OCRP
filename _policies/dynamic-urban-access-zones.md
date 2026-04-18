@@ -13,6 +13,7 @@ implementation_level: "municipal"
 related_policies:
   - "15-minute-city-model"
   - "green-procurement"
+  - "congestion-pricing-nyc-model"
 date: "2025-12-21"
 slug: "dynamic-urban-access-zones"
 keywords:
