@@ -23,9 +23,6 @@ official_sources:
   title: 'France to require all large car parks to be covered by solar panels'
   accessed: '2025-12-28'
   note: Coverage of France's solar parking mandate approved by the French Senate
-- url: https://web.archive.org/web/20250405101048/https://www.legifrance.gouv.fr/jorf/id/JORFTEXT0000000000
-  title: "D\xE9cret n\xB0 2024-1023 (French Official Journal) (archived placeholder)"
-  language: fr
 - url: https://www.transportenvironment.org/articles
   title: "Transport & Environment (2023) \u2014 Solar canopies over parking lots"
   note: NGO analysis summarizing generation potential, structural considerations,

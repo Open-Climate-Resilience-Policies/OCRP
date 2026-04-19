@@ -48,11 +48,18 @@ def check_url(url: str):
         # Try HEAD first
         resp = SESSION.head(url, timeout=TIMEOUT, allow_redirects=True)
         code = resp.status_code
-        if code == 405 or code == 403:
-            # Some servers disallow HEAD; try GET
+        if code in (405, 403):
+            # Some servers disallow HEAD; fall back to GET
             resp = SESSION.get(url, timeout=TIMEOUT, allow_redirects=True)
             code = resp.status_code
         return code, resp.url
+    except requests.exceptions.Timeout:
+        # Retry once with a longer timeout before reporting as unreachable
+        try:
+            resp = SESSION.get(url, timeout=TIMEOUT * 3, allow_redirects=True)
+            return resp.status_code, resp.url
+        except Exception as e:
+            return None, str(e)
     except Exception as e:
         return None, str(e)
 
