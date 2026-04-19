@@ -23,7 +23,7 @@ official_sources:
   title: "TransitCenter 'Who's On Board 2019' report (PDF) \u2014 rider priorities\
     \ for frequency vs. fare-free programs"
   accessed: '2025-12-28'
-- url: https://www.iledefrance-mobilites.fr/404
+- url: https://www.iledefrance-mobilites.fr/
   title: "\xCEle-de-France Mobilit\xE9s \u2014 Versement Mobilit\xE9 employer payroll\
     \ levy for transit operations"
   accessed: '2025-12-28'

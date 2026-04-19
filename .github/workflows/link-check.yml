@@ -46,7 +46,24 @@ jobs:
           python3 - <<'PY'
 import json,sys
 results=json.load(open('link-check.json'))
-bad=[e for e in results if e.get('status_code') is None or (isinstance(e.get('status_code'),int) and e.get('status_code')>=400)]
+# 403/401/429: bot-blocking or auth-required — warn but do not fail.
+# 404/410 and connection errors (None): definitively broken.
+UNCERTAIN_CODES = {401, 403, 429}
+bad=[]
+warn=[]
+for e in results:
+    code = e.get('status_code')
+    if code is None:
+        bad.append(e)
+    elif isinstance(code, int):
+        if code in UNCERTAIN_CODES:
+            warn.append(e)
+        elif code >= 400:
+            bad.append(e)
+if warn:
+    print('WARNING — URLs that may be bot-blocked or require auth (not counted as failures):')
+    import pprint
+    pprint.pprint(warn[:20])
 if bad:
     print('Broken official_sources detected (first 20):')
     import pprint
