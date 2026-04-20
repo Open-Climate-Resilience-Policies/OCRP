@@ -26,6 +26,7 @@ definitively broken.  A human-visible warning is still emitted.
 import json
 import pprint
 import sys
+from urllib.parse import urlparse
 
 # 401/403/429: bot-blocking or auth-required — warn but do not fail.
 # 500/502/503/504: transient server errors — warn but do not fail.
@@ -42,7 +43,7 @@ warn = []
 for e in results:
     code = e.get('status_code')
     url = e.get('url', '') or e.get('final_url', '')
-    is_archive = ARCHIVE_ORG_HOST in url
+    is_archive = urlparse(url).netloc == ARCHIVE_ORG_HOST
     if code is None:
         # Network error (connection refused, timeout, DNS failure).
         # Treat as a warning so CI does not fail due to runner network

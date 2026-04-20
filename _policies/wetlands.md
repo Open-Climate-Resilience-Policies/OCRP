@@ -18,8 +18,6 @@ official_sources:
     url: "https://eur-lex.europa.eu/eli/reg/2014/1143/oj"
   - title: "New Zealand Biosecurity Act 1993"
     url: "https://www.legislation.govt.nz/act/public/1993/0025/latest/whole.html"
-  - title: "BC Integrated Stormwater Management Planning"
-    url: "https://www2.gov.bc.ca/gov/content/environment/air-land-water-climate-change/water/integrated-water-management"
 related_policies:
   - "Biodiversity Corridors & Rewilding Mandate"
 ---
