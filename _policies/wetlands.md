@@ -12,14 +12,14 @@ keywords:
   - biodiversity-corridors
   - water-management
 official_sources:
-  - title: "Great Lakes Binational Toxics Strategy"
-    url: "https://web.archive.org/web/20240930120000/https://www.epa.gov/glri/great-lakes-binational-toxics-strategy"
+  - title: "Great Lakes Binational Toxics Strategy — International Joint Commission"
+    url: "https://ijc.org/en/glbts"
   - title: "EU Invasive Alien Species Regulation (1143/2014)"
     url: "https://eur-lex.europa.eu/eli/reg/2014/1143/oj"
   - title: "New Zealand Biosecurity Act 1993"
-    url: "https://www.beehive.govt.nz/information/biosecurity"
-  - title: "BC Integrated Stormwater Management Planning"
-    url: "https://www2.gov.bc.ca/gov/content/environment/air-land-water-climate-change/water/integrated-water-management"
+    url: "https://www.legislation.govt.nz/act/public/1993/0025/latest/whole.html"
+  - title: "BC Integrated Stormwater Management Planning (archived)"
+    url: "https://web.archive.org/web/20240601000000/https://www2.gov.bc.ca/gov/content/environment/air-land-water-climate-change/water/integrated-water-management"
 related_policies:
   - "Biodiversity Corridors & Rewilding Mandate"
 ---
