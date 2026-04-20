@@ -23,7 +23,7 @@ official_sources:
     energy resources, demand response, energy storage, market coupling, and 15-minute
     trading intervals under ACER oversight.
 - title: EU Regulation 2024/1747 on Electricity Market Rules
-  url: https://energy.ec.europa.eu/topics/markets-and-consumers/electricity-market-design_en
+  url: https://eur-lex.europa.eu/eli/reg/2024/1747/oj
   note: Companion regulation to Directive 2024/1711, establishing detailed market
     rules for integration of renewable energy, flexibility services, and distributed
     generation.

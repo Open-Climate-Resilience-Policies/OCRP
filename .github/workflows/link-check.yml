@@ -46,9 +46,10 @@ jobs:
           python3 - <<'PY'
 import json,sys
 results=json.load(open('link-check.json'))
-# 403/401/429: bot-blocking or auth-required — warn but do not fail.
+# 401/403/429: bot-blocking or auth-required — warn but do not fail.
+# 500/502/503/504: transient server errors — warn but do not fail.
 # 404/410 and connection errors (None): definitively broken.
-UNCERTAIN_CODES = {401, 403, 429}
+UNCERTAIN_CODES = {401, 403, 429, 500, 502, 503, 504}
 bad=[]
 warn=[]
 for e in results:
@@ -61,7 +62,7 @@ for e in results:
         elif code >= 400:
             bad.append(e)
 if warn:
-    print('WARNING — URLs that may be bot-blocked or require auth (not counted as failures):')
+    print('WARNING — URLs that may be bot-blocked, require auth, or have transient server errors (not counted as failures):')
     import pprint
     pprint.pprint(warn[:20])
 if bad:

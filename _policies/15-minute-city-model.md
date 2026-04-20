@@ -21,8 +21,8 @@ official_sources:
 - url: https://www.planning.vic.gov.au/guides-and-resources/strategies-and-initiatives/plan-melbourne
   title: "Plan Melbourne 2017\u20132050"
   accessed: '2025-12-27'
-- url: https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods
-  title: 'Victoria Suburban Revitalisation: 20-minute neighbourhood pilots'
+- url: https://web.archive.org/web/20230601120000/https://www.suburbandevelopment.vic.gov.au/suburban-revitalisation/20-minute-neighbourhoods
+  title: 'Victoria Suburban Revitalisation: 20-minute neighbourhood pilots — archived 2023-06-01'
   accessed: '2025-12-28'
 - url: https://www.portland.gov/phb/inclusionary-housing
   title: 'City of Portland: Inclusionary Housing'
