@@ -27,11 +27,8 @@ official_sources:
   title: UK Heatwave Plan for England (UKHSA & Met Office guidance)
   accessed: '2025-12-27'
 - url: https://www.ipcc.ch/report/ar6/wg2/
-  title: "IPCC AR6 WGII \u2014 Impacts, Adaptation and Vulnerability"
-  accessed: '2025-12-27'
-- url: https://www.ipcc.ch/report/ar6/wg2/
-  title: 'IPCC AR6 WG2: Impacts, Adaptation and Vulnerability (heat-related health
-    impacts)'
+  title: "IPCC AR6 WGII \u2014 Impacts, Adaptation and Vulnerability (heat-related health
+    impacts)"
   accessed: '2025-12-27'
 - url: https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health
   title: 'WHO fact sheet: Climate change, heat and health'

@@ -52,6 +52,12 @@ def check_url(url: str):
             # Some servers disallow HEAD; fall back to GET
             resp = SESSION.get(url, timeout=TIMEOUT, allow_redirects=True)
             code = resp.status_code
+        if code >= 500:
+            # Retry once on server errors — these are often transient
+            import time
+            time.sleep(2)
+            resp = SESSION.get(url, timeout=TIMEOUT * 2, allow_redirects=True)
+            code = resp.status_code
         return code, resp.url
     except requests.exceptions.Timeout:
         # Retry once with a longer timeout before reporting as unreachable

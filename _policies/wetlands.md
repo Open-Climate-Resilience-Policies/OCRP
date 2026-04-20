@@ -13,9 +13,9 @@ keywords:
   - water-management
 official_sources:
   - title: "Great Lakes Binational Toxics Strategy"
-    url: "https://www.epa.gov/glri/great-lakes-binational-toxics-strategy"
+    url: "https://web.archive.org/web/20240930120000/https://www.epa.gov/glri/great-lakes-binational-toxics-strategy"
   - title: "EU Invasive Alien Species Regulation (1143/2014)"
-    url: "https://ec.europa.eu/environment/nature/invasivealien/index_en.htm"
+    url: "https://eur-lex.europa.eu/eli/reg/2014/1143/oj"
   - title: "New Zealand Biosecurity Act 1993"
     url: "https://www.beehive.govt.nz/information/biosecurity"
   - title: "BC Integrated Stormwater Management Planning"

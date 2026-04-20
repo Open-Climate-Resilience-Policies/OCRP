@@ -26,20 +26,20 @@ official_sources:
   title: 'European Commission: Energy Performance Certificates (EPBD implementation
     guidance)'
   accessed: '2025-12-27'
-- url: https://doee.dc.gov/service/building-energy-performance-standards-beps
-  title: 'Washington, D.C.: Building Energy Performance Standards (BEPS)'
+- url: https://web.archive.org/web/20240930120000/https://doee.dc.gov/service/building-energy-performance-standards-beps
+  title: 'Washington, D.C.: Building Energy Performance Standards (BEPS) — archived 2024-09-30'
   accessed: '2025-12-27'
-- url: https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760
+- url: https://web.archive.org/web/20240930120000/https://www.kankyo.metro.tokyo.lg.jp/documents/d/kankyo/cap_and_trade-index-files-kankyo4760
   title: Tokyo Metropolitan Government - Tokyo Cap-and-Trade Program overview (English
-    briefing deck)
+    briefing deck) — archived 2024-09-30
   accessed: '2025-12-28'
 - url: https://library.municode.com/ma/boston/codes/code_of_ordinances?nodeId=PTIICOOR_CH7AIAQUPR_ARTIIIBUEMREDEDO_S7-3.2BUEMREDEDO
   title: "Boston Code of Ordinances \xA77-3.2 Building Emissions Reduction and Disclosure\
     \ Ordinance (Municode)"
   accessed: '2025-12-28'
-- url: https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Climate-Action-Sustainability-and-Resiliency/Cutting-Denvers-Carbon-Pollution/Efficient-Commercial-Buildings/Denver-Building-Regulations/Energize-Denver-Building-Performance-Policy/Buildings-25000-sq-ft-or-Larger/Technical-Guidance-25k-or-more
+- url: https://web.archive.org/web/20240930120000/https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Climate-Action-Sustainability-and-Resiliency/Cutting-Denvers-Carbon-Pollution/Efficient-Commercial-Buildings/Denver-Building-Regulations/Energize-Denver-Building-Performance-Policy/Buildings-25000-sq-ft-or-Larger/Technical-Guidance-25k-or-more
   title: City and County of Denver - Energize Denver performance policy technical
-    guidance for buildings >=25,000 sq ft
+    guidance for buildings >=25,000 sq ft — archived 2024-09-30
   accessed: '2025-12-28'
 summary: A framework for reducing building emissions through a phased approach of
   benchmarking, transparency, and mandatory performance standards.
