@@ -20,7 +20,8 @@ import sys
 # 404/410 and connection errors (None): definitively broken.
 UNCERTAIN_CODES = {401, 403, 429, 500, 502, 503, 504}
 
-results = json.load(open('link-check.json'))
+with open('link-check.json') as f:
+    results = json.load(f)
 bad = []
 warn = []
 
@@ -35,8 +36,10 @@ for e in results:
             bad.append(e)
 
 if warn:
-    print('WARNING — URLs that may be bot-blocked, require auth, or have transient server errors'
-          ' (not counted as failures):')
+    print(
+        'WARNING — URLs that may be bot-blocked, require auth, or have transient server errors'
+        ' (not counted as failures):'
+    )
     pprint.pprint(warn[:20])
 
 if bad:
