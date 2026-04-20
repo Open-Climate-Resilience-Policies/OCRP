@@ -12,8 +12,8 @@ keywords:
   - biodiversity-corridors
   - water-management
 official_sources:
-  - title: "Great Lakes Binational Toxics Strategy — International Joint Commission"
-    url: "https://ijc.org/en/glbts"
+  - title: "EU Water Framework Directive (2000/60/EC) — Framework for Community Action in the Field of Water Policy"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32000L0060"
   - title: "EU Invasive Alien Species Regulation (1143/2014)"
     url: "https://eur-lex.europa.eu/eli/reg/2014/1143/oj"
   - title: "New Zealand Biosecurity Act 1993"

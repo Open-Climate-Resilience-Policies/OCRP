@@ -12,8 +12,8 @@ keywords:
   - climate-risk
   - nature-based-adaptation
 official_sources:
-  - title: "BC Sea Level Rise Adaptation Guidelines (archived)"
-    url: "https://web.archive.org/web/20240601000000/https://www2.gov.bc.ca/gov/content/safety/natural-disaster-management/hazard-mitigation/sea-level-rise-adaptation-guidelines"
+  - title: "EU Floods Directive 2007/60/EC — Assessment and Management of Flood Risks"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32007L0060"
   - title: "OECD Coastal Adaptation"
     url: "https://www.oecd.org/environment/"
   - title: "New Zealand Coastal Policy Statement"
