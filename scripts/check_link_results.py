@@ -5,11 +5,17 @@ definitively broken links are found.
 
 Exit codes:
   0 — no broken links
-  1 — broken links found (HTTP 404/410)
+  1 — broken links found (HTTP 404/410 on non-archive.org hosts)
 
 HTTP codes that are treated as warnings (not failures):
   401/403/429 — bot-blocking or auth-required
   500/502/503/504 — transient server errors
+
+archive.org 404 responses are treated as warnings, not failures.
+A 404 from archive.org means the specific snapshot was not captured,
+not that the underlying content is gone.  Wayback Machine is also known
+to block or throttle automated CI runners, making its 404 responses
+unreliable as a quality signal.
 
 Network-level errors (status_code=None, e.g. connection refused, timeout,
 DNS failure) are also treated as warnings.  These indicate the URL could not
@@ -20,12 +26,14 @@ definitively broken.  A human-visible warning is still emitted.
 import json
 import pprint
 import sys
+from urllib.parse import urlparse
 
 # 401/403/429: bot-blocking or auth-required — warn but do not fail.
 # 500/502/503/504: transient server errors — warn but do not fail.
 # None (connection errors): network-level issues — warn but do not fail.
 # 404/410: definitively broken content — fail.
 UNCERTAIN_CODES = {401, 403, 429, 500, 502, 503, 504}
+ARCHIVE_ORG_HOST = 'web.archive.org'
 
 with open('link-check.json') as f:
     results = json.load(f)
@@ -34,6 +42,8 @@ warn = []
 
 for e in results:
     code = e.get('status_code')
+    url = e.get('url', '') or e.get('final_url', '')
+    is_archive = urlparse(url).netloc == ARCHIVE_ORG_HOST
     if code is None:
         # Network error (connection refused, timeout, DNS failure).
         # Treat as a warning so CI does not fail due to runner network
@@ -41,6 +51,12 @@ for e in results:
         warn.append(e)
     elif isinstance(code, int):
         if code in UNCERTAIN_CODES:
+            warn.append(e)
+        elif code >= 400 and is_archive:
+            # archive.org 404 means the specific snapshot was not captured,
+            # not that the underlying content is gone.  Treat as a warning
+            # rather than a hard failure since Wayback Machine availability
+            # is known to be unreliable from automated CI runners.
             warn.append(e)
         elif code >= 400:
             bad.append(e)
