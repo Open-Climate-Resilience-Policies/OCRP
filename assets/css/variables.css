@@ -1,5 +1,5 @@
-:root, [data-theme="light"] {
-  /* WCAG 2.2 AA compliant colors */
+:root {
+  /* WCAG 2.2 AA compliant colors — light theme defaults */
   --color-primary: #004b50;        /* Contrast ratio 11.59:1 with white */
   --color-primary-light: #006b70;  /* Contrast ratio 7.93:1 with white */
   --color-primary-dark: #002d30;
@@ -11,6 +11,8 @@
   --color-bg-light: #f8f9fa;
   --color-bg-secondary: #f8f9fa;
   --color-border: #dee2e6;
+  --color-warning-bg: #fff8e1;
+  --color-warning-border: #d4a017;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -33,11 +35,15 @@
     --color-bg-light: #1e1e1e;
     --color-bg-secondary: #242424;
     --color-border: #333333;
+    --color-warning-bg: #2a1f00;
+    --color-warning-border: #b07800;
   }
 }
 
-/* Hard override */
-[data-theme="dark"] {
+/* Hard overrides — :root[data-theme] has specificity 0-2-0, which beats
+   :root alone (0-1-0) inside the media query above, so manual user
+   preferences correctly override the OS-level preference. */
+:root[data-theme="dark"] {
   --color-primary: #1bb7c1;
   --color-primary-light: #4cdadd;  
   --color-primary-dark: #0f838a;
@@ -49,4 +55,22 @@
   --color-bg-light: #1e1e1e;
   --color-bg-secondary: #242424;
   --color-border: #333333;
+  --color-warning-bg: #2a1f00;
+  --color-warning-border: #b07800;
+}
+
+:root[data-theme="light"] {
+  --color-primary: #004b50;
+  --color-primary-light: #006b70;
+  --color-primary-dark: #002d30;
+  --color-accent: #1a7029;
+  --color-text: #1a1d1f;
+  --color-text-light: #4a4f54;
+  --color-text-muted: #6c757d;
+  --color-bg: #ffffff;
+  --color-bg-light: #f8f9fa;
+  --color-bg-secondary: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-warning-bg: #fff8e1;
+  --color-warning-border: #d4a017;
 }
