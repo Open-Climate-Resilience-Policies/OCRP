@@ -16,7 +16,7 @@ body {
   top: 0;
   z-index: 1000;
   padding: 8px 16px;
-  background: var(--color-primary);
+  background: var(--color-header-bg);
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -30,7 +30,7 @@ body {
 
 /* Header */
 header {
-  background: var(--color-primary);
+  background: var(--color-header-bg);
   color: white;
   padding: var(--spacing-md) var(--spacing-lg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -442,7 +442,7 @@ a:focus {
 
 .share-btn:hover,
 .share-btn:focus-visible {
-  background: var(--color-primary);
+  background: var(--color-header-bg);
   color: #fff;
   outline: 3px solid rgba(0,0,0,0.1);
   outline-offset: 2px;
@@ -479,7 +479,7 @@ a:focus {
 
 .share-option:hover,
 .share-option:focus-visible {
-  background: var(--color-primary);
+  background: var(--color-header-bg);
   color: #fff;
 }
 
@@ -576,7 +576,7 @@ footer {
 .feedback-btn {
   display: inline-flex;
   align-items: center;
-  background: var(--color-primary);
+  background: var(--color-header-bg);
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -632,7 +632,7 @@ footer {
 
 .pagination-previous:hover,
 .pagination-next:hover {
-  background: var(--color-primary);
+  background: var(--color-header-bg);
   color: white;
 }
 
@@ -834,9 +834,9 @@ footer {
 
 .pagination-link:hover,
 .pagination-link:focus {
-  background: var(--color-primary);
+  background: var(--color-header-bg);
   color: white;
-  border-color: var(--color-primary);
+  border-color: var(--color-header-bg);
   text-decoration: none;
 }
 
