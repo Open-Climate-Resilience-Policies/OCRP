@@ -60,6 +60,9 @@
 }
 
 :root[data-theme="light"] {
+  /* Required: provides higher specificity (0-2-0) than the media query
+     above (0-1-0) so that dark-OS users who manually choose light mode
+     are not overridden by prefers-color-scheme: dark. */
   --color-primary: #004b50;
   --color-primary-light: #006b70;
   --color-primary-dark: #002d30;
