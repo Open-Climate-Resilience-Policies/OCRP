@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/variables.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="manifest" href="{{ '/assets/manifest/site.webmanifest' | relative_url }}">
+  <!-- Apply saved theme before first paint to avoid FOUC -->
+  <script>(function(){var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16.png' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
@@ -40,26 +42,28 @@
         <div class="brand-acronym">OCRP</div>
       </div>
     </div>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/policies/' | relative_url }}">Policy Library</a></li>
-        <li><a href="{{ '/contribute/' | relative_url }}">Contribute</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/search/' | relative_url }}">Search</a></li>
-      </ul>
-    </nav>
-    <button id="theme-toggle" aria-label="Switch to dark mode">
-      <!-- Sun icon (yellow/gold) -->
-      <svg aria-hidden="true" class="theme-icon sun-icon" viewBox="0 0 24 24" width="20" height="20">
-        <circle cx="12" cy="12" r="5" fill="currentColor"/>
-        <path fill="currentColor" d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
-      </svg>
-      <!-- Moon icon (blue/grey) -->
-      <svg aria-hidden="true" class="theme-icon moon-icon" viewBox="0 0 24 24" width="20" height="20">
-        <path fill="currentColor" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-      </svg>
-    </button>
+    <div class="header-nav-row">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/policies/' | relative_url }}">Policy Library</a></li>
+          <li><a href="{{ '/contribute/' | relative_url }}">Contribute</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+          <li><a href="{{ '/search/' | relative_url }}">Search</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Switch to dark mode">
+        <!-- Sun icon (yellow/gold) -->
+        <svg aria-hidden="true" class="theme-icon sun-icon" viewBox="0 0 24 24" width="20" height="20">
+          <circle cx="12" cy="12" r="5" fill="currentColor"/>
+          <path fill="currentColor" d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+        </svg>
+        <!-- Moon icon (blue/grey) -->
+        <svg aria-hidden="true" class="theme-icon moon-icon" viewBox="0 0 24 24" width="20" height="20">
+          <path fill="currentColor" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
     <div class="status-indicator" id="status-indicator" hidden aria-live="polite" aria-atomic="true">
       <span class="status-dot"></span>
       <span class="status-text">Offline</span>
