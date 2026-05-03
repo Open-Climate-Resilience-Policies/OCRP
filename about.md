@@ -91,6 +91,8 @@ Our four-agent review chain acts as an internal quality control board:
 | **The Sleep Doctor** | Audits indoor temperature and public-health thresholds | Any housing or heat policy |
 | **The Consistency Guardian** | Checks structure, citations, overlap, and enforcement language | Every new or edited policy |
 
+[See the full workflow, trust mechanisms, and how to run the checks yourself →](/integrity-engine/)
+
 ### Known limitations
 
 Despite these safeguards, AI-assisted content can contain errors. Specifically:
