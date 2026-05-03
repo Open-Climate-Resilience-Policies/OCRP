@@ -9,7 +9,8 @@ permalink: /contribute/
 We now have two ways to help: add new policies and stress-test the Policy Assistant. Both build a stronger community of practice.
 
 ## Track 1: Add or Improve Policies
-1) **Find a policy** that is effective, replicable, and evidence-based.
+1) **Find a policy** that is effective, replicable, and evidence-based.  
+   See the [Resources page]({{ '/resources/' | relative_url }}) for curated policy databases and guides — including **[CircuLaw](https://www.circulaw.nl/)** (circular economy legal instruments) and **[The Policy Playbook](https://www.themandarin.com.au/wp-content/uploads/sites/5/2026/01/The-Policy-Playbook_ebook.pdf)** — as starting points.
 2) **Normalize it to our structure** (title, summary, type, jurisdiction, date, content, implementation, resources).
 3) **Open an issue** with the source link and your formatted Markdown: [Issue Queue](https://github.com/Open-Climate-Resilience-Policies/OCRP/issues).
 
