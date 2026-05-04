@@ -22,7 +22,7 @@ A collaborative repository of climate resilience policies, strategies, and best 
   </div>
 </div>
 
-[Explore Policies]({{ site.baseurl }}/policies/)
+[Get Started]({{ site.baseurl }}/getting-started/) &nbsp; [Explore Policies]({{ site.baseurl }}/policies/)
 
 ## What is OCRP?
 
