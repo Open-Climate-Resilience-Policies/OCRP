@@ -33,3 +33,17 @@ We track impact, not just commits.
 * 🤖 **Automator:** Improved a Python script.
 
 *Join the Discussion on [Discord] to meet other citizen lobbyists.*
+
+---
+
+## ✅ Behavior-Driven Guardrails for UX/Tool Changes
+
+If your PR changes user-visible behavior (navigation, page flow, search, pagination, tool logic, form behavior, or UI controls), you must update behavior specs and tests:
+
+1. Update `/home/runner/work/OCRP/OCRP/FEATURES.md` with Story ID traceability.
+2. Add or update a scenario in `/home/runner/work/OCRP/OCRP/features/*.feature`.
+3. Add or update matching Playwright behavior tests in `/home/runner/work/OCRP/OCRP/tests/behavior/`.
+
+Required rule: **new feature = new scenario + test + traceability entry**.
+
+PRs that modify feature specs without matching behavior tests (or behavior tests without feature specs) are rejected by CI.
