@@ -1,6 +1,10 @@
 module.exports = {
-  testDir: 'assets/js',
-  testMatch: '**/accessibility-test.js',
+  testDir: '.',
+  testMatch: [
+    'assets/js/accessibility-test.js',
+    'tests/behavior/**/*.spec.js'
+  ],
+  testIgnore: ['_site/**'],
   timeout: 30000,
   expect: {
     timeout: 5000,

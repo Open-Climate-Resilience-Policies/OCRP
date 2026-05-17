@@ -29,6 +29,18 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Set up Node.js for search index
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build search index
+        run: npm run build:search
+
       - name: Verify build output
         run: |
           test -d _site
@@ -116,25 +128,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install --save-dev @playwright/test @axe-core/playwright
+        run: npm ci
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Check run interval
-        id: interval
-        run: |
-          if [ $(( ${GITHUB_RUN_NUMBER} % 5 )) -eq 0 ]; then
-            echo "run_tests=true" >> $GITHUB_OUTPUT
-          else
-            echo "run_tests=false" >> $GITHUB_OUTPUT
-          fi
-
       - name: Run accessibility tests
-        if: steps.interval.outputs.run_tests == 'true'
-        run: npx playwright test
+        run: npm run test:accessibility
 
       - name: Upload test results
         if: always()
@@ -143,6 +146,93 @@ jobs:
           name: accessibility-results
           path: playwright-report/
           retention-days: 7
+
+  behavior-tests:
+    name: Behavior Testing
+    runs-on: ubuntu-latest
+    needs: jekyll-build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download built site
+        uses: actions/download-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site/
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run behavior tests
+        run: npm run test:behavior
+
+      - name: Upload behavior test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: behavior-results
+          path: playwright-report/
+          retention-days: 7
+
+  behavior-traceability:
+    name: Feature/Test Traceability Gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Enforce feature/test parity
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE_SHA="${{ github.event.pull_request.base.sha }}"
+            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE_SHA="${{ github.event.before }}"
+            HEAD_SHA="${{ github.sha }}"
+            if [ -z "$BASE_SHA" ] || [ "$BASE_SHA" = "0000000000000000000000000000000000000000" ]; then
+              BASE_SHA="$(git rev-parse HEAD~1)"
+            fi
+          fi
+
+          CHANGED_FILES="$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" || true)"
+          echo "Changed files:"
+          echo "$CHANGED_FILES"
+
+          FEATURES_CHANGED=false
+          TESTS_CHANGED=false
+
+          if echo "$CHANGED_FILES" | grep -Eq '^(FEATURES\.md|features/.*\.feature)$'; then
+            FEATURES_CHANGED=true
+          fi
+
+          if echo "$CHANGED_FILES" | grep -Eq '^tests/behavior/.*\.(js|ts)$'; then
+            TESTS_CHANGED=true
+          fi
+
+          if [ "$FEATURES_CHANGED" != "$TESTS_CHANGED" ]; then
+            echo "❌ Feature/test parity check failed."
+            echo "Feature docs changed: $FEATURES_CHANGED"
+            echo "Behavior tests changed: $TESTS_CHANGED"
+            echo "Update both feature specs and behavior tests in the same PR."
+            exit 1
+          fi
+
+          echo "✅ Feature/test parity check passed."
 
   javascript-quality:
     name: JavaScript Quality

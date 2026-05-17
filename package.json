@@ -4,7 +4,8 @@
   "description": "Quality automation for OCRaP.ai climate resilience policy library",
   "private": true,
   "scripts": {
-    "test:accessibility": "playwright test accessibility-test.js",
+    "test:accessibility": "playwright test assets/js/accessibility-test.js",
+    "test:behavior": "playwright test tests/behavior",
     "install:browsers": "playwright install --with-deps chromium",
     "build:search": "pagefind --site _site"
   },
